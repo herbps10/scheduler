@@ -1,0 +1,173 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ BIOL 103 Human Biology-Lec                  18-JAN-11     11-MAY-11
+     1  53054 02  3.0  25/165 M W    4:00pm-5:15pm   NEWTON214  Spicka, Edwin J.
+
+ BIOL 104 N/Human Biology Laboratory         18-JAN-11     11-MAY-11
+     1  50051 01  1.0   4/20   T     8:30am-10:20am  ISC   147  Reho, Thomas A.
+     1  50052 02  1.0   1/20   T     10:30am-12:20pm ISC   147  Reho, Thomas A.
+     1  50053 03  1.0   4/20   T     12:30pm-2:20pm  ISC   147  Reho, Thomas A.
+     1  50054 04  1.0   5/20   T     2:30pm-4:20pm   ISC   147  Reho, Thomas A.
+     1  50055 05  1.0   1/20    W    8:30am-10:20am  ISC   147  Reho, Thomas A.
+     1  50056 06  1.0   4/20    W    10:30am-12:20pm ISC   147  Reho, Thomas A.
+     1  50057 07  1.0   2/20     R   10:30am-12:20pm ISC   147  Reho, Thomas A.
+     1  50058 08  1.0   4/20     R   12:30pm-2:20pm  ISC   147  Reho, Thomas A.
+
+ BIOL 116 N/General Biology Laboratory       18-JAN-11     11-MAY-11
+     1  54676 01  2.0   3/20  M      2:30pm-3:20pm   NEWTON202  Hannam, Kristina
+                               T     10:30am-1:20pm  ISC   101  Hannam, Kristina
+     1  54677 02  2.0   1/20  M      2:30pm-3:20pm   NEWTON202  Hannam, Kristina
+                               T     10:30am-1:20pm  ISC   103  Hannam, Kristina
+     1  54678 03  2.0   1/20  M      2:30pm-3:20pm   NEWTON202  Muench, Susan Bandoni
+                               T     2:30pm-5:20pm   ISC   101  Muench, Susan Bandoni
+     1  54679 04  2.0   0/20  M      2:30pm-3:20pm   NEWTON202  Muench, Susan Bandoni
+                               T     2:30pm-5:20pm   ISC   103  Muench, Susan Bandoni
+     1  54680 05  2.0   2/20  M      2:30pm-3:20pm   NEWTON202  McPherson, Duane R
+                                W    3:45pm-6:35pm   ISC   101  McPherson, Duane R
+     1  54681 06  2.0   0/20  M      2:30pm-3:20pm   NEWTON202  McPherson, Duane R
+                                W    3:45pm-6:35pm   ISC   103  McPherson, Duane R
+     1  54682 07  2.0   4/20  M      2:30pm-3:20pm   NEWTON202  O'Donnell, Robert W
+                                 R   2:30pm-5:20pm   ISC   101  O'Donnell, Robert W
+     1  54683 08  2.0   0/20  M      2:30pm-3:20pm   NEWTON202  O'Donnell, Robert W
+                                 R   2:30pm-5:20pm   ISC   103  O'Donnell, Robert W
+
+ BIOL 119 GenBiol:Diversity,Physiol,Ecol     18-JAN-11     11-MAY-11
+     1  50064 01  3.0  14/170 M W F  9:30am-10:20am  NEWTON202  O'Donnell, Robert W
+     1  54962 02  3.0   5/170 M W F  12:30pm-1:20pm  NEWTON202  Hannam, Kristina
+
+ BIOL 203 Principles of Ecology              18-JAN-11     11-MAY-11
+     1  50077 01  3.0   3/45  M W F  8:30am-9:20am   SCHRAD  1  Hartvigsen, Gregg
+     1  51968 02  3.0   5/45  M W F  9:30am-10:20am  SCHRAD  1  Hartvigsen, Gregg
+     1  54009 03  3.0   5/45  M W F  10:30am-11:20am SCHRAD  1  Apple, Jennifer
+
+ BIOL 204 Ecology Laboratory                 18-JAN-11     11-MAY-11
+     1  54723 01  1.0  16/16     R   2:30pm-5:20pm   ISC   107  Apple, Jennifer
+
+ BIOL 208 Anatomy Laboratory                 18-JAN-11     11-MAY-11
+     1  50079 01  1.0  15/15   T R   1:00pm-2:15pm   ISC   202  Spicka, Edwin J.
+     1  54302 02  1.0  15/15   T R   2:30pm-3:45pm   ISC   202  Spicka, Edwin J.
+
+ BIOL 210 Nutrition                          18-JAN-11     11-MAY-11
+     1  53865 01  3.0  48/48   T R   10:00am-11:15am ISC   115  Hatley-Briggs, Cynthia
+
+ BIOL 222 Principles of Genetics             18-JAN-11     11-MAY-11
+     1  50082 01  3.0   5/40  M W F  9:30am-10:20am  NEWTON209  Militello, Kevin
+     1  51970 02  3.0   6/40  M W F  10:30am-11:20am NEWTON209  Militello, Kevin
+     1  52338 03  3.0   0/40  M W F  11:30am-12:20pm NEWTON209  Lovett, Janice A
+
+ BIOL 223 Genetics Laboratory                18-JAN-11     11-MAY-11
+     1  54354 01  1.0   5/16   T     10:00am-12:50pm ISC   306  Lovett, Janice A
+     1  54355 02  1.0   6/16   T     2:30pm-5:20pm   ISC   306  Lovett, Janice A
+
+ BIOL 230 Principles of Microbiology-Lec     18-JAN-11     11-MAY-11
+     1  50083 01  4.0  39/40   T R   2:30pm-3:45pm   ISC   131  Simon, Robert D
+
+ BIOL 230 Principles of Microbiology-Lab     18-JAN-11     11-MAY-11
+     1  50084 02   .0  19/20   T     10:00am-11:55am ISC   302  Simon, Robert D
+                                 R   10:00am-10:55am ISC   302  Simon, Robert D
+     1  50085 03   .0  20/20   T     4:00pm-5:55pm   ISC   302  Simon, Robert D
+                                 R   4:00pm-4:55pm   ISC   302  Simon, Robert D
+
+ BIOL 235 M/Disease&the Developing World     18-JAN-11     11-MAY-11
+     1  54435 01  3.0  36/55  M W    1:00pm-2:15pm   NEWTON209  Muench, Susan Bandoni
+
+ BIOL 241 Biology of Invertebrates-Lec       18-JAN-11     11-MAY-11
+     1  51971 01  4.0  40/40  M W F  9:30am-10:20am  ISC   131  Bosch, Isidro M
+
+ BIOL 241 Biology of Invertebrates-Lab       18-JAN-11     11-MAY-11
+     1  51972 02   .0  20/20     R   10:00am-12:50pm ISC   105  Bosch, Isidro M
+     1  52816 03   .0  20/20     R   2:30pm-5:20pm   ISC   105  Bosch, Isidro M
+
+ BIOL 264 Human Physiology-Lec               18-JAN-11     11-MAY-11
+     1  54011 01  4.0  42/42  M W F  1:30pm-2:20pm   ISC   115  Lewis, Jani
+
+ BIOL 264 Human Physiology-Lab               18-JAN-11     11-MAY-11
+     1  54012 02   .0  14/14     R   2:30pm-5:20pm   ISC   203  Lewis, Jani
+     1  54013 03   .0  14/14      F  9:30am-12:20pm  ISC   203  Lewis, Jani
+     1  54304 04   .0  14/14     R   10:00am-12:50pm ISC   203  Lewis, Jani
+
+ BIOL 300 Cell Biology                       18-JAN-11     11-MAY-11
+     1  52378 01  3.0  20/40  M W F  9:30am-10:20am  FRASER202A Hoops, Harold J
+     1  52379 02  3.0  20/40  M W F  10:30am-11:20am FRASER202A Hoops, Harold J
+
+ BIOL 327 Molecular Ecology                  18-JAN-11     11-MAY-11
+     1  54836 01  3.0  16/16   T R   10:00am-11:15am ISC   136  Apple, Jennifer
+
+ BIOL 334 Biology of Cancer-Lec              18-JAN-11     11-MAY-11
+     1  53432 01  3.0  32/32  M W    12:30pm-1:20pm  ISC   131  O'Donnell, Robert W
+
+ BIOL 334 Biology of Cancer-Rec              18-JAN-11     11-MAY-11
+     1  53433 02   .0  16/16      F  12:30pm-1:20pm  ISC   131  O'Donnell, Robert W
+     1  53434 03   .0  16/16      F  1:30pm-2:20pm   ISC   131  O'Donnell, Robert W
+
+ BIOL 340 Modeling Biological System-Lec     18-JAN-11     11-MAY-11
+     1  53738 01  3.0   9/12  M      2:30pm-4:20pm   ISC   115  Hartvigsen, Gregg
+
+ BIOL 340 Modeling Biological System-Lab     18-JAN-11     11-MAY-11
+     1  53739 02   .0   9/12      F  2:30pm-4:20pm   ISC   115  Hartvigsen, Gregg
+
+ BIOL 342 Parasitology                       18-JAN-11     11-MAY-11
+     1  51973 01  3.0  30/30   T R   1:00pm-2:15pm   NEWTON209  Muench, Susan Bandoni
+
+ BIOL 354 Developmental Biology-Lec          18-JAN-11     11-MAY-11
+     1  50097 01  4.0  11/16  M W F  1:30pm-2:20pm   ISC   136  Haynie, John L
+
+ BIOL 354 Developmental Biology-Lab          18-JAN-11     11-MAY-11
+     1  50098 02   .0   3/8      R   2:30pm-5:20pm   ISC   306  Haynie, John L
+     1  50099 03   .0   8/8      R   10:00am-12:50pm ISC   306  Haynie, John L
+
+ BIOL 354 Developmental Biology-Lec          18-JAN-11     11-MAY-11
+     1  54963 04  4.0  16/16   T R   11:30am-12:45pm ISC   115  Cox, Elisabeth
+
+ BIOL 354 Developmental Biology-Lab          18-JAN-11     11-MAY-11
+     1  54964 05   .0   8/8     W    10:00am-12:50pm ISC   302  Cox, Elisabeth
+     1  54965 06   .0   8/8     W    3:45pm-6:35pm   ISC   302  Cox, Elisabeth
+
+ BIOL 361 Plant Physiology-Lec               18-JAN-11     11-MAY-11
+     1  50100 01  4.0  16/24   T R   8:30am-9:45am   ISC   131  Briggs, George M.
+
+ BIOL 361 Plant Physiology-Lab               18-JAN-11     11-MAY-11
+     1  50101 02   .0   8/12   T     1:00pm-1:50pm   ISC   206  Briggs, George M.
+     1  55146 03   .0   8/12                         CAMPUS     Briggs, George M.
+
+ BIOL 376 Environmental Management           18-JAN-11     11-MAY-11
+     1  51627 01  3.0  30/30  M W F  10:30am-11:20am ISC   136  Spear, Ray
+
+ BIOL 380 BioSem:Reproductive Technology     18-JAN-11     11-MAY-11
+     1  50107 01  1.0  15/12   T     10:00am-10:50am ISC   137  Spicka, Edwin J.
+
+ BIOL 380 Bio Sem:Endocrinology              18-JAN-11     11-MAY-11
+     1  51628 02  1.0  15/14     R   11:30am-12:20pm ISC   137  O'Donnell, Robert W
+
+ BIOL 380 Bio Sem:Plant Biology              18-JAN-11     11-MAY-11
+     1  51976 03  1.0  16/14    W    8:30am-9:20am   ISC   137  Briggs, George M.
+
+ BIOL 385 Senior Seminar in Biochemistry     18-JAN-11     11-MAY-11
+     1  50110 01  1.0  12/12     R   10:00am-10:50am ISC   137  Hoops, Harold J
+     1  54437 02  1.0  10/12    W    10:30am-11:20am ISC   137  Simon, Robert D
+
+ BIOL 388 Exp:Neural Organization            18-JAN-11     11-MAY-11
+     1  52342 01  3.0  20/20   T R   4:00pm-5:15pm   ISC   115  Holtzman, David
+
+ BIOL 388 Exp:Cellular Neurobiology          18-JAN-11     11-MAY-11
+     1  52603 02  3.0   9/30  M W F  10:30am-11:20am WELLES121  McPherson, Duane R
+
+ BIOL 390 Biol Techniques:Molecular          18-JAN-11     11-MAY-11
+     1  50111 01  2.0  12/12    W    10:30am-2:20pm  ISC   304  Chang, Ming-Mei
+     1  50112 02  2.0  12/12   T     1:00pm-4:50pm   ISC   304  Chang, Ming-Mei
+
+ BIOL 390 Biol Tech:Electron Microscopy      18-JAN-11     11-MAY-11
+     1  50113 03  2.0   9/12   T     2:30pm-4:20pm   ISC        Hoops, Harold J
+
+ BIOL 390 Biol Techniques:Molecular          18-JAN-11     11-MAY-11
+     1  50114 04  2.0  12/12     R   1:00pm-4:50pm   ISC   304  Chang, Ming-Mei
+
+ BIOL 390 Biol Technique:Genome Analysis     18-JAN-11     11-MAY-11
+     1  52604 05  2.0   8/12     R   8:30am-12:20pm  ISC   304  Militello, Kevin
+
+ BIOL 390 Biol Tech:Neurobiology             18-JAN-11     11-MAY-11
+     1  54837 06  2.0   9/10   T     11:30am-3:15pm  ISC   203  McPherson, Duane R

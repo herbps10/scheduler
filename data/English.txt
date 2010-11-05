@@ -1,0 +1,116 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 26-OCT-10 9:00pm
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ENGL 142 Literary Forms:Serial Killers      18-JAN-11     11-MAY-11
+     1  50369 01  3.0   0/35   T     4:00pm-6:30pm   WELLES134  Walker, Julia M.
+
+ ENGL 142 Lit Form:Neo-Slave Narrative       18-JAN-11     11-MAY-11
+     1  50370 02  3.0   0/35   T R   2:30pm-3:45pm   WELLES119  Lima, Maria
+
+ ENGL 142 Literary Forms:Science Fiction     18-JAN-11     11-MAY-11
+     1  50371 03  3.0   0/35  M W    4:00pm-5:15pm   NEWTON212  Metzger, Thomas Richard
+
+ ENGL 170 The Practice of Criticism          18-JAN-11     11-MAY-11
+     1  52865 01  3.0   0/25   T R   11:30am-12:45pm WELLES216  Paku, Gillian
+     1  52866 02  3.0   0/25  M W F  8:30am-9:20am   WELLES216  Stelzig, Eugene L.
+     1  52867 03  3.0   0/25  M   F  2:30pm-3:45pm   WELLES216  Harrison, William
+     1  52868 04  3.0   0/25  M W F  9:30am-10:20am  STURGS113  Doggett, Robert
+
+ ENGL 200 College Writing II                 18-JAN-11     11-MAY-11
+     1  50377 01  3.0   0/25  M W    6:00pm-7:15pm   NEWTON212  Metzger, Thomas Richard
+
+ ENGL 201 Creative Writing                   18-JAN-11     11-MAY-11
+     1  50380 01  3.0   0/24   T R   1:00pm-2:15pm   WELLES216  Perri, Christopher Michael
+     1  51056 02  3.0   0/24   T R   4:00pm-5:15pm   WELLES216  Perri, Christopher Michael
+     1  52050 03  3.0   0/24  M   F  10:00am-11:15am NEWTON206  Faurot, Catherine
+
+ ENGL 212 British Literature I               18-JAN-11     11-MAY-11
+     1  50386 01  3.0   0/35  M W    7:00pm-8:15pm   WELLES216  Drake, Graham N.
+
+ ENGL 213 British Literature II              18-JAN-11     11-MAY-11
+     1  50387 01  3.0   0/35  M W    11:30am-12:45pm NEWTON212  Harrison, William
+
+ ENGL 222 Exp-Ren:Milton'sBiblicalPoetry     18-JAN-11     11-MAY-11
+     1  54048 01  3.0   0/35  M W    11:30am-12:45pm WELLES134  Walker, Julia M.
+
+ ENGL 235 American Literature                18-JAN-11     11-MAY-11
+     1  50389 01  3.0   0/35   T R   11:30am-12:45pm WELLES119  Cooper, Kenneth Dean
+
+ ENGL 237 Voices&Persp:Hurricane Stories     18-JAN-11     11-MAY-11
+     1  51502 01  3.0   0/35  M W    10:00am-11:15am WELLES119  McCoy, Beth A.
+
+ ENGL 237 Voices&Persp:Hip-Hop Culture       18-JAN-11     11-MAY-11
+     1  55069 02  3.0   0/35   T R   11:30am-12:45pm NEWTON212  Gentry, Kristen
+
+ ENGL 237 Voices&Persp:Asian-Amer Lit        18-JAN-11     11-MAY-11
+     1  55070 03  3.0   0/35   T R   10:00am-11:15am WELLES216  Rutkowski, Alice
+
+ ENGL 250 Literature & Existentialism        18-JAN-11     11-MAY-11
+     1  55135 01  3.0   0/35    W    6:00pm-8:30pm   WELLES119  Asher, Kenneth G
+
+ ENGL 254 Intro to Shakespeare               18-JAN-11     11-MAY-11
+     1  55130 01  3.0   0/35  M W    10:00am-11:15am WELLES134  Walker, Julia M.
+
+ ENGL 282 The Bible as Literature            18-JAN-11     11-MAY-11
+     1  55131 01  3.0   0/35   T R   8:30am-9:45am   WELLES119  Drake, Graham N.
+
+ ENGL 301 Poetry Writing I                   18-JAN-11     11-MAY-11
+     1  52274 01  3.0   0/15  M      4:00pm-6:30pm   WADWTH204  Woidat, Caroline M.
+
+ ENGL 302 Fiction Writing I                  18-JAN-11     11-MAY-11
+     1  50405 01  3.0   0/15   T R   10:00am-11:15am WELLES134  Gentry, Kristen
+
+ ENGL 303 Poetry Writing II                  18-JAN-11     11-MAY-11
+     1  50406 01  3.0   0/10  M      4:00pm-6:30pm   WADWTH204  Woidat, Caroline M.
+
+ ENGL 304 Fiction Writing II                 18-JAN-11     11-MAY-11
+     1  50407 01  3.0   0/10   T R   10:00am-11:15am WELLES134  Gentry, Kristen
+
+ ENGL 305 Creative Non-Fiction Writing I     18-JAN-11     11-MAY-11
+     1  54349 01  3.0   0/15   T R   2:30pm-3:45pm   WELLES216  Gentry, Kristen
+
+ ENGL 306 Writing for Teachers               18-JAN-11     11-MAY-11
+     1  55073 01  3.0   0/30   T     4:30pm-7:00pm   WELLES119  Gillin, Mary P.
+
+ ENGL 307 Creative Non-FictionWriting II     18-JAN-11     11-MAY-11
+     1  54350 01  3.0   0/10   T R   2:30pm-3:45pm   WELLES216  Gentry, Kristen
+
+ ENGL 318 Black British Lit & Culture        18-JAN-11     11-MAY-11
+     1  55132 01  3.0   0/35   T R   5:30pm-6:45pm   WELLES216  Lima, Maria
+
+ ENGL 319 Literary Theory                    18-JAN-11     11-MAY-11
+     1  50411 01  3.0   0/33  M   F  11:30am-12:45pm WELLES119  Asher, Kenneth G
+
+ ENGL 320 Irish Literature                   18-JAN-11     11-MAY-11
+     1  55133 01  3.0   0/35  M W    4:00pm-5:15pm   WELLES128  Doggett, Robert
+
+ ENGL 330 American Romanticism               18-JAN-11     11-MAY-11
+     1  52627 01  3.0   0/35   T R   10:00am-11:15am WELLES119  Gillin, Edward G.
+
+ ENGL 337 African-American Literature        18-JAN-11     11-MAY-11
+     1  50415 01  3.0   0/31  M   F  2:30pm-3:45pm   WELLES134  McCoy, Beth A.
+
+ ENGL 339 American Ways:Plotting Women       18-JAN-11     11-MAY-11
+     1  54609 01  3.0   0/33  M W F  9:30am-10:20am  WELLES216  Woidat, Caroline M.
+
+ ENGL 355 Shakespeare II                     18-JAN-11     11-MAY-11
+     1  50418 01  3.0   0/25  M W    4:00pm-5:15pm   NEWTON206  Herzman, Ronald B
+     1  50987 02  3.0   0/35  M W F  10:30am-11:20am WELLES216  Stelzig, Eugene L.
+
+ ENGL 358 Major Author:DeLillo               18-JAN-11     11-MAY-11
+     1  50419 01  3.0   0/35   T R   1:00pm-2:15pm   WELLES119  Cooper, Kenneth Dean
+
+ ENGL 358 MajAuth:Malory&Legends-Arthur      18-JAN-11     11-MAY-11
+     1  50420 02  3.0   0/35   T     7:00pm-9:30pm   WELLES119  Drake, Graham N.
+
+ ENGL 370 Senior Reading                     18-JAN-11     11-MAY-11
+     1  54869 01  1.0   0/24     R   5:30pm-6:20pm   WELLES134  Perri, Christopher Michael
+
+ ENGL 386 Modern Drama                       18-JAN-11     11-MAY-11
+     1  55134 01  3.0   0/35  M W    4:00pm-5:15pm   WELLES134  Greenfield, Thomas A.
+
+ ENGL 406 Writing for Teachers               18-JAN-11     11-MAY-11
+     1  55074 01  3.0   0/30   T     4:30pm-7:00pm   WELLES119  Gillin, Mary P.

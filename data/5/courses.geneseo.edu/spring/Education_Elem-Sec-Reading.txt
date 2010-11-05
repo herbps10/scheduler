@@ -1,0 +1,88 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ EDUC 188 Exp:Supp Med Fragile St in Sch     18-JAN-11     11-MAY-11
+     1  55126 01  2.0  24/30                         CAMPUS     Rozalski, Michael
+
+ EDUC 215 Foundtn of Literacy-Sec School     18-JAN-11     11-MAY-11
+     1  54338 02  3.0   5/30   T R   4:00pm-5:15pm   FRASER114  O'Leary, Patricia Eileen
+     1  54749 03  3.0   3/30   T R   1:00pm-2:15pm   SOUTH 237  O'Leary, Patricia Eileen
+
+ EDUC 303 Field Experience:Soc St-Lec        18-JAN-11     11-MAY-11
+     1  53901 01  3.0   2/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:Soc St-Act        18-JAN-11     11-MAY-11
+     1  53902 02   .0   2/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:Math-Lec          18-JAN-11     11-MAY-11
+     1  54066 03  3.0   2/5                          OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:Math-Act          18-JAN-11     11-MAY-11
+     1  54067 04   .0   2/5                          OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:English-Lec       18-JAN-11     11-MAY-11
+     1  54068 05  3.0   1/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:English-Act       18-JAN-11     11-MAY-11
+     1  54069 06   .0   1/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:For Lang-Lec      18-JAN-11     11-MAY-11
+     1  54339 07  3.0   1/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:For Lang-Act      18-JAN-11     11-MAY-11
+     1  54340 08   .0   1/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:Science-Lec       18-JAN-11     11-MAY-11
+     1  54341 09  3.0   2/15                         OFC        Brown, Sharon A
+
+ EDUC 303 Field Experience:Science-Act       18-JAN-11     11-MAY-11
+     1  54342 10   .0   2/15                         OFC        Brown, Sharon A
+
+ EDUC 320 Student Teachng-Elem Education     18-JAN-11     11-MAY-11
+     1  55064 01  7.5  24/30                         OFC        Watts, Diantha
+
+ EDUC 326 Classroom Mgmt in Elem School      18-JAN-11     11-MAY-11
+     1  54606 01  2.0  17/33  M W    9:10am-10:00am  SOUTH      Rozalski, Michael
+
+ EDUC 331 Student Teaching - Primary         18-JAN-11     11-MAY-11
+     1  51008 01  7.5   3/150                        OFC        Watts, Diantha
+
+ EDUC 332 Student Teaching-Intermediate      18-JAN-11     11-MAY-11
+     1  51009 01  7.5   3/150                        OFC        Watts, Diantha
+
+ EDUC 340 Student Teaching-Middle Sch Ed     18-JAN-11     11-MAY-11
+     1  54058 01  6.0   8/100                        OFC        Watts, Diantha
+
+ EDUC 350 Student Teaching-High Sch Educ     18-JAN-11     11-MAY-11
+     1  54059 01  6.0   8/100                        OFC        Watts, Diantha
+
+ EDUC 354 Family & Community                 18-JAN-11     11-MAY-11
+     1  54714 01  3.0  15/33  M W F  8:00am-8:50am   SOUTH 235  Marozas, Donald S
+     1  54715 02  3.0   8/30  M W F  12:30pm-1:20pm  SOUTH 235  Marozas, Donald S
+     1  54716 03  3.0  11/30  M W F  1:30pm-2:20pm   SOUTH 235  Marozas, Donald S
+     1  54717 04  3.0  30/30  M W F  10:30am-11:20am SOUTH 235  Marozas, Donald S
+
+ EDUC 479 Wkp:CreatingMulticulturalClsrm     18-JAN-11     11-MAY-11
+     1  54363 01  3.0   2/25  M      5:00pm-7:30pm   SOUTH 241  Watts, Diantha
+
+ EDUC 488 Exp:TransformationalPedagogies     18-JAN-11     11-MAY-11
+     1  50912 01  3.0   1/25   T     5:00pm-7:30pm   SOUTH 235  Morse, Jane
+
+ EDUC 488 Exp:Lit & Lang Dev - ESOL          18-JAN-11     11-MAY-11
+     1  55147 02  3.0   0/15     R   5:00pm-7:30pm   SOUTH 233  Urso, Annmarie
+
+ EDUC 501 Phil & Psy Assump Nature Lrng      18-JAN-11     11-MAY-11
+     1  55065 01  3.0   3/25     R   5:00pm-7:30pm   SOUTH 241  Granger, David
+
+ EDUC 504 Educational Resrch Methodology     18-JAN-11     11-MAY-11
+     1  50916 01  3.0   6/25   T     5:00pm-7:30pm   SOUTH 233  Rozalski, Michael
+     1  55066 02  3.0   2/25    W    5:00pm-7:30pm   SOUTH 237  Barber, Patricia
+
+ EDUC 540 The Writing Process:PreK-8         18-JAN-11     11-MAY-11
+     1  54060 01  3.0  25/25   T     5:00pm-7:30pm   SOUTH 237  Peck, Sharon
+
+ EDUC 560 Th/PrMulEd:Lit&Lang Dev-ESOL       18-JAN-11     11-MAY-11
+     1  55127 01  3.0   1/10     R   5:00pm-7:30pm   SOUTH 233  Urso, Annmarie

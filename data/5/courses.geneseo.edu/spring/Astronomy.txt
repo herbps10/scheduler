@@ -1,0 +1,17 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ASTR 100 Introductory Astronomy             18-JAN-11     11-MAY-11
+     1  51958 01  3.0  14/14   T R   10:00am-11:15am NEWTON202  Steinhauer, Aaron
+
+ ASTR 101 N/Introductory Astronomy Lab       18-JAN-11     11-MAY-11
+     1  51959 01  1.0   2/2    T     1:00pm-2:50pm   ISC   216  Steinhauer, Aaron
+     1  51960 02  1.0   2/2    T     3:00pm-4:50pm   ISC   216  Steinhauer, Aaron
+     1  51961 03  1.0   2/2    T     7:00pm-8:50pm   ISC   216  Steinhauer, Aaron
+     1  51962 04  1.0   2/2     W    4:00pm-5:50pm   ISC   216  Steinhauer, Aaron
+     1  51963 05  1.0   2/2     W    6:00pm-7:50pm   ISC   216  Steinhauer, Aaron
+     1  53451 06  1.0   2/2      R   11:30am-1:20pm  ISC   216  Steinhauer, Aaron
+     1  54671 07  1.0   1/2      R   2:00pm-3:50pm   ISC   216  Steinhauer, Aaron

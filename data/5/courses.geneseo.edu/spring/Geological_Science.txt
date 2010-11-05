@@ -1,0 +1,73 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ GSCI 100 N/Our Geologic Environment-Lec     18-JAN-11     11-MAY-11
+     1  50485 01  4.0  20/20  M W F  12:30pm-1:20pm  NEWTON214  Sheldon, Amy L.
+
+ GSCI 100 N/Our Geologic Environment-Lab     18-JAN-11     11-MAY-11
+     1  50487 03   .0   4/4     W    9:30am-11:20am  ISC   142  Farthing, Dori J.
+     1  50488 04   .0   4/4     W    1:30pm-3:20pm   ISC   142  Sheldon, Amy L.
+     1  50489 05   .0   4/4     W    3:30pm-5:20pm   ISC   142  Sheldon, Amy L.
+     1  50490 06   .0   4/4      R   11:30am-1:20pm  ISC   142  Farthing, Dori J.
+     1  50491 07   .0   4/4      R   2:30pm-4:20pm   ISC   142  Sheldon, Amy L.
+
+ GSCI 101 N/Geological Hist of Life-Lec      18-JAN-11     11-MAY-11
+     1  50496 01  4.0   6/6    T R   1:00pm-2:15pm   NEWTON214  Over, D. Jeffrey
+
+ GSCI 101 N/Geological Hist of Life-Lab      18-JAN-11     11-MAY-11
+     1  50497 02   .0   2/2     W    10:00am-11:50am ISC   146  Over, D. Jeffrey
+     1  50498 03   .0   2/2     W    1:30pm-3:20pm   ISC   146  Over, D. Jeffrey
+     1  50499 04   .0   2/2      R   8:30am-10:20am  ISC   146  Over, D. Jeffrey
+
+ GSCI 112 Geological Science II-Lec          18-JAN-11     11-MAY-11
+     1  50500 01  4.0   5/47  M W F  11:30am-12:20pm ISC   115  Giorgis, Scott D.
+
+ GSCI 112 Geological Science II-Lab          18-JAN-11     11-MAY-11
+     1  50501 02   .0   3/24   T     9:00am-11:50am  ISC   144  Giorgis, Scott D.
+     1  50502 03   .0   2/23   T     2:00pm-4:50pm   ISC   144  Giorgis, Scott D.
+
+ GSCI 188 Ex:N/Geol-ClimateCh&Energy-Lec     18-JAN-11     11-MAY-11
+     1  55075 01  4.0   8/10   T R   11:30am-12:45pm NEWTON202  Laabs, Benjamin
+
+ GSCI 188 Ex:N/Geol-ClimateCh&Energy-Lab     18-JAN-11     11-MAY-11
+     1  55076 02   .0   2/2    T     1:00pm-2:50pm   ISC   142  Laabs, Benjamin
+     1  55077 03   .0   1/2    T     3:00pm-4:50pm   ISC   142  Young, Richard A.
+     1  55078 04   .0   1/2     W    8:30am-10:20am  ISC   144  Laabs, Benjamin
+     1  55079 05   .0   2/2     W    10:30am-12:20pm ISC   144  Laabs, Benjamin
+     1  55080 06   .0   2/2     W    1:30pm-3:20pm   ISC   144  Young, Richard A.
+
+ GSCI 200 Environmental Geology              18-JAN-11     11-MAY-11
+     1  55056 01  3.0  16/25  M W    4:00pm-5:15pm   ISC   144  Laabs, Benjamin
+
+ GSCI 201 Geology of Alien Worlds            18-JAN-11     11-MAY-11
+     1  54853 01  3.0   4/16   T R   11:30am-12:45pm ISC   236  Young, Richard A.
+
+ GSCI 220 Petrology-Lec                      18-JAN-11     11-MAY-11
+     1  50503 01  3.0   5/25   T R   10:00am-10:50am ISC   207  Farthing, Dori J.
+
+ GSCI 220 Petrology-Lab                      18-JAN-11     11-MAY-11
+     1  50504 02   .0   5/25   T     11:00am-12:50pm ISC   207  Farthing, Dori J.
+
+ GSCI 310 Sci&Tech Wrtng-Geosciences-Lec     18-JAN-11     11-MAY-11
+     1  55057 01  3.0   9/25  M W    10:30am-11:20am ISC    19  Sheldon, Amy L.
+
+ GSCI 310 Sci&Tech Wrtng-Geosciences-Lab     18-JAN-11     11-MAY-11
+     1  55058 02   .0   9/25      F  10:30am-12:20pm ISC    19  Sheldon, Amy L.
+
+ GSCI 331 Geomorphology-Lec                  18-JAN-11     11-MAY-11
+     1  51952 01  3.0  11/16  M      11:30am-1:20pm  ISC   236  Young, Richard A.
+
+ GSCI 331 Geomorphology-Lab                  18-JAN-11     11-MAY-11
+     1  51953 02   .0  11/16    W    11:30am-1:20pm  ISC   236  Young, Richard A.
+
+ GSCI 345 Tectonics                          18-JAN-11     11-MAY-11
+     1  55059 01  3.0  12/25  M W    4:00pm-5:15pm   ISC   207  Giorgis, Scott D.
+
+ GSCI 351 Stratigraphy-Lec                   18-JAN-11     11-MAY-11
+     1  51543 01  3.0  20/25  M W    8:30am-9:20am   ISC   146  Over, D. Jeffrey
+
+ GSCI 351 Stratigraphy-Lab                   18-JAN-11     11-MAY-11
+     1  51544 02   .0  20/25      F  8:30am-10:20am  ISC   146  Over, D. Jeffrey

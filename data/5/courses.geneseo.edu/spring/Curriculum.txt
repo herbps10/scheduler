@@ -1,0 +1,71 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ CURR 213 Reading & Writing Process          18-JAN-11     11-MAY-11
+     1  53765 01  3.0   0/30  M W F  8:30am-9:20am   SOUTH 233  Jensen, Mary A
+     1  53766 02  3.0   2/30   T R   1:30pm-2:45pm   SOUTH 241  Jensen, Mary A
+     1  53767 03  3.0   0/30   T R   10:00am-11:15am SOUTH 241  Balajthy, Ernest P.
+     1  53768 04  3.0   4/30   T R   8:30am-9:45am   SOUTH 241  Balajthy, Ernest P.
+
+ CURR 313 Classroom Reading&Lit Programs     18-JAN-11     11-MAY-11
+     1  53868 01  3.0   4/30  M W F  11:30am-12:20pm SOUTH 244  Morgan, Brian Stuart
+     1  53885 02  3.0  14/30  M W F  8:00am-9:00am   HOLCOM266  Liwanag, Maria Perpetua
+
+ CURR 316 Teaching Sci &Math to Children     18-JAN-11     11-MAY-11
+     1  53770 01  4.0   0/30   T R   2:00pm-3:40pm   SOUTH 233  Natoli, Philip J.
+     1  53771 02  4.0   2/30   T R   11:45am-1:25pm  SOUTH 233  Showers, Dennis E
+     1  53772 03  4.0   0/30   T R   8:00am-9:40am   SOUTH 233  Rommel-Esham, Kathryn
+     1  53773 04  4.0   4/30   T R   10:00am-11:40am SOUTH 233  Rommel-Esham, Kathryn
+
+ CURR 317 Soc St & Curr Integration-Lec      18-JAN-11     11-MAY-11
+     1  53869 01  3.0   4/33  M W F  10:30am-11:20am SOUTH 244  Falk, Elizabeth
+
+ CURR 317 Soc St & Curr Integration-Act      18-JAN-11     11-MAY-11
+     1  53870 02   .0   4/33                         CAMPUS     Falk, Elizabeth
+
+ CURR 317 Soc St & Curr Integration-Lec      18-JAN-11     11-MAY-11
+     1  53877 03  3.0  14/33  M W F  9:10am-10:00am  HOLCOM272  Falk, Elizabeth
+
+ CURR 317 Soc St & Curr Integration-Act      18-JAN-11     11-MAY-11
+     1  53878 04   .0  14/33                         CAMPUS     Falk, Elizabeth
+
+ CURR 320 Arts &Career Educ in Community     18-JAN-11     11-MAY-11
+     1  53889 01  3.0  12/33  M W F  10:10am-11:00am HOLCOM270  Ware, Linda
+
+ CURR 436 Teaching Young Adult Lit           18-JAN-11     11-MAY-11
+     1  55150 01  3.0   5/25     R   5:00pm-7:30pm   SOUTH 235  Morgan, Brian Stuart
+
+ CURR 438 Teaching Lit:Birth-6th Grade       18-JAN-11     11-MAY-11
+     1  54359 01  3.0  25/25  M      5:00pm-7:30pm   SOUTH 235  Morgan, Brian Stuart
+
+ CURR 440 Content Area Rdg/Lit-SecSchool     18-JAN-11     11-MAY-11
+     1  54196 01  3.0  15/25    W    5:00pm-7:30pm   SOUTH 244  Morgan, Brian Stuart
+
+ CURR 510 Foundations of Literacy Educ       18-JAN-11     11-MAY-11
+     1  54453 01  3.0   1/25  M      5:00pm-7:30pm   SOUTH 237  Liwanag, Maria Perpetua
+     1  55148 02  3.0   0/25  M      5:00pm-7:30pm   SOUTH 244  TBA
+
+ CURR 511 Materials&Methods-Reading/Lit      18-JAN-11     11-MAY-11
+     1  54454 01  3.0   5/25     R   5:00pm-7:30pm   SOUTH 237  Peck, Sharon
+     1  55149 02  3.0   0/25     R   5:00pm-7:30pm   WELLES132  TBA
+
+ CURR 512 Diagns&Assess-Rdg&Lit:Early Ch     18-JAN-11     11-MAY-11
+     1  54197 01  3.0  17/25  M      5:00pm-7:30pm   SOUTH 328  Kreutter, Cheryl A.
+     1  55060 02  3.0  20/20   T     5:00pm-7:30pm   SOUTH 241  Balajthy, Ernest P.
+
+ CURR 513 Prac:MeetngNeed-Diverse Reader     18-JAN-11     11-MAY-11
+     1  54198 01  3.0  20/20    W    3:45pm-6:15pm   OFC        Liwanag, Maria Perpetua
+     1  54229 02  3.0  20/20    W    3:45pm-6:15pm   OFC        Peck, Sharon
+
+ CURR 522 Diag&Asses:Rdg/Lit-Mid-Ch&Adol     18-JAN-11     11-MAY-11
+     1  54207 01  3.0   0/5    T     5:00pm-7:30pm   SOUTH 241  Balajthy, Ernest P.
+
+ CURR 533 Math Meth-Elem School              18-JAN-11     11-MAY-11
+     1  54604 01  3.0   4/25  M      5:00pm-7:30pm   SOUTH 233  Showers, Dennis E
+
+ CURR 535 Action Res in Reading&Literacy     18-JAN-11     11-MAY-11
+     1  54199 01  3.0  14/25   T     5:00pm-7:30pm   SOUTH 244  Kreutter, Cheryl A.
+     1  55061 02  3.0  25/25     R   5:00pm-7:30pm   SOUTH 244  Kreutter, Cheryl A.

@@ -1,0 +1,64 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ GEOG 102 S/Human Geography                  18-JAN-11     11-MAY-11
+     1  50469 01  3.0   0/0     W F  10:00am-11:15am FRASER119  Norris, Darrell A
+
+ GEOG 110 N/Physical Geography-Lec           18-JAN-11     11-MAY-11
+     1  51485 01  4.0   6/6   M W F  12:30pm-1:20pm  NEWTON204  Aagesen, David L
+
+ GEOG 110 N/Physical Geography-Lab           18-JAN-11     11-MAY-11
+     1  51486 02   .0   2/2    T     10:00am-11:50am FRASER103  Aagesen, David L
+     1  51487 03   .0   3/2    T     12:00pm-1:50pm  FRASER103  Aagesen, David L
+     1  54939 04   .0   2/2    T     2:00pm-3:50pm   FRASER103  Aagesen, David L
+
+ GEOG 110 N/Physical Geography-Lec           18-JAN-11     11-MAY-11
+     1  54940 05  4.0   9/6   M W F  9:30am-10:20am  NEWTON204  Kernan, James
+
+ GEOG 110 N/Physical Geography-Lab           18-JAN-11     11-MAY-11
+     1  54941 06   .0   3/2      R   9:00am-10:50am  FRASER103  Kernan, James
+     1  54942 07   .0   2/2      R   11:00am-12:50pm FRASER103  Kernan, James
+     1  54943 08   .0   3/2      R   1:00pm-2:50pm   FRASER103  Kernan, James
+
+ GEOG 123 S/M/The Developing World           18-JAN-11     11-MAY-11
+     1  50472 01  3.0   5/4    T R   11:30am-12:45pm NEWTON201  Norris, Darrell A
+     1  54944 02  3.0   4/4   M W    4:00pm-5:15pm   NEWTON201  Rogalsky, Jennifer
+
+ GEOG 201 Intro Urban &Regional Planning     18-JAN-11     11-MAY-11
+     1  52552 01  3.0  26/40   T R   2:30pm-3:45pm   FRASER202A Rogalsky, Jennifer
+
+ GEOG 250 U/American Landscapes              18-JAN-11     11-MAY-11
+     1  54945 01  3.0  15/30    W F  11:30am-12:45pm FRASER119  Norris, Darrell A
+
+ GEOG 261 Geography of the United States     18-JAN-11     11-MAY-11
+     1  50474 01  3.0  20/90   T R   10:00am-11:15am NEWTON214  Vasiliev, I. Ren
+
+ GEOG 291 Cartography-Lec                    18-JAN-11     11-MAY-11
+     1  50475 01  3.0   5/20  M W    11:30am-12:20pm FRASER103  Vasiliev, I. Ren
+
+ GEOG 291 Cartography-Lab                    18-JAN-11     11-MAY-11
+     1  50476 02   .0   5/20  M      12:30pm-2:20pm  FRASER103  Vasiliev, I. Ren
+
+ GEOG 340 Pyrogeography                      18-JAN-11     11-MAY-11
+     1  54691 01  3.0   6/20  M W    11:30am-12:45pm FRASER114  Kernan, James
+
+ GEOG 348 Sport Geography                    18-JAN-11     11-MAY-11
+     1  54946 01  3.0   7/20      F  1:30pm-4:00pm   FRASER108  Aagesen, David L
+
+ GEOG 363 M/The Geography of Africa          18-JAN-11     11-MAY-11
+     1  54692 01  3.0  14/20  M W    10:00am-11:15am FRASER104  Rogalsky, Jennifer
+
+ GEOG 374 Geographic Thought                 18-JAN-11     11-MAY-11
+     1  51939 01  3.0  16/20   T     4:00pm-6:30pm   WADWTH204  Robertson, David
+
+ GEOG 375 Field Experience                   18-JAN-11     11-MAY-11
+     1  53310 01  1.0   1/12                         CAMPUS     Rogalsky, Jennifer
+
+ GEOG 385 Adv Geographic Info Systems        18-JAN-11     11-MAY-11
+     1  53263 01  3.0   6/20  M      5:00pm-7:30pm   FRASER108  Kernan, James
+
+ GEOG 388 Exp:Experimental Cartography       18-JAN-11     11-MAY-11
+     1  52010 01  3.0   2/20   T R   1:00pm-2:15pm   FRASER114  Vasiliev, I. Ren

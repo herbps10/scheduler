@@ -1,0 +1,11 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ARBC 102 Elementary Arabic II               18-JAN-11     11-MAY-11
+     1  54848 01  3.0   0/25  M W    7:00pm-8:15pm   WELLES133  Aljaysh, Akil
+
+ ARBC 288 Exp:Intermediate Arabic II         18-JAN-11     11-MAY-11
+     1  55110 01  3.0   7/25  M W    5:30pm-6:45pm   WELLES134  Aljaysh, Akil

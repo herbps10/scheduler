@@ -1,0 +1,102 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ MUSC 105 F/Popular Music in America         18-JAN-11     11-MAY-11
+     1  50645 01  3.0   4/4    T R   10:00am-11:15am BRODIE208  Kimball, James W.
+
+ MUSC 110 F/Basic Musicianship               18-JAN-11     11-MAY-11
+     1  50646 01  3.0   2/2   M W F  8:30am-9:20am   BRODIE210  Johnston, Jack R
+     1  50647 02  3.0   2/2    T R   10:00am-11:15am BRODIE210  Balkin, Richard A
+
+ MUSC 120 F/Intro to Music History           18-JAN-11     11-MAY-11
+     1  55123 01  3.0   4/4    T R   1:00pm-2:15pm   BRODIE210  Walker, James A.
+
+ MUSC 123 F/M/Music of World's Peoples       18-JAN-11     11-MAY-11
+     1  50651 01  3.0   0/15  M W F  9:30am-10:20am  BRODIE210  Kimball, James W.
+     1  52306 02  3.0   1/15  M W F  10:30am-11:20am BRODIE210  Kimball, James W.
+
+ MUSC 156 Elementary Composition             18-JAN-11     11-MAY-11
+     1  53037 01  1.0   0/3    TWR   4:00pm-4:50pm   BRODIE     Weibel, Anneliese
+
+ MUSC 160 Choral Organiz:Chamber Singers     18-JAN-11     11-MAY-11
+     1  50668 01  1.0   0/55   TWR   4:00pm-5:30pm   BRODIE208  Floriano, Gerard F.
+
+ MUSC 160 Choral Org:Spectrum                18-JAN-11     11-MAY-11
+     1  50669 02  1.0   0/55   T R   2:30pm-3:45pm   BRODIE208  Floriano, Gerard F.
+
+ MUSC 160 Choral Organiz:Festival Chorus     18-JAN-11     11-MAY-11
+     1  52565 03  1.0   0/100  T     7:00pm-9:00pm   BRODIE208  Floriano, Gerard F.
+
+ MUSC 165 Instrmn Org:Symphony Orchestra     18-JAN-11     11-MAY-11
+     1  50670 01  1.0   0/60  M W    4:00pm-5:30pm   WADWTH     Walker, James A.
+
+ MUSC 165 Instrumental Org:Wind Ensemble     18-JAN-11     11-MAY-11
+     1  50671 02  1.0   0/50   T R   4:00pm-5:30pm   WADWTH     Walker, James A.
+
+ MUSC 165 Instrumntal Org:Percussion Ens     18-JAN-11     11-MAY-11
+     1  50672 03  1.0   0/20  M      5:45pm-8:00pm   WADWTH     Tiller, Jim A.
+
+ MUSC 165 Instrumntl Org:Jazz Ensemble I     18-JAN-11     11-MAY-11
+     1  50673 04  1.0   0/20     R   6:30pm-9:00pm   BRODIE210  Kruger, Jonathan H
+
+ MUSC 165 Instrumental Org:String Band       18-JAN-11     11-MAY-11
+     1  50674 05  1.0   0/20   T     7:30pm-9:30pm   BRODIE210  Kimball, James W.
+
+ MUSC 165 Instrumnt Org:Jazz Ensemble II     18-JAN-11     11-MAY-11
+     1  50675 06  1.0   0/20  M      7:00pm-9:30pm   BRODIE210  Gibson, John David
+
+ MUSC 211 Theory of Music II                 18-JAN-11     11-MAY-11
+     1  52307 01  3.0   7/35  M W F  10:30am-11:20am BRODIE214  Weibel, Anneliese
+
+ MUSC 213 Theory Skills I-Lec                18-JAN-11     11-MAY-11
+     1  52308 01  2.0   4/20  M      9:30am-10:20am  BRODIE214  Weibel, Anneliese
+
+ MUSC 213 Theory Skills I-Stu                18-JAN-11     11-MAY-11
+     1  52309 02   .0   4/20    W F  9:30am-10:20am  BRODIE214  Weibel, Anneliese
+
+ MUSC 222 F/Stage Musicals                   18-JAN-11     11-MAY-11
+     1  52310 01  3.0  12/35  M W F  9:30am-10:20am  BRODIE208  Reynolds, Anne-Marie
+
+ MUSC 227 F/Music-Western Civ Since 1750     18-JAN-11     11-MAY-11
+     1  52384 01  3.0   8/35  M W F  11:30am-12:20pm BRODIE208  Reynolds, Anne-Marie
+
+ MUSC 256 Intermediate Composition           18-JAN-11     11-MAY-11
+     1  53038 01  1.0   0/3                          BRODIE     Weibel, Anneliese
+
+ MUSC 265 Chamber Music Ensemble             18-JAN-11     11-MAY-11
+     1  52311 01  1.0   0/20                         BRODIE     Kirkwood, Linda
+
+ MUSC 265 Chamber Music Ens:Jazz Combo       18-JAN-11     11-MAY-11
+     1  53376 02  1.0   0/10                         BRODIE210  Gibson, John David
+     1  53713 03  1.0   0/10                         BRODIE210  Kruger, Jonathan H
+
+ MUSC 271 Musical Theater Workshop           18-JAN-11     11-MAY-11
+     1  52312 01  1.0   0/50                         BRODIE245  Case, Alan Lee
+
+ MUSC 311 Theory of Music IV                 18-JAN-11     11-MAY-11
+     1  52313 01  3.0   6/30  M W F  12:30pm-1:20pm  BRODIE214  Weibel, Anneliese
+
+ MUSC 333 Studies in Vocal Lit:Opera         18-JAN-11     11-MAY-11
+     1  55038 01  3.0   6/20  M W F  1:30pm-2:20pm   BRODIE208  Reynolds, Anne-Marie
+
+ MUSC 356 Advanced Composition               18-JAN-11     11-MAY-11
+     1  53039 01  1.0   0/3                          BRODIE     Weibel, Anneliese
+
+ MUSC 368 Vocal Pedagogy-Lec                 18-JAN-11     11-MAY-11
+     1  52315 01  2.0   2/5    T R   11:30am-11:55am BRODIE114  Kurau, Pamela B
+
+ MUSC 368 Vocal Pedagogy-Stu                 18-JAN-11     11-MAY-11
+     1  52316 02   .0   2/5    T R   12:00pm-12:20pm BRODIE114  Kurau, Pamela B
+
+ MUSC 370 Music for Classroom Teacher        18-JAN-11     11-MAY-11
+     1  55039 01  3.0   3/20   T R   10:00am-11:15am BRODIE214  Balkin, Laura M
+
+ MUSC 375 Piano Pedagogy                     18-JAN-11     11-MAY-11
+     1  52369 01  3.0   0/5    T R   2:30pm-3:45pm   BRODIE     Stanley, Amy A.
+
+ MUSC 376 Piano Teaching Practicum           18-JAN-11     11-MAY-11
+     1  51653 01  2.0   1/2   M W    11:30am-12:20pm BRODIE107  Stanley, Amy A.
+     1  51654 02  2.0   0/2   M W    1:00pm-2:15pm   BRODIE107  Stanley, Amy A.

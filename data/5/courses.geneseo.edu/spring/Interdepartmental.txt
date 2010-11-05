@@ -1,0 +1,157 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ INTD 105 Writing Sem:Sex, Skulls&Aliens     18-JAN-11     11-MAY-11
+     1  54951 01  3.0   1/0     W F  10:00am-11:15am FRASER114  Krumrine, Kristi
+
+ INTD 105 WS:Durkheim on Religion&Ritual     18-JAN-11     11-MAY-11
+     1  53556 02  3.0   0/0    T R   1:00pm-2:15pm   FRASER104  Derne, Stephan D.
+
+ INTD 105 Wrtg Sem:Values of Life&Death      18-JAN-11     11-MAY-11
+     1  54981 03  3.0   0/0    T R   11:30am-12:45pm STURGS112  TBA
+     1  53558 04  3.0   0/0    T R   2:30pm-3:45pm   FRASER114  TBA
+
+ INTD 105 Wrtg Sem:Tolerance & Morality      18-JAN-11     11-MAY-11
+     1  53563 05  3.0   0/0    T R   2:30pm-3:45pm   FRASER104  Timothy, Olivia Michael
+
+ INTD 105 Writing Sem:Philosophy of Love     18-JAN-11     11-MAY-11
+     1  53566 06  3.0   1/0   M W F  12:30pm-1:20pm  WELLES132  Edgar, Stacey L.
+
+ INTD 105 Writing Sem:Freedom & Equality     18-JAN-11     11-MAY-11
+     1  53592 08  3.0   0/0    T R   1:00pm-2:15pm   WELLES128  Morgan, Sean Thomas
+
+ INTD 105 WS:Botticelli&Idealized Beauty     18-JAN-11     11-MAY-11
+     1  53593 09  3.0   0/0   M W    8:30am-9:45am   NEWTON205  Bosch, Lynette
+
+ INTD 105 Wrtg Sem:Affluence in America      18-JAN-11     11-MAY-11
+     1  53595 11  3.0   1/0    T R   11:30am-12:45pm FRASER104  Scipione, Paul A.
+
+ INTD 105 Wrtg Sem:Disability in America     18-JAN-11     11-MAY-11
+     1  53596 12  3.0   0/0   M   F  8:30am-9:45am   HOLCOM270  Ware, Linda
+
+ INTD 105 WS:Songs-Slavery,Songs-Freedom     18-JAN-11     11-MAY-11
+     1  53597 13  3.0   0/0   M W F  10:30am-11:20am WELLES133  McClure, Glenn Lee
+
+ INTD 105 WrSm:Paris-City Ancient&Modern     18-JAN-11     11-MAY-11
+     1  53599 15  3.0   1/0    T R   8:30am-9:45am   MILNE 105  Lutkus, Anne D.
+
+ INTD 105 Writing Sem:the Woman Writer       18-JAN-11     11-MAY-11
+     1  53600 16  3.0   0/0    T R   10:00am-11:15am NEWTON206  Beltz-Hosek, Caroline
+
+ INTD 105 WS:Women&Work-Fict&Non-Fict        18-JAN-11     11-MAY-11
+     1  53601 17  3.0   0/0    T R   11:30am-12:45pm MILNE 105  Herzman, Ellen F
+
+ INTD 105 WrSm:Ocatvia Butler's Parables     18-JAN-11     11-MAY-11
+     1  53602 18  3.0   0/0     W F  1:00pm-2:15pm   MILNE 105  McCoy, Beth A.
+
+ INTD 105 Wrtg Sem:Looking on Darkness       18-JAN-11     11-MAY-11
+     1  53607 19  3.0   0/0   M W F  8:30am-9:20am   MILNE 105  Symington, Sidney
+
+ INTD 105 Wr Sem:Hypocrisy-Virtuous Vice     18-JAN-11     11-MAY-11
+     1  53608 20  3.0   1/0    T R   10:00am-11:15am MILNE 105  Paku, Gillian
+
+ INTD 105 WS:Partianship-AmPol 1790-2000     18-JAN-11     11-MAY-11
+     1  53614 21  3.0   0/0    T R   5:00pm-6:15pm   STURGS109  Barden, Thomas M
+
+ INTD 105 WrtSm:Themes-Contemp Amer Lit      18-JAN-11     11-MAY-11
+     1  53615 22  3.0   0/0   M W    6:00pm-7:15pm   STURGS113  Tsang, Ronny H
+
+ INTD 105 WrSm:German Hist,Media&Terror      18-JAN-11     11-MAY-11
+     1  53624 23  3.0   0/0   M W    4:00pm-5:15pm   WELLES123  Goehle, Todd Michael
+
+ INTD 105 WrSm:Religion vs Science in US     18-JAN-11     11-MAY-11
+     1  53625 24  3.0   0/0    T R   4:00pm-5:15pm   STURGS108  Swarts, James L.
+
+ INTD 110 ESL Oral Communication             18-JAN-11     11-MAY-11
+     1  55055 01  1.0   1/25  M      6:30pm-7:30pm   STURGS208A House, Thomas D.
+
+ INTD 203 U/Social Foundatns of Amer Edu     18-JAN-11     11-MAY-11
+     1  50928 01  3.0   1/20  M W F  8:30am-9:20am   SOUTH 241  Granger, David
+     1  50929 02  3.0   1/20  M W F  12:30pm-1:20pm  SOUTH 233  Morse, Jane
+     1  50930 03  3.0   0/20   T R   2:30pm-3:45pm   SOUTH 237  Lauricella, Ann Marie
+     1  50931 04  3.0   2/20   T R   10:00am-11:15am SOUTH 235  Lauricella, Ann Marie
+     1  53783 11  3.0   0/0    T R   8:30am-9:45am   STURGS219  Whitehead, Robert L.
+
+ INTD 205 Business Communications            18-JAN-11     11-MAY-11
+     1  54831 01  3.0  10/10  M W F  12:30pm-1:20pm  WELLES121  Jurkowski, Ginni
+     1  54832 02  3.0  10/10   T R   8:30am-9:45am   NEWTON213  Herman, Andrew
+     1  54833 03  3.0   9/10  M W F  10:30am-11:20am NEWTON213  McAlpine, Amy
+     1  54834 04  3.0   7/10   T R   5:00pm-6:15pm   WELLES121  Irwin, W. David
+
+ INTD 210 Top-Film: -Lec                     18-JAN-11     11-MAY-11
+     1  53912 01  3.0  10/10  M      7:00pm-8:40pm   WELLES119  Symington, Sidney
+
+ INTD 210 Top-Film: -Lab                     18-JAN-11     11-MAY-11
+     1  53913 02   .0  10/10  M      8:50pm-9:30pm   WELLES119  Symington, Sidney
+
+ INTD 288 Ex:Global Serv Lrng-El Sauce       18-JAN-11     11-MAY-11
+     1  51060 01  1.0   0/15                                    Parfitt, David B
+
+ INTD 300 Topics in Secondry Edu:Science     18-JAN-11     11-MAY-11
+     1  53924 01  1.0  10/30    W    5:00pm-5:50pm   SOUTH 233  Showers, Dennis E
+
+ INTD 301 Topics in Secondary Educ:Engl      18-JAN-11     11-MAY-11
+     1  50642 01  3.0  10/30   T     11:30am-2:00pm  SOUTH 244  Keegan, Kelly
+
+ INTD 301 Topics in Secondry Educ:Soc St     18-JAN-11     11-MAY-11
+     1  51666 02  3.0  23/30  M      8:00am-10:30am  HOLCOM269  Schwartz, Sherry
+
+ INTD 301 Topics in Secondry Educ:Math       18-JAN-11     11-MAY-11
+     1  51667 03  3.0  19/30   T R   10:00am-11:15am SOUTH 336  Johannes, Jeff
+
+ INTD 302 Methods&Matl-Sec Educ:Engl-Lec     18-JAN-11     11-MAY-11
+     1  50937 01  3.0  11/30     R   11:30am-2:00pm  SOUTH 244  Keegan, Kelly
+
+ INTD 302 Methods&Matl-Sec Educ:Engl-Act     18-JAN-11     11-MAY-11
+     1  50938 02   .0  11/30                         CAMPUS     Keegan, Kelly
+
+ INTD 302 Method&Matl-Sec Ed:Soc St-Lec      18-JAN-11     11-MAY-11
+     1  50939 03  3.0  23/30   T R   11:30am-12:45pm SOUTH 237  Lauricella, Ann Marie
+
+ INTD 302 Method&Matl-Sec Ed:Soc St-Act      18-JAN-11     11-MAY-11
+     1  50940 04   .0  23/30                         CAMPUS     Lauricella, Ann Marie
+
+ INTD 302 Method&Matl-Sec Ed:Math-Lec        18-JAN-11     11-MAY-11
+     1  50941 05  3.0  19/30   T R   8:30am-9:20am   SOUTH 336  Sutherland, Melissa Ann
+
+ INTD 302 Method&Matl-Sec Ed:Math-Act        18-JAN-11     11-MAY-11
+     1  50942 06   .0  19/30   T R   9:25am-9:45am   SOUTH 336  Sutherland, Melissa Ann
+
+ INTD 302 Meth&Matl-Sec Educ:Biology-Lec     18-JAN-11     11-MAY-11
+     1  50943 07  3.0   4/13   T R   8:30am-9:20am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Educ:Biology-Act     18-JAN-11     11-MAY-11
+     1  50944 08   .0   4/13   T R   9:25am-9:45am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Chemistry-Lec     18-JAN-11     11-MAY-11
+     1  51011 09  3.0   1/5    T R   8:30am-9:20am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Chemistry-Act     18-JAN-11     11-MAY-11
+     1  51012 10   .0   1/5    T R   9:25am-9:45am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Earth Sci-Lec     18-JAN-11     11-MAY-11
+     1  51013 11  3.0   2/6    T R   8:30am-9:20am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Earth Sci-Act     18-JAN-11     11-MAY-11
+     1  51014 12   .0   2/6    T R   9:25am-9:45am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Physics-Lec       18-JAN-11     11-MAY-11
+     1  51015 13  3.0   3/5    T R   8:30am-9:20am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:Physics-Act       18-JAN-11     11-MAY-11
+     1  51016 14   .0   3/5    T R   9:25am-9:45am   ISC   137  Spear, Ray
+
+ INTD 302 Meth&Matl-Sec Ed:For Lang-Lec      18-JAN-11     11-MAY-11
+     1  51017 15  3.0   2/25   T R   7:00pm-8:15pm   WELLES210  Heller, Willard A
+
+ INTD 302 Meth&Matl-Sec Ed:For Lang-Act      18-JAN-11     11-MAY-11
+     1  51018 16   .0   2/25                         CAMPUS     Heller, Willard A
+
+ INTD 388 Ex:LivCARESBiloxi ServLrng-Lec     18-JAN-11     11-MAY-11
+     1  52606 01  2.0   0/30                         OFC        Kallio, Kenneth D.
+
+ INTD 388 Ex:LivCARESBiloxi ServLrng-Act     18-JAN-11     11-MAY-11
+     1  55141 02   .0   0/30                         OFC        Kallio, Kenneth D.

@@ -1,0 +1,23 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ARTH 172 F/HisWstArt:Renaissance-Rococo     18-JAN-11     11-MAY-11
+     1  52856 01  3.0  20/20  M W    11:30am-12:45pm NEWTON201  Bosch, Lynette
+
+ ARTH 173 F/His West Art:Neoclassic-Cont     18-JAN-11     11-MAY-11
+     1  54730 01  3.0  19/20   T R   1:00pm-2:15pm   NEWTON202  Laun, Kristina L
+
+ ARTH 180 F/M/Arts-Afr,Oceania,Amer,Asia     18-JAN-11     11-MAY-11
+     1  52326 01  3.0  16/20   T R   2:30pm-3:45pm   NEWTON214  Board, Marilynn L
+
+ ARTH 278 F/19th Cen Eur Art:Fr Rev-Post     18-JAN-11     11-MAY-11
+     1  55024 01  3.0  18/35   T R   11:30am-12:45pm BRODIE154  Board, Marilynn L
+
+ ARTH 300 MajArtists&Iss:Rivera & Kahlo      18-JAN-11     11-MAY-11
+     1  55025 01  3.0   5/15  M W    1:00pm-2:15pm   BRODIE154  Board, Marilynn L
+
+ ARTH 305 Italian&NorthrnRenaissance Art     18-JAN-11     11-MAY-11
+     1  55026 01  3.0  15/15   T     6:00pm-8:30pm   BRODIE242A Bosch, Lynette

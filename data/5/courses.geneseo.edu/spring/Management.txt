@@ -1,0 +1,87 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ MGMT 099 Professional Dev Requirement       18-JAN-11     11-MAY-11
+     1  54357 01   .0  86/200                        CAMPUS     Howard, Barbara J
+
+ MGMT 100 Society and Business               18-JAN-11     11-MAY-11
+     1  53106 01  3.0  50/50   T R   2:30pm-3:45pm   WELLES140  Wall, Kathleen
+
+ MGMT 250 Information Tech for Business      18-JAN-11     11-MAY-11
+     1  54841 01  3.0  16/15  M      8:30am-9:20am   NEWTON214  Horn, Michael
+                                W    8:30am-10:20am  SOUTH 138  Horn, Michael
+     1  54842 02  3.0  15/15  M      8:30am-9:20am   NEWTON214  Horn, Michael
+                                  F  8:30am-10:20am  SOUTH 138  Horn, Michael
+     1  54843 03  3.0  15/15  M      8:30am-9:20am   NEWTON214  Horn, Michael
+                                W    10:30am-12:20pm SOUTH 138  Horn, Michael
+     1  54844 04  3.0  15/15  M      8:30am-9:20am   NEWTON214  Horn, Michael
+                                  F  10:30am-12:20pm SOUTH 138  Horn, Michael
+
+ MGMT 263 Business Law I                     18-JAN-11     11-MAY-11
+     1  54037 01  3.0  37/50   T R   2:30pm-3:45pm   NEWTON201  Sciarrino, Alfred J.
+     1  54163 02  3.0  15/50   T R   4:00pm-5:15pm   NEWTON201  Sciarrino, Alfred J.
+
+ MGMT 264 Business Law II                    18-JAN-11     11-MAY-11
+     1  51869 01  3.0  50/50    W    5:00pm-7:30pm   STURGS219  Sciarrino, Alfred J.
+
+ MGMT 300 Organizational Behavior            18-JAN-11     11-MAY-11
+     1  51871 01  3.0   1/30   T R   11:30am-12:45pm WELLES140  Jassawalla, Avan
+     1  51872 02  3.0   2/30   T R   1:00pm-2:15pm   WELLES140  Jassawalla, Avan
+     1  52249 03  3.0   1/30  M W F  10:30am-11:20am WELLES138  Markulis, Peter M
+     1  53036 04  3.0   4/30  M W F  11:30am-12:20pm WELLES138  Markulis, Peter M
+
+ MGMT 311 Managerial Finance                 18-JAN-11     11-MAY-11
+     1  51873 01  3.0   3/30   T R   8:30am-9:45am   SOUTH 340  Boyd, Robert
+     1  51874 02  3.0  20/30   T R   10:00am-11:15am SOUTH 340  Boyd, Robert
+     1  51875 03  3.0  13/30     R   5:30pm-8:00pm   SOUTH 340  Gargano, Robert
+
+ MGMT 313 Security Valuation & Analysis      18-JAN-11     11-MAY-11
+     1  54326 01  3.0   9/30  M W    4:00pm-5:15pm   SOUTH 338  Gu, Anthony
+
+ MGMT 316 International Finance              18-JAN-11     11-MAY-11
+     1  52250 01  3.0  33/30  M W    11:30am-12:45pm SOUTH 338  Gu, Anthony
+     1  52570 02  3.0  32/30  M W    1:00pm-2:15pm   SOUTH 338  Gu, Anthony
+
+ MGMT 325 Money&Financial Intermediation     18-JAN-11     11-MAY-11
+     1  54863 01  3.0   7/15  M W    11:30am-12:45pm WELLES 26  Stone, Leonie S.
+
+ MGMT 331 Marketing                          18-JAN-11     11-MAY-11
+     1  51879 01  3.0   0/30   T R   8:30am-9:45am   SOUTH 338  Alam, Ian
+     1  51880 02  3.0   3/30   T R   10:00am-11:15am SOUTH 338  Alam, Ian
+     1  53415 03  3.0   7/30   T R   11:30am-12:45pm SOUTH 338  Alam, Ian
+
+ MGMT 333 Market Research                    18-JAN-11     11-MAY-11
+     1  55048 01  3.0  30/30   T R   11:30am-12:45pm SOUTH 340  Gutenberg, Jeffrey S.
+
+ MGMT 355 Production & Operations Mangmt     18-JAN-11     11-MAY-11
+     1  51886 01  3.0   7/30  M W    11:30am-12:45pm WELLES140  Sheikh, Farooq
+     1  51887 02  3.0  16/30  M W    1:00pm-2:15pm   WELLES140  Sheikh, Farooq
+     1  55049 03  3.0  30/30   T R   4:00pm-5:15pm   SOUTH 338  Wall, Kathleen
+
+ MGMT 357 Electronic Commerce                18-JAN-11     11-MAY-11
+     1  55114 01  3.0  16/30   T R   8:30am-9:45am   SOUTH 138  Horn, Michael
+
+ MGMT 360 Labor Relations                    18-JAN-11     11-MAY-11
+     1  51889 01  3.0  30/30   T     6:00pm-8:30pm   WELLES 24  Manginell, Raymond
+
+ MGMT 370 International Business             18-JAN-11     11-MAY-11
+     1  51890 01  3.0  30/30   T R   1:00pm-2:15pm   SOUTH 338  Nolan, John Timothy
+     1  51891 02  3.0  30/30   T R   2:30pm-3:45pm   SOUTH 338  Nolan, John Timothy
+
+ MGMT 385 SpTop-Bus:Sales & Negotiation      18-JAN-11     11-MAY-11
+     1  53804 01  3.0  30/30     R   6:00pm-8:30pm   SOUTH 338  Nolan, John Timothy
+
+ MGMT 385 SpTop-Bus:Consumer Behavior        18-JAN-11     11-MAY-11
+     1  54039 02  3.0  30/30   T R   4:00pm-5:15pm   WELLES138  Scipione, Paul A.
+
+ MGMT 390 Strategic Management               18-JAN-11     11-MAY-11
+     1  51892 01  3.0  25/25    W    5:00pm-7:30pm   WELLES138  Markulis, Peter M
+     1  51893 02  3.0  25/25   T     6:00pm-8:30pm   SOUTH 338  Nolan, John Timothy
+     1  51894 03  3.0  25/25   T R   2:30pm-3:45pm   SOUTH 340  Gutenberg, Jeffrey S.
+     1  54092 04  3.0  25/25   T R   4:00pm-5:15pm   SOUTH 340  Gutenberg, Jeffrey S.
+
+ MGMT 500 Leadership in Organizations        18-JAN-11     11-MAY-11
+     1  54328 01  3.0  10/20   T R   4:00pm-5:15pm   WELLES140  Jassawalla, Avan

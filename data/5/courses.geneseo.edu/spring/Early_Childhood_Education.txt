@@ -1,0 +1,23 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ECED 331 Student Teaching-Primary           18-JAN-11     11-MAY-11
+     1  54055 01  7.5   5/30                         OFC        Watts, Diantha
+
+ ECED 333 Student Teaching-Early Childhd     18-JAN-11     11-MAY-11
+     1  54056 01  7.5   5/30                         OFC        Watts, Diantha
+
+ ECED 352 Intro to Early Childhood Educ      18-JAN-11     11-MAY-11
+     1  53777 01  3.0   2/30  M W    1:00pm-2:15pm   SOUTH 244  O'Brien, Leigh
+
+ ECED 353 Curr Dev for YoungChildren-Lec     18-JAN-11     11-MAY-11
+     1  53873 01  3.0  11/25   T R   8:30am-9:45am   SOUTH 235  Jensen, Mary A
+
+ ECED 353 Curr Dev for YoungChildren-Act     18-JAN-11     11-MAY-11
+     1  53874 02   .0  11/25                         CAMPUS     Jensen, Mary A
+
+ ECED 355 Diversity&Inclusion-EC Classrm     18-JAN-11     11-MAY-11
+     1  53872 01  3.0  12/25   T R   2:30pm-3:45pm   SOUTH 235  O'Brien, Leigh

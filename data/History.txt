@@ -1,0 +1,107 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 26-OCT-10 9:00pm
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ HIST 108 The Bible                          18-JAN-11     11-MAY-11
+     1  55081 01  3.0   0/45  M W F  10:30am-11:20am NEWTON201  Cook, William R.
+
+ HIST 113 World History II                   18-JAN-11     11-MAY-11
+     1  55082 01  3.0   0/60  M W    8:30am-9:45am   WADWTH 21  Gohlman, William E.
+
+ HIST 151 S/U/History of United StatesII     18-JAN-11     11-MAY-11
+     1  50543 01  3.0   0/45   T R   5:00pm-6:15pm   WELLES123  Revell, James
+
+ HIST 162 S/U/Issues in Amer History II      18-JAN-11     11-MAY-11
+     1  50547 01  3.0   0/45   T R   7:00pm-8:15pm   WELLES123  Revell, James
+
+ HIST 203 Bio:Martin King,MalcolmX,Baker     18-JAN-11     11-MAY-11
+     1  55083 01  3.0   0/40   T R   2:30pm-3:45pm   MILNE 213  Crosby, Emilye J.
+
+ HIST 204 S/U/United States Since 1945       18-JAN-11     11-MAY-11
+     1  52838 01  3.0   0/40   T R   11:30am-12:45pm STURGS108  Kleiman, Jordan
+
+ HIST 207 Ancient Roman Civilization         18-JAN-11     11-MAY-11
+     1  55084 01  3.0   0/40  M W    1:00pm-2:15pm   STURGS109  Williams, James M.
+
+ HIST 212 The High Middle Ages               18-JAN-11     11-MAY-11
+     1  55085 01  3.0   0/40  M W F  9:30am-10:20am  NEWTON213  Cook, William R.
+
+ HIST 220 Int-Hist:Historigraphy-Slavery     18-JAN-11     11-MAY-11
+     1  52839 01  4.0   0/20   T R   11:30am-1:10pm  NEWTON205  Adams, Catherine Johnson
+
+ HIST 220 Int in Hist:Civil Rights Movt      18-JAN-11     11-MAY-11
+     1  53402 02  4.0   0/20   T R   8:00am-9:40am   MILNE 213  Crosby, Emilye J.
+
+ HIST 220 Int-Hist:Reconstruction            18-JAN-11     11-MAY-11
+     1  54361 03  4.0   0/20  M W    11:30am-1:10pm  NEWTON205  Behrend, Justin
+
+ HIST 221 Res-Hist:Tech&EnvModern U.S.       18-JAN-11     11-MAY-11
+     1  52840 01  4.0   0/20   T R   3:30pm-5:10pm   WELLES 26  Kleiman, Jordan
+
+ HIST 221 Res-His:Writing the Holocaust      18-JAN-11     11-MAY-11
+     1  53057 02  4.0   0/20   T R   11:30am-1:10pm  MILNE 213  Waddy, N.Helena
+
+ HIST 221 Res-Hist:Indians In Early Amer     18-JAN-11     11-MAY-11
+     1  53661 03  4.0   0/20   T R   5:00pm-6:40pm   STURGS103  Oberg, Michael
+
+ HIST 221 Res-His:Rural America              18-JAN-11     11-MAY-11
+     1  54557 04  4.0   0/20   T R   1:00pm-2:40pm   STURGS108  Mapes, Kathleen
+
+ HIST 260 S/U/Women in United States His     18-JAN-11     11-MAY-11
+     1  55086 01  3.0   0/40   T R   10:00am-11:15am MILNE 213  Adams, Catherine Johnson
+
+ HIST 262 Amer Indian Law &Public Policy     18-JAN-11     11-MAY-11
+     1  55087 01  3.0   0/40  M      6:00pm-8:30pm   STURGS108  Oberg, Michael
+
+ HIST 264 S/U/US Immigration History         18-JAN-11     11-MAY-11
+     1  54043 01  3.0   0/40   T R   10:00am-11:15am STURGS109  Mapes, Kathleen
+
+ HIST 271 S/M/His-Latin Amer Since 1825      18-JAN-11     11-MAY-11
+     1  55088 01  3.0   0/40   T R   11:30am-12:45pm STURGS109  Tamarin, David
+
+ HIST 282 M/Hist of East Asia Since 1840     18-JAN-11     11-MAY-11
+     1  52841 01  3.0   0/40   T R   8:30am-9:45am   NEWTON209  Hon, Tze-Ki
+
+ HIST 288 Exp:The Global 1960's              18-JAN-11     11-MAY-11
+     1  52609 01  3.0   0/40  M W    6:00pm-7:15pm   WELLES123  Goehle, Todd Michael
+
+ HIST 288 Exp:Women in War                   18-JAN-11     11-MAY-11
+     1  52610 02  3.0   0/40   T     5:30pm-8:00pm   STURGS108  Stolee, Margaret K.
+
+ HIST 288 Exp:U.S./Latin Amer Relations      18-JAN-11     11-MAY-11
+     1  55089 03  3.0   0/40   T R   2:30pm-3:45pm   WELLES123  Tamarin, David
+
+ HIST 339 The French Revolution              18-JAN-11     11-MAY-11
+     1  55090 01  3.0   0/35  M W F  10:30am-11:20am STURGS108  Cope, Joseph A.
+
+ HIST 344 Nazi Germany                       18-JAN-11     11-MAY-11
+     1  51564 01  3.0   0/35    W    4:00pm-6:30pm   STURGS109  Waddy, N.Helena
+
+ HIST 353 Age of Amer Revolution:1763-89     18-JAN-11     11-MAY-11
+     1  50560 01  3.0   0/35     R   2:30pm-5:00pm   NEWTON213  Adams, Catherine Johnson
+
+ HIST 355 Slave Rebellion&Res-New World      18-JAN-11     11-MAY-11
+     1  55091 01  3.0   0/35  M W    4:00pm-5:15pm   STURGS113  Behrend, Justin
+
+ HIST 357 Black Power & Struc Inequality     18-JAN-11     11-MAY-11
+     1  55092 01  3.0   0/35   T R   10:00am-11:15am STURGS108  Crosby, Emilye J.
+
+ HIST 362 M/Hist-Iroquois:Pre-Cont-Pres      18-JAN-11     11-MAY-11
+     1  55093 01  3.0   0/35   T R   7:00pm-8:15pm   STURGS109  Oberg, Michael
+
+ HIST 372 History of Modern Mexico           18-JAN-11     11-MAY-11
+     1  55094 01  3.0   0/35    W    4:00pm-6:30pm   STURGS108  Tamarin, David
+
+ HIST 382 Modern China                       18-JAN-11     11-MAY-11
+     1  53757 01  3.0   0/35   T R   10:00am-11:15am NEWTON209  Hon, Tze-Ki
+
+ HIST 388 Exp:Napoleon, Moscow & 1812        18-JAN-11     11-MAY-11
+     1  52628 01  3.0   0/35  M      4:00pm-6:30pm   STURGS109  Stolee, Margaret K.
+
+ HIST 391 SrSm:Pol of Food inModern U.S.     18-JAN-11     11-MAY-11
+     1  52843 01  3.0   0/20    W    4:30pm-7:00pm   STURGS103  Kleiman, Jordan
+
+ HIST 391 SenrSem:Contesting Citizenship     18-JAN-11     11-MAY-11
+     1  52844 02  3.0   0/20   T     4:00pm-6:30pm   STURGS105  Mapes, Kathleen

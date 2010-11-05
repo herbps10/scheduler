@@ -1,0 +1,39 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ PHIL 100 Introduction to Philosophy         18-JAN-11     11-MAY-11
+     1  50676 01  3.0   8/40   T R   11:30am-12:45pm WADWTH 21  Levy, David
+
+ PHIL 111 R/Introduction to Logic            18-JAN-11     11-MAY-11
+     1  50680 01  3.0  35/65  M W F  11:30am-12:20pm NEWTON204  Edgar, Stacey L.
+
+ PHIL 201 Environmental Ethics               18-JAN-11     11-MAY-11
+     1  50683 01  3.0  26/40   T R   11:30am-12:45pm WELLES131  Filice, Carlo
+
+ PHIL 207 Modern Philosophy                  18-JAN-11     11-MAY-11
+     1  50685 01  3.0  11/40  M W F  1:30pm-2:20pm   WADWTH 21  Soffer, Walter
+
+ PHIL 217 Problem in Philosophy of Law       18-JAN-11     11-MAY-11
+     1  50687 01  3.0  12/40   T R   11:30am-12:45pm WELLES132  Savellos, Elias
+
+ PHIL 218 Philosophy of Religion             18-JAN-11     11-MAY-11
+     1  50688 01  3.0   4/40  M W F  9:30am-10:20am  WELLES132  Soffer, Walter
+
+ PHIL 235 Philosophy of Biology              18-JAN-11     11-MAY-11
+     1  54980 01  3.0  10/40   T R   1:00pm-2:15pm   WELLES132  Everett, Theodore J.
+
+ PHIL 237 Ethical Issues in Business         18-JAN-11     11-MAY-11
+     1  50690 01  3.0  10/40   T R   2:30pm-3:45pm   WELLES131  Levy, David
+     1  50691 02  3.0   8/40   T R   10:00am-11:15am WELLES132  Savellos, Elias
+
+ PHIL 330 Ethical Theory                     18-JAN-11     11-MAY-11
+     1  51981 01  3.0  15/30   T R   2:30pm-3:45pm   STURGS103  Filice, Carlo
+
+ PHIL 340 Theory of Knowledge                18-JAN-11     11-MAY-11
+     1  50694 01  3.0   6/25  M W    10:00am-11:15am NEWTON205  Levy, David
+
+ PHIL 397 Sem:Disagreement&Belief            18-JAN-11     11-MAY-11
+     1  51641 01  3.0   7/25    W    4:00pm-6:30pm   WELLES132  Everett, Theodore J.

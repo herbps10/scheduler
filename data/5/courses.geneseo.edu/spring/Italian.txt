@@ -1,0 +1,8 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ITAL 102 L/Elementary Italian II            18-JAN-11     11-MAY-11
+     1  54991 01  3.0  15/25   T R   8:30am-9:45am   WELLES131  Ponziani, Laura

@@ -1,0 +1,90 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ CSCI 104 Problem Solving w/Computer-Lec     18-JAN-11     11-MAY-11
+     1  50279 01  3.0   4/24  M W    1:30pm-2:20pm   WELLES121  TBA
+
+ CSCI 104 Problem Solving w/Computer-Rec     18-JAN-11     11-MAY-11
+     1  54329 02   .0   4/24      F  1:30pm-2:20pm   SOUTH 341  TBA
+
+ CSCI 114 R/Survey of Computer Sci-Lec       18-JAN-11     11-MAY-11
+     1  51003 01  3.0  14/48  M W    10:30am-11:20am WELLES123  Russell, Scott W
+
+ CSCI 114 R/Survey of Computer Sci-Rec       18-JAN-11     11-MAY-11
+     1  54331 02   .0   0/24      F  9:30am-10:20am  SOUTH 341  Russell, Scott W
+     1  54332 03   .0  14/24      F  10:30am-11:20am SOUTH 341  Russell, Scott W
+
+ CSCI 119 R/Object Orientd Prog:Java-Lec     18-JAN-11     11-MAY-11
+     1  53567 01  3.0   8/48    W F  1:30pm-2:20pm   WELLES134  Park, Gahyun
+
+ CSCI 119 R/Object Orientd Prog:Java-Lab     18-JAN-11     11-MAY-11
+     1  54333 02   .0   5/24     R   12:00pm-1:50pm  SOUTH 341  Park, Gahyun
+     1  54334 03   .0   3/24     R   2:00pm-3:50pm   SOUTH 341  Park, Gahyun
+
+ CSCI 119 R/Object Orientd Prog:Java-Lec     18-JAN-11     11-MAY-11
+     1  53570 04  3.0   8/48   T R   11:30am-12:20pm WELLES121  Shin, Christian
+
+ CSCI 119 R/Object Orientd Prog:Java-Lab     18-JAN-11     11-MAY-11
+     1  53637 05   .0   3/24  M      1:30pm-3:20pm   SOUTH 345  Shin, Christian
+     1  54335 06   .0   5/24  M      3:30pm-5:20pm   SOUTH 345  Shin, Christian
+
+ CSCI 120 R/Procedural Programming:C-Lec     18-JAN-11     11-MAY-11
+     1  53573 01  3.0  22/48   T R   1:00pm-1:50pm   WELLES121  Farian, Homma
+
+ CSCI 120 R/Procedural Programming:C-Rec     18-JAN-11     11-MAY-11
+     1  53574 02   .0  16/24      F  1:30pm-2:20pm   SOUTH 345  Farian, Homma
+     1  53575 03   .0   6/24      F  2:30pm-3:20pm   SOUTH 345  Farian, Homma
+
+ CSCI 142 Principles of Computer Sci-Lec     18-JAN-11     11-MAY-11
+     1  50301 01  4.0  11/24   T R   11:30am-12:45pm WELLES123  Talwar, Indu
+
+ CSCI 142 Principles of Computer Sci-Lab     18-JAN-11     11-MAY-11
+     1  50302 02   .0  11/24    W    12:30pm-2:20pm  SOUTH 345  Talwar, Indu
+
+ CSCI 216 Statistical Software-Lec           18-JAN-11     11-MAY-11
+     1  50305 01  3.0  10/24  M W    4:00pm-4:50pm   WELLES 24  TBA
+
+ CSCI 216 Statistical Software-Rec           18-JAN-11     11-MAY-11
+     1  50306 02   .0  10/24      F  4:00pm-4:50pm   SOUTH 345  TBA
+
+ CSCI 230 Digital Electronics-Lec            18-JAN-11     11-MAY-11
+     1  50310 01  3.0  15/18   T R   1:00pm-1:50pm   ISC   115  TBA
+
+ CSCI 230 Digital Electronics-Lab            18-JAN-11     11-MAY-11
+     1  50311 02   .0  15/18  M      2:30pm-4:30pm   ISC   226  TBA
+
+ CSCI 240 Foundations of Algorithms-Lec      18-JAN-11     11-MAY-11
+     1  54336 01  4.0   9/24   T R   1:00pm-2:15pm   WELLES123  Talwar, Indu
+
+ CSCI 240 Foundations of Algorithms-Lab      18-JAN-11     11-MAY-11
+     1  54337 02   .0   9/24    W    10:30am-12:20pm SOUTH 345  Talwar, Indu
+
+ CSCI 241 Princ of Computer Organiz-Lec      18-JAN-11     11-MAY-11
+     1  50313 01  4.0   4/24   T R   10:00am-11:15am WELLES121  Farian, Homma
+
+ CSCI 241 Princ of Computer Organiz-Lab      18-JAN-11     11-MAY-11
+     1  50314 02   .0   4/24      F  10:30am-12:20pm SOUTH 345  Farian, Homma
+
+ CSCI 242 Analysis of Algorithms             18-JAN-11     11-MAY-11
+     1  50315 01  3.0   6/35  M W    1:00pm-2:15pm   WELLES123  Russell, Scott W
+
+ CSCI 259 Software Engineering&Its Tools     18-JAN-11     11-MAY-11
+     1  54847 01  3.0   3/35  M W F  1:30pm-2:20pm   SOUTH 328  Baldwin, Douglas L
+
+ CSCI 276 Lisp as a Second Language          18-JAN-11     18-FEB-11
+     7  50319 01  1.0   6/24    W F  4:00pm-5:15pm   SOUTH 341  Park, Gahyun
+
+ CSCI 330 Data Communications                18-JAN-11     11-MAY-11
+     1  54972 01  3.0  12/35   T R   8:30am-9:45am   WELLES121  Baldwin, Douglas L
+
+ CSCI 331 Compiler Construction              18-JAN-11     11-MAY-11
+     1  54973 01  3.0   5/35   T R   10:00am-11:15am WELLES 24  Russell, Scott W
+
+ CSCI 341 Theory of Languages                18-JAN-11     11-MAY-11
+     1  50323 01  3.0  12/35   T R   11:30am-12:45pm WELLES 26  Baldwin, Douglas L
+
+ CSCI 376 Artificial Intelligence            18-JAN-11     11-MAY-11
+     1  50327 01  3.0   5/35    W F  11:30am-12:45pm WELLES123  Park, Gahyun

@@ -1,0 +1,53 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ FREN 102 L/Elementary French II             18-JAN-11     11-MAY-11
+     1  50429 01  3.0   4/22  M W F  12:30pm-1:20pm  WELLES133  Drouet, Marie-Alexandra
+     1  52048 02  3.0   1/22  M W F  8:30am-9:20am   WELLES133  Alves-Hebbelinck, Adelin
+e
+     1  54096 03  3.0   6/22   T R   2:30pm-3:45pm   WELLES133  Betts, Adrianna L.
+
+ FREN 201 Intermediate French I              18-JAN-11     11-MAY-11
+     1  50430 01  3.0   6/22  M W F  10:30am-11:20am WELLES117  Adabra, Kodjo
+     1  52331 02  3.0   5/22  M W F  11:30am-12:20pm WELLES117  Adabra, Kodjo
+     1  54505 03  3.0   5/22   T R   1:00pm-2:15pm   WELLES133  Ptak, Rosette V
+
+ FREN 202 Intermediate French II             18-JAN-11     11-MAY-11
+     1  50431 01  3.0   7/22   T R   11:30am-12:45pm WELLES133  Ptak, Rosette V
+
+ FREN 300 Conversation                       18-JAN-11     11-MAY-11
+     1  50433 01  3.0   1/20  M W F  9:30am-10:20am  WELLES133  Alves-Hebbelinck, Adelin
+e
+
+ FREN 301 Composition                        18-JAN-11     11-MAY-11
+     1  50434 01  3.0   3/20   T R   10:00am-11:15am WELLES133  Evans, Beverly J.
+
+ FREN 302 Readings in French                 18-JAN-11     11-MAY-11
+     1  50435 01  3.0   0/25   T R   1:00pm-2:15pm   WELLES117  Evans, Beverly J.
+
+ FREN 313 Contemporary Civilization          18-JAN-11     11-MAY-11
+     1  54982 01  3.0  10/25   T R   4:00pm-5:15pm   WELLES117  Evans, Beverly J.
+
+ FREN 316 French Grammar & Syntax            18-JAN-11     11-MAY-11
+     1  54983 01  3.0  10/25    W    5:30pm-8:00pm   WELLES131  Evans, Beverly J.
+
+ FREN 323 Linguistics                        18-JAN-11     11-MAY-11
+     1  54984 01  3.0   9/25  M W    4:00pm-5:15pm   WELLES133  Adabra, Kodjo
+
+ FREN 365 Selected Topics in French Lit:     18-JAN-11     11-MAY-11
+     1  54985 01  3.0  10/25  M W    5:30pm-6:45pm   WELLES133  Adabra, Kodjo
+
+ FREN 413 Contemporary Civilization          18-JAN-11     11-MAY-11
+     1  54986 01  3.0   0/5    T R   4:00pm-5:15pm   WELLES117  Evans, Beverly J.
+
+ FREN 416 Grammar and Syntax                 18-JAN-11     11-MAY-11
+     1  54987 01  3.0   1/5     W    5:30pm-8:00pm   WELLES131  Evans, Beverly J.
+
+ FREN 423 Linguistics                        18-JAN-11     11-MAY-11
+     1  54988 01  3.0   0/5   M W    4:00pm-5:15pm   WELLES133  Adabra, Kodjo
+
+ FREN 465 Selected Topics in French Lit:     18-JAN-11     11-MAY-11
+     1  54989 01  3.0   0/5   M W    5:30pm-6:45pm   WELLES133  Adabra, Kodjo

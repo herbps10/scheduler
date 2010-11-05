@@ -1,0 +1,8 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ENVR 124 S/Environmental Issues             18-JAN-11     11-MAY-11
+     1  51591 01  3.0  50/50  M W    1:00pm-2:15pm   NEWTON203  Robertson, David

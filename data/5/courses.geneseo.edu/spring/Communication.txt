@@ -1,0 +1,89 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ COMN 102 Principles of Public Speaking      18-JAN-11     11-MAY-11
+     1  50246 01  3.0   0/23    W F  10:00am-11:15am WELLES 26  Bulsys, Joseph A
+     1  50247 02  3.0   0/23    W F  1:00pm-2:15pm   WELLES 26  Bulsys, Joseph A
+
+ COMN 103 S/Intr to Interpersonal Commun     18-JAN-11     11-MAY-11
+     1  50250 01  3.0  27/28  M W F  12:30pm-1:20pm  FRASER202A Herman, Andrew
+
+ COMN 107 Foundations of Media Writing       18-JAN-11     11-MAY-11
+     1  54828 01  3.0   1/18  M W F  8:30am-9:20am   WELLES123  Jurkowski, Ginni
+     1  54829 02  3.0   4/18  M W F  9:30am-10:20am  WELLES121  Jurkowski, Ginni
+
+ COMN 160 S/Intro to Mass Communication      18-JAN-11     11-MAY-11
+     1  50252 01  3.0   8/56   T R   11:30am-12:45pm NEWTON209  Tajima, Atsushi
+
+ COMN 203 Professional Public Speaking       18-JAN-11     11-MAY-11
+     1  55012 01  3.0  17/25    W    6:00pm-8:30pm   MILNE 213  Mohan, Mary L
+
+ COMN 211 Discussion & Group Dynamics        18-JAN-11     11-MAY-11
+     1  50255 01  3.0  28/28   T R   1:00pm-2:15pm   MILNE 109  Harrigan, Meredith Marko
+
+ COMN 213 Persuasion & Social Influence      18-JAN-11     11-MAY-11
+     1  51531 01  3.0   5/28   T R   10:00am-11:15am NEWTON205  Bulsys, Joseph A
+
+ COMN 215 American Public Address            18-JAN-11     11-MAY-11
+     1  55013 01  3.0   6/25   T R   1:00pm-2:15pm   WELLES 26  Bulsys, Joseph A
+
+ COMN 248 Perspectives-Organizatnl Comm      18-JAN-11     11-MAY-11
+     1  55014 01  3.0  48/48   T R   10:00am-11:15am ISC   131  Harrigan, Meredith Marko
+
+ COMN 251 Mass Media & Society               18-JAN-11     11-MAY-11
+     1  55015 01  3.0   6/35  M W    8:30am-9:45am   MILNE 213  Mclaughlin, Charles E.
+
+ COMN 253 Media Advertising                  18-JAN-11     11-MAY-11
+     1  55016 01  3.0   9/23  M W    10:00am-11:15am MILNE 109  Mclaughlin, Charles E.
+
+ COMN 280 Elec Media Prac:Radio Productn     18-JAN-11     11-MAY-11
+     1  51760 01  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Pract:Radio News        18-JAN-11     11-MAY-11
+     1  51761 02  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Prac:Radio Managmnt     18-JAN-11     11-MAY-11
+     1  51762 03  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Pract:TV Production     18-JAN-11     11-MAY-11
+     1  51796 04  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Practicum:TV News       18-JAN-11     11-MAY-11
+     1  52085 05  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Pract:TV Management     18-JAN-11     11-MAY-11
+     1  52086 06  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 280 Elec Media Prac:Radio Performa     18-JAN-11     11-MAY-11
+     1  52672 07  1.0   0/5                          CAMPUS     Pruszynski, Chris
+
+ COMN 288 Exp:Writing-Bus & Professions      18-JAN-11     11-MAY-11
+     1  55017 01  3.0   9/20  M W F  11:30am-12:20pm WELLES121  Jurkowski, Ginni
+
+ COMN 341 Public Relations Case Problems     18-JAN-11     11-MAY-11
+     1  50267 01  3.0  38/38    W F  1:00pm-2:15pm   MILNE 213  Mohan, Mary L
+
+ COMN 346 Conflict,Negotiation&Mediation     18-JAN-11     11-MAY-11
+     1  55018 01  3.0  29/28  M W    4:00pm-5:15pm   MILNE 213  Mohan, Mary L
+
+ COMN 349 Adv Issues-Personal &Prof Comm     18-JAN-11     11-MAY-11
+     1  55019 01  3.0  20/30  M W    11:30am-12:45pm MILNE 109  Harrigan, Meredith Marko
+
+ COMN 362 International Mass Communicatn     18-JAN-11     11-MAY-11
+     1  51537 01  3.0  16/23   T R   2:30pm-3:45pm   WELLES121  Tajima, Atsushi
+
+ COMN 363 Advanced Television Prod-Lec       18-JAN-11     11-MAY-11
+     1  55020 01  3.0   9/24  M W    9:30am-10:20am  BLAKEB208  Pruszynski, Chris
+
+ COMN 363 Advanced Television Prod-Lab       18-JAN-11     11-MAY-11
+     1  55021 02   .0   6/12  M      10:30am-12:20pm BLAKEB208  Pruszynski, Chris
+     1  55022 03   .0   3/12    W    10:30am-12:20pm BLAKEB208  Pruszynski, Chris
+
+ COMN 366 Mass Media Management              18-JAN-11     11-MAY-11
+     1  55023 01  3.0  35/38   T R   8:30am-9:45am   BLAKEB208  Pruszynski, Chris
+
+ COMN 391 Sm:MediaEffect-CritPerspective     18-JAN-11     11-MAY-11
+     1  54202 01  3.0   9/15  M W    1:00pm-2:15pm   WELLES 24  Tajima, Atsushi

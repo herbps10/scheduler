@@ -1,0 +1,15 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ GERM 102 L/Elementary German II             18-JAN-11     11-MAY-11
+     1  50444 01  3.0   3/25   T R   8:30am-9:45am   WELLES210  Klima, Cynthia
+     1  51912 02  3.0   5/25   T R   10:00am-11:15am WELLES210  Klima, Cynthia
+
+ GERM 202 Intermediate German II             18-JAN-11     11-MAY-11
+     1  50445 01  3.0   6/25   T R   8:30am-9:45am   WELLES133  Houghton, Marianne L
+
+ GERM 335 Commercial German                  18-JAN-11     11-MAY-11
+     1  54990 01  3.0   4/25   T R   2:30pm-3:45pm   WELLES210  Klima, Cynthia

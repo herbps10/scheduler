@@ -1,0 +1,52 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ANTH 100 S/M/Intr Cultural Anthropology     18-JAN-11     11-MAY-11
+     1  50123 01  3.0  10/30   T R   10:00am-11:15am NEWTON203  Judkins, Russell A
+     1  50124 02  3.0  19/20  M W    1:00pm-2:15pm   NEWTON201  Szafran, Denice
+     1  50125 03  3.0  14/30   T R   11:30am-12:45pm NEWTON203  Aimers, James
+
+ ANTH 101 S/M/Exploratn-Human Diversity      18-JAN-11     11-MAY-11
+     1  53577 01  3.0  11/20   T R   4:00pm-5:15pm   NEWTON214  Welker, Barbara
+
+ ANTH 110 Introduction to Archaeology        18-JAN-11     11-MAY-11
+     1  53412 01  3.0  18/15  M W    11:30am-12:45pm STURGS113  Pacheco, Paul J.
+
+ ANTH 201 Human Evolution                    18-JAN-11     11-MAY-11
+     1  50129 01  3.0   7/30   T R   1:00pm-2:15pm   FRASER116  Welker, Barbara
+
+ ANTH 208 M/Classics of Ethnography          18-JAN-11     11-MAY-11
+     1  50130 01  3.0  14/20   T R   1:00pm-2:15pm   STURGS 14  Judkins, Russell A
+
+ ANTH 215 S/M/Ancient Civ of Old World       18-JAN-11     11-MAY-11
+     1  53579 01  3.0  16/60  M W F  1:30pm-2:20pm   STURGS219  Pacheco, Paul J.
+
+ ANTH 220 Intro Linguistic Analysis          18-JAN-11     11-MAY-11
+     1  50132 01  3.0  22/30  M W    10:00am-11:15am MILNE 213  Szafran, Denice
+
+ ANTH 226 M/Native Voices:Mesoamer&Andes     18-JAN-11     11-MAY-11
+     1  54947 01  3.0   5/30   T R   2:30pm-3:45pm   WELLES 24  Aimers, James
+
+ ANTH 233 Primates                           18-JAN-11     11-MAY-11
+     1  54157 01  3.0   7/20    W    4:00pm-6:30pm   FRASER116  Welker, Barbara
+
+ ANTH 236 Forensic Anthropology              18-JAN-11     11-MAY-11
+     1  54686 01  3.0  15/30    W F  1:00pm-2:15pm   FRASER116  Krumrine, Kristi
+
+ ANTH 243 S/M/Women:Cross-Cultural Persp     18-JAN-11     11-MAY-11
+     1  54948 01  3.0  13/40    W F  1:00pm-2:15pm   FRASER114  Chierici, Rose-Marie
+
+ ANTH 283 Research Methods-Archeology        18-JAN-11     11-MAY-11
+     1  54949 01  3.0   7/20  M      4:00pm-6:30pm   FRASER114  Aimers, James
+
+ ANTH 301 M/Religion, Society & Culture      18-JAN-11     11-MAY-11
+     1  54029 01  3.0  25/25   T R   2:30pm-3:45pm   STURGS 14  Judkins, Russell A
+
+ ANTH 321 Contemporary Theory in Anthro      18-JAN-11     11-MAY-11
+     1  53583 01  3.0   8/20    W F  10:00am-11:15am STURGS 14  Chierici, Rose-Marie
+
+ ANTH 346 Topics in Archaeology              18-JAN-11     11-MAY-11
+     1  54950 01  3.0   4/15    W    6:00pm-8:30pm   STURGS  8  Pacheco, Paul J.

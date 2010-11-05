@@ -1,0 +1,121 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ CDSC 142 Communicative Disorders:Overvw     18-JAN-11     11-MAY-11
+     1  52275 01  3.0   1/30   T R   8:30am-9:45am   STURGS208A Spencer, Linda Jean
+
+ CDSC 150 Phonetics                          18-JAN-11     11-MAY-11
+     1  50827 01  3.0   1/35   T R   10:00am-11:15am STURGS219  House, Linda I
+
+ CDSC 207 Speech&LngDev&Interv-ESLSpeakr     18-JAN-11     11-MAY-11
+     1  55145 01  1.0   0/0                          STURGS205  Belyakov, Irene K
+
+ CDSC 221 Anatomy&Physiol of Speech Mech     18-JAN-11     11-MAY-11
+     1  50829 01  3.0   0/35  M W F  8:30am-9:20am   STURGS221  Metz, Dale E.
+
+ CDSC 228 Language Acquisition               18-JAN-11     11-MAY-11
+     1  50830 01  3.0   0/35   T R   11:30am-12:45pm STURGS221  Owens, Robert E
+
+ CDSC 238 Fundamentals of Clinical Proc      18-JAN-11     11-MAY-11
+     1  54430 01  3.0   5/30  M W F  12:30pm-1:20pm  STURGS219  Henke-Lofquist, Beverly
+
+ CDSC 240 Language Intervention              18-JAN-11     11-MAY-11
+     1  50834 01  3.0   6/30   T R   10:00am-11:15am STURGS221  Owens, Robert E
+
+ CDSC 242 Phonology &Articulation Interv     18-JAN-11     11-MAY-11
+     1  52850 01  3.0   5/30   T R   1:00pm-2:15pm   STURGS208A Belyakov, Irene K
+
+ CDSC 244 Voice Intervention                 18-JAN-11     11-MAY-11
+     1  54171 01  3.0   4/30   T R   2:30pm-3:45pm   STURGS219  Whitehead, Robert L.
+
+ CDSC 259 Speech & Hearing Science           18-JAN-11     11-MAY-11
+     1  52852 01  3.0   2/35  M W F  9:30am-10:20am  STURGS219  Metz, Dale E.
+
+ CDSC 261 Auditory Disorders &Assessment     18-JAN-11     11-MAY-11
+     1  54431 01  3.0   8/50  M W F  8:30am-9:20am   STURGS219  MacKenzie, Douglas J.
+
+ CDSC 262 Auditory Disorders &Assmnt Lab     18-JAN-11     11-MAY-11
+     1  54432 01  1.0   5/6   M      9:30am-10:20am  STURGS201  MacKenzie, Douglas J.
+     1  54484 02  1.0   0/6   M      10:30am-11:20am STURGS201  MacKenzie, Cheryl A.
+     1  54546 03  1.0   0/6   M      11:30am-12:20pm STURGS201  MacKenzie, Cheryl A.
+     1  54547 04  1.0   1/6     W    9:30am-10:20am  STURGS201  MacKenzie, Douglas J.
+     1  54548 05  1.0   0/6     W    10:30am-11:20am STURGS201  MacKenzie, Cheryl A.
+     1  54549 06  1.0   0/6     W    11:30am-12:20pm STURGS201  MacKenzie, Cheryl A.
+     1  55050 07  1.0   2/6       F  9:30am-10:20am  STURGS201  MacKenzie, Cheryl A.
+     1  55051 08  1.0   0/6       F  10:30am-11:20am STURGS201  MacKenzie, Cheryl A.
+     1  55052 09  1.0   0/6       F  11:30am-12:20pm STURGS201  MacKenzie, Cheryl A.
+
+ CDSC 310 Literacy Development               18-JAN-11     11-MAY-11
+     1  53728 01  3.0  20/35   T R   8:30am-9:45am   STURGS221  Deats, Linda Ann
+
+ CDSC 320 Manual Language Systems            18-JAN-11     11-MAY-11
+     1  53589 01  3.0  16/20  M W    10:30am-11:45am STURGS219  MacKenzie, Douglas J.
+
+ CDSC 331 Clinical Intervention II-Lec       18-JAN-11     11-MAY-11
+     1  53074 01  3.0  35/50   T R   11:30am-12:20pm STURGS219  House, Linda I
+
+ CDSC 331 Clinical Intervention II-Lab       18-JAN-11     11-MAY-11
+     1  53075 02   .0  35/50                         STURGS202  House, Linda I
+
+ CDSC 337 Applied Skills in Audiology        18-JAN-11     11-MAY-11
+     1  52277 01  1.0   0/8                          STURGS201  MacKenzie, Cheryl A.
+
+ CDSC 361 Aural Rehabilitation               18-JAN-11     04-MAR-11
+     2  51072 01  3.0  20/25   T R   1:00pm-3:30pm   STURGS221  Spencer, Linda Jean
+
+ CDSC 362 Prof Services in Comm Disorder     18-JAN-11     04-MAR-11
+     2  50842 01  3.0  18/25   T R   10:00am-12:30pm BLAKEB208  Whitehead, Robert L.
+
+ CDSC 363 Practicum in Speech Pathology      07-MAR-11     11-MAY-11
+     3  50843 01  8.0  18/25                         OFC        House, Linda I
+
+ CDSC 436 Communictve Disorders Rsch-Lec     18-JAN-11     11-MAY-11
+     1  53850 01  3.0   0/5    T     10:00am-12:45pm STURGS213  Spencer, Linda Jean
+
+ CDSC 436 Communictve Disorders Rsch-Lab     18-JAN-11     11-MAY-11
+     1  53851 02   .0   0/5                          STURGS213  Spencer, Linda Jean
+
+ CDSC 443 Adv Articulation&Phonology Int     18-JAN-11     11-MAY-11
+     1  53925 01  3.0   4/12  M      11:15am-1:45pm  STURGS221  House, Linda I
+
+ CDSC 445 Severe Language Impairment         18-JAN-11     11-MAY-11
+     1  55053 01  3.0   0/12  M      8:30am-11:00am  FRASER114  Owens, Robert E
+
+ CDSC 447 Language Disorders in Children     18-JAN-11     11-MAY-11
+     1  51007 01  3.0   1/12  M      4:45pm-7:15pm   STURGS221  Owens, Robert E
+
+ CDSC 455 Educational Audiology              18-JAN-11     11-MAY-11
+     1  53411 01  3.0   6/12  M      2:00pm-4:30pm   STURGS221  MacKenzie, Douglas J.
+
+ CDSC 519 Fluency Disorders                  18-JAN-11     11-MAY-11
+     1  55054 01  3.0  10/15      F  10:30am-1:00pm  STURGS221  Metz, Dale E.
+
+ CDSC 527 Dysphagia                          18-JAN-11     11-MAY-11
+     1  52895 01  3.0   1/12   T     5:00pm-7:30pm   STURGS221  Venezia, Kelly Joan
+
+ CDSC 541 Adult Language Disorders           18-JAN-11     11-MAY-11
+     1  54008 01  3.0   7/12     R   4:30pm-7:00pm   STURGS221  Spencer, Linda Jean
+
+ CDSC 570 Sem:                               18-JAN-11     11-MAY-11
+     1  52861 01  1.0  10/30                         STURGS221  TBA
+
+ CDSC 581 Clinical Practcm in Audiology      18-JAN-11     11-MAY-11
+     1  52896 01  1.0   0/12                         STURGS201  MacKenzie, Cheryl A.
+
+ CDSC 582 Clin Prac-SpeechLangAssmnt-Lec     18-JAN-11     11-MAY-11
+     1  54485 01  3.0   0/12    W    1:00pm-3:00pm   STURGS202  Serventi, Gail Weir
+
+ CDSC 582 Clin Prac-SpeechLangAssmnt-Lab     18-JAN-11     11-MAY-11
+     1  54541 02   .0   0/12    W    3:30pm-5:30pm   STURGS202  Serventi, Gail Weir
+
+ CDSC 583 Clin Prac-Speech Lang Patholgy     18-JAN-11     11-MAY-11
+     1  52898 01  1.0   0/12                         STURGS202  House, Linda I
+
+ CDSC 585 Adv Clincl Practm in SpPath        18-JAN-11     11-MAY-11
+     1  50851 01  3.0  11/25                         OFC        House, Linda I
+
+ CDSC 587 Grad Internshp/Commun Disordrs     18-JAN-11     11-MAY-11
+     1  50853 01  6.0   1/5                          OFC        House, Linda I

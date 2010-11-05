@@ -1,0 +1,113 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ H&PE 104 Conditioning                       07-MAR-11     11-MAY-11
+     3  50992 01  1.0  25/25  M W    10:30am-11:20am MERRIT208  Minton, Stephen C.
+
+ H&PE 116 Racquetball                        07-MAR-11     11-MAY-11
+     3  53648 02  1.0  12/12   T R   10:00am-10:50am SCHRAD     Simmons, Paul
+
+ H&PE 127 Golf                               07-MAR-11     11-MAY-11
+     3  52614 01  1.0  25/25   T R   8:30am-9:20am   MERRIT208  Gagnier, George J.
+
+ H&PE 142 Ice Skating                        18-JAN-11     04-MAR-11
+     2  50995 01  1.0  30/30   T R   10:00am-10:50am MERRIT111  Schultz, Christopher Rob
+ert
+
+ H&PE 188 Exp:Lifetime Phys Act Pursuits     18-JAN-11     11-MAY-11
+     1  53848 01  2.0  15/15    W    11:30am-1:20pm  MERRIT208  West, Sharon
+
+ H&PE 188 Experimental:Badminton             18-JAN-11     04-MAR-11
+     2  54585 02  1.0   9/9   M W    10:30am-11:20am MERRIT208  Lyons, James
+
+ H&PE 203 Varsity Swimming-Men's             18-JAN-11     04-MAR-11
+     2  50512 01  1.0   0/40  MTWRF  4:00pm-6:00pm   MERRIT237  Dotterweich, Paul
+
+ H&PE 203 Varsity Swimming-Women's           18-JAN-11     04-MAR-11
+     2  53203 02  1.0   0/25  MTWRF  4:00pm-6:00pm   MERRIT237  Dotterweich, Paul
+
+ H&PE 205 Nautilus Fitness                   18-JAN-11     04-MAR-11
+     2  50998 01  1.0  20/20   T R   10:00am-10:50am MERRIT106  Simmons, Paul
+
+ H&PE 209 Varsity Track & Field-Men's        07-MAR-11     11-MAY-11
+     3  50513 01  1.0   0/75  MTWRF  4:00pm-6:00pm   MERRIT     Prevosti, David
+
+ H&PE 209 Varsity Track & Field-Women's      07-MAR-11     11-MAY-11
+     3  53204 02  1.0   0/50  MTWRF  4:00pm-6:00pm   MERRIT     Prevosti, David
+
+ H&PE 232 Varsity Softball                   07-MAR-11     11-MAY-11
+     3  50514 01  1.0   0/30  MTWRF  4:00pm-6:00pm   MERRIT208  Ciccarello, Anthony T.
+
+ H&PE 235 Varsity Basketball-Men             18-JAN-11     04-MAR-11
+     2  50515 01  1.0   0/25  MTWRF  4:00pm-6:00pm   MERRIT208  Minton, Stephen C.
+
+ H&PE 235 Varsity Basketball-Women           18-JAN-11     04-MAR-11
+     2  50516 02  1.0   0/20  MTWRF  4:00pm-6:00pm   SCHRAD106  Hemer, A Scott
+
+ H&PE 236 Varsity Lacrosse-Men               07-MAR-11     11-MAY-11
+     3  50517 01  1.0   0/40  MTWRF  4:00pm-6:00pm   MERRIT208  Lyons, James
+
+ H&PE 236 Varsity Lacrosse-Women             07-MAR-11     11-MAY-11
+     3  53205 02  1.0   0/35  MTWRF  4:00pm-6:00pm   MERRIT208  Ritchlin, Carly
+
+ H&PE 238 Varsity Ice Hockey                 18-JAN-11     04-MAR-11
+     2  50518 01  1.0   0/30  MTWRF  4:00pm-6:00pm   MERRIT111  Schultz, Christopher Rob
+ert
+
+ H&PE 288 Exp:Varsity Equestrian-Women's     18-JAN-11     04-MAR-11
+     2  54206 01  1.0   0/26  MTWRF  4:00pm-6:00pm   CAMPUS     Sanford, Kimberly
+
+ H&PE 302 Lifeguard Training                 07-MAR-11     11-MAY-11
+     3  52360 02  1.0   5/12  M W    8:05am-9:20am   SCHRAD  4  Dotterweich, Paul
+                              M W    9:55am-11:20am  MERRIT237  Dotterweich, Paul
+
+ H&PE 303 Water Safety Instruction           18-JAN-11     11-MAY-11
+     1  52404 01  2.0   8/10   T R   8:30am-9:20am   SCHRAD  1  Dotterweich, Paul
+                               T R   9:30am-10:20am  MERRIT237  Dotterweich, Paul
+
+ H&PE 350 Health & Safety Iss in Schools     18-JAN-11     04-MAR-11
+     2  50519 01  1.0   7/30  M W    10:30am-11:20am STURGS106  Sugarman, Kathleen
+     2  50521 03  1.0   6/30  M W    11:30am-12:20pm STURGS106  Sugarman, Kathleen
+     2  50523 05  1.0   9/30  M W    12:30pm-1:20pm  STURGS106  Sugarman, Kathleen
+     2  50525 07  1.0   4/30  M W    1:30pm-2:20pm   STURGS106  Sugarman, Kathleen
+
+ H&PE 350 Health & Safety Iss in Schools     07-MAR-11     11-MAY-11
+     3  50520 02  1.0   6/30   T R   10:00am-10:50am STURGS106  Sugarman, Kathleen
+     3  50522 04  1.0   1/30   T R   11:00am-11:50am STURGS106  Sugarman, Kathleen
+     3  50524 06  1.0   3/30   T R   12:00pm-12:50pm STURGS106  Sugarman, Kathleen
+     3  50526 08  1.0   7/30   T R   1:00pm-1:50pm   STURGS106  Sugarman, Kathleen
+
+ H&PE 352 Responding to Emergencies-Lec      18-JAN-11     11-MAY-11
+     1  52231 01  2.0   1/20   T     6:00pm-7:00pm   SCHRAD  1  Prevosti, David
+
+ H&PE 352 Responding to Emergencies-Act      18-JAN-11     11-MAY-11
+     1  50528 02   .0   1/20   T     7:10pm-8:50pm   SCHRAD  1  Prevosti, David
+
+ H&PE 353 Care & Prev of Athletic Injury     18-JAN-11     11-MAY-11
+     1  50529 01  3.0   7/20   T R   1:00pm-2:15pm   SCHRAD  1  Stearns, Jeremie
+
+ H&PE 354 Phil & Princ of Athlcs in Educ     18-JAN-11     11-MAY-11
+     1  50530 01  3.0  12/25  M W F  9:30am-10:20am  SCHRAD  4  Mooney, Michael C.
+
+ H&PE 355 Coaching:Basketball-Lec            18-JAN-11     04-MAR-11
+     2  50531 01  1.0   0/10   T R   1:00pm-1:25pm   SCHRAD106  Hemer, A Scott
+
+ H&PE 355 Coaching:Basketball-Act            18-JAN-11     04-MAR-11
+     2  50532 02   .0   0/10   T R   1:30pm-2:25pm   SCHRAD106  Hemer, A Scott
+
+ H&PE 355 Coaching:Hockey-Lec                18-JAN-11     04-MAR-11
+     2  54061 05  1.0   0/10   T R   8:30am-9:20am   MERRIT111  Schultz, Christopher Rob
+ert
+
+ H&PE 355 Coaching:Hockey-Act                18-JAN-11     04-MAR-11
+     2  54062 06   .0   0/10   T R   10:00am-11:05am MERRIT111  Schultz, Christopher Rob
+ert
+
+ H&PE 355 Coaching:Track-Lec                 07-MAR-11     11-MAY-11
+     3  50533 03  1.0   3/10  M W    4:00pm-4:30pm   MERRIT     Prevosti, David
+
+ H&PE 355 Coaching:Track-Act                 07-MAR-11     11-MAY-11
+     3  50534 04   .0   3/10  M W    4:35pm-5:40pm   MERRIT     Prevosti, David

@@ -1,0 +1,21 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ HONR 102 Critical Reading                   18-JAN-11     11-MAY-11
+     1  50567 01  3.0   0/20  M W    7:00pm-8:15pm   WADWTH204  Stelzig, Eugene L.
+     1  54614 02  3.0   0/20  M W F  10:30am-11:20am WADWTH204  Herzman, Ronald B
+
+ HONR 206 HS:Humanities&NaturalDisasters     18-JAN-11     11-MAY-11
+     1  54850 01  3.0   5/20  M W F  1:30pm-2:20pm   STURGS108  Cope, Joseph A.
+
+ HONR 206 Honors Sem:Digital Humanities      18-JAN-11     11-MAY-11
+     1  55129 02  3.0  14/20   T R   10:00am-11:15am MILNE 109  Schacht, Paul J
+
+ HONR 288 Exp:N/Forensic Geology-Lec         18-JAN-11     11-MAY-11
+     1  55119 01  4.0  12/20  M W F  12:30pm-1:20pm  ISC    19  Farthing, Dori J.
+
+ HONR 288 Exp:N/Forensic Geology-Lab         18-JAN-11     11-MAY-11
+     1  55120 02   .0  12/20  M      1:30pm-3:20pm   ISC    19  Farthing, Dori J.

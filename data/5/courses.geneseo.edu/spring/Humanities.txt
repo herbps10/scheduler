@@ -1,0 +1,44 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ HUMN 220 H/Western Humanities I             18-JAN-11     11-MAY-11
+     1  50569 01  4.0   2/33  M W    4:00pm-5:40pm   WELLES216  TBA
+     1  50570 02  4.0   8/33  M W    11:30am-1:10pm  NEWTON206  Doggett, Robert
+     1  50571 03  4.0   5/33  M W F  10:00am-11:10am SOUTH 328  Greenfield, Thomas A.
+     1  51033 04  4.0  16/33  M W F  1:00pm-2:10pm   WELLES216  Greenfield, Thomas A.
+     1  51034 05  4.0   2/33  M W F  10:00am-11:10am NEWTON212  Harrison, William
+     1  51035 06  4.0   4/33  M W F  8:10am-9:20am   NEWTON206  Herzman, Ronald B
+     1  51687 07  4.0   3/33  M W F  8:30am-9:40am   STURGS109  Williams, James M.
+     1  51862 08  4.0   3/33  M W F  10:30am-11:40am STURGS109  Williams, James M.
+     1  55095 09  4.0   0/33  M W F  12:30pm-1:20pm  STURGS108  Cook, William R.
+                               T     10:00am-10:50am NEWTON212  Cook, William R.
+     1  55136 10  4.0   1/33  M   F  11:30am-1:10pm  ISC   229  Faurot, Catherine
+     1  55137 11  4.0  20/33   T R   4:00pm-5:40pm   WELLES115  Everett, Theodore J.
+
+ HUMN 221 H/Western Humanities II            18-JAN-11     11-MAY-11
+     1  50573 02  4.0  17/33   T R   2:30pm-4:10pm   WELLES132  Savellos, Elias
+     1  50574 03  4.0  14/34   T R   8:00am-9:45am   WELLES132  Edgar, Stacey L.
+     1  50575 04  4.0  34/34   T R   2:30pm-4:10pm   STURGS114  Bennett, James Gerard
+     1  50576 05  4.0   6/34  M W F  10:30am-11:40am WELLES132  Soffer, Walter
+     1  50577 06  4.0  34/34    W    4:00pm-7:30pm   FRASER114  Klima, Cynthia
+     1  50578 07  4.0  12/59  M W    11:30am-1:10pm  SCHRAD  1  Bernard, Lori
+     1  50579 08  4.0  34/34  M W F  9:00am-10:10am  SOUTH 235  Morse, Jane
+     1  50580 09  4.0  34/34  M W F  10:30am-11:40am WADWTH 21  Granger, David
+     1  50581 10  4.0  21/34  M   F  1:30pm-3:10pm   WELLES119  Eddy, Jaclyn
+     1  50582 11  4.0  34/34  M   F  2:30pm-4:10pm   WELLES138  Asher, Kenneth G
+     1  50584 13  4.0  34/34   T R   2:30pm-4:10pm   NEWTON206  Gillin, Mary P.
+     1  50586 15  4.0  34/34  M W F  8:10am-9:20am   NEWTON212  Kennison, Weston Lee
+     1  51036 16  4.0  18/34  M W F  11:30am-12:40pm WELLES216  Woidat, Caroline M.
+     1  51037 17  4.0   6/34   T R   8:00am-9:40am   WELLES134  Cooper, Kenneth Dean
+     1  51038 18  4.0  14/34   T R   11:30am-1:10pm  NEWTON206  Beltz-Hosek, Caroline
+     1  51039 19  4.0  34/34   T R   8:00am-9:40am   WELLES216  Gillin, Edward G.
+     1  51040 20  4.0  30/34   T R   2:30pm-4:10pm   NEWTON212  Rutkowski, Alice
+     1  51041 21  4.0   7/34  M   F  4:00pm-5:40pm   WELLES119  Eddy, Jaclyn
+     1  51042 22  4.0  32/34   T R   10:00am-11:40am SOUTH 328  Lima, Maria
+     1  51043 23  4.0  34/34  M W F  11:30am-12:40pm NEWTON213  Cope, Joseph A.
+     1  51044 24  4.0  34/34   T R   4:30pm-6:10pm   FRASER119  Bennett, James Gerard
+     1  51045 25  4.0   3/34   T R   2:30pm-4:10pm   STURGS109  Waddy, N.Helena
+     1  55117 27  4.0   9/34   T R   4:00pm-5:40pm   WELLES128  Morgan, Sean Thomas

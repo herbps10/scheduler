@@ -1,0 +1,133 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ MATH 112 Precalculus                        18-JAN-11     11-MAY-11
+     1  53853 01  4.0   0/30  M W    4:00pm-5:40pm   FRASER202A Rose, Aimee Jenelle
+
+ MATH 140 Math Concepts for Elem Educ I      18-JAN-11     11-MAY-11
+     1  50593 01  3.0   1/30  M W F  9:30am-10:20am  STURGS103  Stewart, Barbara M.
+     1  54966 02  3.0   3/30  M W F  10:30am-11:20am STURGS103  McKenna, Susan M.
+
+ MATH 141 R/Math Concepts for Elem Ed II     18-JAN-11     11-MAY-11
+     1  50597 01  3.0   1/30  M W F  1:30pm-2:20pm   STURGS103  McKenna, Susan M.
+     1  50598 02  3.0   4/30  M W    5:00pm-6:15pm   STURGS208A House, Donald F.
+
+ MATH 213 R/Applied Calculus I               18-JAN-11     11-MAY-11
+     1  52805 01  4.0   4/45   T R   2:30pm-4:10pm   STURGS208A Dussault, David Allen
+     1  52811 02  4.0   3/30  M W    4:00pm-5:40pm   STURGS114  Szucs, Francis T
+
+ MATH 221 R/Calculus I                       18-JAN-11     11-MAY-11
+     1  50607 01  4.0   1/30  M W F  9:30am-10:20am  FRASER213  Smith, Lisa Michele
+                               T     10:00am-10:50am FRASER202A Smith, Lisa Michele
+     1  50608 02  4.0   0/30  M W F  10:30am-11:20am FRASER213  Smith, Lisa Michele
+                                 R   10:00am-10:50am FRASER202A Smith, Lisa Michele
+     1  50609 03  4.0   2/30  M W F  11:30am-12:20pm STURGS103  Stewart, Barbara M.
+                                 R   11:30am-12:20pm FRASER202A Stewart, Barbara M.
+     1  51855 04  4.0   0/30  M W F  12:30pm-1:20pm  STURGS103  Stewart, Barbara M.
+                                 R   1:00pm-1:50pm   FRASER202A Stewart, Barbara M.
+     1  53456 05  4.0   0/30   T R   10:00am-11:40am FRASER213  Macula, Anthony
+     1  54806 06  4.0   4/30  M W    6:00pm-7:40pm   STURGS114  Szucs, Francis T
+
+ MATH 222 Calculus II                        18-JAN-11     11-MAY-11
+     1  50610 01  4.0   1/30  MTW F  8:30am-9:20am   FRASER202A Esham, Benjamin F.
+     1  50611 02  4.0   1/30  M W F  9:30am-10:20am  SOUTH 336  Tang, Chi-Ming
+                                 R   10:00am-10:50am STURGS103  Tang, Chi-Ming
+     1  50612 03  4.0   0/30  M W F  11:30am-12:20pm SOUTH 336  Esham, Benjamin F.
+                               T     11:30am-12:20pm STURGS103  Esham, Benjamin F.
+     1  50613 04  4.0   2/30  M W F  11:30am-12:20pm STURGS208A Haddad, Caroline N.
+                               T     1:00pm-1:50pm   FRASER202A Haddad, Caroline N.
+     1  50614 05  4.0   0/30  M W F  1:30pm-2:20pm   STURGS105  Johannes, Jeff
+                               T     1:30pm-2:20pm   STURGS105  Johannes, Jeff
+     1  50615 06  4.0   3/30   T R   10:00am-11:40am STURGS208A Tsai, Jung H.
+
+ MATH 223 Calculus III                       18-JAN-11     11-MAY-11
+     1  50618 01  4.0  12/30  MTW F  11:30am-12:20pm FRASER202A Heap, Aaron
+     1  50619 02  4.0   0/30  M W    10:00am-11:15am STURGS114  Kedzierawski, Andrzej
+                                  F  10:00am-10:50am STURGS114  Kedzierawski, Andrzej
+     1  52365 03  4.0   3/30   T R   8:30am-9:45am   STURGS113  Friedland, Lew
+                                W    8:30am-9:20am   STURGS113  Friedland, Lew
+
+ MATH 228 Calculus II for Biologists         18-JAN-11     11-MAY-11
+     1  54027 01  4.0   6/30  M W F  10:30am-11:20am STURGS208A Leary, Christopher
+                               T     10:00am-10:50am STURGS105  Leary, Christopher
+
+ MATH 233 Elementary Linear Algebra          18-JAN-11     11-MAY-11
+     1  50620 01  3.0   6/25   T R   11:30am-12:45pm SOUTH 336  Haddad, Caroline N.
+     1  50621 02  3.0  11/25  M W F  1:30pm-2:20pm   STURGS114  Kedzierawski, Andrzej
+     1  50622 03  3.0   1/25   T R   11:30am-12:45pm STURGS113  Friedland, Lew
+
+ MATH 237 R/Intro toDiscrete Mathematics     18-JAN-11     11-MAY-11
+     1  50623 01  3.0   1/30   T R   1:00pm-2:15pm   STURGS103  Macula, Anthony
+
+ MATH 239 Intro to Mathematical Proof        18-JAN-11     11-MAY-11
+     1  54164 01  3.0   7/25  M W F  10:30am-11:20am SOUTH 336  Sutherland, Melissa Ann
+     1  54165 02  3.0   4/25  M W F  11:30am-12:20pm FRASER213  Nicodemi, Olympia E
+     1  54496 03  3.0   9/25   T R   10:00am-11:15am STURGS113  Friedland, Lew
+
+ MATH 242 R/Elem of Probability & Stat       18-JAN-11     11-MAY-11
+     1  50625 01  3.0   7/30   T R   1:00pm-2:15pm   STURGS113  Tsai, Jung H.
+
+ MATH 262 R/Applied Statistics               18-JAN-11     11-MAY-11
+     1  54582 01  3.0  24/30  M W F  12:30pm-1:20pm  SOUTH 336  Smith, Lisa Michele
+
+ MATH 288 Ex:Intro-MultivariableCalculus     18-JAN-11     11-MAY-11
+     1  54967 01  4.0   1/25  M W F  11:30am-12:20pm STURGS105  Towsley, Gary W.
+                               T     11:30am-12:20pm STURGS105  Towsley, Gary W.
+
+ MATH 319 Theory of Numbers                  18-JAN-11     11-MAY-11
+     1  54968 01  3.0   8/15   T R   1:00pm-2:15pm   SOUTH 336  Rault, Patrick X
+     1  55112 02  3.0  10/15   T R   2:30pm-3:45pm   SOUTH 336  Rault, Patrick X
+
+ MATH 324 Real Analysis I                    18-JAN-11     11-MAY-11
+     1  50628 01  3.0  27/25   T R   2:30pm-3:45pm   STURGS113  Tsai, Jung H.
+     1  50629 02  3.0  16/20  M   F  2:30pm-3:45pm   SOUTH 336  Esham, Benjamin F.
+
+ MATH 325 Real Analysis II                   18-JAN-11     11-MAY-11
+     1  54969 01  3.0  16/25  M W F  10:30am-11:20am STURGS105  Towsley, Gary W.
+
+ MATH 326 Differential Equations             18-JAN-11     11-MAY-11
+     1  50631 01  3.0  12/25  M W F  9:30am-10:20am  STURGS208A Heap, Aaron
+     1  50632 02  3.0   6/25  M W F  12:30pm-1:20pm  STURGS114  Kedzierawski, Andrzej
+     1  52809 04  3.0   5/25  M W F  1:30pm-2:20pm   STURGS208A Heap, Aaron
+
+ MATH 330 Abstract Algebra                   18-JAN-11     11-MAY-11
+     1  50634 01  3.0  25/25  M W F  9:30am-10:20am  STURGS105  Nicodemi, Olympia E
+
+ MATH 335 Foundations of Geometry            18-JAN-11     11-MAY-11
+     1  50635 01  3.0  20/20  M W F  8:30am-9:20am   SOUTH 336  Wallace, Edward C.
+     1  50636 02  3.0  20/20   T R   1:00pm-2:15pm   FRASER213  Sutherland, Melissa Ann
+
+ MATH 340 Modeling Biological System-Lec     18-JAN-11     11-MAY-11
+     1  53758 01  3.0   7/30  M      2:30pm-4:30pm   ISC   115  Leary, Christopher
+
+ MATH 340 Modeling Biological System-Lab     18-JAN-11     11-MAY-11
+     1  53759 02   .0   7/30      F  2:30pm-4:30pm   ISC   115  Leary, Christopher
+
+ MATH 348 Oral Presentation &Res Seminar     18-JAN-11     11-MAY-11
+
+ MATH 350 Vector Analysis                    18-JAN-11     11-MAY-11
+     1  55113 01  3.0  20/30  M W F  11:30am-12:20pm ISC   136  Johannes, Jeff
+
+ MATH 360 Probability & Statistics I         18-JAN-11     11-MAY-11
+     1  51857 01  3.0   5/30   T R   8:30am-9:45am   FRASER213  Macula, Anthony
+
+ MATH 361 Probability & Statistics II        18-JAN-11     11-MAY-11
+     1  50638 01  3.0  22/30  M W F  12:30pm-1:20pm  FRASER213  Tang, Chi-Ming
+
+ MATH 366 Math Fdtn of Actuarial Sci-Lec     18-JAN-11     11-MAY-11
+     1  53560 01  2.0   9/15  M      4:00pm-6:15pm   FRASER213  Tang, Chi-Ming
+
+ MATH 366 Math Fdtn of Actuarial Sci-Lab     18-JAN-11     11-MAY-11
+     1  53561 02   .0   9/15     R   4:00pm-6:15pm   SOUTH 336  Tang, Chi-Ming
+
+ MATH 382 Intro-Wavelets&TheirApplicatns     18-JAN-11     11-MAY-11
+     1  54970 01  3.0  14/20  M W F  1:30pm-2:20pm   SOUTH 336  Haddad, Caroline N.
+
+ MATH 390 History of Mathematics             18-JAN-11     11-MAY-11
+     1  50640 01  3.0  30/30  M W F  8:30am-9:20am   STURGS114  Towsley, Gary W.
+
+ MATH 436 Euclidean & Non-Eucldn Geomtry     18-JAN-11     11-MAY-11
+     1  54971 01  3.0   0/20  M W    4:00pm-5:15pm   SOUTH 336  Wallace, Edward C.

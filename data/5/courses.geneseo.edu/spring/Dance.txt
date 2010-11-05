@@ -1,0 +1,49 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ DANC 100 F/Introduction to Dance            18-JAN-11     11-MAY-11
+     1  50328 01  3.0   2/2    T R   1:00pm-2:15pm   NEWTON201  McCausland, Jacqueline J
+oan
+
+ DANC 103 Jazz Dance I-Lec                   18-JAN-11     11-MAY-11
+     1  55029 01  2.0   8/20   T R   11:30am-11:55am SCHRAD152  Acomb, Heather N
+
+ DANC 103 Jazz Dance I-Stu                   18-JAN-11     11-MAY-11
+     1  55030 02   .0   8/20   T R   12:00pm-12:50pm SCHRAD152  Acomb, Heather N
+
+ DANC 202 Modern Dance II-Lec                18-JAN-11     11-MAY-11
+     1  54020 01  2.0   4/20   T R   10:00am-10:25am SCHRAD152  Acomb, Heather N
+
+ DANC 202 Modern Dance II-Stu                18-JAN-11     11-MAY-11
+     1  54021 02   .0   4/20   T R   10:30am-11:20am SCHRAD152  Acomb, Heather N
+
+ DANC 211 F/M/CulturalDance-Asian People     18-JAN-11     11-MAY-11
+     1  53585 01  3.0  13/30   T R   11:30am-12:45pm BRODIE210  Kaplan, Randy B
+
+ DANC 222 F/Dance History Since 1900         18-JAN-11     11-MAY-11
+     1  53268 01  3.0   3/30  M W    11:30am-12:45pm BRODIE154  Lancos, Jonette
+
+ DANC 250 Classical Ballet: Pointe-Lec       18-JAN-11     11-MAY-11
+     1  55031 01  2.0   1/20  M W    4:00pm-4:25pm   BRODIE152  Lancos, Jonette
+
+ DANC 250 Classical Ballet: Pointe-Stu       18-JAN-11     11-MAY-11
+     1  55032 02   .0   1/20  M W    4:30pm-5:20pm   BRODIE152  Lancos, Jonette
+
+ DANC 265 Dance Ensemble                     18-JAN-11     11-MAY-11
+     1  51030 01  1.0   0/50  M W    5:30pm-6:45pm   BRODIE152  Lancos, Jonette
+     1  54073 02  1.0   0/50   T R   4:00pm-5:15pm   SCHRAD152  Acomb, Heather N
+
+ DANC 301 Ballet III-Lec                     18-JAN-11     11-MAY-11
+     1  55033 01  2.0   0/20  M W    4:00pm-4:25pm   BRODIE152  Lancos, Jonette
+
+ DANC 301 Ballet III-Stu                     18-JAN-11     11-MAY-11
+     1  55034 02   .0   0/20  M W    4:30pm-5:20pm   BRODIE152  Lancos, Jonette
+
+ DANC 302 Modern Dance III-Lec               18-JAN-11     11-MAY-11
+     1  55035 01  2.0   7/20   T R   10:00am-10:25am SCHRAD152  Acomb, Heather N
+
+ DANC 302 Modern Dance III-Stu               18-JAN-11     11-MAY-11
+     1  55036 02   .0   7/20   T R   10:30am-11:20am SCHRAD152  Acomb, Heather N

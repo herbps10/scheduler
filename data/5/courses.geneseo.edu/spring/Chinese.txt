@@ -1,0 +1,12 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ CHIN 102 L/Elementary Chinese II            18-JAN-11     11-MAY-11
+     1  50428 01  3.0   2/22  M W F  8:30am-9:20am   WELLES117  Huang, Pin-Chen
+     1  54851 02  3.0   5/22  M W F  9:30am-10:20am  WELLES117  Huang, Pin-Chen
+
+ CHIN 202 Intermediate Chinese II            18-JAN-11     11-MAY-11
+     1  51906 01  3.0   6/22   T R   8:30am-9:45am   WELLES140  Tang, Jasmine K Y

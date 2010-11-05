@@ -1,0 +1,11 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ RUSS 101 L/Elementary Russian I             18-JAN-11     11-MAY-11
+     1  54994 01  3.0   0/25   T R   4:00pm-5:15pm   WELLES133  Abramova, Yelena
+
+ RUSS 202 Intermediate Russian II            18-JAN-11     11-MAY-11
+     1  54995 01  3.0   5/25   T R   5:30pm-6:45pm   WELLES133  Abramova, Yelena

@@ -1,0 +1,63 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ THEA 100 F/Introduction to the Theatre      18-JAN-11     11-MAY-11
+     1  51567 01  3.0  20/200 M W F  8:30am-9:20am   NEWTON202  Herman, Michael
+     1  52302 02  3.0  21/200  T R   8:30am-9:45am   NEWTON202  Ferrell, Crystal
+
+ THEA 129 Stagecraft                         18-JAN-11     11-MAY-11
+     1  51570 01  1.0   3/25      F  9:30am-10:20am  BRODIE154  Ferrell, Johnnie J.
+
+ THEA 130 F/Intro Technical Theatre-Lec      18-JAN-11     11-MAY-11
+     1  51571 01  3.0   8/30  M W    9:30am-10:20am  BRODIE154  Ferrell, Johnnie J.
+
+ THEA 130 F/Intro Technical Theatre-Stu      18-JAN-11     11-MAY-11
+     1  51572 02   .0   8/30                         BRODIE154  Ferrell, Johnnie J.
+
+ THEA 140 F/Play Analysis for Theatre        18-JAN-11     11-MAY-11
+     1  51573 01  3.0   7/33  M W F  11:30am-12:20pm BRODIE214  Stubblefield, Steven H.
+
+ THEA 203 F/His of Theatre Since 17th C      18-JAN-11     11-MAY-11
+     1  51574 01  3.0   4/32  M W F  10:30am-11:20am BRODIE208  Blood, Melanie N.
+
+ THEA 221 Acting I-Lec                       18-JAN-11     11-MAY-11
+     1  51575 01  3.0   5/20   T R   11:30am-12:20pm BRODIE245  Blood, Melanie N.
+
+ THEA 221 Acting I-Stu                       18-JAN-11     11-MAY-11
+     1  51576 02   .0   5/20   T R   12:30pm-1:20pm  BRODIE245  Blood, Melanie N.
+
+ THEA 233 Stage Make-up I-Lec                18-JAN-11     11-MAY-11
+     1  53040 01  3.0   2/12  M W    10:00am-10:50am BRODIE159  Ferrell, Crystal
+
+ THEA 233 Stage Make-up I-Stu                18-JAN-11     11-MAY-11
+     1  53041 02   .0   2/12  M W    11:00am-11:50am BRODIE159  Ferrell, Crystal
+
+ THEA 236 Scene Painting for Theatre-Lec     18-JAN-11     11-MAY-11
+     1  55040 01  3.0   4/12   T R   2:30pm-2:55pm   BRODIE171  Stubblefield, Steven H.
+
+ THEA 236 Scene Painting forTheatre-Stu      18-JAN-11     11-MAY-11
+     1  55041 02   .0   4/12   T R   3:00pm-4:20pm   BRODIE171  Stubblefield, Steven H.
+
+ THEA 305 TopThHist:Gender Iden-TheaHist     18-JAN-11     11-MAY-11
+     1  52835 01  3.0   7/15  M W    1:00pm-2:15pm   BRODIE210  Blood, Melanie N.
+
+ THEA 320 Acting II-Lec                      18-JAN-11     11-MAY-11
+     1  51580 01  3.0   0/20   T R   8:30am-9:20am   BRODIE245  Kaplan, Randy B
+
+ THEA 320 Acting II-Stu                      18-JAN-11     11-MAY-11
+     1  51581 02   .0   0/20   T R   9:30am-10:20am  BRODIE245  Kaplan, Randy B
+
+ THEA 321 Directing II-Lec                   18-JAN-11     11-MAY-11
+     1  55042 01  3.0   0/12   T R   2:30pm-3:20pm   BRODIE245  Kaplan, Randy B
+
+ THEA 321 Directing II-Stu                   18-JAN-11     11-MAY-11
+     1  55043 02   .0   0/12   T R   3:30pm-4:20pm   BRODIE245  Kaplan, Randy B
+
+ THEA 345 Stage Lighting Design II-Lec       18-JAN-11     11-MAY-11
+     1  55124 01  3.0   1/5    T R   10:00am-10:50am BRODIE     Ferrell, Johnnie J.
+
+ THEA 345 Stage Lighting Design II-Stu       18-JAN-11     11-MAY-11
+     1  55125 02   .0   1/5    T R   11:00am-11:50am BRODIE     Ferrell, Johnnie J.

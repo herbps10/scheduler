@@ -1,0 +1,79 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 26-OCT-10 9:00pm
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ SOCL 100 S/Introduction to Sociology        18-JAN-11     11-MAY-11
+     1  50797 01  3.0   0/50  M      5:30pm-8:00pm   STURGS223  Eisenberg, Anne
+     1  50798 02  3.0   0/45   T R   4:00pm-5:15pm   STURGS223  Scott, Denise C
+     1  50799 03  3.0   0/50    W    5:30pm-8:00pm   WELLES 26  Wahlstrom, Carl M.
+     1  50800 04  3.0   0/50  M W    11:30am-12:45pm STURGS223  Eisenberg, Anne
+     1  50801 05  3.0   0/45  M W F  9:30am-10:20am  STURGS223  Meyer, Lisa
+
+ SOCL 102 S/Intro Soc Prob&Public Policy     18-JAN-11     11-MAY-11
+     1  50806 01  3.0   0/50   T R   8:30am-9:45am   STURGS223  Cylke, F. Kurt
+     1  51551 02  3.0   0/45   T R   10:00am-11:15am STURGS223  Cylke, F. Kurt
+
+ SOCL 105 S/M/Intro to Global Soc Change     18-JAN-11     11-MAY-11
+     1  50807 01  3.0   0/45  M W F  10:30am-11:20am STURGS223  Meyer, Lisa
+     1  51954 02  3.0   0/45  M W F  11:30am-12:20pm WELLES115  Tamura, Yuichi
+     1  53270 03  3.0   0/45   T R   10:00am-11:15am NEWTON213  Kirk, Joanna H.
+
+ SOCL 210 Sociology of the Family            18-JAN-11     11-MAY-11
+     1  51555 01  3.0   0/50   T R   2:30pm-3:45pm   STURGS223  Scott, Denise C
+
+ SOCL 211 R/Statistics for Social Resrch     18-JAN-11     11-MAY-11
+     1  50809 01  3.0   0/35   T R   1:00pm-2:15pm   SOUTH 328  McLaughlin, Paul Joseph
+     1  50810 02  3.0   0/35   T R   2:30pm-3:45pm   FRASER119  Bearden, James
+
+ SOCL 212 Sociological Research              18-JAN-11     11-MAY-11
+     1  50811 01  3.0   0/45   T R   10:00am-11:15am FRASER119  Bearden, James
+
+ SOCL 217 S/U/Urban Sociology                18-JAN-11     11-MAY-11
+     1  50813 01  3.0   0/50  M W    4:00pm-5:15pm   STURGS223  Bearden, James
+
+ SOCL 220 U/Inequality, Class & Poverty      18-JAN-11     11-MAY-11
+     1  50814 01  3.0   0/50   T R   1:00pm-2:15pm   WELLES115  Cylke, F. Kurt
+
+ SOCL 225 Sociology of Gender                18-JAN-11     11-MAY-11
+     1  50815 01  3.0   0/50    W F  10:00am-11:15am WELLES115  Cleeton, Elaine
+
+ SOCL 230 S/U/Race & Ethnicity               18-JAN-11     11-MAY-11
+     1  51557 01  3.0   0/45  M W F  12:30pm-1:20pm  WELLES115  Tamura, Yuichi
+
+ SOCL 240 S/Sociology of Religion            18-JAN-11     11-MAY-11
+     1  50817 01  3.0   0/45   T R   10:00am-11:15am WELLES115  Derne, Stephan D.
+
+ SOCL 250 Sociology of Deviance              18-JAN-11     11-MAY-11
+     1  51558 01  3.0   0/50   T R   1:00pm-2:15pm   STURGS223  Lofquist, William
+
+ SOCL 265 Classical Sociological Theory      18-JAN-11     11-MAY-11
+     1  53271 01  3.0   0/45   T R   8:30am-9:45am   WELLES115  Derne, Stephan D.
+
+ SOCL 281 SelTop:Gender&InternationalDev     18-JAN-11     11-MAY-11
+     1  53049 01  3.0   0/50  M W    1:00pm-2:15pm   FRASER119  Meyer, Lisa
+
+ SOCL 281 SelTop:Women inSouth Asian Soc     18-JAN-11     11-MAY-11
+     1  54956 02  3.0   0/45   T R   11:30am-12:45pm WELLES115  Scott, Denise C
+
+ SOCL 314 Illness, Self & Society            18-JAN-11     11-MAY-11
+     1  51560 01  3.0   0/40    W F  8:30am-9:45am   WELLES115  Cleeton, Elaine
+
+ SOCL 318 Environmental Sociology            18-JAN-11     11-MAY-11
+     1  54827 01  3.0   0/40   T R   11:30am-12:45pm STURGS104  McLaughlin, Paul Joseph
+
+ SOCL 333 Sociology of Education             18-JAN-11     11-MAY-11
+     1  52299 01  3.0   0/40  M W    4:00pm-5:15pm   WELLES115  Tamura, Yuichi
+
+ SOCL 340 Social Movements                   18-JAN-11     11-MAY-11
+     1  50824 01  3.0   0/40   T R   2:30pm-3:45pm   WELLES115  McLaughlin, Paul Joseph
+
+ SOCL 347 Criminolgy&JuvenileDelinquency     18-JAN-11     11-MAY-11
+     1  51956 01  3.0   0/40   T R   11:30am-12:45pm STURGS223  Lofquist, William
+
+ SOCL 365 Contemporary Sociological Thry     18-JAN-11     11-MAY-11
+     1  53272 01  3.0   0/40  M W    1:00pm-2:15pm   STURGS223  Eisenberg, Anne
+
+ SOCL 376 SrSem:Reel Life Facts Cin Fict     18-JAN-11     11-MAY-11
+     1  54160 01  3.0   0/20    W F  11:30am-12:45pm MILNE 213  Cleeton, Elaine

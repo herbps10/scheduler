@@ -1,0 +1,81 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ CHEM 118 Chemistry II                       18-JAN-11     11-MAY-11
+     1  52251 01  3.0  12/120 M W F  10:30am-11:20am NEWTON202  Cappon, Christopher J.
+     1  52411 02  3.0   5/120 M W F  11:30am-12:20pm NEWTON202  Boiani, James A.
+
+ CHEM 119 N/Introductory Chemistry Lab       18-JAN-11     11-MAY-11
+     1  54793 01  2.0   0/18   T     1:00pm-4:50pm   ISC   318  Gikonyo, Barnabas
+     1  54794 02  2.0   1/18   T     1:00pm-4:50pm   ISC   319  Gikonyo, Barnabas
+     1  54795 03  2.0   2/18    W    1:00pm-4:50pm   ISC   318  Gikonyo, Barnabas
+     1  54796 04  2.0   2/18    W    1:00pm-4:50pm   ISC   319  Gikonyo, Barnabas
+     1  54797 05  2.0   2/18     R   8:30am-12:20pm  ISC   318  Gikonyo, Barnabas
+     1  54798 06  2.0   0/18     R   8:30am-12:20pm  ISC   319  Gikonyo, Barnabas
+     1  54799 07  2.0   1/18     R   1:00pm-4:50pm   ISC   318  Boiani, James A.
+     1  54800 08  2.0   0/18     R   1:00pm-4:50pm   ISC   319  Boiani, James A.
+
+ CHEM 209 Intermediate Chemistry Lab         18-JAN-11     11-MAY-11
+     1  54801 01  2.0   0/14   T     9:00am-12:50pm  ISC   318  Peterson, Jeffrey J
+     1  54878 02  2.0   0/14   T     9:00am-12:50pm  ISC   319  Geiger, Hilda Cristina
+
+ CHEM 211 Organic Chemistry                  18-JAN-11     11-MAY-11
+     1  54952 01  3.0   2/50  M W F  9:30am-10:20am  NEWTON203  Geiger, David K.
+
+ CHEM 213 Organic Chemistry II               18-JAN-11     11-MAY-11
+     1  50231 01  3.0   9/75  M W F  9:30am-10:20am  NEWTON214  Geiger, Hilda Cristina
+     1  51936 02  3.0  27/75  M W F  10:30am-11:20am NEWTON214  Gikonyo, Barnabas
+     1  54592 03  3.0   6/75  M W F  11:30am-12:20pm NEWTON214  Helms, Eric D
+
+ CHEM 216 Organic Chemistry Laboratory       18-JAN-11     11-MAY-11
+     1  54622 01  2.0   1/18   T     8:30am-12:20pm  ISC   314  Pogozelski, Wendy K
+     1  54623 02  2.0   2/18   T     1:00pm-4:50pm   ISC   314  Helms, Eric D
+     1  54624 03  2.0   2/18   T     6:00pm-9:50pm   ISC   314  Cappon, Christopher J.
+     1  54625 04  2.0   3/18    W    1:00pm-4:50pm   ISC   314  Johnson, David K
+     1  54626 05  2.0   1/18     R   8:30am-12:20pm  ISC   314  Pogozelski, Wendy K
+     1  54627 06  2.0   0/18     R   1:00pm-4:50pm   ISC   314  McKnight, Ruel
+
+ CHEM 300 Principles of Biochemistry         18-JAN-11     11-MAY-11
+     1  50237 01  3.0  27/40  M W    4:00pm-5:15pm   ISC   131  Helms, Eric D
+
+ CHEM 301 Biochemistry Laboratory            18-JAN-11     11-MAY-11
+     1  54600 01  2.0  15/16  M      1:00pm-4:50pm   ISC   304  McKnight, Ruel
+
+ CHEM 304 Biochemistry II                    18-JAN-11     11-MAY-11
+     1  50239 01  3.0  17/25   T R   10:00am-11:15am NEWTON201  McKnight, Ruel
+     1  54802 02  3.0  23/25  M W F  9:30am-10:20am  ISC   115  Pogozelski, Wendy K
+
+ CHEM 313 Lab Tech in Organic Chem I         18-JAN-11     11-MAY-11
+     1  54803 01  2.0   8/12  M      1:00pm-4:50pm   ISC   314  Geiger, Hilda Cristina
+     1  54804 02  2.0   6/12      F  1:00pm-4:50pm   ISC   314  Johnson, David K
+
+ CHEM 318 Advanced Organic Chemistry         18-JAN-11     11-MAY-11
+     1  54953 01  3.0  13/30   T R   1:00pm-2:15pm   ISC   131  Johnson, David K
+
+ CHEM 322 Physical Chemistry II              18-JAN-11     11-MAY-11
+     1  50241 01  3.0  16/30  M W F  11:30am-12:20pm ISC   131  Peterson, Jeffrey J
+
+ CHEM 324 Principles of Physical Chem        18-JAN-11     11-MAY-11
+     1  50242 01  3.0  48/40   T R   8:30am-9:45am   NEWTON201  Yokoyama, Kazushige
+
+ CHEM 330 Inorganic Chemistry I              18-JAN-11     11-MAY-11
+     1  50243 01  3.0  16/30  M W F  10:30am-11:20am ISC   115  McGarrah, James
+
+ CHEM 331 Lab Tech in Inorganic Chem         18-JAN-11     11-MAY-11
+     1  54601 01  2.0   5/12  M      1:00pm-4:50pm   ISC   315  McGarrah, James
+     1  54741 02  2.0   4/12   T     9:00am-12:50pm  ISC   315  McGarrah, James
+
+ CHEM 352 Chemistry Senior Seminar           18-JAN-11     11-MAY-11
+     1  54041 01  1.0   9/10  M      2:30pm-3:45pm   ISC   325  Boiani, James A.
+     1  54954 02  1.0   5/10   T     10:00am-11:15am ISC   325  Geiger, David K.
+     1  54955 03  1.0  10/10     R   11:30am-12:45pm ISC   325  Peterson, Jeffrey J
+
+ CHEM 361 Modern Chemistry Laboratory        18-JAN-11     11-MAY-11
+     1  54602 01  2.0  11/12    W    1:00pm-4:50pm   ISC   315  Yokoyama, Kazushige
+     1  54805 02  2.0  12/12     R   1:00pm-4:50pm   ISC   315  Yokoyama, Kazushige
+
+ CHEM 393 Honors Research                    18-JAN-11     11-MAY-11
+     1  52907 01  4.0   2/12                         CAMPUS     Geiger, David K.

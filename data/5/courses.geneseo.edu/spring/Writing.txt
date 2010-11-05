@@ -1,0 +1,12 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ WRTG 101 English Language & Culture         18-JAN-11     11-MAY-11
+     1  52394 01  3.0   8/15   T R   11:30am-12:45pm MILNE 109  Belyakov, Irene K
+
+ WRTG 201 English Language & Culture II      18-JAN-11     11-MAY-11
+     1  53921 01  3.0   0/15   T R   2:30pm-3:45pm   MILNE 109  Belyakov, Irene K
+     1  54504 02  3.0   0/15  M W    5:00pm-6:15pm   MILNE 109  Belyakov, Irene K

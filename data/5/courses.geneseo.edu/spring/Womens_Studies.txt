@@ -1,0 +1,11 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ WMST 100 Intro to Women's Studies           18-JAN-11     11-MAY-11
+     1  54619 01  3.0  10/30  M W F  8:30am-9:20am   WELLES121  McAlpine, Amy
+
+ WMST 201 Top-Women's St:Gender & Disab      18-JAN-11     11-MAY-11
+     1  53261 01  3.0   3/35  M   F  11:30am-12:45pm HOLCOM270  Ware, Linda

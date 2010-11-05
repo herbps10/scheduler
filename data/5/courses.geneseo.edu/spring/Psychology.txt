@@ -1,0 +1,116 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ PSYC 100 Introductory Psychology            18-JAN-11     11-MAY-11
+     1  50744 01  3.0  15/89  M W F  1:30pm-2:20pm   NEWTON214  Kirsh, Steven J.
+     1  50745 02  3.0  14/50   T R   10:00am-11:15am NEWTON204  Schneider, Monica E.
+
+ PSYC 215 S/Child Development                18-JAN-11     11-MAY-11
+     1  50764 01  3.0   0/35  M W F  8:30am-9:20am   STURGS112  Kallio, Kenneth D.
+     1  50765 02  3.0   5/35  M W F  9:30am-10:20am  STURGS104  Kirsh, Steven J.
+     1  50766 03  3.0  14/35  M W F  10:30am-11:20am STURGS104  Kirsh, Steven J.
+     1  50767 04  3.0   3/35  M W F  12:30pm-1:20pm  STURGS104  Kallio, Kenneth D.
+     1  50768 05  3.0  10/35  M W F  1:30pm-2:20pm   STURGS104  DeHart, Ganie B.
+
+ PSYC 216 S/Adolescent Development           18-JAN-11     11-MAY-11
+     1  50770 01  3.0   2/35  M W F  1:30pm-2:20pm   STURGS112  Lynch, Michael
+     1  50771 02  3.0  16/35   T R   8:30am-9:45am   STURGS112  Storms, Tera
+     1  51946 03  3.0  21/35   T R   10:00am-11:15am STURGS112  Storms, Tera
+     1  52059 04  3.0   3/35   T R   1:00pm-2:15pm   STURGS111  Repinski, Daniel J
+     1  52870 05  3.0   3/35   T R   2:30pm-3:45pm   STURGS111  Repinski, Daniel J
+
+ PSYC 217 Adult Development & Aging          18-JAN-11     11-MAY-11
+     1  54974 01  3.0  35/35   T R   5:00pm-6:15pm   STURGS104  TBA
+
+ PSYC 220 Applied Behavior Analysis          18-JAN-11     11-MAY-11
+     1  54865 01  3.0  14/35   T R   10:00am-11:15am STURGS114  Ballard, Joan
+
+ PSYC 236 Human Sexual Behavior              18-JAN-11     11-MAY-11
+     1  54975 01  3.0  36/35   T R   10:00am-11:15am STURGS111  Repinski, Daniel J
+
+ PSYC 250 R/Intro-Behavioral Statistics      18-JAN-11     11-MAY-11
+     1  52281 01  3.0   2/35   T R   2:30pm-3:45pm   STURGS104  Pastizzo, Matthew
+     1  52282 02  3.0  11/35  M W F  10:30am-11:20am STURGS112  Ruddy, Lanna L
+     1  52283 03  3.0  19/35  M W F  11:30am-12:20pm STURGS112  Ruddy, Lanna L
+     1  52284 04  3.0   7/35   T R   1:00pm-2:15pm   STURGS112  Allen, James B.
+
+ PSYC 251 Intro to Behavioral Res Method     18-JAN-11     11-MAY-11
+     1  52285 01  3.0   3/23  M W F  8:30am-9:20am   STURGS111  Bazzett, Terence
+     1  52286 02  3.0   3/23   T R   10:00am-11:15am STURGS104  Markowski, Vincent P.
+     1  52287 03  3.0   6/23  M W F  12:30pm-1:20pm  STURGS111  Bazzett, Terence
+     1  52288 04  3.0   2/23   T R   2:30pm-3:45pm   STURGS112  Markowski, Vincent P.
+     1  54976 05  3.0  10/23  M W    4:00pm-5:15pm   STURGS104  Tomczak, Timothy
+
+ PSYC 260 Abnormal Psychology                18-JAN-11     11-MAY-11
+     1  54153 01  3.0   6/35  M W F  9:30am-10:20am  STURGS111  Raynor, Douglas
+     1  54154 02  3.0   5/35  M W F  1:30pm-2:20pm   STURGS111  Raynor, Douglas
+     1  54155 03  3.0  22/35  M W    5:30pm-6:45pm   STURGS104  Tomczak, Timothy
+
+ PSYC 280 Sport & Exercise Psychology        18-JAN-11     11-MAY-11
+     1  54722 01  3.0  39/40  M W F  11:30am-12:20pm STURGS111  Raynor, Douglas
+
+ PSYC 307 Sensation & Perception             18-JAN-11     11-MAY-11
+     1  54440 01  3.0  22/40  M W F  10:30am-11:20am STURGS111  Mounts, Jeffrey
+
+ PSYC 315 Psychology of Language             18-JAN-11     11-MAY-11
+     1  54977 01  3.0  40/40   T R   1:00pm-2:15pm   STURGS104  Pastizzo, Matthew
+
+ PSYC 321 Dev Psyc:Parenting                 18-JAN-11     11-MAY-11
+     1  50778 01  3.0  40/40  M W F  11:30am-12:20pm STURGS104  Lynch, Michael
+
+ PSYC 325 Cognitive Psychology               18-JAN-11     11-MAY-11
+     1  50779 01  3.0  10/40  M W F  8:30am-9:20am   STURGS104  Mounts, Jeffrey
+
+ PSYC 330 Biological Psychology              18-JAN-11     11-MAY-11
+     1  52295 01  3.0   8/40   T R   8:30am-9:45am   STURGS104  Markowski, Vincent P.
+
+ PSYC 332 Human Neuropsychology              18-JAN-11     11-MAY-11
+     1  54575 01  3.0  17/40   T R   4:00pm-5:15pm   MILNE 104  Ballard, Joan
+
+ PSYC 335 Behavioral Pharmacology            18-JAN-11     11-MAY-11
+     1  50781 01  3.0  36/40   T R   8:30am-9:45am   STURGS111  Bazzett, Terence
+
+ PSYC 338 Animal Behavior                    18-JAN-11     11-MAY-11
+     1  50782 01  3.0  29/40  M W F  9:30am-10:20am  STURGS112  Ruddy, Lanna L
+
+ PSYC 350 Social Psychology                  18-JAN-11     11-MAY-11
+     1  50784 01  3.0  37/40   T R   11:30am-12:45pm STURGS111  Allen, James B.
+
+ PSYC 352 AdvRes-Psyc:Sexual Aggression      18-JAN-11     11-MAY-11
+     1  53762 01  3.0  14/14  M W F  10:30am-11:20am STURGS 28  Katz, Jennifer
+
+ PSYC 352 AdvRes-Psyc:Attention&Emotion      18-JAN-11     11-MAY-11
+     1  53763 02  3.0  14/14  M W F  1:30pm-2:20pm   STURGS 28  Mounts, Jeffrey
+
+ PSYC 352 AdvRes-Psych:Word Play             18-JAN-11     11-MAY-11
+     1  53910 03  3.0  12/14   T R   10:00am-11:15am STURGS 28  Pastizzo, Matthew
+
+ PSYC 352 AdvRes-Psyc:Accuracy of Memory     18-JAN-11     11-MAY-11
+     1  54045 04  3.0  10/14   T R   11:30am-12:45pm STURGS 28  Kallio, Kenneth D.
+
+ PSYC 352 AdvRes-Psych:First Impressions     18-JAN-11     11-MAY-11
+     1  54046 05  3.0  14/14   T R   1:00pm-2:15pm   STURGS 28  Ballard, Joan
+
+ PSYC 352 AdvResPsych:Threat & Prejudice     18-JAN-11     11-MAY-11
+     1  54978 06  3.0  14/14   T R   2:30pm-3:45pm   STURGS 28  Schneider, Monica E.
+
+ PSYC 355 Psychology of Personality          18-JAN-11     11-MAY-11
+     1  50786 01  3.0  40/40  M W    4:00pm-5:15pm   STURGS112  Schneider, Monica E.
+
+ PSYC 365 Clinical Psychology                18-JAN-11     11-MAY-11
+     1  50790 01  3.0  28/40  M W    4:00pm-5:15pm   STURGS111  Katz, Jennifer
+
+ PSYC 390 SpTop:Gender&Dev of Aggression     18-JAN-11     11-MAY-11
+     1  52141 01  3.0  10/15  M W F  9:30am-10:20am  STURGS 28  DeHart, Ganie B.
+
+ PSYC 395 Int:Community Intern in Psych      18-JAN-11     11-MAY-11
+     1  50795 01  3.0   0/25    W    5:00pm-6:30pm   STURGS 28  Lynch, Michael
+
+ PSYC 396 Teaching Internship                18-JAN-11     11-MAY-11
+     1  53260 01  3.0   0/25  M      12:30pm-1:20pm  STURGS 28  DeHart, Ganie B.
+
+ PSYC 397 Undergraduate Research Seminar     18-JAN-11     11-MAY-11
+     1  54576 01  3.0   0/20                         CAMPUS     Allen, James B.

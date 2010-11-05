@@ -1,0 +1,43 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ACCT 099 Professional Dev Requirement       18-JAN-11     11-MAY-11
+     1  54320 01   .0  50/100                        CAMPUS     Howard, Barbara J
+
+ ACCT 102 Intro to Financial Accounting      18-JAN-11     11-MAY-11
+     1  50137 01  3.0   7/10  M W F  9:30am-10:20am  WELLES140  Mitschow, Mark
+     1  50138 02  3.0   8/10  M W F  10:30am-11:20am WELLES140  Mitschow, Mark
+     1  50139 03  3.0   6/10  M W F  12:30pm-1:20pm  WELLES138  Mitschow, Mark
+     1  53034 04  3.0   5/10   T     5:30pm-8:00pm   SOUTH 340  TBA
+
+ ACCT 103 Intro to Managerial Accounting     18-JAN-11     11-MAY-11
+     1  50140 01  3.0   2/15  M W F  9:30am-10:20am  SOUTH 340  Bossung, Sharon
+     1  50141 02  3.0   6/15  M W F  10:30am-11:20am SOUTH 340  Bossung, Sharon
+     1  50142 03  3.0   2/15  M W F  11:30am-12:20pm SOUTH 340  Bossung, Sharon
+     1  55044 04  3.0   2/15  M      6:00pm-8:30pm   WELLES121  Hartmann, Terry E
+
+ ACCT 270 Managerial Accounting I            18-JAN-11     11-MAY-11
+     1  50146 01  3.0   4/30  M W    8:30am-9:45am   SOUTH 338  Gifford, Richard
+     1  52567 02  3.0  21/30  M W    10:00am-11:15am SOUTH 338  Gifford, Richard
+
+ ACCT 302 Interm Financial Accounting II     18-JAN-11     11-MAY-11
+     1  54433 01  3.0  30/30  M W    1:00pm-2:15pm   SOUTH 340  Howe, Harry
+     1  54553 02  3.0  15/30  M W    5:00pm-6:15pm   SOUTH 340  Howe, Harry
+
+ ACCT 306 Controllership in Organization     18-JAN-11     11-MAY-11
+     1  54727 01  3.0  25/25  M      6:00pm-8:30pm   SOUTH 338  Fasoldt, Jeffrey Charles
+
+ ACCT 388 Ex:Int Audit&FinReportingFraud     18-JAN-11     11-MAY-11
+     1  53609 01  3.0  30/30   T R   10:00am-11:15am WELLES 26  Gifford, Richard
+
+ ACCT 503 Strategic Management Accountng     18-JAN-11     11-MAY-11
+     1  54321 01  3.0  10/20   T R   1:00pm-2:15pm   WELLES 24  Gifford, Richard
+
+ ACCT 520 Advanced Auditing Theory           18-JAN-11     11-MAY-11
+     1  54322 01  3.0  10/20     R   6:00pm-8:30pm   WELLES 26  Wood, Thomas Jason
+
+ ACCT 530 Accounting Theory & Research       18-JAN-11     11-MAY-11
+     1  54323 01  3.0  10/20  M W    11:30am-12:45pm WELLES 24  Howe, Harry

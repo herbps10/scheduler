@@ -1,0 +1,8 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ AMST 201 U/Top-Amer St:Civil War&Memory     18-JAN-11     11-MAY-11
+     1  55118 01  3.0  16/30   T R   11:30am-12:45pm FRASER119  Behrend, Justin

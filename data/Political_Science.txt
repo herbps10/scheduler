@@ -1,0 +1,64 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 26-OCT-10 9:00pm
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ PLSC 110 S/U/American Politics              18-JAN-11     11-MAY-11
+     1  50725 01  3.0   0/50  M      6:00pm-8:30pm   WELLES128  Van Der Meid, Theodore J
+     1  55006 03  3.0   0/50    W    6:00pm-8:30pm   NEWTON203  Cook, Robert
+
+ PLSC 120 S/Comparative Politics             18-JAN-11     11-MAY-11
+     1  50727 01  3.0   0/50  M W    5:00pm-6:15pm   WELLES140  Partapurwala, Mohammed
+     1  54498 02  3.0   0/50  M W    6:30pm-7:45pm   WELLES140  Partapurwala, Mohammed
+
+ PLSC 140 S/International Politics           18-JAN-11     11-MAY-11
+     1  50728 01  3.0   0/50   T R   1:00pm-2:15pm   NEWTON203  Kirk, Joanna H.
+     1  51931 02  3.0   0/50  M      6:00pm-8:30pm   WELLES138  Goodwin, Mark
+
+ PLSC 215 Community,State & Regional Pol     18-JAN-11     11-MAY-11
+     1  53904 01  3.0   0/40  M   F  10:00am-11:15am WELLES 24  Klotz, Marilyn
+
+ PLSC 216 Presidential Politics              18-JAN-11     11-MAY-11
+     1  55115 01  3.0   0/50  M W    8:30am-9:45am   WELLES 24  Klotz, Marilyn
+
+ PLSC 218 Politics of Judicial Process       18-JAN-11     11-MAY-11
+     1  55007 01  3.0   0/40   T R   2:30pm-3:45pm   WADWTH 21  Deutsch, Kenneth L.
+
+ PLSC 228 S/M/Dev Third World Politics       18-JAN-11     11-MAY-11
+     1  52234 01  3.0   0/40   T R   10:00am-11:15am FRASER114  Morgan, Sean Thomas
+
+ PLSC 241 Politics of Genocide               18-JAN-11     11-MAY-11
+     1  54696 01  3.0   0/40  M W F  9:30am-10:20am  WELLES128  Drachman, Edward
+
+ PLSC 246 S/U.S. Foreign Policy              18-JAN-11     11-MAY-11
+     1  51933 01  3.0   0/40   T R   10:00am-11:15am WELLES128  Goeckel, Robert F.
+     1  55008 02  3.0   0/40  M W F  8:30am-9:20am   WELLES128  Drachman, Edward
+
+ PLSC 251 R/Modern Political Analysis        18-JAN-11     11-MAY-11
+     1  51673 01  3.0   0/40  M W F  10:30am-11:20am WELLES128  Koch, Jeffrey W.
+
+ PLSC 313 Political Leadership               18-JAN-11     11-MAY-11
+     1  55009 01  3.0   0/30  M      4:00pm-6:30pm   WADWTH 21  Deutsch, Kenneth L.
+
+ PLSC 314 American Public Policy             18-JAN-11     11-MAY-11
+     1  50735 01  3.0   0/30  M W    11:30am-12:45pm WELLES128  Klotz, Marilyn
+
+ PLSC 318 Constitutional Law                 18-JAN-11     11-MAY-11
+     1  55010 01  3.0   0/30   T R   10:00am-11:15am WADWTH 21  Deutsch, Kenneth L.
+
+ PLSC 325 Pol of Mexico,Centr Amer&Carib     18-JAN-11     11-MAY-11
+     1  51002 01  3.0   0/30  M W F  11:30am-12:20pm STURGS114  Drachman, Edward
+
+ PLSC 329 Politics of Russia & Eurasia       18-JAN-11     11-MAY-11
+     1  55116 01  3.0   0/30   T R   2:30pm-3:45pm   WELLES128  Goeckel, Robert F.
+
+ PLSC 345 Theories-International Relatns     18-JAN-11     11-MAY-11
+     1  53266 01  3.0   0/20   T R   1:00pm-2:15pm   WADWTH204  Goeckel, Robert F.
+     1  55011 02  3.0   0/20   T R   8:30am-9:45am   WADWTH204  Grace, Jeremy
+
+ PLSC 348 Pol of Internatnl Econ Relatns     18-JAN-11     11-MAY-11
+     1  53400 01  3.0   0/30   T R   11:30am-12:45pm WELLES128  Grace, Jeremy
+
+ PLSC 395 Political Affairs Internship       18-JAN-11     11-MAY-11
+     1  50742 01  3.0   0/10  M      1:00pm-2:15pm   WADWTH204  Koch, Jeffrey W.

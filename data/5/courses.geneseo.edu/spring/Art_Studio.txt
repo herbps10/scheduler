@@ -1,0 +1,152 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ARTS 100 F/Two-Dimensional Design-Lec       18-JAN-11     11-MAY-11
+     1  50009 01  3.0   1/1   M W    11:30am-12:20pm BRODIE244  Case, Patrice E.
+
+ ARTS 100 F/Two-Dimensional Design-Stu       18-JAN-11     11-MAY-11
+     1  50010 02   .0   1/1   M W    12:30pm-1:20pm  BRODIE244  Case, Patrice E.
+
+ ARTS 100 F/Two-Dimensional Design-Lec       18-JAN-11     11-MAY-11
+     1  50011 03  3.0   1/1    T R   8:30am-9:20am   BRODIE221  MacPherson, Thomas J
+
+ ARTS 100 F/Two-Dimensional Design-Stu       18-JAN-11     11-MAY-11
+     1  50012 04   .0   1/1    T R   9:30am-10:20am  BRODIE221  MacPherson, Thomas J
+
+ ARTS 101 F/Three-Dimensional Design-Lec     18-JAN-11     11-MAY-11
+     1  50015 01  3.0   1/1    T R   10:30am-11:20am BRODIE217  DeZarn, Eugene Daniel
+
+ ARTS 101 F/Three-Dimensional Design-Stu     18-JAN-11     11-MAY-11
+     1  50016 02   .0   1/1    T R   11:30am-12:20pm BRODIE217  DeZarn, Eugene Daniel
+
+ ARTS 101 F/Three-Dimensional Design-Lec     18-JAN-11     11-MAY-11
+     1  54174 03  3.0   1/1    T R   1:30pm-2:20pm   BRODIE217  DeZarn, Eugene Daniel
+
+ ARTS 101 F/Three-Dimensional Design-Stu     18-JAN-11     11-MAY-11
+     1  54175 04   .0   1/1    T R   2:30pm-3:20pm   BRODIE217  DeZarn, Eugene Daniel
+
+ ARTS 200 F/Computer Art-Lec                 18-JAN-11     11-MAY-11
+     1  50018 01  3.0   5/1    T R   10:30am-11:20am BRODIE243  Teres, Michael J.
+
+ ARTS 200 F/Computer Art-Stu                 18-JAN-11     11-MAY-11
+     1  50019 02   .0   5/1    T R   11:30am-12:20pm BRODIE243  Teres, Michael J.
+
+ ARTS 204 Graphic Design-Lec                 18-JAN-11     11-MAY-11
+     1  54014 01  3.0   3/20  M W    10:30am-11:20am BRODIE243  Teres, Michael J.
+
+ ARTS 204 Graphic Design-Stu                 18-JAN-11     11-MAY-11
+     1  54015 02   .0   3/20  M W    11:30am-12:20pm BRODIE243  Teres, Michael J.
+
+ ARTS 205 F/Calligraphy-Lec                  18-JAN-11     11-MAY-11
+     1  53427 01  3.0   5/5   M W    4:00pm-4:50pm   NEWTON204  Shanahan, Carl
+
+ ARTS 205 F/Calligraphy-Stu                  18-JAN-11     11-MAY-11
+     1  55096 02   .0   5/5   M W    5:00pm-5:50pm   NEWTON204  Shanahan, Carl
+
+ ARTS 210 F/Drawing I-Lec                    18-JAN-11     11-MAY-11
+     1  50020 01  3.0   1/1    T R   2:30pm-3:20pm   BRODIE221  Anderson, Douglas
+
+ ARTS 210 F/Drawing I-Stu                    18-JAN-11     11-MAY-11
+     1  55097 02   .0   1/1    T R   3:30pm-4:20pm   BRODIE221  Anderson, Douglas
+
+ ARTS 220 Oil Painting I-Lec                 18-JAN-11     11-MAY-11
+     1  50024 01  3.0   1/20   T R   10:30am-11:20am BRODIE220  Anderson, Douglas
+
+ ARTS 220 Oil Painting I-Stu                 18-JAN-11     11-MAY-11
+     1  55098 02   .0   1/20   T R   11:30am-12:20pm BRODIE220  Anderson, Douglas
+
+ ARTS 225 F/Watercolor I-Lec                 18-JAN-11     11-MAY-11
+     1  50026 01  3.0  17/22  M W    8:30am-9:20am   BRODIE221  MacPherson, Thomas J
+
+ ARTS 225 F/Watercolor I-Stu                 18-JAN-11     11-MAY-11
+     1  55099 02   .0  17/22  M W    9:30am-10:20am  BRODIE221  MacPherson, Thomas J
+
+ ARTS 230 Printmaking I-Lec                  18-JAN-11     11-MAY-11
+     1  55027 01  3.0  13/13  M W    10:30am-11:20am BRODIE217  MacPherson, Thomas J
+
+ ARTS 230 Printmaking I-Stu                  18-JAN-11     11-MAY-11
+     1  55028 02   .0  13/13  M W    11:30am-12:20pm BRODIE217  MacPherson, Thomas J
+
+ ARTS 235 F/Digital Photography I            18-JAN-11     11-MAY-11
+     1  50028 01  3.0   1/1    T R   8:30am-10:20am  BRODIE243  Teres, Michael J.
+
+ ARTS 240 Sculpture I-Lec                    18-JAN-11     11-MAY-11
+     1  51675 01  3.0   1/15  M W    12:30pm-1:20pm  BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 240 Sculpture I-Stu                    18-JAN-11     11-MAY-11
+     1  55100 02   .0   1/15  M W    1:30pm-2:20pm   BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 245 Ceramics I-Lec                     18-JAN-11     11-MAY-11
+     1  50031 01  3.0   2/18  M W    10:30am-11:20am BRODIE146  Shanahan, Carl
+
+ ARTS 245 Ceramics I-Stu                     18-JAN-11     11-MAY-11
+     1  55101 02   .0   2/18  M W    11:30am-12:20pm BRODIE146  Shanahan, Carl
+
+ ARTS 250 Jewelry & Metals I-Lec             18-JAN-11     11-MAY-11
+     1  50033 01  3.0  11/16   T R   1:00pm-1:50pm   BRODIE147  Case, Patrice E.
+
+ ARTS 250 Jewelry & Metals I-Stu             18-JAN-11     11-MAY-11
+     1  55102 02   .0  11/16   T R   2:00pm-2:50pm   BRODIE147  Case, Patrice E.
+
+ ARTS 265 Sophomore Fndtn Portfolio Rev      18-JAN-11     11-MAY-11
+     1  54465 01  1.0   1/20  M      2:30pm-3:20pm   BRODIE242A Case, Patrice E.
+
+ ARTS 310 Drawing II-Lec                     18-JAN-11     11-MAY-11
+     1  52330 01  3.0   6/15  M W    12:30pm-1:20pm  BRODIE221  Anderson, Douglas
+
+ ARTS 310 Drawing II-Stu                     18-JAN-11     11-MAY-11
+     1  55103 02   .0   6/15  M W    1:30pm-2:20pm   BRODIE221  Anderson, Douglas
+
+ ARTS 320 Oil Painting II-Lec                18-JAN-11     11-MAY-11
+     1  50036 01  3.0  10/10  M W    9:30am-10:20am  BRODIE220  Anderson, Douglas
+
+ ARTS 320 Oil Painting II-Stu                18-JAN-11     11-MAY-11
+     1  55104 02   .0  10/10  M W    10:30am-11:20am BRODIE220  Anderson, Douglas
+
+ ARTS 325 Watercolor II-Lec                  18-JAN-11     11-MAY-11
+     1  55121 01  3.0  10/25   T R   10:30am-11:20am BRODIE221  MacPherson, Thomas J
+
+ ARTS 325 Watercolor II-Stu                  18-JAN-11     11-MAY-11
+     1  55122 02   .0  10/25   T R   11:30am-12:20pm BRODIE221  MacPherson, Thomas J
+
+ ARTS 335 Digital Photography II             18-JAN-11     11-MAY-11
+     1  50039 01  3.0   0/16  M W    8:30am-10:20am  BRODIE243  Teres, Michael J.
+
+ ARTS 336 Digital Photography III            18-JAN-11     11-MAY-11
+     1  54486 01  3.0   1/4   M W    8:30am-10:20am  BRODIE243  Teres, Michael J.
+
+ ARTS 340 Sculpture II-Lec                   18-JAN-11     11-MAY-11
+     1  51676 01  3.0   2/6   M W    9:30am-10:20am  BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 340 Sculpture II-Stu                   18-JAN-11     11-MAY-11
+     1  55105 02   .0   2/6   M W    10:30am-11:20am BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 341 Sculpture III-Lec                  18-JAN-11     11-MAY-11
+     1  54466 01  3.0   1/4   M W    9:30am-10:20am  BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 341 Sculpture III-Stu                  18-JAN-11     11-MAY-11
+     1  55106 02   .0   1/4   M W    10:30am-11:20am BRODIE148  DeZarn, Eugene Daniel
+
+ ARTS 345 Ceramics II-Lec                    18-JAN-11     11-MAY-11
+     1  50040 01  3.0   4/12  M W    8:30am-9:20am   BRODIE146  Shanahan, Carl
+
+ ARTS 345 Ceramics II-Stu                    18-JAN-11     11-MAY-11
+     1  55107 02   .0   4/12  M W    9:30am-10:20am  BRODIE146  Shanahan, Carl
+
+ ARTS 346 Ceramics III-Lec                   18-JAN-11     11-MAY-11
+     1  54467 01  3.0   1/4   M W    8:30am-9:20am   BRODIE146  Shanahan, Carl
+
+ ARTS 346 Ceramics III-Stu                   18-JAN-11     11-MAY-11
+     1  55108 02   .0   1/4   M W    9:30am-10:20am  BRODIE146  Shanahan, Carl
+
+ ARTS 350 Jewelry & Metals II-Lec            18-JAN-11     11-MAY-11
+     1  50041 01  3.0   6/16   T R   4:00pm-4:50pm   BRODIE147  Case, Patrice E.
+
+ ARTS 350 Jewelry & Metals II-Stu            18-JAN-11     11-MAY-11
+     1  55109 02   .0   6/16   T R   5:00pm-5:50pm   BRODIE147  Case, Patrice E.
+
+ ARTS 370 Senior Art Exhibition              18-JAN-11     11-MAY-11
+     1  54702 01  2.0   7/20      F  11:30am-12:20pm BRODIE242A Case, Patrice E.

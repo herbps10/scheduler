@@ -1,0 +1,75 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 26-OCT-10 9:00pm
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ SPAN 102 Elementary Spanish II              18-JAN-11     11-MAY-11
+     1  50451 01  3.0   0/25  M W F  8:30am-9:20am   WELLES131  Alcantara Garcia, Ana Isabel
+     1  50452 02  3.0   0/25  M W F  10:30am-11:20am WELLES131  Salas Garrido, Irene
+     1  51613 03  3.0   0/25   T R   10:00am-11:15am WELLES117  Kelly, Sara Y.
+     1  52076 04  3.0   0/25   T R   11:30am-12:45pm FRASER114  Kelly, Sara Y.
+     1  52662 05  3.0   0/25  M W F  12:30pm-1:20pm  WELLES131  Delgado, Rocio
+     1  53786 06  3.0   0/25  M W F  11:30am-12:20pm WELLES133  Delgado, Rocio
+     1  54996 07  3.0   0/25  M   F  2:30pm-3:45pm   WELLES133  Delgado, Rocio
+
+ SPAN 201 Intermediate Spanish I             18-JAN-11     11-MAY-11
+     1  50453 01  3.0   0/25  M W    9:30am-10:45am  STURGS221  Bernard, Lori
+     1  50454 02  3.0   0/25  M W F  12:30pm-1:20pm  WELLES117  Gomez, Joaquin
+     1  52596 03  3.0   0/25  M W F  1:30pm-2:20pm   WELLES117  Gomez, Joaquin
+     1  54042 04  3.0   0/25   T R   5:30pm-6:45pm   WELLES131  Lewis, Jenna Anne
+     1  54215 05  3.0   0/25  M W F  1:30pm-2:20pm   WELLES133  Baker, Shannon Elizabeth
+     1  54708 06  3.0   0/25  M W F  11:30am-12:20pm WELLES131  Baker, Shannon Elizabeth
+
+ SPAN 202 Intermediate Spanish II            18-JAN-11     11-MAY-11
+     1  50455 01  3.0   0/25  M W F  10:30am-11:20am WELLES210  Gomez, Joaquin
+     1  50456 02  3.0   0/25   T R   4:00pm-5:15pm   WELLES210  Brea, Felisa B.
+     1  51917 03  3.0   0/25   T R   1:00pm-2:15pm   WELLES210  Brea, Felisa B.
+
+ SPAN 300 Conversation                       18-JAN-11     11-MAY-11
+     1  50457 01  3.0   0/20  M W F  9:30am-10:20am  WELLES210  Alcantara Garcia, Ana Isabel
+     1  51918 02  3.0   0/20   T R   11:30am-12:45pm WELLES210  Brea, Felisa B.
+
+ SPAN 301 Composition                        18-JAN-11     11-MAY-11
+     1  50458 01  3.0   0/20  M W    1:30pm-2:45pm   WELLES210  Vallejo-Alegre, Maria del Rocio
+     1  51614 02  3.0   0/20   T R   8:30am-9:45am   WELLES117  Brea, Felisa B.
+     1  54881 03  3.0   0/20  M W F  12:30pm-1:20pm  WELLES210  Vallejo-Alegre, Maria del Rocio
+
+ SPAN 302 Readings in Spanish                18-JAN-11     11-MAY-11
+     1  50459 01  3.0   0/45  M   F  2:30pm-3:45pm   WELLES115  McEwen, Rosemary
+
+ SPAN 305 Survey of Spanish Amer Lit I       18-JAN-11     11-MAY-11
+     1  54997 01  3.0   0/25   T R   11:30am-12:45pm WELLES117  Bernard, Lori
+
+ SPAN 318 Advanced Grammar & Composition     18-JAN-11     11-MAY-11
+     1  54998 01  3.0   0/25   T R   4:00pm-5:15pm   WELLES131  Lewis, Jenna Anne
+
+ SPAN 320 Workshop in Spanish                18-JAN-11     11-MAY-11
+     1  50464 01  3.0   0/25   T R   5:30pm-6:45pm   WELLES210  Heller, Willard A
+
+ SPAN 323 Linguistics                        18-JAN-11     11-MAY-11
+     1  54999 01  3.0   0/25    W    6:00pm-8:30pm   WELLES117  Delgado, Rocio
+
+ SPAN 350 Medieval Spanish Literature        18-JAN-11     11-MAY-11
+     1  55000 01  3.0   0/25   T R   2:30pm-3:45pm   WELLES117  Bernard, Lori
+
+ SPAN 363 19th Century Latin Amer Lit        18-JAN-11     11-MAY-11
+     1  55001 01  3.0   0/25  M W    4:00pm-5:15pm   WELLES210  McEwen, Rosemary
+
+ SPAN 382 SelTp:CivilizationThrough Film     18-JAN-11     11-MAY-11
+     1  53746 01  3.0   0/25  M      6:00pm-8:30pm   WELLES117  Gomez, Joaquin
+
+ SPAN 418 Adv Grammar and Composition        18-JAN-11     11-MAY-11
+     1  55002 01  3.0   0/5    T R   4:00pm-5:15pm   WELLES131  Lewis, Jenna Anne
+
+ SPAN 423 Linguistics                        18-JAN-11     11-MAY-11
+     1  55003 01  3.0   0/5     W    6:00pm-8:30pm   WELLES117  Delgado, Rocio
+
+ SPAN 450 Early Spanish Literature           18-JAN-11     11-MAY-11
+     1  55004 01  3.0   0/5    T R   2:30pm-3:45pm   WELLES117  Bernard, Lori
+
+ SPAN 463 19th Century Latin Amer Lit        18-JAN-11     11-MAY-11
+     1  55005 01  3.0   0/5   M W    4:00pm-5:15pm   WELLES210  McEwen, Rosemary
+
+ SPAN 482 SelTp:CivilizationThrough Film     18-JAN-11     11-MAY-11
+     1  53785 01  3.0   0/5   M      6:00pm-8:30pm   WELLES117  Gomez, Joaquin

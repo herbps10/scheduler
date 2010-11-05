@@ -1,0 +1,45 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ SPED 231 Intro to Special Education         18-JAN-11     11-MAY-11
+     1  50945 01  3.0   0/35    W    5:00pm-7:30pm   WELLES 24  TBA
+     1  52147 02  3.0   2/35  M W F  1:30pm-2:20pm   SOUTH 233  Salmon, Susan J.
+
+ SPED 234 Instr Strategies &Inq in Sp Ed     18-JAN-11     11-MAY-11
+     1  50946 01  3.0   0/15  M W F  10:30am-11:20am SOUTH 233  Salmon, Susan J.
+     1  50947 02  3.0   1/15  M W F  11:30am-12:20pm SOUTH 233  Salmon, Susan J.
+
+ SPED 319 Diversity&Inclusion in Classrm     18-JAN-11     11-MAY-11
+     1  53871 01  3.0   7/30  M W F  11:30am-12:20pm SOUTH 235  Urso, Annmarie
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Lec     18-JAN-11     11-MAY-11
+     1  50958 01  3.0  12/30  M W F  9:30am-10:20am  SOUTH 237  Barber, Patricia
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Act     18-JAN-11     11-MAY-11
+     1  50959 02   .0  12/30                         CAMPUS     Barber, Patricia
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Lec     18-JAN-11     11-MAY-11
+     1  52636 03  3.0  25/30  M W F  11:30am-12:20pm SOUTH 237  Barber, Patricia
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Act     18-JAN-11     11-MAY-11
+     1  53437 04   .0  25/30                         CAMPUS     Barber, Patricia
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Lec     18-JAN-11     11-MAY-11
+     1  53893 05  3.0   7/30  M W F  8:30am-9:20am   SOUTH 237  Urso, Annmarie
+
+ SPED 382 Assmnt&Pres Tch-St w/Disab-Act     18-JAN-11     11-MAY-11
+     1  53894 06   .0   7/30                         CAMPUS     Urso, Annmarie
+
+ SPED 383 Spec Ed Classroom Mgmt Skills      18-JAN-11     11-MAY-11
+     1  50960 01  3.0  12/33  M W F  11:15am-12:15pm HOLCOM269  Rozalski, Michael
+
+ SPED 385 Team Appr to Ed-Ind w/ Disabil     18-JAN-11     11-MAY-11
+     1  50962 01  3.0   7/30  M W F  9:30am-10:20am  SOUTH 241  Hall, Elizabeth W.
+     1  50963 02  3.0  28/30  M W F  12:30pm-1:20pm  SOUTH 241  Hall, Elizabeth W.
+     1  52637 03  3.0  11/30  M W F  10:30am-11:20am SOUTH 241  Hall, Elizabeth W.
+
+ SPED 391 Stu Tchg-Spec Ed:Mild Disabil      18-JAN-11     04-MAR-11
+     2  51024 01  7.5  23/150                        OFC        Watts, Diantha

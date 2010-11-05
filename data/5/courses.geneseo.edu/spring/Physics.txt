@@ -1,0 +1,79 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ PHYS 105 N/Nature of Light & Color-Lec      18-JAN-11     11-MAY-11
+     1  53068 01  4.0   8/8   M W F  10:30am-11:20am ISC   131  Marcus, George
+
+ PHYS 105 N/Nature of Light & Color-Lab      18-JAN-11     11-MAY-11
+     1  53069 02   .0   2/2     W    4:00pm-5:50pm   ISC   215  Marcus, George
+     1  53070 03   .0   2/2     W    6:00pm-7:50pm   ISC   215  Marcus, George
+     1  53252 04   .0   2/2      R   10:00am-11:50am ISC   215  Marcus, George
+     1  53401 05   .0   2/2      R   12:00pm-1:50pm  ISC   215  Marcus, George
+
+ PHYS 115 General Physics II                 18-JAN-11     11-MAY-11
+     1  54810 01  3.0   4/65   T R   8:30am-9:45am   NEWTON204  TBA
+     1  54811 02  3.0  28/65   T R   1:00pm-2:15pm   NEWTON204  Freeman, Charles G.
+
+ PHYS 116 Physics II Lab                     18-JAN-11     11-MAY-11
+     1  54812 01  1.0  11/18  M      1:30pm-3:20pm   ISC   220  Freeman, Charles G.
+     1  54813 02  1.0   4/18  M      4:00pm-5:50pm   ISC   220  Freeman, Charles G.
+     1  54814 03  1.0   1/18  M      6:00pm-7:50pm   ISC   220  Freeman, Charles G.
+     1  54815 04  1.0   1/18   T     2:00pm-3:50pm   ISC   220  Freeman, Charles G.
+     1  54816 05  1.0   7/18   T     4:00pm-5:50pm   ISC   220  Freeman, Charles G.
+     1  54817 06  1.0   3/18   T     6:00pm-7:50pm   ISC   220  Freeman, Charles G.
+     1  54818 07  1.0   6/18    W    12:30pm-2:20pm  ISC   220  Freeman, Charles G.
+     1  54819 08  1.0   4/18    W    4:00pm-5:50pm   ISC   220  Freeman, Charles G.
+     1  54820 09  1.0   0/18    W    6:00pm-7:50pm   ISC   220  Freeman, Charles G.
+     1  54821 10  1.0   1/18     R   2:00pm-3:50pm   ISC   220  Freeman, Charles G.
+
+ PHYS 125 Analytical Physics II              18-JAN-11     11-MAY-11
+     1  52318 01  3.0   8/47  M W F  8:30am-9:20am   NEWTON204  TBA
+     1  52319 02  3.0   3/47  M W F  1:30pm-2:20pm   NEWTON204  McLean, James G
+
+ PHYS 126 Analytical Physics II Lab          18-JAN-11     11-MAY-11
+     1  52320 01  1.0   0/18  M      2:30pm-5:20pm   ISC   219  Padalino, Stephen J.
+     1  52321 02  1.0   1/18  M      6:00pm-8:50pm   ISC   219  TBA
+     1  52322 03  1.0   0/18   T     1:00pm-3:50pm   ISC   219  McLean, James G
+     1  54957 04  1.0   0/18   T     6:00pm-8:50pm   ISC   219  TBA
+
+ PHYS 224 Analytical Physics IV              18-JAN-11     11-MAY-11
+     1  50712 01  3.0   9/54  M W F  10:30am-11:20am NEWTON204  Freeman, Charles G.
+
+ PHYS 228 Mathematical Methods inPhysics     18-JAN-11     11-MAY-11
+     1  54315 01  2.0   9/48  M W    1:30pm-2:20pm   ISC   131  Pogozelski, Edward M.
+
+ PHYS 313 Applied Mechanics                  18-JAN-11     11-MAY-11
+     1  50715 01  3.0  10/25  M W F  10:30am-11:20am ISC   229  Pogozelski, Edward M.
+
+ PHYS 314 Fluid Mechanics                    18-JAN-11     11-MAY-11
+     1  54958 01  3.0  15/25   T R   10:00am-11:15am ISC   229  Pogozelski, Edward M.
+
+ PHYS 332 Electric Circuit Analysis          18-JAN-11     11-MAY-11
+     1  50717 01  3.0  12/25   T R   8:30am-9:45am   ISC   229  Marcus, George
+
+ PHYS 336 Intermed Elec & Magnetism II       18-JAN-11     11-MAY-11
+     1  50718 01  3.0  11/25   T R   11:30am-12:45pm ISC   229  TBA
+
+ PHYS 341 Seminar in Physics                 18-JAN-11     11-MAY-11
+     1  50719 01  1.0   9/9   M      2:30pm-3:20pm   ISC   229  Steinhauer, Aaron
+     1  50720 02  1.0   9/9    T     2:30pm-3:20pm   ISC   229  Marcus, George
+     1  54621 03  1.0   9/9     W    4:00pm-4:50pm   ISC   229  Steinhauer, Aaron
+
+ PHYS 353 Quantum Mechanics II               18-JAN-11     11-MAY-11
+     1  54960 01  3.0  21/25  M W F  9:30am-10:20am  ISC   229  Padalino, Stephen J.
+
+ PHYS 362 Intermediate Laboratory            18-JAN-11     11-MAY-11
+     1  50721 01  2.0  16/16    W    3:45pm-5:15pm   ISC   225A McLean, James G
+     1  54959 02  2.0   1/16    W    3:45pm-5:15pm   ISC   225A Padalino, Stephen J.
+
+ PHYS 363 Instrumentation & Interfacing      18-JAN-11     11-MAY-11
+     1  50722 01  2.0  12/9    T R   2:30pm-3:45pm   ISC   225  Pogozelski, Edward M.
+
+ PHYS 372 Undergraduate Research             18-JAN-11     11-MAY-11
+     1  53919 01  2.0   0/15     R   3:00pm-3:50pm   ISC   229  Steinhauer, Aaron
+
+ PHYS 381 Introduction to Astrophysics       18-JAN-11     11-MAY-11
+     1  54961 01  3.0  25/25  M W F  1:30pm-2:20pm   ISC   229  Steinhauer, Aaron

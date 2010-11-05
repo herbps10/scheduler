@@ -1,0 +1,53 @@
+                       SUNY GENESEO Spring 2011 COURSE SECTIONS
+                                as of 05-NOV-10 9:00am
+
+ COURSE   TITLE        ACT/MAX               BEGIN DATE    END DATE
+     P  CRN  SEC CRED  ENROLL MTWRFS TIME            BLDG  RM   INSTRUCTOR
+
+ ECON 099 Professional Dev Requirement       18-JAN-11     11-MAY-11
+     1  54356 01   .0  15/30                         CAMPUS     Howard, Barbara J
+
+ ECON 101 Introductory Microeconomics        18-JAN-11     11-MAY-11
+     1  52242 01  3.0  14/25   T R   11:30am-12:45pm NEWTON214  Strang, Daniel R.
+     1  52243 02  3.0   8/25   T R   8:30am-9:45am   NEWTON214  Strang, Daniel R.
+
+ ECON 102 Introductory Macroeconomics        18-JAN-11     11-MAY-11
+     1  52244 01  3.0  13/25  M W F  10:30am-11:20am NEWTON203  Chen, Shuo
+     1  52245 02  3.0  11/25  M W F  11:30am-12:20pm NEWTON203  Chen, Shuo
+
+ ECON 201 Interm Macroeconomic Theory        18-JAN-11     11-MAY-11
+     1  50161 01  3.0  16/30   T R   11:30am-12:45pm WELLES138  Annala, Christopher
+
+ ECON 202 Business & Economic Stat-Lec       18-JAN-11     11-MAY-11
+     1  50163 01  3.0   4/75  M W    9:30am-10:20am  NEWTON201  Stone, Leonie S.
+
+ ECON 202 Business & Economic Stat-Lab       18-JAN-11     11-MAY-11
+     1  50164 02   .0   0/25   T     10:00am-11:50am SOUTH 138  Stone, Leonie S.
+     1  50165 03   .0   4/25   T     1:00pm-2:50pm   SOUTH 138  Stone, Leonie S.
+     1  50166 04   .0   0/25   T     3:00pm-4:50pm   SOUTH 138  Stone, Leonie S.
+
+ ECON 202 Business & Economic Stat-Lec       18-JAN-11     11-MAY-11
+     1  52820 05  3.0   0/25    W F  8:30am-9:20am   SOUTH 340  Sheikh, Farooq
+
+ ECON 202 Business & Economic Stat-Lab       18-JAN-11     11-MAY-11
+     1  52821 06   .0   0/25  M      8:30am-10:20am  SOUTH 138  Sheikh, Farooq
+
+ ECON 301 Econometrics                       18-JAN-11     11-MAY-11
+     1  50167 01  3.0  20/30   T     2:30pm-3:45pm   WELLES138  Annala, Christopher
+                                 R   2:30pm-3:45pm   SOUTH 138  Annala, Christopher
+
+ ECON 325 Money&Financial Intermediation     18-JAN-11     11-MAY-11
+     1  54839 01  3.0   9/20  M W    11:30am-12:45pm WELLES 26  Stone, Leonie S.
+
+ ECON 345 Economics of Sports                18-JAN-11     11-MAY-11
+     1  54162 01  3.0  30/30   T R   10:00am-11:15am WELLES138  Annala, Christopher
+
+ ECON 370 Industrial Organization            18-JAN-11     11-MAY-11
+     1  55046 01  3.0  21/30  M W    4:00pm-5:15pm   WELLES 26  Chen, Shuo
+
+ ECON 376 Labor Economics                    18-JAN-11     11-MAY-11
+     1  55047 01  3.0  22/30  M W    1:00pm-2:15pm   WELLES128  Stone, Leonie S.
+
+ ECON 393 Honors Seminar in Economics II     18-JAN-11     11-MAY-11
+     1  51830 01  3.0   0/10                         CAMPUS     Annala, Christopher
+     1  53952 02  3.0   0/10                         CAMPUS     Stone, Leonie S.
