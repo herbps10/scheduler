@@ -1,0 +1,25 @@
+COMPUTER SCIENCE
+
+FALL 2011
+
+CRN SUBJ CRS SEC COURSE TITLE CrHr DAYS TIME BLDG ROOM INSTRUCTOR -----------------------------------------------------------------------------------------------------------------------------------Students registering for CSCI 114-01 Lecture section must also register for one Rec section numbered 114-02 to 114-03. 13399 CSCI 114 01 R/Survey of Computer Sci-Lec 3.0 T R 400pm- 450pm WELLES 121 Farian, Homma 13552 CSCI 114 02 R/Survey of Computer Sci-Rec 0.0 F 130pm- 220pm SOUTH 345 Farian, Homma 16077 CSCI 114 03 R/Survey of Computer Sci-Rec 0.0 F 230pm- 320pm SOUTH 345 Farian, Homma Students registering for CSCI 115-01 Lecture section must also register for Rec section numbered 115-02. 16435 CSCI 115 01 R/DigitalFuture,HumanFutre-Lec 3.0 M W 930am- 1020am WELLES 26 Baldwin, Douglas L 16436 CSCI 115 02 R/DigitalFuture,HumanFutre-Rec 0.0 F 930am- 1020am SOUTH 341 Baldwin, Douglas L Students registering for CSCI 119-01 Lecture section must also register for one Lab section 15359 CSCI 119 01 R/Object Ornt Prg:Java-Lec 3.0 T R 1130am-1220pm WELLES 123 15363 CSCI 119 02 R/Object Ornt Prg:Java-Lab 0.0 T 1230pm-220pm SOUTH 345 16078 CSCI 119 03 R/Object Ornt Prg:Java-Lab 0.0 R 1230pm-220pm SOUTH 345 Students registering for CSCI 119-04 Lecture section must also register for one Lab section 16079 CSCI 119 04 R/Object Ornt Prg:Java-Lec 3.0 W F 100pm- 150pm WELLES 123 16080 CSCI 119 05 R/Object Ornt Prg:Java-Lab 0.0 R 1000am-1150am SOUTH 341 16081 CSCI 119 06 R/Object Ornt Prg:Java-Lab 0.0 R 230pm- 420pm SOUTH 341 Students registering for CSCI 119-07 Lecture section must also register for one Lab section 16082 CSCI 119 07 R/Object Ornt Prg:Java-Lec 3.0 T R 100pm- 150pm WELLES 24 16083 CSCI 119 08 R/Object Ornt Prg:Java-Lab 0.0 M 1200pm-150pm SOUTH 341 16084 CSCI 119 09 R/Object Ornt Prg:Java-Lab 0.0 M 200pm- 350pm SOUTH 341 numbered 119-02 to 119-03. Talwar, Indu Talwar, Indu Talwar, Indu numbered 119-05 to 119-06. Park, Gahyun Park, Gahyun Park, Gahyun numbered 119-08 to 119-09. Shin, Christian Shin, Christian Shin, Christian
+
+Students registering for CSCI 120-01 Lecture section must also register for one Recitation section numbered 120-02 to 120-04. 15365 CSCI 120 01 R/Procedural Prog:C-Lec 3.0 M W 1030am-1120am WELLES 26 Russell, Scott W 15366 CSCI 120 02 R/Procedural Prog:C-Rec 0.0 F 1030am-1120am SOUTH 341 Russell, Scott W 15367 CSCI 120 03 R/Procedural Prog:C-Rec 0.0 F 1130am-1220pm SOUTH 341 Russell, Scott W Students registering for CSCI 142-01 Lecture section must also register for the Lab section numbered 142-02. 12263 CSCI 142 01 Principles of Computer Sci-Lec 4.0 M W F 130pm- 220pm SOUTH 328 Russell, Scott W 12264 CSCI 142 02 Principles of Computer Sci-Lab 0.0 R 230pm- 420pm SOUTH 345 Russell, Scott W 16915 16916 14597 CSCI 216 01 CSCI 216 02 CSCI 232 01 Statistical Software-Lec Statistical Software-Rec Numeric Methods 3.0 0.0 3.0 M W T R F 1230pm-120pm 1230pm-120pm 100pm- 215pm WELLES 121 SOUTH 341 WELLES 121 STAFF STAFF Park, Gahyun
+
+Students registering for CSCI 240-01 Lecture section must also register for the Lab section numbered 240-02. 16278 CSCI 240 01 Foundations of Algorithms-Lec 4.0 T R 1000am-1115am WELLES 123 Talwar, Indu 16279 CSCI 240 02 Foundations of Algorithms-Lab 0.0 W 1030am-1220pm SOUTH 345 Talwar, Indu
+
+Students registering for CSCI 241-01 Lecture section must also register for the Lab section numbered 241-02. 12272 CSCI 241 01 Princ of Computer Organztn-Lec 4.0 T R 1130am-1245pm WELLES 121 Farian, Homma 12273 CSCI 241 02 Princ of Computer Organztn-Lab 0.0 F 1030am-1220pm SOUTH 345 Farian, Homma 12274 12275 CSCI 242 01 CSCI 243 01 Analysis of Algorithms 3.0 T R 1000am-1115am WELLES SOUTH 24 341 Baldwin, Douglas L Russell, Scott W
+
+C Programming & UNIX 1.0 T R 100pm- 215pm (Meets first one-third of the semester only.) Theory of Computation Operating Systems Computer Architecture Topics in Computer Science 3.0 3.0 3.0 3.0 W F T R M F 1130am-1245pm 1000am-1115am 230pm- 345pm 1130am-1245pm
+
+13832 12280 16917 16918
+
+CSCI 342 01 CSCI 343 01 CSCI 380 01 CSCI 390 01
+
+WELLES 123 WELLES 121 WELLES 121 SOUTH 328
+
+Baldwin, Douglas L Farian, Homma STAFF Shin, Christian
+
+T R
+
+
