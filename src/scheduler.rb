@@ -37,6 +37,7 @@ class Scheduler
 
 		@fixedCourses.each do |course|
 			baseSchedule.addCourse(course)
+			puts course.department
 		end
 
 		schedules = addLevel(baseSchedule, 0, showAllOptions)
@@ -75,6 +76,32 @@ class Scheduler
 		end
 
 		return schedules
+	end
+
+	def graphGenerateSchedules
+		# Check to see if there are any edges
+		highDegree = 0
+		@fixedCourses.each do |course1|
+			@fixedCourses.each do |course2|
+				next if course1 == course2
+
+				if course1.courseTimeConflict course2
+					conflict = true
+					break
+				end
+			end
+
+			break if conflict == true
+		end
+
+		if conflict == false
+			puts "No conflicts"
+			return
+		end
+
+		
+
+		return []
 	end
 end
 

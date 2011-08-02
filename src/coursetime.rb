@@ -17,11 +17,11 @@ class CourseTime
 	# Checks to see if the given course time conflicts with this course time
 	def conflict?(time)
 		return true if \
-				(time.startTimeInMinutes <= @endTimeInMinutes && time.startTimeInMinutes >= @startTimeInMinutes) \
+				((time.startTimeInMinutes <= @endTimeInMinutes && time.startTimeInMinutes >= @startTimeInMinutes) \
 				or (time.endTimeInMinutes >= @startTimeInMinutes && time.endTimeInMinutes <= @endTimeInMinutes) \
 				or (time.startTimeInMinutes > @startTimeInMinutes && time.endTimeInMinutes < @endTimeInMinutes) \
-				or (time.startTimeInMinutes < @startTimeInMinutes && time.endTimeInMinutes > @endTimeInMinutes) \
-				&& @day == time.day
+				or (time.startTimeInMinutes < @startTimeInMinutes && time.endTimeInMinutes > @endTimeInMinutes)) \
+				and @day == time.day
 		return false
 	end
 
@@ -45,6 +45,14 @@ class CourseTime
 
 	def getEnglishTime
 		@englishTime
+	end
+
+	def uniqueID
+		id = 0
+		
+		id += ("MTWRF".index(@day) + 1) * 1000000
+		id += @startTimeInMinutes * 1000
+		id += @endTimeInMinutes
 	end
 end
 

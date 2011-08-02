@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'sinatra'
 require 'redis'
 
@@ -23,6 +24,8 @@ class Course
 		@sections = []
 
 		data = $redis.hgetall(crn)
+
+		puts data.inspect
 
 		@title = data["title"]
 	end

@@ -20,8 +20,7 @@ class SDL::Screen
 		end
 
 		self.draw_aa_circle(x, y, r, color)
-
-		end
+	end
 end
 
 def convertRange(oldValue, oldMin, oldMax, newMin, newMax)
@@ -36,10 +35,20 @@ end
 #
 # Initialize Courses
 #
-files = Dir.glob("data/5/courses.geneseo.edu/spring/*.txt")
+#files = Dir.glob("data/5/courses.geneseo.edu/spring/*.txt")
+#files = ["data/11/courses.geneseo.edu/spring/Biology.txt", \
+#	 "data/11/courses.geneseo.edu/spring/Computer_Science.txt"]
+files = ["data/5/courses.geneseo.edu/spring/Biology.txt", \
+	"data/8/courses.geneseo.edu/spring/Biology.txt", \
+	"data/9/courses.geneseo.edu/spring/Biology.txt", \
+	"data/10/courses.geneseo.edu/spring/Biology.txt", \
+	"data/11/courses.geneseo.edu/spring/Biology.txt", \
+	"data/30/courses.geneseo.edu/spring/Biology.txt"]
 
 courses = Courses.new
-files.each { |file| courses.parseFile(file) }
+#files.each { |file| courses.parseFile(file) }
+fileIndex = 0
+courses.parseFile(files[fileIndex])
 
 #
 # Initialize SDL
@@ -59,67 +68,80 @@ font = SDL::TTF.open("assets/futura.ttf", 12)
 BGCOLOR = screen.mapRGB(0, 0, 0);
 FONTCOLOR = [255, 255, 255]
 
-# Initialize department colors
-DEPARTMENTCOLORS = {
-	"CSCI" => screen.mapRGB(255, 0, 0),
-	"MATH" => screen.mapRGB(0, 255, 0),
-	"BIOL" => screen.mapRGB(0, 0, 255)
-}
-
 #
 # Initialize visualization parameters
 #
 OFFSET_X = 50
 OFFSET_Y = 50
-CLASS_MIN_RADIUS = 10
-CLASS_MAX_RADIUS = 40 
-CLASS_WIDTH = 100
-CLASS_HEIGHT = 100
+CLASS_MIN_RADIUS = 20
+CLASS_MAX_RADIUS = 40
+BUFFER_X = 50
+BUFFER_Y = 50
 
-# Figure out which course has the largest and smallest capacity
-smallestCapacity = -1
-largestCapacity = -1
-courses.each do |course|
-	courseCapacity = course.capacity.to_i
+def redrawScreen(screen, font, courses)
+	screen.fill_rect(0, 0, SCREEN_X, SCREEN_Y, BGCOLOR)
 
-	smallestCapacity = courseCapacity if(smallestCapacity == -1)
-	largestCapacity = courseCapacity if(largestCapacity == -1)
+	counter = 1
+	x = 0
+	y = 0
+	largestY = 0
+	courses.each do |course|
+		enrolled = course.enrolled.to_i
+		capacity = course.capacity.to_i
 
-	smallestCapacity = courseCapacity if(courseCapacity < smallestCapacity)
-	largestCapacity = courseCapacity if(courseCapacity > largestCapacity)
-end
+		theta = (enrolled * (2*PI)) / capacity
 
-screen.fill_rect(0, 0, SCREEN_X, SCREEN_Y, BGCOLOR)
+		radius = convertRange(capacity, courses.smallestCapacity(), courses.largestCapacity(), CLASS_MIN_RADIUS, CLASS_MAX_RADIUS)
 
-counter = 0
-x = 0
-y = 0
-courses.each do |course|
-	enrolled = course.enrolled.to_i
-	capacity = course.capacity.to_i
+		screen.draw_circle_segment(OFFSET_X + x + radius, OFFSET_Y + y + radius, radius, theta, screen.mapRGB(255, 255, 255))
 
-	theta = (enrolled * (2*PI)) / capacity
+		font.drawBlendedUTF8(screen, course.department + " " + course.number + " " + course.section, x + OFFSET_X, y + OFFSET_Y + (radius*2), *FONTCOLOR)
 
-	radius = convertRange(capacity, smallestCapacity, largestCapacity, CLASS_MIN_RADIUS, CLASS_MAX_RADIUS)
-	screen.draw_circle_segment(OFFSET_X + x + radius, OFFSET_Y + y + radius, radius, theta, DEPARTMENTCOLORS[course.department])
+		x += (radius * 2) + BUFFER_X
 
-	font.drawBlendedUTF8(screen, course.department + " " + course.number + " " + course.section, x + OFFSET_X, y + OFFSET_Y + (radius*2), *FONTCOLOR)
+		largestY = (radius * 2) + BUFFER_Y if((radius * 2) + BUFFER_Y > largestY)
 
-	counter += 1
-	x += CLASS_WIDTH
+		if x >= (SCREEN_X - (OFFSET_X * 2))
+			y += largestY
+			largestY = 0
+			x = 0
+		end
 
-	if counter % ((SCREEN_X - OFFSET_X) / CLASS_WIDTH) == 0
-		y += CLASS_HEIGHT
-		x = 0
+		counter += 1
 	end
+
+	screen.flip
 end
 
-screen.flip
+redrawScreen(screen, font, courses)
 
 running = true
-while event = SDL::Event2.poll
-	case event
-		when SDL::Event2::Quit
-		running = false
+while running == true
+	while event = SDL::Event2.poll
+		case event
+			when SDL::Event2::Quit
+				running = false
+				break
+			when SDL::Event2::KeyDown
+				case event.sym
+					when SDL::Key::RIGHT
+						if(fileIndex + 1 < files.length)
+							fileIndex += 1
+							courses = Courses.new
+							courses.parseFile(files[fileIndex])
+							redrawScreen(screen, font, courses)
+						end
+						break
+					when SDL::Key::LEFT
+						if(fileIndex - 1 > 0)
+							fileIndex -= 1
+							courses = Courses.new
+							courses.parseFile(files[fileIndex])
+							redrawScreen(screen, font, courses)
+						end
+						break
+				end
+				break
+		end
 	end
 end

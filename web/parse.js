@@ -1,6 +1,6 @@
 var fs = require('fs')
 var $ = require('jquery')
-var db = require('./redis-client.js')
+var db = require('./lib/redis-client.js')
 
 var redis = db.createClient()
 
@@ -10,7 +10,7 @@ departments = [ "CSCI", "ACCT" ];
 
 for(var department_index in departments) {
 	var department = departments[department_index];
-	fs.readFile("./" + department + ".html", 'utf8', function(err, data) {
+	fs.readFile("./data/" + department + ".html", 'utf8', function(err, data) {
 		$("tr", data).each(function() {
 			if($(this).attr("valign") != "middle" && $(this).children("td").length > 1) {
 				course = {}

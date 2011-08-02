@@ -1,6 +1,10 @@
 class Courses
 	def initialize
 		@courses = []
+
+		# These are used as cache variables by smallestCapacity() and largestCapacity()
+		@largestCapacity = -1
+		@smallestCapacity = -1
 	end
 
 	def addCourse(course)
@@ -105,5 +109,40 @@ class Courses
 
 	def length
 		return @courses.length
+	end
+
+	def smallestCapacity()
+		# The smallest course capacity has been cached in an instance variable.
+		return @smallestCapacity if(@smallestCapacity != -1)
+
+		smallestCapacity = -1
+		@courses.each do |course|
+			courseCapacity = course.capacity.to_i
+			smallestCapacity = courseCapacity if(smallestCapacity == -1 or courseCapacity < smallestCapacity)
+		end
+
+		@smallestCapacity = smallestCapacity
+		return smallestCapacity
+	end
+
+	def largestCapacity()
+		# The largest course capacity has been cached in an instance variable.
+		return @largestCapacity if (@largestCapacity != -1)
+
+		largestCapacity = -1
+		@courses.each do |course|
+			courseCapacity = course.capacity.to_i
+			largestCapacity = courseCapacity if(largestCapacity == -1 or courseCapacity > largestCapacity)
+		end
+
+		@largestCapacity = largestCapacity
+		return largestCapacity
+	end
+
+	def categorizeByTime
+		courseBuckets = []
+
+		each do |course|
+		end
 	end
 end

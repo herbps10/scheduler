@@ -5,7 +5,7 @@ require "src/functions.rb"
 require "src/schedule.rb"
 require "src/scheduler.rb"
 
-files = Dir.glob("data/*.txt")
+files = Dir.glob("add_drop_data/28/*.txt")
 
 courses = Courses.new
 files.each { |file| courses.parseFile(file) }
