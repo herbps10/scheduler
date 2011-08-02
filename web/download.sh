@@ -1,7 +1,6 @@
-URL="https://knightweb.geneseo.edu/banweb/owsocc.P_GetCrse"
+DEPARTMENTS=( "ACCT" "ANTH" "ARTH" "ARTS" "ASTR" "BIOL" "BLKS" "COMN" "CDSC" "DANC" "EDUC" "ENVR" "CHEM" "ECON" "ENGL" "CSCI" "GEOG" "GSCI" "HIST" "H&PE" "HONR" "HUMN" "INTD" "MATH" "PHYS" "THEA" "WRIT" "SOCI" "PLSC" "SPAN" "FREN" "JAPN" "GERM" "LATN" "ITAL" "RUSS" "CHIN" "ARBC" "MGMT" "MUSC" "PHIL" "PSYC" "WMST" )
 
-#DEPARTMENTS=( "ACCT" "ANTH" "ARTH" "ARTS" "ASTR" "BIOL" "BLKS" "COMN" "CDSC" "DANC" "EDUC" "ENVR" "CHEM" "ECON" "ENGL" "CSCI" "GEOG" "GSCI" "HIST" "H&PE" "HONR" "HUMN" "INTD" "MATH" "PHYS" "THEA" "WRIT" "SOCI" "PLSC" "SPAN" "FREN" "JAPN" "GERM" "LATN" "ITAL" "RUSS" "CHIN" "ARBC" "MGMT" "MUSC" "PHIL" "PSYC" "WMST" )
-DEPARTMENTS=( "ACCT" "ANTH" )
+URL="https://knightweb.geneseo.edu/banweb/owsocc.P_GetCrse"
 
 for SUBJECT in "${DEPARTMENTS[@]}"
 do
