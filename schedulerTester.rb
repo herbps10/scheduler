@@ -12,9 +12,9 @@ files.each { |file| courses.parseFile(file) }
 
 scheduler = Scheduler.new(courses)
 
-scheduler.addFixedCourse(courses.getCourse("BIOL", "119", "01"))
-scheduler.addFixedCourse(courses.getCourse("CSCI", "142", "01"))
-scheduler.addFixedCourse(courses.getCourse("CSCI", "142", "02"))
+#scheduler.addFixedCourse(courses.getCourse("BIOL", "119", "01"))
+#scheduler.addFixedCourse(courses.getCourse("CSCI", "142", "01"))
+#jscheduler.addFixedCourse(courses.getCourse("CSCI", "142", "02"))
 
 # Modeling biological systems
 scheduler.addFixedCourse(courses.getCourse("MATH", "340", "01"))
@@ -22,8 +22,8 @@ scheduler.addFixedCourse(courses.getCourse("MATH", "340", "02"))
 
 scheduler.addFixedCourse(courses.getCourse("ANTH", "101", "01"))
 
-#scheduler.addFlexibleCourse("MATH", "326")
-#scheduler.addFlexibleCourse("CSCI", "230")
+scheduler.addFlexibleCourse("MATH", "326")
+scheduler.addFlexibleCourse("CSCI", "230")
 #scheduler.addFlexibleCourse("BIOL", "116")
 
 schedules = scheduler.generateSchedules(false)

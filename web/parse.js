@@ -6,11 +6,14 @@ var redis = db.createClient()
 
 redis.flushdb
 
-departments = [ "CSCI", "ACCT" ];
+redis.close
+
+departments = [ "ACCT", "ANTH", "ARTH", "ARTS", "ASTR", "BIOL", "BLKS", "COMN", "CDSC", "DANC", "EDUC", "ENVR", "CHEM", "ECON", "ENGL", "CSCI", "GEOG", "GSCI", "HIST", "H&PE", "HONR", "HUMN", "INTD", "MATH", "PHYS", "THEA", "WRIT", "SOCI", "PLSC", "SPAN", "FREN", "JAPN", "GERM", "LATN", "ITAL", "RUSS", "CHIN", "ARBC", "MGMT", "MUSC", "PHIL", "PSYC", "WMST" ]
 
 for(var department_index in departments) {
 	var department = departments[department_index];
 	fs.readFile("./data/" + department + ".html", 'utf8', function(err, data) {
+		var redis_seperate = db.createClient();
 		$("tr", data).each(function() {
 			if($(this).attr("valign") != "middle" && $(this).children("td").length > 1) {
 				course = {}
@@ -69,16 +72,25 @@ for(var department_index in departments) {
 					}
 				});
 
-
 				for(var field in course) {
 					if(field == "crn") {
 						continue;
 					}
 
-					redis.hset(course.crn, field, course[field]);
+					try {
+						redis.hset(course.crn, field, course[field]);
+					}
+					catch(e) {
+						console.log(e);
+					}
 				}
 
-				redis.sadd(course.department, course.crn);
+				try {
+					//redis.sadd(course.department, course.crn);
+				}
+				catch(e) {
+					console.log(e);
+				}
 			}
 		});
 	});

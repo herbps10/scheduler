@@ -2,13 +2,15 @@ require 'rubygems'
 require 'sinatra'
 require 'redis'
 
+require "redishelper.rb"
+
 $redis = Redis.new
 
 class Section
 	attr_accessor :crn, :title, :instructor, :section
 
 	def initialize(crn)
-		data = $redis.hgetall(crn)
+		data = $redis.hgetall(RedisHelper::section(crn))
 
 		@crn = crn
 		@title = data["title"]
@@ -20,18 +22,18 @@ end
 class Course
 	attr_accessor :title, :sections
 	
-	def initialize(crn)
+	def initialize(title)
 		@sections = []
 
-		data = $redis.hgetall(crn)
+		data = $redis.hgetall(RedisHelper::course(title))
 
 		puts data.inspect
 
 		@title = data["title"]
-	end
 
-	def addSection(section)
-		@sections.push section
+		$redis.smembers(RedisHelper::course_sections(@title)).each do |crn|
+			@sections.push Section.new(crn)
+		end
 	end
 end
 
@@ -42,22 +44,8 @@ class Department
 		@department = department
 		@courses = []
 
-		last_section = nil
-		current_course = nil
-
-		$redis.smembers(@department).each do |crn|
-			section = Section.new(crn)
-
-			if current_course == nil or (last_section != nil and last_section.title != section.title)
-				@courses.push current_course if current_course != nil
-
-				current_course = Course.new(crn)
-				current_course.addSection(section)
-			else
-				current_course.addSection(section)
-			end
-			
-			last_section = section
+		$redis.smembers(RedisHelper::department(@department)).each do |title|
+			@courses.push Course.new(title)
 		end
 	end
 
@@ -69,7 +57,7 @@ class Department
 end
 
 get '/' do
-	@department = Department.new("ACCT")
+	@department = Department.new("PHYS")
 
 	erb :index
 end
