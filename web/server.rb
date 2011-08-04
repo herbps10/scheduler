@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'redis'
+require 'coffee-script'
 
 require "redishelper.rb"
 
@@ -60,6 +61,10 @@ get '/' do
 	@department = Department.new("PHYS")
 
 	erb :index
+end
+
+get '/courses' do
+	erb "courses"
 end
 
 get '/script.js' do
