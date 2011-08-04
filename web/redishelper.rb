@@ -8,7 +8,7 @@ class RedisHelper
 	end
 
 	def self.section(id)
-		return "section:" + id
+		return "section:" + id.to_s
 	end
 
 	def self.department(id)

@@ -71,7 +71,6 @@ end
 
 get '/' do
 	@department = Department.new("PHYS")
-
 	erb :index
 end
 
