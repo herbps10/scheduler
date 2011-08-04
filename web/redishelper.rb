@@ -14,4 +14,8 @@ class RedisHelper
 	def self.department(id)
 		return "department:" + id
 	end
+
+	def self.time(days, time)
+		return "timeslot:" + days + ":" + time.gsub(" ", "")
+	end
 end

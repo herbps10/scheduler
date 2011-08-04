@@ -5,7 +5,7 @@ require 'nokogiri'
 require 'redishelper.rb'
 
 class Saver
-	@@fields = :crn, :department, :courseNumber, :section, :credits, :title, :days, :time, :capacity, :actual, :remaining, :instructor, :location
+	@@fields = :crn, :department, :courseNumber, :section, :credits, :title, :days, :time, :capacity, :actual, :remaining, :instructor, :location, :time_id
 	@@fields.each { |field| attr_accessor field }
 
 	def save_course
@@ -22,6 +22,8 @@ class Saver
 		$redis.hset(RedisHelper::section(@crn), 'title', @title)
 		$redis.hset(RedisHelper::section(@crn), 'instructor', @instructor)
 		$redis.hset(RedisHelper::section(@crn), 'location', @location)
+
+		$redis.hset(RedisHelper::time(@days, @time), @crn);
 
 		$redis.sadd(RedisHelper::course_sections(@title), @crn)
 	end
@@ -86,6 +88,11 @@ departments.each do |department|
 		elsif(index == 15) 	
 			course.instructor = cell.content	
 		elsif(index == 17) 	
+			if course.time_id == nil
+				puts course.days
+				puts course.time
+			end
+
 			course.location = cell.content 
 
 			if previous_course == nil

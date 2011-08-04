@@ -61,3 +61,7 @@ get '/' do
 
 	erb :index
 end
+
+get '/script.js'
+	coffee :script
+end
