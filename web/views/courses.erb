@@ -1,18 +1,26 @@
 {
 	"departments": [
-		<% @departments.each do |department| %>
+		<% @data.departments.each_index do |department_index| %>
+			<% department = @data.departments[department_index] %>
 			{
-				"department": <%= department.title %>,
+				"department": "<%= department.title %>",
 				"courses": [
-					<% department.courses.each do |course| %>
+					<% department.courses.each_index do |course_index| %>
+						<% course = department.courses[course_index] %>
 						{
-							"title": <%= course.title %>
-							<% course.sections.each do |section| %>
-						}
+							"title": "<%= course.title %>",
+							"sections": [
+							<% course.sections.each_index do |section_index| %>
+								<% section = course.sections[section_index] %>
+								{
+									"crn": <%= section.crn %>
+								}<%= "," if section_index < course.sections.length - 1 %>
+							<% end %>
+							]
+						}<%= "," if course_index < department.courses.length - 1 %>
 					<% end %>
 				]
-			<% end %>	
-			}
+			}<%= "," if department_index < @data.departments.length - 1 %>
 		<% end %>
 	]
 }

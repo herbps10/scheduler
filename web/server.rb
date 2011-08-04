@@ -39,13 +39,13 @@ class Course
 end
 
 class Department
-	attr_accessor :courses
+	attr_accessor :courses, :title
 
 	def initialize(department)
-		@department = department
+		@title = department
 		@courses = []
 
-		$redis.smembers(RedisHelper::department(@department)).each do |title|
+		$redis.smembers(RedisHelper::department(@title)).each do |title|
 			@courses.push Course.new(title)
 		end
 	end
@@ -57,6 +57,18 @@ class Department
 	end
 end
 
+class Everything
+	attr_accessor :departments
+
+	def initialize()
+		@departments = []
+		
+		$redis.smembers(RedisHelper::departments).each do |department|
+			@departments.push Department.new(department)
+		end
+	end
+end
+
 get '/' do
 	@department = Department.new("PHYS")
 
@@ -64,6 +76,7 @@ get '/' do
 end
 
 get '/courses' do
+	@data = Everything.new
 	erb :courses, { :layout => false }
 end
 
