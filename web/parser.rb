@@ -23,7 +23,7 @@ class Saver
 		$redis.hset(RedisHelper::section(@crn), 'instructor', @instructor)
 		$redis.hset(RedisHelper::section(@crn), 'location', @location)
 
-		$redis.hset(RedisHelper::time(@days, @time), @crn);
+		$redis.sadd(RedisHelper::time(@days, @time), @crn);
 
 		$redis.sadd(RedisHelper::course_sections(@title), @crn)
 	end
@@ -45,6 +45,8 @@ $redis.flushdb
 departments = [ "ACCT", "ANTH", "ARTH", "ARTS", "ASTR", "BIOL", "BLKS", "COMN", "CDSC", "DANC", "EDUC", "ENVR", "CHEM", "ECON", "ENGL", "CSCI", "GEOG", "GSCI", "HIST", "H&PE", "HONR", "HUMN", "INTD", "MATH", "PHYS", "THEA", "WRIT", "SOCI", "PLSC", "SPAN", "FREN", "JAPN", "GERM", "LATN", "ITAL", "RUSS", "CHIN", "ARBC", "MGMT", "MUSC", "PHIL", "PSYC", "WMST" ]
 
 departments.each do |department|
+	$redis.sadd(RedisHelper.departments, department);
+
 	doc = Nokogiri::HTML(File.open("data/#{department}.html").read)
 
 	course = Saver.new

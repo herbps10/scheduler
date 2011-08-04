@@ -64,7 +64,7 @@ get '/' do
 end
 
 get '/courses' do
-	erb "courses"
+	erb :courses, { :layout => false }
 end
 
 get '/script.js' do

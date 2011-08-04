@@ -1,0 +1,18 @@
+{
+	"departments": [
+		<% @departments.each do |department| %>
+			{
+				"department": <%= department.title %>,
+				"courses": [
+					<% department.courses.each do |course| %>
+						{
+							"title": <%= course.title %>
+							<% course.sections.each do |section| %>
+						}
+					<% end %>
+				]
+			<% end %>	
+			}
+		<% end %>
+	]
+}
