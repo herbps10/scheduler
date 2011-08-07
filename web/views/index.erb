@@ -1,14 +1,3 @@
-<ul>
-<% @department.courses.each do |course| %>
-	<li>
-		<%= course.title %>
-
-		<ul>
-			<% course.sections.each do |section| %>
-				<li><%= section.section %></li>
-			<% end %>
-		</ul>
-	</li>
-<% end %>
-</ul>
-
+<div class='departments'>
+	<ul></ul>
+</div>
