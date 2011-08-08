@@ -1,54 +1,67 @@
 body {
-        font-family: Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
+}
+
+#scratch_list {
+	float: right;
+}
+
+.departments {
+	position: relative;
+	top: 0;
+	z-index: 3000;
+	width: 300px;
+	background-color: purple;
 }
 
 .department {
-        background: blue;
-        color: lightblue;
-        width: 120px;
-	position: relative;
+	width: 120px;
+	z-index: 30;
 }
 
 .courses {
 	position: absolute;
-	top: 0px
+	top: 0;
+	z-index: 20;
+	left: 20px;
 }
 
 .course {
-        font-size: 1em;
-        background-color: skyblue;
-        width: 240;
+	z-index: 10;
+	font-size: 1em;
+	background-color: skyblue;
+	width: 240;
 }
 
 .sections {
-        font-size: .8em;
-        background-color: lightblue;
-        position: absolute;
-        padding-left: 0;
-        margin-top: 8px;
-        top: 0;
-        z-index: 1;
+	font-size: .8em;
+	background-color: lightblue;
+	position: absolute;
+	padding-left: 0;
+	margin-top: 8px;
+	top: 0;
+	z-index: 1;
 }
 
 #left_col {
-        position: absolute;
-        z-index: 10;
+	position: absolute;
+	z-index: 10;
 }
 
 #right_col {
-        overflow-y: hidden;
+	overflow-y: hidden;
 }
 
 ul,ol {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .selected_course {
-        background-color: darkcyan;
+	background-color: darkcyan;
 }
 
 .scratch_list {
-        background-color: lightgreen;
+	background-color: lightgreen;
 }

@@ -27,8 +27,7 @@ $(document).ready(function() {
 	});
 
 	$('.section').live('click', function() {
-
+		$('#scratch_list').append($(this).text());
 		$(this).toggleClass('scratch_list');
-
 	});
 });
