@@ -70,7 +70,7 @@ class Everything
 end
 
 get '/' do
-	@department = Department.new("PHYS")
+	@data = Everything.new
 	erb :index
 end
 
