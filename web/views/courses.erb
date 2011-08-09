@@ -3,7 +3,7 @@
 		<% @data.departments.each_index do |department_index| %>
 			<% department = @data.departments[department_index] %>
 			{
-				"title": "<%= department.title %>",
+				"department": "<%= department.title %>",
 				"courses": [
 					<% department.courses.each_index do |course_index| %>
 						<% course = department.courses[course_index] %>

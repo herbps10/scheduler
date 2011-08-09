@@ -70,11 +70,15 @@ class Everything
 end
 
 get '/' do
-	@data = Everything.new
+	@department = Department.new("PHYS")
 	erb :index
 end
 
-get '/courses.json' do
+get '/courses' do
 	@data = Everything.new
 	erb :courses, { :layout => false }
+end
+
+get '/script.js' do
+	coffee :script
 end
