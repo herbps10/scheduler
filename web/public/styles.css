@@ -1,0 +1,54 @@
+body {
+        font-family: Helvetica, sans-serif;
+}
+
+.department {
+        background: blue;
+        color: lightblue;
+        width: 120px;
+	position: relative;
+}
+
+.courses {
+	position: absolute;
+	top: 0px
+}
+
+.course {
+        font-size: 1em;
+        background-color: skyblue;
+        width: 240;
+}
+
+.sections {
+        font-size: .8em;
+        background-color: lightblue;
+        position: absolute;
+        padding-left: 0;
+        margin-top: 8px;
+        top: 0;
+        z-index: 1;
+}
+
+#left_col {
+        position: absolute;
+        z-index: 10;
+}
+
+#right_col {
+        overflow-y: hidden;
+}
+
+ul,ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.selected_course {
+        background-color: darkcyan;
+}
+
+.scratch_list {
+        background-color: lightgreen;
+}

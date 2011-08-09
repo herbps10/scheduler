@@ -74,11 +74,7 @@ get '/' do
 	erb :index
 end
 
-get '/courses' do
+get '/courses.json' do
 	@data = Everything.new
 	erb :courses, { :layout => false }
-end
-
-get '/script.js' do
-	coffee :script
 end
