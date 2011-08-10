@@ -1,20 +1,23 @@
-<ul>
-<% @data.departments.each do |department| %>
-<li><%= department.title %></li>
-<ul><% department.courses.each do |course| %>
-        <div class= "course <%= course.title %>">
-                <li><%= course.title %></li>
-                <div class="sections <%= course.title %>">
-                        <ol><% course.sections.each do |section| %>
-                                <div class="section">
-                                <li><%= section.section %></li>
-                                </div>
-                        <% end %>
-                        </ol>
-                </div>
-        </div>
-<% end %>
+<div>
+<ul class="departments">
+	<% @data.departments.each do |department| %>
+	<li class = "department <%= department.title %>">
+		<a href="#"><%= department.title %></a>
+			<ul class = "courses" >
+				<% department.courses.each do |course| %>
+				<li class= "course <%= course.title %>">
+					<a href="#"><%= course.title %></a>
+					<ul class="sections <%= course.title %>">
+					<% course.sections.each do |section| %>
+						<li class="section">
+							<a href="#"><%= section.section %></a>
+						</li>
+					<% end %>
+					</ul>
+				</li>
+			 <% end %>
+			</ul>
+		</li>
+	<% end %>
 </ul>
 </div>
-<% end %>
-</ul>
