@@ -11,9 +11,7 @@
 					<a href="#"><%= course.title %></a>
 					<ul class="sections <%= course.title %>">
 					<% course.sections.each do |section| %>
-						<li class="section">
-							<a href="#"><%= section.crn %></a>
-						</li>
+						<li class="section"><a href="#"><%= section.crn %></a></li>
 					<% end %>
 					</ul>
 				</li>

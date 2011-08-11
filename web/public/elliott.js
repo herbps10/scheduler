@@ -47,19 +47,22 @@ $(document).ready(function() {
    });
 
 
-	var list = [];
+	var courseList = [];
 
 	$('.section').live('click', function() {
+		var thisText = "<li>"+$(this).text()+"<li>";
+		var realArray = $.makeArray( courseList );
 		$(this).toggleClass('listed');
-		var text = $(this).text()
-		if(text in list) {
-			list.splice($.inArray(text, list), 5);
-		}
-		else{
-			list.push("<li>"+text+"</li>");
-		}
-		$.unique(list)
-		$('#course_list').append("<li>"+list+"</li>");
+		console.log(courseList);
+		courseList = $.map( realArray, function(n){
+			return n == thisText ? null : (n, thisText.push(courseList));
+		});
+		courseList = realArray;
+		console.log(courseList);
+
+		$('#course_list').append($(courseList).text());
+		
+		
 	});
 	
 	
