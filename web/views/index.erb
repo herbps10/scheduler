@@ -1,5 +1,7 @@
-<div>
-<ul class="departments">
+
+
+<div id="sliders">
+	<ul class="departments">
 	<% @data.departments.each do |department| %>
 	<li class = "department <%= department.title %>">
 		<a href="#"><%= department.title %></a>
@@ -10,7 +12,7 @@
 					<ul class="sections <%= course.title %>">
 					<% course.sections.each do |section| %>
 						<li class="section">
-							<a href="#"><%= section.section %></a>
+							<a href="#"><%= section.crn %></a>
 						</li>
 					<% end %>
 					</ul>
@@ -19,5 +21,5 @@
 			</ul>
 		</li>
 	<% end %>
-</ul>
+	</ul>
 </div>
