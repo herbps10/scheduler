@@ -15,42 +15,35 @@ $(document).ready(function() {
 
       if ($subCourse.css("display") == "none")
       {
+    	//Hide last course when new dept is clicked
 		if ($currentCourse  != null)
             $currentCourse.animate({ marginLeft: 'hide' });
 
-        
+        //Hide last section when new dept is clicked
         if($currentSec != null)
             $currentSec.animate({ marginLeft: 'hide' });
 
+		//Show courses when new dept is clicked
    		$subCourse.animate({ marginLeft: 'show' });
+   		
    		$currentCourse = $subCourse;
    		//$(this).addClass("selected_depart");
-
-
-      }else
-      {
-		$subSec.animate({ marginLeft: 'hide' });
-
-				
-		if ($currentCourse  != null)
-            $currentCourse.animate({ marginLeft: 'show' });
-			//$(this).addClass("selected_depart");
-        
       }
 
       if ($subSec.css("display") == "none")
       {
-         if ($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' });
-    
-   			
+		//Hide previous section
+        if ($currentSec != null)
+    		$currentSec.animate({ marginLeft: 'hide' });
+    		
+   		//Show new section	
    		$subSec.animate({ marginLeft: 'show' });
 		$currentSec = $subSec;
 
       }
       else
       {
-        $subSec.animate({ marginLeft: 'hide' });
+        //$subSec.animate({ marginLeft: 'hide' });
       }
    });
 
