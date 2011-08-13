@@ -3,12 +3,12 @@
 <div id="sliders">
 	<ul class="departments">
 	<% @data.departments.each do |department| %>
-	<li class = "department <%= department.title %>">
-		<a href="#"><%= department.title %></a>
+	<li class = "<%= department.title %>">
+		<div  class = "department"><a href="#"><%= department.title %></a></div>
 			<ul class = "courses" >
 				<% department.courses.each do |course| %>
-				<li class= "course <%= course.title %>">
-					<a href="#"><%= course.title %></a>
+				<li class= "<%= course.title %>">
+					<div  class = "course"><a class = "course" href="#"><%= course.title %></a></div>
 					<ul class="sections <%= course.title %>">
 					<% course.sections.each do |section| %>
 						<li class="section"><a href="#"><%= section.crn %></a></li>

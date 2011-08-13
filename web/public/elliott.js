@@ -1,48 +1,56 @@
 $(document).ready(function() {
 
-	var $current = null;
+	var $currentCourse  = null;
 	var $currentSec = null;
-
+	var $lastCourse = null;
+	var $lastDept = null;
 
    $("ul li ul").hide(); 
 
-   $("ul li a").click(function(){
-      var $sub = $(this).next('.courses'); 
+
+   $(".department,.course").click(function(){
+      var $subCourse = $(this).next('.courses'); 
       var $subSec = $(this).next('.sections'); 
 
-      if ($sub.css("display") == "none")
+
+      if ($subCourse.css("display") == "none")
       {
-		if ($current != null)
-            $current.animate({ marginLeft: 'hide' }); 
+		if ($currentCourse  != null)
+            $currentCourse.animate({ marginLeft: 'hide' });
+
         
         if($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' }); 
-			
-   			
-   		$sub.animate({ marginLeft: 'show'  });
-   		$current = $sub;
+            $currentSec.animate({ marginLeft: 'hide' });
 
-      }
-      else
+   		$subCourse.animate({ marginLeft: 'show' });
+   		$currentCourse = $subCourse;
+   		//$(this).addClass("selected_depart");
+
+
+      }else
       {
-         $sub.animate({ marginLeft: 'hide'  });
+		$subSec.animate({ marginLeft: 'hide' });
 
-
+				
+		if ($currentCourse  != null)
+            $currentCourse.animate({ marginLeft: 'show' });
+			//$(this).addClass("selected_depart");
+        
       }
 
       if ($subSec.css("display") == "none")
       {
          if ($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' }); 
+            $currentSec.animate({ marginLeft: 'hide' });
+    
    			
-   			$subSec.animate({ marginLeft: 'show'  });
-			$currentSec = $subSec;
+   		$subSec.animate({ marginLeft: 'show' });
+		$currentSec = $subSec;
 
       }
       else
       {
-         $subSec.animate({ marginLeft: 'hide'  });
-         $currentSec = null;
+        $subSec.animate({ marginLeft: 'hide' });
       }
    });
 
@@ -50,6 +58,7 @@ $(document).ready(function() {
 	var courseList = [];
 
 	$('.section').live('click', function() {
+		$current = null;
 		var thisText = "<li>"+$(this).text()+"<li>";
 		var realArray = $.makeArray( courseList );
 		$(this).toggleClass('listed');
