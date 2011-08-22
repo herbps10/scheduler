@@ -12,7 +12,7 @@ $(document).ready(function() {
 
       if ($sub.css("display") == "none")
       {
-		if ($current != null)
+	if ($current != null)
             $current.animate({ marginLeft: 'hide' }); 
         
         if($currentSec != null)
@@ -26,8 +26,6 @@ $(document).ready(function() {
       else
       {
          $sub.animate({ marginLeft: 'hide'  });
-
-
       }
 
       if ($subSec.css("display") == "none")
@@ -51,16 +49,51 @@ $(document).ready(function() {
 
 	$('.section').live('click', function() {
 		$(this).toggleClass('listed');
-		var text = $(this).text()
-		if(text in list) {
-			list.splice($.inArray(text, list), 5);
+		var text = $(this).children('a').text().trim();
+
+		if(!(text in list)) {
+			list.push(text);
 		}
-		else{
-			list.push("<li>"+text+"</li>");
-		}
+
 		$.unique(list)
-		$('#course_list').append("<li>"+list+"</li>");
+
+		$("#course_list").html('');
+
+		$(list).each(function(i) {
+			$('#course_list').append("<li>" + list[i] + "</li>");
+		});
 	});
-	
-	
+
+	$(".generate-list").click(function() {
+		console.log(list);
+		$.get("/schedules", {
+			'crns[]': list
+		}, function(data) {
+			$("#schedules").html(data);
+		});
+	});
+
+	// from: http://kilianvalkhof.com/2010/javascript/how-to-build-a-fast-simple-list-filter-with-jquery/
+	jQuery.expr[':'].Contains = function(a,i,m){
+		    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+	};
+
+	function listFilter(inputs, list, cls) {
+		$(inputs).change(function() {
+			var filter = $(this).val();
+
+			if(filter) {
+				$(this).parent().find("a." + cls + ":Contains(" + filter + ")").parent().show();
+				$(this).parent().find("a." + cls + ":not(:Contains(" + filter + "))").parent().hide();
+			}
+			else {
+				$(this).parent().find('li').show();
+			}
+		}).keyup(function() {
+			$(this).change();
+		});
+	}
+
+	listFilter("#departments-search", ".departments", 'department-title');
+	listFilter(".courses-search", ".courses", 'course-title');
 });

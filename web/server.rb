@@ -5,76 +5,51 @@ require 'coffee-script'
 
 require "redishelper.rb"
 
+require "./src/course.rb"
+require "./src/coursetime.rb"
+require "./src/schedule.rb"
+require "./src/everything.rb"
+require "./src/department.rb"
+require "./src/section.rb"
+require "./src/scheduler.rb"
+
 $redis = Redis.new
 
-class Section
-	attr_accessor :crn, :title, :instructor, :section
-
-	def initialize(crn)
-		data = $redis.hgetall(RedisHelper::section(crn))
-
-		@crn = crn
-		@title = data["title"]
-		@instructor = data["instructor"]
-		@section = data["section"]
-	end
-end
-
-class Course
-	attr_accessor :title, :sections
-	
-	def initialize(title)
-		@sections = []
-
-		data = $redis.hgetall(RedisHelper::course(title))
-
-		puts data.inspect
-
-		@title = data["title"]
-
-		$redis.smembers(RedisHelper::course_sections(@title)).each do |crn|
-			@sections.push Section.new(crn)
-		end
-	end
-end
-
-class Department
-	attr_accessor :courses, :title
-
-	def initialize(department)
-		@title = department
-		@courses = []
-
-		$redis.smembers(RedisHelper::department(@title)).each do |title|
-			@courses.push Course.new(title)
-		end
-	end
-
-	def each
-		@courses.each do |course|
-			yield course
-		end
-	end
-end
-
-class Everything
-	attr_accessor :departments
-
-	def initialize()
-		@departments = []
-		
-		$redis.smembers(RedisHelper::departments).each do |department|
-			@departments.push Department.new(department)
-		end
-	end
-end
-
 get '/' do
+	response.set_cookie("schedule", Time.new.to_f.to_s)
+
+
+	#s1 = Section.new 12606
+	#s2 = Section.new 16279
+
 	@data = Everything.new
+
 	erb :index
 end
 
 get '/courses.json' do
 	@data = Everything.new
 	erb :courses, { :layout => false }
+end
+
+get "/schedules" do
+	crns = params[:crns]
+
+	@scheduler = Scheduler.new
+
+	crns.each { |crn| @scheduler.addSection Section.new(crn) }
+
+	@scheduler.schedules
+
+	erb :schedules, :layout => false
+end
+
+get "/add/section/:crn" do
+	crn = params[:crn]
+
+	puts request.cookies[:schedule]
+end
+
+get "/add/course/:title" do
+	course = params[:title]
 end

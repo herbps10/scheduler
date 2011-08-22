@@ -9,10 +9,12 @@ body{
 	text-align: center;
 }
 
-#course_list{
+#course_list {
 	clear: both;
 	float: right;
 	margin-right: 50px;
+	width: 100px;
+	overflow: hidden;
 }
 
 a[href] {
@@ -48,23 +50,26 @@ a[href] {
 	position: fixed;
 	height: 400px;
 	width: 300px;
+	background: white;
 }
+
 .course {
 	font-size: 1em;
 	background-color: skyblue;
 }
 
-.sections{
+.sections {
 	font-size: .8em;
 	text-align: center;
 	background-color: lightblue;
 	padding-left: 0;
-	width: 40px;
+	width: 100px;
 	margin-top: 8px;
 	margin-left: 300px;
 	top: 75px;
 	position: fixed;
 	z-index: -20;
+	overflow: hidden;
 }
 
 .section {
@@ -109,4 +114,3 @@ ul,ol{
 .last_clicked_depart {
 	background-color: purple;
 }
-

@@ -1,0 +1,9 @@
+<% @scheduler.schedules.each do |schedule| %>
+	<h2>Schedule</h2>
+
+	<% schedule.sections.each do |section| %>
+		<p>
+		<%= section.title %>
+		</p>
+	<% end %>
+<% end %>
