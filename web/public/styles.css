@@ -103,11 +103,11 @@ ul,ol{
 	overflow-y: scroll;
 }
 
-.selected_depart {
+.departments > .selected_depart {
 	background-color: darkblue;
 }
 
-.selected_course {
+.courses > .selected_course {
 	background-color: darkgreen;
 }
 

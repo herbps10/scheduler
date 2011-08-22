@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 	var $currentCourse  = null;
 	var $currentSec = null;
-	var $lastCourse = null;
-	var $lastDept = null;
+	var $lastCourse = $(this);
+	var $lastDept = $(this).children('.courses');
 
    $("ul li ul").hide(); 
 
@@ -14,10 +14,15 @@ $(document).ready(function() {
 
       if ($subCourse.css("display") == "none")
       {
+        var $currentDept = $(this);
+        $lastDept.removeClass("selected_depart");
+        $lastDept = $currentDept;
 
     	//Hide last course when new dept is clicked
 		if ($currentCourse  != null)
             $currentCourse.animate({ marginLeft: 'hide' });
+            
+        $currentDept.addClass("selected_depart");
 
         //Hide last section when new dept is clicked
         if($currentSec != null)
@@ -25,25 +30,24 @@ $(document).ready(function() {
 
 		//Show courses when new dept is clicked
    		$subCourse.animate({ marginLeft: 'show' });
-   		
    		$currentCourse = $subCourse;
-   		//$(this).addClass("selected_depart");
+        
+        $lastCourse.removeClass("selected_course");
       }
 
       if ($subSec.css("display") == "none")
       {
-		//Hide previous section
+		//Hide previous section when new courses is clicked
         if ($currentSec != null)
     		$currentSec.animate({ marginLeft: 'hide' });
     		
-   		//Show new section	
+   		//Show new sections when new course is clicked
    		$subSec.animate({ marginLeft: 'show' });
 		$currentSec = $subSec;
-
-      }
-      else
-      {
-        //$subSec.animate({ marginLeft: 'hide' });
+        
+        $lastCourse.removeClass("selected_course");
+        $lastCourse = $(this);
+        $(this).addClass("selected_course");
       }
    });
 
