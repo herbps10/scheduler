@@ -1,33 +1,43 @@
-
-
 <div id="sliders">
-
 	<ul class="departments">
-	<input type='text' id='departments-search' size='6' />
-	<% @data.departments.each do |department| %>
-	<li class = "department <%= department.title %>">
-		<a class='department-title' href="#"><%= department.title %></a>
-			<ul class = "courses" >
-				<input type='text' class='courses-search' size='40' />
-				<% department.courses.each do |course| %>
-				<li class= "course <%= course.title %>">
-					<%= course.courseNumber %>
-					<a class='course-title' href="#"><%= course.title %></a>
-					<ul class="sections <%= course.title %>">
-					<% course.sections.each do |section| %>
-						<li class="section">
-							<%= section.time.prettyDays %>: <%= section.time.prettyTime %>
-							<%= section.instructor %>
-							<a href='#'>
-								<%= section.crn %>
-							</a>
+
+		<input type='text' id='departments-search' size='6' />
+
+		<% @data.departments.each do |department| %>
+
+			<li class = "department <%= department.title %>">
+				<a  class = "department-title"><%= department.title %></a>
+
+				<ul class = "courses" >
+
+					<input type='text' class='courses-search' size='40' />
+
+					<% department.courses.each do |course| %>
+
+						<li class= "course <%= course.title %>">
+
+							<%= course.courseNumber %>
+
+							<a  class = "course-title"><%= course.title %></a>
+
+							<ul class="sections <%= course.title %>">
+
+								<% course.sections.each do |section| %>
+
+									<li class="section">
+										<%= section.time.prettyDays %>: <%= section.time.prettyTime %>
+										<%= section.instructor %>
+										<a href='#'>
+											<%= section.crn %>
+										</a>
+									</li>
+
+								<% end %>
+							</ul>
 						</li>
-					<% end %>
-					</ul>
-				</li>
-			 <% end %>
-			</ul>
-		</li>
-	<% end %>
+				 	<% end %>
+				</ul>
+			</li>
+		<% end %>
 	</ul>
 </div>

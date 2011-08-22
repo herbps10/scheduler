@@ -29,6 +29,7 @@ a[href] {
 }
 
 .departments {
+	position: fixed;
 	font-size: 1.2em;
 	line-height: 1.5em;
 	color: black;
@@ -55,13 +56,11 @@ a[href] {
 
 .course {
 	font-size: 1em;
-	background-color: skyblue;
 }
 
 .sections {
 	font-size: .8em;
 	text-align: center;
-	background-color: lightblue;
 	padding-left: 0;
 	width: 100px;
 	margin-top: 8px;
@@ -76,18 +75,24 @@ a[href] {
 	z-index: 0;
 }
 
-.department:nth-child(odd) {
+.departments > :nth-child(odd) {
 	background: skyblue;
 }
-.department:nth-child(even) {
+.departments > :nth-child(even) {
 	background: lightskyblue;
 }
 
-.course:nth-child(odd) {
+.courses > :nth-child(odd) {
+	background: seagreen;
+}
+.courses > :nth-child(even) {
 	background: lightseagreen;
 }
-.course:nth-child(even) {
-	background: seagreen;
+.sections > :nth-child(odd) {
+	background: palegoldenrod;
+}
+.sections > :nth-child(even) {
+	background: paleturquoise;
 }
 
 ul,ol{
@@ -102,11 +107,11 @@ ul,ol{
 	background-color: darkblue;
 }
 
-.selected_courses {
-	background-color: darkcyan;
+.selected_course {
+	background-color: darkgreen;
 }
 
-.listed{
+.sections > .listed{
 	background-color: lightgreen;
 	overflow-y: scroll;
 }

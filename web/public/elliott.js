@@ -1,73 +1,74 @@
 $(document).ready(function() {
 
-	var $current = null;
+	var $currentCourse  = null;
 	var $currentSec = null;
-
+	var $lastCourse = null;
+	var $lastDept = null;
 
    $("ul li ul").hide(); 
 
-   $("ul li a").click(function(){
-      var $sub = $(this).next('.courses'); 
-      var $subSec = $(this).next('.sections'); 
 
-      if ($sub.css("display") == "none")
+   $(".department, .course").click(function(){
+      var $subCourse = $(this).children('.courses'); 
+      var $subSec = $(this).children('.sections'); 
+
+      if ($subCourse.css("display") == "none")
       {
-	if ($current != null)
-            $current.animate({ marginLeft: 'hide' }); 
-        
+
+    	//Hide last course when new dept is clicked
+		if ($currentCourse  != null)
+            $currentCourse.animate({ marginLeft: 'hide' });
+
+        //Hide last section when new dept is clicked
         if($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' }); 
-			
-   			
-   		$sub.animate({ marginLeft: 'show'  });
-   		$current = $sub;
+            $currentSec.animate({ marginLeft: 'hide' });
 
-      }
-      else
-      {
-         $sub.animate({ marginLeft: 'hide'  });
+		//Show courses when new dept is clicked
+   		$subCourse.animate({ marginLeft: 'show' });
+   		
+   		$currentCourse = $subCourse;
+   		//$(this).addClass("selected_depart");
       }
 
       if ($subSec.css("display") == "none")
       {
-         if ($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' }); 
-   			
-   			$subSec.animate({ marginLeft: 'show'  });
-			$currentSec = $subSec;
+		//Hide previous section
+        if ($currentSec != null)
+    		$currentSec.animate({ marginLeft: 'hide' });
+    		
+   		//Show new section	
+   		$subSec.animate({ marginLeft: 'show' });
+		$currentSec = $subSec;
 
       }
       else
       {
-         $subSec.animate({ marginLeft: 'hide'  });
-         $currentSec = null;
+        //$subSec.animate({ marginLeft: 'hide' });
       }
    });
 
 
-	var list = [];
+	var courseList = [];
 
 	$('.section').live('click', function() {
 		$(this).toggleClass('listed');
+
 		var text = $(this).children('a').text().trim();
 
-		if(!(text in list)) {
-			list.push(text);
+		if(!(text in courseList)) {
+			courseList.push(text);
 		}
 
-		$.unique(list)
+		$.unique(courseList)
 
-		$("#course_list").html('');
-
-		$(list).each(function(i) {
-			$('#course_list').append("<li>" + list[i] + "</li>");
+		$(courseList).each(function(i) {
+			$('#course_list').append("<li>" + courseList[i] + "</li>");
 		});
 	});
 
 	$(".generate-list").click(function() {
-		console.log(list);
 		$.get("/schedules", {
-			'crns[]': list
+			'crns[]': courseList
 		}, function(data) {
 			$("#schedules").html(data);
 		});
@@ -87,7 +88,7 @@ $(document).ready(function() {
 				$(this).parent().find("a." + cls + ":not(:Contains(" + filter + "))").parent().hide();
 			}
 			else {
-				$(this).parent().find('li').show();
+				$(this).parent().children('li').show();
 			}
 		}).keyup(function() {
 			$(this).change();
