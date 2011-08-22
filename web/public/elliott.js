@@ -22,7 +22,6 @@ $(document).ready(function() {
 		if ($currentCourse  != null)
             $currentCourse.animate({ marginLeft: 'hide' });
             
-        $currentDept.addClass("selected_depart");
 
         //Hide last section when new dept is clicked
         if($currentSec != null)
@@ -32,6 +31,7 @@ $(document).ready(function() {
    		$subCourse.animate({ marginLeft: 'show' });
    		$currentCourse = $subCourse;
         
+        $currentDept.addClass("selected_depart");
         $lastCourse.removeClass("selected_course");
       }
 
@@ -104,6 +104,25 @@ $(document).ready(function() {
 			$(this).change();
 		});
 	}
+    
+    $('.courses-search').focus(function() {
+        if ($currentSec != null)
+    		$currentSec.animate({ marginLeft: 'hide' });
+        
+        $lastCourse.removeClass("selected_course");
+    })
+    
+    $('#departments-search').focus(function() {
+        $lastDept.removeClass("selected_depart");
+
+		if ($currentCourse  != null)
+            $currentCourse.animate({ marginLeft: 'hide' });
+            
+        if($currentSec != null)
+            $currentSec.animate({ marginLeft: 'hide' });
+        
+        $lastCourse.removeClass("selected_course");
+    })
 
 	listFilter("#departments-search", ".departments", 'department-title');
 	listFilter(".courses-search", ".courses", 'course-title');
