@@ -1,8 +1,10 @@
+
+
+
 <div id="sliders">
+    <input type='text' id='departments-search' size='6' />
+    <input type='text' id='courses-search' size='40' />
 	<ul class="departments">
-
-		<input type='text' id='departments-search' size='6' />
-
 		<% @data.departments.each do |department| %>
 
 			<li class = "department <%= department.title %>">
@@ -10,7 +12,6 @@
 
 				<ul class = "courses" >
 
-					<input type='text' class='courses-search' size='40' />
 
 					<% department.courses.each do |course| %>
 

@@ -9,12 +9,31 @@ body{
 	text-align: center;
 }
 
+#departments-search {
+	position: fixed;
+}
+
+#courses-search {
+	position: fixed;
+	left: 350px;
+}
+
 #course_list {
+	top: 16px;
+}
+
+#list {
 	clear: both;
 	float: right;
 	margin-right: 50px;
 	width: 100px;
 	overflow: hidden;
+	top: 16px;
+}
+
+#generate-list {
+	position: fixed;
+	margin: auto;
 }
 
 a[href] {
@@ -30,6 +49,7 @@ a[href] {
 
 .departments {
 	position: fixed;
+	top: 106px;
 	font-size: 1.2em;
 	line-height: 1.5em;
 	color: black;
@@ -45,7 +65,7 @@ a[href] {
 .courses {
 	color: black;
 	margin-left: 100px;
-	top: 83px;
+	top: 106px;
 	z-index: -10;
 	font-size: .8em;
 	position: fixed;
@@ -62,17 +82,16 @@ a[href] {
 	font-size: .8em;
 	text-align: center;
 	padding-left: 0;
-	width: 100px;
+	width: 200px;
 	margin-top: 8px;
 	margin-left: 300px;
-	top: 75px;
+	top: 98px;
 	position: fixed;
 	z-index: -20;
 	overflow: hidden;
 }
 
 .section {
-	z-index: 0;
 }
 
 .departments > :nth-child(odd) {

@@ -105,7 +105,7 @@ $(document).ready(function() {
 		});
 	}
     
-    $('.courses-search').focus(function() {
+    $('#courses-search').focus(function() {
         if ($currentSec != null)
     		$currentSec.animate({ marginLeft: 'hide' });
         
@@ -125,5 +125,5 @@ $(document).ready(function() {
     })
 
 	listFilter("#departments-search", ".departments", 'department-title');
-	listFilter(".courses-search", ".courses", 'course-title');
+	listFilter("#courses-search", ".courses", 'course-title');
 });
