@@ -12,7 +12,6 @@
 
 				<ul class = "courses" >
 
-
 					<% department.courses.each do |course| %>
 
 						<li class= "course <%= course.title %>">
@@ -21,13 +20,13 @@
 
 							<a  class = "course-title"><%= course.title %></a>
 
-							<ul class="sections <%= course.title %>">
+							<ul class="sections">
 
 								<% course.sections.each do |section| %>
 
 									<li class="section">
 										<%= section.time.prettyDays %>: <%= section.time.prettyTime %>
-										<%= section.instructor %>
+										<br/><%= section.instructor %>
 										<a href='#'>
 											<%= section.crn %>
 										</a>

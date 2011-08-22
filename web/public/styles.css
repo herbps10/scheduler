@@ -10,30 +10,73 @@ body{
 }
 
 #departments-search {
-	position: fixed;
+	position: relative;
+	padding: 5px;
+	left: 10px;
 }
 
 #courses-search {
-	position: fixed;
-	left: 350px;
+	position: relative;
+	padding: 5px;
+	left: 60px;
 }
 
 #course_list {
-	top: 16px;
+	background: lightblue;
+	padding: 20px;
+	position: relative;
+	text-align: right;
+	margin-top: 10px;
+}
+
+#schedules {
+	margin: auto;
+	padding-left: 300px;
+	background: bisque;
+	width: auto;
+}
+
+#sliders {
+	width: 400px;
+	height: 400px;
+	margin: auto;
 }
 
 #list {
-	clear: both;
+	background-color: blue;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	position: fixed;
 	float: right;
-	margin-right: 50px;
-	width: 100px;
-	overflow: hidden;
-	top: 16px;
+	bottom: 0px;
+	width: 220px;
+	margin: ;
 }
 
-#generate-list {
+#generate_button {
+	bottom: 0px;
+	width: auto;
+	font-size: 1.8em;
+	position: relative;
+	background-color: grey;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#back_button {
+	bottom: 0px;
+	width: 200px;
+	font-size: 1.8em;
 	position: fixed;
-	margin: auto;
+	background-color: grey;
+	text-align: center;
+	right: 240px;
+}
+
+#list_title {
+	margin: 3px;
+	font-size: 1.2em;
 }
 
 a[href] {
@@ -41,57 +84,55 @@ a[href] {
 	text-decoration: inherit;
 }
 
-#sliders {
-	width: 440px;
-	height: 400px;
-	margin: auto;
-}
-
 .departments {
 	position: fixed;
-	top: 106px;
-	font-size: 1.2em;
-	line-height: 1.5em;
-	color: black;
+	top: 126px;
 	height: 400px;
 	width: 100px;
+	
+	font-size: 1.2em;
+	color: black;
+
 	z-index: 0;
 }
 
 .department {
-	z-index: 0;
+	padding: 4px;
 }
 
 .courses {
-	color: black;
-	margin-left: 100px;
-	top: 106px;
-	z-index: -10;
-	font-size: .8em;
 	position: fixed;
 	height: 400px;
 	width: 300px;
-	background: white;
+	margin-left: 100px;
+	top: 126px;
+
+
+	font-size: .8em;
+	color: black;
+	
+	z-index: -10;
 }
 
 .course {
-	font-size: 1em;
+	padding: 4px;
 }
 
 .sections {
-	font-size: .8em;
-	text-align: center;
-	padding-left: 0;
-	width: 200px;
-	margin-top: 8px;
-	margin-left: 300px;
-	top: 98px;
 	position: fixed;
+	height: 400px;
+	width: 240px;
+	margin-left: 300px;
+	top: 126px;
+
+	font-size: .8em;
+	
 	z-index: -20;
 	overflow: hidden;
 }
 
 .section {
+	padding: 4px 4px 4px 4px;
 }
 
 .departments > :nth-child(odd) {

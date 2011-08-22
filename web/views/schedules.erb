@@ -3,7 +3,7 @@
 
 	<% schedule.sections.each do |section| %>
 		<p>
-		<%= section.title %>
+		<%= section.title %>  |  <%= section.time.prettyDays %>: <%= section.time.prettyTime %>
 		</p>
 	<% end %>
 <% end %>

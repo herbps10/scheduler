@@ -1,4 +1,4 @@
-<html>
+<DOCTYPE html>
 <head>
 	<title>Scheduler</title>
 	<script type='text/javascript' src='jquery.js'></script>
@@ -7,15 +7,20 @@
 </head>
 <body>
 
-<div id="header"> Hey! We're Getting Somewhere.</div>
+<div id="header">Scheduler</div>
 
 <%= yield %>
 
 <div id="list">
-	<ul id="course_list">
-	</ul>
+    <div id='list_title'>Added Courses:</div>
+	<ul id="course_list"></ul>
+    <div id='generate_button'>
+        <a href='#'>Generate Schedules</a>
+    </div>
+</div>
 
-	<a href='#' class='generate-list'>Generate Schedules</a>
+<div id='back_button'>
+    <a href='#'>Back</a>
 </div>
 
 <div id='schedules'>

@@ -5,8 +5,8 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   $("ul li ul").hide(); 
-
+   $('ul li ul').hide(); 
+   $('#courses-search, #back_button').hide();
 
    $(".department, .course").click(function(){
       var $subCourse = $(this).children('.courses'); 
@@ -21,7 +21,6 @@ $(document).ready(function() {
     	//Hide last course when new dept is clicked
 		if ($currentCourse  != null)
             $currentCourse.animate({ marginLeft: 'hide' });
-            
 
         //Hide last section when new dept is clicked
         if($currentSec != null)
@@ -30,7 +29,8 @@ $(document).ready(function() {
 		//Show courses when new dept is clicked
    		$subCourse.animate({ marginLeft: 'show' });
    		$currentCourse = $subCourse;
-        
+        $('#courses-search').show();
+                        
         $currentDept.addClass("selected_depart");
         $lastCourse.removeClass("selected_course");
       }
@@ -50,7 +50,6 @@ $(document).ready(function() {
         $(this).addClass("selected_course");
       }
    });
-
 
 	var courseList = [];
 
@@ -76,12 +75,16 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".generate-list").click(function() {
+	$("#generate_button").click(function() {
 		$.get("/schedules", {
 			'crns[]': courseList
 		}, function(data) {
 			$("#schedules").html(data);
 		});
+        $('#sliders').hide(); 
+        $('#back_button').show();
+        $('#schedules').show();
+
 	});
 
 	// from: http://kilianvalkhof.com/2010/javascript/how-to-build-a-fast-simple-list-filter-with-jquery/
@@ -94,11 +97,11 @@ $(document).ready(function() {
 			var filter = $(this).val();
 
 			if(filter) {
-				$(this).parent().find("a." + cls + ":Contains(" + filter + ")").parent().show();
-				$(this).parent().find("a." + cls + ":not(:Contains(" + filter + "))").parent().hide();
+				$(list).find("a." + cls + ":Contains(" + filter + ")").parent().show();
+				$(list).find("a." + cls + ":not(:Contains(" + filter + "))").parent().hide();
 			}
 			else {
-				$(this).parent().children('li').show();
+				$(list).children('li').show();
 			}
 		}).keyup(function() {
 			$(this).change();
@@ -123,6 +126,12 @@ $(document).ready(function() {
         
         $lastCourse.removeClass("selected_course");
     })
+    
+    $('#back_button').click(function() {
+        $('#schedules').hide();
+        $('#sliders').show();
+        $('#back_button').hide();
+    });
 
 	listFilter("#departments-search", ".departments", 'department-title');
 	listFilter("#courses-search", ".courses", 'course-title');
