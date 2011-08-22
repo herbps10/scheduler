@@ -55,12 +55,20 @@ $(document).ready(function() {
 
 		var text = $(this).children('a').text().trim();
 
-		if(!(text in courseList)) {
+		if(courseList.indexOf(text) == -1) {
 			courseList.push(text);
+		}
+		else {
+			courseList = $.map(courseList, function(data) {
+				if(data != text) {
+					return data
+				}
+			});
 		}
 
 		$.unique(courseList)
 
+		$('#course_list').html('');
 		$(courseList).each(function(i) {
 			$('#course_list').append("<li>" + courseList[i] + "</li>");
 		});
