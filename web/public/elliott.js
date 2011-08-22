@@ -59,10 +59,8 @@ $(document).ready(function() {
 			courseList.push(text);
 		}
 		else {
-			courseList = $.map(courseList, function(data) {
-				if(data != text) {
-					return data
-				}
+			courseList = $.grep(courseList, function(data) {
+				return data != text;
 			});
 		}
 
