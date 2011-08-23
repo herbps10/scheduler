@@ -21,14 +21,6 @@ body{
 	left: 210px;
 }
 
-#course_list {
-	background: lightblue;
-	padding: 20px;
-	position: relative;
-	text-align: right;
-	margin-top: 10px;
-}
-
 #schedules {
 	margin: auto;
 	left: 300px;
@@ -42,6 +34,16 @@ body{
 	background: white;
 }
 
+#course_list {
+	background: lightblue;
+	padding: 20px;
+	position: relative;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 70px;
+	overflow: scroll;
+}
+
 #list {
 	background-color: blue;
 	bottom: 0;
@@ -51,14 +53,15 @@ body{
 	float: right;
 	bottom: 0px;
 	width: 220px;
-	margin: ;
+	max-height: 600px;
+	overflow: scroll;
 }
 
 #generate_button {
 	bottom: 0px;
 	width: auto;
 	font-size: 1.8em;
-	position: relative;
+	position: fixed;
 	background-color: grey;
 	text-align: center;
 	margin-top: 10px;
