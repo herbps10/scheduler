@@ -48,10 +48,53 @@ $redis = Redis.new
 
 $redis.flushdb
 
-departments = [ "ACCT", "ANTH", "ARTH", "ARTS", "ASTR", "BIOL", "BLKS", "COMN", "CDSC", "DANC", "EDUC", "ENVR", "CHEM", "ECON", "ENGL", "CSCI", "GEOG", "GSCI", "HIST", "H&PE", "HONR", "HUMN", "INTD", "MATH", "PHYS", "THEA", "WRIT", "SOCI", "PLSC", "SPAN", "FREN", "JAPN", "GERM", "LATN", "ITAL", "RUSS", "CHIN", "ARBC", "MGMT", "MUSC", "PHIL", "PSYC", "WMST" ]
+departments = { "ACCT" => "Accounting", 
+		"ANTH" => "Anthropology",
+		"ARTH" => "Art History",
+		"ARTS" => "Art",
+		"ASTR" => "Astronomy",
+		"BIOL" => "Biology",
+		"BLKS" => "Black Studies",
+		"COMN" => "Communication",
+		"CDSC" => "Speech Pathology",
+		"DANC" => "Dance",
+		"EDUC" => "Education",
+		"ENVR" => "Environmental Studies",
+		"CHEM" => "Chemistry",
+		"ECON" => "Economics",
+		"ENGL" => "English",
+		"CSCI" => "Computer Science",
+		"GEOG" => "Geography",
+		"GSCI" => "Geological Sciences",
+		"HIST" => "History",
+		"H&PE" => "Health & PE",
+		"HONR" => "Honors",
+		"HUMN" => "Humanities",
+		"INTD" => "Interdisciplinary",
+		"MATH" => "Math",
+		"PHYS" => "Physics",
+		"THEA" => "Theater",
+		"WRIT" => "Writing",
+		"SOCI" => "Sociology",
+		"PLSC" => "Political Science",
+		"SPAN" => "Spanish",
+		"FREN" => "French",
+		"JAPN" => "Japan",
+		"GERM" => "Germany",
+		"LATN" => "Latin",
+		"ITAL" => "Italian",
+		"RUSS" => "Russian",
+		"CHIN" => "Chinese",
+		"ARBC" => "Arabic",
+		"MGMT" => "Management",
+		"MUSC" => "Music",
+		"PHIL" => "Philosophy",
+		"PSYC" => "Psychology",
+		"WMST" => "Women's Studies"}
 
-departments.each do |department|
-	$redis.sadd(RedisHelper.departments, department);
+departments.each_pair do |department, full_department|
+	$redis.sadd(RedisHelper.departments, department)
+	$redis.set(RedisHelper.department_title(department), full_department)
 
 	doc = Nokogiri::HTML(File.open("data/#{department}.html").read)
 

@@ -2,10 +2,11 @@ class Department
 	attr_accessor :courses, :title
 
 	def initialize(department)
-		@title = department
+		@department = department
+		@title = $redis.get(RedisHelper.department_title(department))
 		@courses = []
 
-		$redis.zrange(RedisHelper::department(@title), 0, -1).each do |title|
+		$redis.zrange(RedisHelper::department(@department), 0, -1).each do |title|
 			@courses.push Course.new(title)
 		end
 	end

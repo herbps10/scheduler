@@ -22,4 +22,8 @@ class RedisHelper
 	def self.departments
 		return "departments"
 	end
+
+	def self.department_title(department)
+		return "department:title:" + department
+	end
 end
