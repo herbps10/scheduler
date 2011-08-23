@@ -19,15 +19,20 @@ $(document).ready(function() {
         $lastDept = $currentDept;
 
     	//Hide last course when new dept is clicked
-		if ($currentCourse  != null)
-            $currentCourse.animate({ width: 'hide' });
+		if ($currentCourse  != null){
+            $currentCourse.animate({ left: 'hide' });
+            //$('#box_side_course').animate({ left: 'hide'});
+        }
 
         //Hide last section when new dept is clicked
-        if($currentSec != null)
-            $currentSec.animate({ width: 'hide' });
+        if($currentSec != null){
+            $currentSec.animate({ left: 'hide' });
+            //$('#box_side_course').animate({ left: 'hide'});
+        }
 
 		//Show courses when new dept is clicked
-   		$subCourse.animate({ width: 'show' });
+   		$subCourse.animate({ left: 'show' });
+        //$('#box_side_course').animate({ left: 'show'});
    		$currentCourse = $subCourse;
         $('#courses-search').show();
                         
@@ -38,11 +43,14 @@ $(document).ready(function() {
       if ($subSec.css("display") == "none")
       {
 		//Hide previous section when new courses is clicked
-        if ($currentSec != null)
-    		$currentSec.animate({ width: 'hide' });
+        if ($currentSec != null){
+    		$currentSec.animate({ left: 'hide' });
+            //$('#box_side_course').animate({ left: 'hide'});
+
+        }
     		
    		//Show new sections when new course is clicked
-   		$subSec.animate({ width: 'show' });
+   		$subSec.animate({ left: 'show' });
 		$currentSec = $subSec;
         
         $lastCourse.removeClass("selected_course");
@@ -144,7 +152,7 @@ $(document).ready(function() {
     
     $('#courses-search').focus(function() {
         if ($currentSec != null)
-    		$currentSec.animate({ width: 'hide' });
+    		$currentSec.animate({ left: 'hide' });
         
         $lastCourse.removeClass("selected_course");
     })
@@ -153,10 +161,10 @@ $(document).ready(function() {
         $lastDept.removeClass("selected_depart");
 
 		if ($currentCourse  != null)
-            $currentCourse.animate({ width: 'hide' });
+            $currentCourse.animate({ left: 'hide' });
             
         if($currentSec != null)
-            $currentSec.animate({ width: 'hide' });
+            $currentSec.animate({ left: 'hide' });
         
         $lastCourse.removeClass("selected_course");
     })
