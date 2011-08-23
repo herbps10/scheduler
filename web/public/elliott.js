@@ -20,14 +20,14 @@ $(document).ready(function() {
 
     	//Hide last course when new dept is clicked
 		if ($currentCourse  != null)
-            $currentCourse.animate({ marginLeft: 'hide' });
+            $currentCourse.animate({ width: 'hide' });
 
         //Hide last section when new dept is clicked
         if($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' });
+            $currentSec.animate({ width: 'hide' });
 
 		//Show courses when new dept is clicked
-   		$subCourse.animate({ marginLeft: 'show' });
+   		$subCourse.animate({ width: 'show' });
    		$currentCourse = $subCourse;
         $('#courses-search').show();
                         
@@ -39,10 +39,10 @@ $(document).ready(function() {
       {
 		//Hide previous section when new courses is clicked
         if ($currentSec != null)
-    		$currentSec.animate({ marginLeft: 'hide' });
+    		$currentSec.animate({ width: 'hide' });
     		
    		//Show new sections when new course is clicked
-   		$subSec.animate({ marginLeft: 'show' });
+   		$subSec.animate({ width: 'show' });
 		$currentSec = $subSec;
         
         $lastCourse.removeClass("selected_course");
@@ -144,7 +144,7 @@ $(document).ready(function() {
     
     $('#courses-search').focus(function() {
         if ($currentSec != null)
-    		$currentSec.animate({ marginLeft: 'hide' });
+    		$currentSec.animate({ width: 'hide' });
         
         $lastCourse.removeClass("selected_course");
     })
@@ -153,10 +153,10 @@ $(document).ready(function() {
         $lastDept.removeClass("selected_depart");
 
 		if ($currentCourse  != null)
-            $currentCourse.animate({ marginLeft: 'hide' });
+            $currentCourse.animate({ width: 'hide' });
             
         if($currentSec != null)
-            $currentSec.animate({ marginLeft: 'hide' });
+            $currentSec.animate({ width: 'hide' });
         
         $lastCourse.removeClass("selected_course");
     })

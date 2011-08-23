@@ -12,13 +12,13 @@ body{
 #departments-search {
 	position: relative;
 	padding: 5px;
-	left: 10px;
+	left: 150px;
 }
 
 #courses-search {
 	position: relative;
 	padding: 5px;
-	left: 60px;
+	left: 210px;
 }
 
 #course_list {
@@ -31,15 +31,15 @@ body{
 
 #schedules {
 	margin: auto;
-	padding-left: 300px;
+	left: 300px;
 	background: bisque;
 	width: auto;
 }
 
 #sliders {
-	width: 400px;
 	height: 400px;
 	margin: auto;
+	background: white;
 }
 
 #list {
@@ -89,6 +89,7 @@ a[href] {
 	top: 126px;
 	height: 400px;
 	width: 100px;
+	left: 150px;
 	
 	font-size: 1.2em;
 	color: black;
@@ -98,15 +99,15 @@ a[href] {
 
 .department {
 	padding: 4px;
+	overflow:  hidden;
 }
 
 .courses {
 	position: fixed;
-	height: 400px;
+	height: 390px;
 	width: 300px;
-	margin-left: 100px;
-	top: 126px;
-
+	left: 250px;
+	top: 136px;
 
 	font-size: .8em;
 	color: black;
@@ -115,44 +116,44 @@ a[href] {
 }
 
 .course {
-	padding: 4px;
+	padding: 4 4 4 40;
+
 }
 
 .sections {
 	position: fixed;
 	height: 400px;
 	width: 240px;
-	margin-left: 300px;
-	top: 126px;
+	left: 540px;
+	top: 146px;
 
 	font-size: .8em;
 	
 	z-index: -20;
-	overflow: hidden;
 }
 
 .section {
-	padding: 4px 4px 4px 4px;
+	padding: 4 4 4 40;
 }
 
 .departments > :nth-child(odd) {
-	background: skyblue;
+	background-image: url(/images/dept_light.png);
 }
 .departments > :nth-child(even) {
-	background: lightskyblue;
+	background-image: url(/images/dept_dark.png);
 }
 
 .courses > :nth-child(odd) {
-	background: seagreen;
+	background-image: url(/images/course_light.png);
 }
 .courses > :nth-child(even) {
-	background: lightseagreen;
+	background-image: url(/images/course_dark.png);
 }
 .sections > :nth-child(odd) {
-	background: palegoldenrod;
+	background-image: url(/images/sect_light.png);
 }
 .sections > :nth-child(even) {
-	background: paleturquoise;
+	background-image: url(/images/sect_dark.png);
 }
 
 ul,ol{
@@ -164,20 +165,17 @@ ul,ol{
 }
 
 .departments > .selected_depart {
-	background-color: darkblue;
+	background-image: url(/images/dept_sel.png);
+	color: white;
 }
 
 .courses > .selected_course {
-	background-color: darkgreen;
+	background-image: url(/images/course_sel.png);
+	color: white;
 }
 
 .sections > .listed{
-	background-color: lightgreen;
-	overflow-y: scroll;
-}
-
-.last_clicked_depart {
-	background-color: purple;
+	background-image: url(/images/sect_sel.png);
 }
 
 .delete-all {
