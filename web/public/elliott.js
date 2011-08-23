@@ -54,6 +54,10 @@ $(document).ready(function() {
 	var courseList = [];
 
 	$('.section').live('click', function() {
+		if(courseList.length == 0) {
+			$(".delete-all").show();
+		}
+
 		$(this).toggleClass('listed');
 
 		var text = $(this).children('a').text().trim();
@@ -71,8 +75,38 @@ $(document).ready(function() {
 
 		$('#course_list').html('');
 		$(courseList).each(function(i) {
-			$('#course_list').append("<li>" + courseList[i] + "</li>");
+			var section_element = $('.section[rel=' + courseList[i] + ']');
+
+			var title = section_element.parent('.sections').siblings('.course-title').text();
+			var time = section_element.children('.time').text();
+			var days = section_element.children('.days').text();
+
+			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='course-title'>" + title + "</span><br/><span class='days'>" + days + "</span> <span class='time'>" + time + "</span> <a href='#' class='delete'>delete</a></li>");
 		});
+	});
+
+	$('.delete').live('click', function() {
+		var crn = $(this).parent().attr('rel');
+
+		courseList = $.grep(courseList, function(data) {
+			return crn != data;
+		});
+
+		if(courseList.length == 0) {
+			$(".delete-all").hide();
+		}
+
+		$('.section[rel=' + crn + ']').removeClass('listed');
+
+		$(this).parent().remove();
+	});
+
+	$('.delete-all').click(function() {
+		courseList = [];
+		$("#course_list").html('');
+		$(".listed").removeClass('listed');
+
+		$(this).hide();
 	});
 
 	$("#generate_button").click(function() {
@@ -81,10 +115,10 @@ $(document).ready(function() {
 		}, function(data) {
 			$("#schedules").html(data);
 		});
-        $('#sliders').hide(); 
-        $('#back_button').show();
-        $('#schedules').show();
 
+        	$('#sliders').hide(); 
+        	$('#back_button').show();
+        	$('#schedules').show();
 	});
 
 	// from: http://kilianvalkhof.com/2010/javascript/how-to-build-a-fast-simple-list-filter-with-jquery/

@@ -179,3 +179,7 @@ ul,ol{
 .last_clicked_depart {
 	background-color: purple;
 }
+
+.delete-all {
+	display: none;
+}

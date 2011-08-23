@@ -24,9 +24,14 @@
 
 								<% course.sections.each do |section| %>
 
-									<li class="section">
-										<%= section.time.prettyDays %>: <%= section.time.prettyTime %>
-										<br/><%= section.instructor %>
+									<li class="section" rel='<%= section.crn %>'>
+										<% if section.time.tba == true %>
+											<span class='time'>Time TBA</span>
+										<% else %>
+											<span class='days'><%= section.time.prettyDays %></span>: <span class='time'><%= section.time.prettyTime %></span>
+										<% end %>
+
+										<br/><span class='instructor'><%= section.instructor %></span>
 										<a href='#'>
 											<%= section.crn %>
 										</a>
