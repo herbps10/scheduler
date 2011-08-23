@@ -20,6 +20,7 @@ class Saver
 
 	def save_section
 		$redis.hset(RedisHelper::section(@crn), 'section', @section)
+		$redis.hset(RedisHelper::section(@crn), 'department', @department);
 		$redis.hset(RedisHelper::section(@crn), 'courseNumber', @courseNumber);
 		$redis.hset(RedisHelper::section(@crn), 'title', @title)
 		$redis.hset(RedisHelper::section(@crn), 'instructor', @instructor)

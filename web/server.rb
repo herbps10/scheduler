@@ -39,6 +39,8 @@ get "/schedules" do
 
 	crns.each { |crn| @scheduler.addSection Section.new(crn) }
 
+	#return @scheduler.inspect.gsub('<', '')
+
 	@scheduler.schedules
 
 	erb :schedules, :layout => false

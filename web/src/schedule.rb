@@ -2,6 +2,11 @@ class Schedule
 	attr_accessor :sections
 
 	def addSections sections
+		if sections.is_a? Section
+			@sections.push sections
+			return self
+		end
+
 		@sections += sections.map do |section|
 			if section.is_a? Section
 				section
@@ -40,5 +45,11 @@ class Schedule
 		@sections.each { |s| credits += s.credits.to_i }
 
 		return credits
+	end
+
+	def print
+		@sections.each do |section|
+			puts section.title
+		end
 	end
 end
