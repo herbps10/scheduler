@@ -21,18 +21,15 @@ $(document).ready(function() {
     	//Hide last course when new dept is clicked
 		if ($currentCourse  != null){
             $currentCourse.animate({ left: 'hide' });
-            //$('#box_side_course').animate({ left: 'hide'});
         }
 
         //Hide last section when new dept is clicked
         if($currentSec != null){
             $currentSec.animate({ left: 'hide' });
-            //$('#box_side_course').animate({ left: 'hide'});
         }
 
 		//Show courses when new dept is clicked
    		$subCourse.animate({ left: 'show' });
-        //$('#box_side_course').animate({ left: 'show'});
    		$currentCourse = $subCourse;
         $('#courses-search').show();
                         
@@ -45,7 +42,6 @@ $(document).ready(function() {
 		//Hide previous section when new courses is clicked
         if ($currentSec != null){
     		$currentSec.animate({ left: 'hide' });
-            //$('#box_side_course').animate({ left: 'hide'});
 
         }
     		

@@ -2,7 +2,7 @@
 
 
 <div id="sliders">
-    <input type='text' id='departments-search' size='6' />
+    <input type='text' id='departments-search' size='20' />
     <input type='text' id='courses-search' size='40' />
 	<ul class="departments">
 		<% @data.departments.each do |department| %>
@@ -30,7 +30,7 @@
 										<% end %>
 
 										<br/><span class='instructor'><%= section.instructor %></span>
-										<span class='crn'><a href='#'>
+										<a href='#'><span class='crn'>
 											<%= section.crn %></span>
 										</a>
 									</li>
