@@ -16,9 +16,7 @@
 
 						<li class= "course <%= course.title %>">
 
-							<%= course.courseNumber %>
-
-							<a  class = "course-title"><%= course.title %></a>
+							<a  class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
 
 							<ul class="sections">
 
@@ -28,12 +26,12 @@
 										<% if section.time.tba == true %>
 											<span class='time'>Time TBA</span>
 										<% else %>
-											<span class='days'><%= section.time.prettyDays %></span>: <span class='time'><%= section.time.prettyTime %></span>
+											<span class='days'><%= section.time.prettyDays %>:</span> <span class='time'><%= section.time.prettyTime %></span>
 										<% end %>
 
 										<br/><span class='instructor'><%= section.instructor %></span>
-										<a href='#'>
-											<%= section.crn %>
+										<span class='crn'><a href='#'>
+											<%= section.crn %></span>
 										</a>
 									</li>
 

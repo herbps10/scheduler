@@ -105,11 +105,11 @@ a[href] {
 	position: fixed;
 	top: 126px;
 	height: 400px;
-	width: 100px;
+	width: 216px;
 	left: 150px;
 	
 	font-size: 1.2em;
-	color: black;
+	color: rgb(100, 100, 100);
 
 	z-index: 0;
 }
@@ -117,42 +117,65 @@ a[href] {
 .department {
 	padding: 4px;
 	overflow:  hidden;
+	
 }
 
 .courses {
 	position: fixed;
 	height: 324px;
-	width: 300px;
-	left: 300px;
+	width: 366px;
+	left: 367px;
 	top: 160px;
 
 	font-size: .8em;
-	color: black;
-	background-image: url(/images/course_dark.png);
-	
+	color: rgb(100, 100, 100);
+	background-color: lightgray;	
 	z-index: -10;
 }
 
-.course {
-	padding: 4 4 4 40;
+.course-title {
+	z-index: -10;
+}
 
+.course_number {
+	font-size: 1.05em;
+}
+
+.course {
+	padding: 4px 4px 4px 20px;
+	z-index: -10;
 }
 
 .sections {
 	position: fixed;
 	height: 264px;
 	width: 240px;
-	left: 630px;
+	left: 732px;
 	top: 188px;
 
 	font-size: .8em;
-	background-image: url(/images/sect_dark.png);
+	background-color: lightgrey;
 	
 	z-index: -20;
 }
 
 .section {
-	padding: 4 4 4 40;
+	padding: 4px 4px 4px 40px;
+}
+
+.days {
+	font-weight: 500;
+	size: 1.05;
+}
+.time {
+	font-weight: 500;
+	size: 1.05;
+}
+.instructor {
+	color: gray;
+}
+.crn {
+	color: gray;
 }
 
 .departments > :nth-child(odd) {
@@ -170,9 +193,12 @@ a[href] {
 }
 .sections > :nth-child(odd) {
 	background-image: url(/images/sect_light.png);
+	background-size: cover;
 }
 .sections > :nth-child(even) {
 	background-image: url(/images/sect_dark.png);
+	background-size: cover;
+
 }
 
 ul,ol{
@@ -185,12 +211,12 @@ ul,ol{
 
 .departments > .selected_depart {
 	background-image: url(/images/dept_sel.png);
-	color: white;
+	color: black;
 }
 
 .courses > .selected_course {
 	background-image: url(/images/course_sel.png);
-	color: white;
+	color: black;
 }
 
 .sections > .listed{
