@@ -1,9 +1,10 @@
 <% @scheduler.schedules.each do |schedule| %>
-	<h2>Schedule</h2>
+<div class='schedule'>
+	<h3>Schedule</h3>
 
 	<% schedule.sections.each do |section| %>
-		<p>
-		<%= section.crn %> <%= section.title %>  |  <%= section.time.prettyDays %>: <%= section.time.prettyTime %>
-		</p>
+        <span class='course-title'>• <%= section.title %></span><br/><span class='days'><%= section.time.prettyDays %>:</span><span class='time'> <%= section.time.prettyTime %></span>
+         <br/><span class='crn'>CRN: <%= section.crn %></span><br/>
 	<% end %>
+</div>
 <% end %>

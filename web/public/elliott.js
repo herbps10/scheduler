@@ -5,55 +5,19 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   $('ul li ul').hide(); 
    $('#courses-search, #back_button').hide();
 
-   $(".department, .course").click(function(){
-      var $subCourse = $(this).children('.courses'); 
-      var $subSec = $(this).children('.sections'); 
-
-      if ($subCourse.css("display") == "none")
-      {
-        var $currentDept = $(this);
-        $lastDept.removeClass("selected_depart");
-        $lastDept = $currentDept;
-
-    	//Hide last course when new dept is clicked
-		if ($currentCourse  != null){
-            $currentCourse.animate({ left: 'hide' });
-        }
-
-        //Hide last section when new dept is clicked
-        if($currentSec != null){
-            $currentSec.animate({ left: 'hide' });
-        }
-
-		//Show courses when new dept is clicked
-   		$subCourse.animate({ left: 'show' });
-   		$currentCourse = $subCourse;
-        $('#courses-search').show();
-                        
-        $currentDept.addClass("selected_depart");
-        $lastCourse.removeClass("selected_course");
-      }
-
-      if ($subSec.css("display") == "none")
-      {
-		//Hide previous section when new courses is clicked
-        if ($currentSec != null){
-    		$currentSec.animate({ left: 'hide' });
-
-        }
-    		
-   		//Show new sections when new course is clicked
-   		$subSec.animate({ left: 'show' });
-		$currentSec = $subSec;
+    
+    	$("#myTree").columnNavigation({
+ 		containerBackgroundColor        : "rgb(255,255,255)",
+ 		columnFontFamily                : "Arial,sans-serif",
+ 		columnScrollVelocity            : 600,
+        containerWidth                  : "755px",
+        containerMargin                 : "20px auto auto auto",
+    	columnDeselectBackgroundImage   : "url(/images/dept_light.png)",
+    	//columnSelectBackgroundImage     : "url(/images/dept_sel.png)",
         
-        $lastCourse.removeClass("selected_course");
-        $lastCourse = $(this);
-        $(this).addClass("selected_course");
-      }
-   });
+ 	});
 
 	var courseList = [];
 
@@ -85,7 +49,7 @@ $(document).ready(function() {
 			var time = section_element.children('.time').text();
 			var days = section_element.children('.days').text();
 
-			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='course-title'>" + title + "</span><br/><span class='days'>" + days + "</span> <span class='time'>" + time + "</span> <a href='#' class='delete'>delete</a></li>");
+			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='list_course-title'>" + title + "</span><br/><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span><br/><a href='#' class='delete'>remove</a></li>");
 		});
 	});
 
@@ -120,7 +84,7 @@ $(document).ready(function() {
 			$("#schedules").html(data);
 		});
 
-        	$('#sliders').hide(); 
+        	$('#sliders, #searchboxes').hide(); 
         	$('#back_button').show();
         	$('#schedules').show();
 	});
@@ -145,26 +109,15 @@ $(document).ready(function() {
 			$(this).change();
 		});
 	}
-    
+
     $('#courses-search').focus(function() {
-        if ($currentSec != null)
-    		$currentSec.animate({ left: 'hide' });
-        
-        $lastCourse.removeClass("selected_course");
+
     })
     
     $('#departments-search').focus(function() {
-        $lastDept.removeClass("selected_depart");
 
-		if ($currentCourse  != null)
-            $currentCourse.animate({ left: 'hide' });
-            
-        if($currentSec != null)
-            $currentSec.animate({ left: 'hide' });
-        
-        $lastCourse.removeClass("selected_course");
     })
-    
+
     $('#back_button').click(function() {
         $('#schedules').hide();
         $('#sliders').show();
@@ -174,3 +127,4 @@ $(document).ready(function() {
 	listFilter("#departments-search", ".departments", 'department-title');
 	listFilter("#courses-search", ".courses", 'course-title');
 });
+
