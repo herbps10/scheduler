@@ -37,8 +37,10 @@ body{
 }
 
 #schedules {
+	overflow: scroll;
 	padding: auto;
 	left: 300px;
+	height: 600px;
 }
 
 .schedule {
@@ -144,15 +146,61 @@ a[href] {
 	padding-top: 30px;
 }
 
+/* The *normal* state styling */
+.section, .course, .department{
+	background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.2)));
+	background-image:-moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#80ffffff', EndColorStr='#20ffffff');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#80ffffff', EndColorStr='#20ffffff')";
+	background-color:rgb(225, 225, 229);
+	border:1px solid rgb(191, 190, 190);
+	color:rgb(85, 85, 85);
+	text-shadow:1px 1px 1px rgb(171, 171, 171);
+}
+/* The *hover* state styling */
+.section:hover, .course:hover, .department:hover{
+	border:1px solid rgb(192, 191, 191);
+}
 
+/* The *active* state styling */
+.section:active, .course:active, .department:active,.section:focus, .course:focus, .department:focus{
+	color:rgb(42, 41, 41);
+}
+
+.section:active, .course:active, .department:active,.section:focus, .course:focus, .department:focus{
+	background-image:linear-gradient(-90deg, rgba(226, 226, 230, 0.8), rgba(226, 226, 230, 0.2));
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(226, 226, 230, 0.8)), color-stop(100%, rgba(226, 226, 230, 0.2)));
+	background-image:-moz-linear-gradient(-90deg, rgba(226, 226, 230, 0.8), rgba(226, 226, 230, 0.2));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#80e2e2e6', EndColorStr='#20e2e2e6');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#80e2e2e6', EndColorStr='#20e2e2e6')";
+	background-color:rgb(255, 255, 255);
+	color:rgb(42, 41, 41);
+}
+
+.course.selected, .department.selected{
+	background-image:linear-gradient(-90deg, rgba(226, 226, 230, 0.8), rgba(226, 226, 230, 0.2));
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(226, 226, 230, 0.8)), color-stop(100%, rgba(226, 226, 230, 0.2)));
+	background-image:-moz-linear-gradient(-90deg, rgba(226, 226, 230, 0.8), rgba(226, 226, 230, 0.2));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#80e2e2e6', EndColorStr='#20e2e2e6');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#80e2e2e6', EndColorStr='#20e2e2e6')";
+	background-color:rgb(255, 255, 255);
+	color:rgb(42, 41, 41);
+}
+
+/*
 .section, .course, .department {
 	background-image: url(/images/dept_light.png);
 	background-size: cover;
 }
+
+
 .course.selected, .department.selected {
 	background-image: url(/images/dept_sel.png);
 	background-size: cover;
 }
+
+*/
 
 .department-title {
 	padding: 6px;
@@ -232,7 +280,15 @@ li {
 
 
 .listed{
-	background-image: url(/images/sect_sel.png);
+	background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%);
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(25%, rgba(255, 255, 255, 0.2)));
+	background-image:-moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%);
+	background-color:rgb(255, 154, 1);
+	border:1px solid rgb(186, 191, 191);
+	box-shadow:0px 0px 10px rgba(32, 202, 249, 0.65);
+	-moz-box-shadow:0px 0px 10px rgba(32, 202, 249, 0.65);
+	-webkit-box-shadow:0px 0px 10px rgba(32, 202, 249, 0.65);
+	color:rgb(42, 41, 41);
 }
 
 .delete-all {
