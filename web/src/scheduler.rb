@@ -48,8 +48,12 @@ class Scheduler
 				end
 			end
 		end
-	
-		return ret.map { |r| r.flatten.sort_by { |s| s.crn } }
+
+		ret.map! { |r| r.flatten.sort_by { |s| s.crn } }
+		
+		puts ret.length
+
+		return ret
 	end
 
 	def subtract(list1, list2)
@@ -124,12 +128,29 @@ class Scheduler
 		intersect(list1, list2, true)
 	end
 
+	def same_course(arr)
+		return false if arr.flatten != arr
+		return false if arr.length == 0
+
+		arr.each do |s1|
+			arr.each do |s2|
+				next if s1 == s2
+
+				puts s1.department + " " + s2.department
+				return false if s1.department != s2.department
+				return false if s1.department == s2.department && s1.courseNumber != s2.courseNumber
+			end
+		end
+
+		return true
+	end
+
 	def condense_schedules(options)
 		schedules = product(0, options)
 
-		return [schedules] if schedules.length == 1
+		return [schedules] if same_course(schedules)
 
-		schedules.map! { |s| [s] }
+		return [schedules] if schedules.length == 1
 
 		i = 0
 		while true
@@ -170,6 +191,7 @@ class Scheduler
 
 			break if replacement.length == 0
 
+
 			schedules = replacement.clone
 			i += 1
 		end
@@ -186,6 +208,7 @@ class Scheduler
 		all_sections = (@courses | @sections.map { |s| [s] })
 
 		schedules = []
+
 		all_sections.combination(size).to_a.each do |options|
 			schedules += condense_schedules(options)
 =begin
@@ -214,11 +237,17 @@ class Scheduler
 		end
 		
 		@schedules = []
+
+		sum = 0
+		@courses.each { |course| sum += course.length }
+
 		size = @sections.length + @courses.length
 
-		while @schedules == [] && size >= 1
+		while @schedules == []
 			@schedules = genSchedules(size)
+
 			size -= 1
+			break if size == 0
 		end
 
 		return @schedules
