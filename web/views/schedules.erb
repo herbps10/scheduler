@@ -1,8 +1,6 @@
-<%= @scheduler.schedules.inspect.gsub('<', '<br/>').gsub('>', '<br/>') %>
-
-<% @scheduler.schedules.each do |schedule| %>
+<% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 <div class='schedule'>
-	<h3>Schedule</h3>
+	<h3>Schedule <%= schedule_index + 1 %></h3>
 
 	<% schedule.each do |section| %>
 		<% if section.kind_of? Array %>
