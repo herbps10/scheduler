@@ -35,12 +35,161 @@ class Scheduler
 		end
 	end
 
-	def genSchedule(size)
-		options = (@sections.map { |s| [s] } | @courses)
+	def product(index, sets)
+		if index == sets.length - 1
+			return sets[index]
+		end
+
+		ret = []
+		sets[index].each do |element|
+			product(index + 1, sets).each do |e|
+				if element.conflict?(e) == false and element.sameCourse?(e) == false
+					ret.push [element] + [e]
+				end
+			end
+		end
+	
+		return ret.map { |r| r.flatten.sort_by { |s| s.crn } }
+	end
+
+	def subtract(list1, list2)
+		if list1.kind_of? Array
+			list1.flatten! 
+		else
+			list1 = [list1]
+		end
+
+		if list2.kind_of? Array
+			list2.flatten!
+		else
+			list2 = [list2]
+		end
+
+
+		ret = []
+		list1.each do |s1|
+			included = false
+			list2.each do |s2|
+				next if s1 == s2
+
+				if s1.department == s2.department and s1.courseNumber == s2.courseNumber
+					included = true
+				end
+			end
+
+			ret.push s1 if included == true
+
+			#list1.delete_if { |l| l == s1 }
+		end
+		
+		return ret
+	end
+
+	def intersect(list1, list2, crn = false)
+		if list1.kind_of? Array
+			list1.flatten! 
+		else
+			list1 = [list1]
+		end
+
+		if list2.kind_of? Array
+			list2.flatten!
+		else
+			list2 = [list2]
+		end
+
+
+		ret = []
+
+		list1.each do |s1|
+			included = false
+			list2.each do |s2|
+				if crn == true
+					if s1.crn == s2.crn
+						ret.push s2
+					end
+				else
+					if s1.department == s2.department and s1.courseNumber == s2.courseNumber
+						ret.push s2
+					end
+				end
+			end
+
+		end
+
+		return ret
+	end
+
+	def intersect_crn(list1, list2)
+		intersect(list1, list2, true)
+	end
+
+	def condense_schedules(options)
+		schedules = product(0, options)
+
+		return [schedules] if schedules.length == 1
+
+		schedules.map! { |s| [s] }
+
+		i = 0
+		while true
+			replacement = []
+			schedules.each do |s1|
+				schedules.each do |s2|
+					next if s1 == s2
+
+=begin
+					puts "s1"
+					puts s1.inspect
+					puts
+					puts "s2"
+					puts s2.inspect
+					puts
+					puts "intersect"
+					puts intersect_crn(s1, s2).inspect
+					puts
+					puts "subtract s1 s2"
+					puts subtract(s1, s2).inspect
+					puts
+					puts "subtract s2 s1"
+					puts subtract(s2, s1).inspect
+					puts
+					puts
+					puts
+=end
+
+					if subtract(s1, s2).length == 1
+						replace = intersect_crn(s1, s2) + [subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }
+
+						replacement.push replace
+					end
+				end
+
+				options.delete_if { |s| s == s1 }
+			end
+
+			break if replacement.length == 0
+
+			schedules = replacement.clone
+			i += 1
+		end
+
+		schedules.uniq!
+
+		return schedules
+	end
+
+	def genSchedules(size)
+		# Gives us an array of arrays containing the different section options
+		# The sections of the courses are already wrapped in an array, but we 
+		# need to wrap the individual sections into an array
+		all_sections = (@courses | @sections.map { |s| [s] })
 
 		schedules = []
-		options.combination(size).each do |option|
-			schedules += option.reduce { |initial, course| initial.product(course) } \
+		all_sections.combination(size).to_a.each do |options|
+			schedules += condense_schedules(options)
+=begin
+			schedules += options.reduce { |initial, course| initial.product(course) } \
 				.map { |combo| 
 					if combo.is_a? Array
 						combo.flatten
@@ -51,6 +200,7 @@ class Scheduler
 				.map { |sections| Schedule.new.addSections sections }
 
 			schedules.delete_if { |schedule| schedule.checkForConflicts != [] }
+=end
 		end
 
 		return schedules
@@ -67,10 +217,9 @@ class Scheduler
 		size = @sections.length + @courses.length
 
 		while @schedules == [] && size >= 1
-			@schedules = genSchedule(size)
+			@schedules = genSchedules(size)
 			size -= 1
 		end
-
 
 		return @schedules
 	end

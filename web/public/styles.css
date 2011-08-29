@@ -214,3 +214,7 @@ ul,ol{
 .delete-all {
 	display: none;
 }
+
+.options {
+	padding-left: 10px;
+}

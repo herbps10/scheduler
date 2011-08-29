@@ -1,9 +1,21 @@
+<%= @scheduler.schedules.inspect.gsub('<', '<br/>').gsub('>', '<br/>') %>
+
 <% @scheduler.schedules.each do |schedule| %>
 	<h2>Schedule</h2>
 
-	<% schedule.sections.each do |section| %>
-		<p>
-		<%= section.crn %> <%= section.title %>  |  <%= section.time.prettyDays %>: <%= section.time.prettyTime %>
-		</p>
+	<% schedule.each do |section| %>
+		<% if section.kind_of? Array %>
+			<div class='options'>
+				<% section.each_with_index do |option, i| %>
+					<p>
+					<%= option.crn %> <%= option.title %>  |  <%= option.time.prettyDays %>: <%= option.time.prettyTime %>
+					</p>
+				<% end %>
+			</div>
+		<% else %>
+			<p>
+			<%= section.crn %> <%= section.title %>  |  <%= section.time.prettyDays %>: <%= section.time.prettyTime %>
+			</p>
+		<% end %>
 	<% end %>
 <% end %>

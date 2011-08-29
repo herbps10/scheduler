@@ -14,7 +14,28 @@ class Section
 	end
 
 	def conflict? section
-		return true if @time.conflict? section.time
-		return false
+		if section.kind_of?(Array) == true
+			section.each do |s|
+				return true if @time.conflict?(s.time) == true
+			end
+
+			return false
+		else
+			return true if @time.conflict? section.time
+			return false
+		end
+	end
+
+	def sameCourse? section
+		if section.kind_of?(Array) == true
+			section.each do |s|
+				return true if s.department == @department and s.courseNumber == @courseNumber
+			end
+
+			return false
+		else
+			return true if section.department == @department and section.courseNumber == @courseNumber
+			return false
+		end
 	end
 end
