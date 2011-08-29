@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <head>
-	<title>Scheduler</title>
+	<title>Block Scheduler [working title]</title>
 	<script type='text/javascript' src='jquery.js'></script>
 	<script type='text/javascript' src='elliott.js'></script>
+    
+    <script type='text/javascript' src='jquery.scrollTo-min.js'></script>
+	<script type='text/javascript' src='jquery.scrollTo.js'></script>
+    
+	<script type='text/javascript' src='jquery-columnnav-1.1.0-min.js'></script>
+	<script type='text/javascript' src='jquery-columnnav-1.1.0.js'></script>
+    
 	<link rel='stylesheet' href='/styles.css' />
 </head>
 <body>
+
+<img class='background' src="images/background_gradient.png" alt="grandient" />
 
 <div id="header">Scheduler</div>
 
@@ -13,19 +22,19 @@
 
 <div id="list">
     <div id='list_title'>Added Courses:</div>
-    <a href='#' class='delete-all'>delete all</a>
+    <a href='#' class='delete-all'>remove all</a>
 
 	<ul id="course_list"></ul>
-    <div id='generate_button'>
+    <div id='generate_button' class = 'button'>
         <a href='#'>Generate Schedules</a>
     </div>
 </div>
 
-<div id='back_button'>
+<div id='schedules'></div>
+
+<div id='back_button' class = 'button'>
     <a href='#'>Back</a>
 </div>
-
-<div id='schedules'></div>
 
 </body>
 </html>

@@ -1,26 +1,27 @@
 
 
+<div id='searchboxes'>
+    <input type='text' id='departments-search' size='40' />
+    <input type='text' id='courses-search' size='40' />
+</div>
 
 <div id="sliders">
-    <input type='text' id='departments-search' size='20' />
-    <input type='text' id='courses-search' size='40' />
-	<ul class="departments">
+    <ul id="myTree" class="departments">
+        <div id='departments'>
 		<% @data.departments.each do |department| %>
-
-			<li class = "department <%= department.title %>">
-				<a  class = "department-title"><%= department.title %></a>
-
+            <li class = "department <%= department.title %>">
+				<a  href="#" class = "department-title"><%= department.title %></a>
 				<ul class = "courses" >
-
-					<% department.courses.each do |course| %>
-
+                
+                    <div id='courses'>
+                        <% department.courses.each do |course| %>
 						<li class= "course <%= course.title %>">
-
-							<a  class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
-
+                        
+							<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
 							<ul class="sections">
-
-								<% course.sections.each do |section| %>
+                            
+                                <div id='sections'>
+                                    <% course.sections.each do |section| %>
 
 									<li class="section" rel='<%= section.crn %>'>
 										<% if section.time.tba == true %>
@@ -29,18 +30,19 @@
 											<span class='days'><%= section.time.prettyDays %>:</span> <span class='time'><%= section.time.prettyTime %></span>
 										<% end %>
 
-										<br/><span class='instructor'><%= section.instructor %></span>
-										<a href='#'><span class='crn'>
+										<br/><span class='instructor'><%= section.instructor %></span><a href='#'><span class='crn'>
 											<%= section.crn %></span>
 										</a>
 									</li>
-
-								<% end %>
+                                    <% end %>
+                                </div>
 							</ul>
 						</li>
-				 	<% end %>
+                        <% end %>
+                    </div>
 				</ul>
 			</li>
-		<% end %>
+            <% end %>
+        </div>
 	</ul>
 </div>

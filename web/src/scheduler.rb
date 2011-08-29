@@ -159,7 +159,7 @@ class Scheduler
 =end
 
 					if subtract(s1, s2).length == 1
-						replace = intersect_crn(s1, s2) + [subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }
+						replace = intersect_crn(s1, s2) + [[subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }]
 
 						replacement.push replace
 					end
