@@ -58,10 +58,6 @@
 			containerMargin:"0",
 			containerWidth:"400px",
 			containerHeight:"250px",
-			containerBackgroundColor:"",
-			containerBackgroundRepeat:"",
-			containerBackgroundPosition:"",
-			containerBorder:"1px solid rgb(178,178,178)",
 			columnWidth:250,
 			columnScrollVelocity:200,
 			callBackFunction:null
@@ -83,10 +79,6 @@
 			margin:configuration.containerMargin,
 			width:configuration.containerWidth,
 			height:configuration.containerHeight,
-			backgroundColor:configuration.containerBackgroundColor,
-			backgroundPosition:configuration.containerBackgroundPosition,
-			backgroundRepeat:configuration.containerBackgroundRepeat,
-			border:configuration.containerBorder,
 			overflowX:"auto",
 			overflowY:"hidden"
 		});
