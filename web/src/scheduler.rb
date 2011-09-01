@@ -51,8 +51,6 @@ class Scheduler
 
 		ret.map! { |r| r.flatten.sort_by { |s| s.crn } }
 		
-		puts ret.length
-
 		return ret
 	end
 
@@ -118,7 +116,6 @@ class Scheduler
 					end
 				end
 			end
-
 		end
 
 		return ret
@@ -145,9 +142,35 @@ class Scheduler
 		return true
 	end
 
+	def split_by_class(sections)
+		ret = []
+
+		i = 0
+		sections.each do |s1|
+			ret[i] = [s1]
+
+			sections.each do |s2|
+				next if s1 == s2
+
+				if s1.department == s2.department and s1.courseNumber == s2.courseNumber
+					ret[i].push s2
+				end
+			end
+
+			i += 1
+			sections.delete_if { |s| s == s1 }
+		end
+
+		ret.map! do |r|
+			r.flatten.sort_by { |s| s.crn }
+		end
+
+		return ret
+	end
+
 	def condense_schedules(options)
 		schedules = product(0, options)
-
+		
 		return [schedules] if same_course(schedules)
 
 		return [schedules] if schedules.length == 1
@@ -159,44 +182,94 @@ class Scheduler
 				schedules.each do |s2|
 					next if s1 == s2
 
+					if i == 0 
+						puts "s1"
+						puts s1.inspect.gsub('>', "\n")
+						puts
+						puts "s2"
+						puts s2.inspect.gsub('>', "\n")
+						puts
+						puts "intersect"
+						puts intersect(s1, s2).inspect.gsub('>', "\n")
+						puts
+						puts "intersect crn"
+						puts intersect_crn(s1, s2).inspect.gsub('>', "\n")
+						puts
+						puts "subtract s1 s2"
+						puts subtract(s1, s2).inspect.gsub('>', "\n")
+						puts
+						puts "subtract s2 s1"
+						puts subtract(s2, s1).inspect.gsub('>', "\n")
+					end
+					
+					if intersect(s1, s2).length >= 1
+						combination = split_by_class(subtract(s1, s2) + subtract(s2, s1));
+
+						if i == 0
+							puts
+							puts "combination"
+							puts combination.inspect.gsub('>', "\n")
+						end
+
+						#replace = intersect_crn(s1, s2) + [[subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }]
+						replace = intersect_crn(s1, s2) + split_by_class(subtract(s1, s2) + subtract(s2, s1))
+
+						if i == 0
+							puts
+							puts replace.inspect.gsub('>', "\n")
+						end
+
 =begin
-					puts "s1"
-					puts s1.inspect
-					puts
-					puts "s2"
-					puts s2.inspect
-					puts
-					puts "intersect"
-					puts intersect_crn(s1, s2).inspect
-					puts
-					puts "subtract s1 s2"
-					puts subtract(s1, s2).inspect
-					puts
-					puts "subtract s2 s1"
-					puts subtract(s2, s1).inspect
-					puts
-					puts
-					puts
+						replace = replace.map do |arr|
+							if arr.kind_of? Array
+								arr.uniq
+							else
+								arr
+							end
+						end			
+
+						replace.each do |arr|
+							if arr.kind_of? Array
+								arr.each do |element|
+									replace.delete_if { |r| r == element }
+								end
+							end
+						end
 =end
 
-					if subtract(s1, s2).length == 1
-						replace = intersect_crn(s1, s2) + [[subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }]
 
 						replacement.push replace
 					end
+
+					if i == 0
+						puts
+						puts
+						puts
+					end
 				end
 
-				options.delete_if { |s| s == s1 }
+				schedules.delete_if { |s| s == s1 }
 			end
+			puts
+			
+			#puts
+			#puts replacement.inspect.gsub(">", "\n")
+			#puts
 
+			puts replacement.length
+			
 			break if replacement.length == 0
 
-
 			schedules = replacement.clone
+
+=begin
+			schedules.uniq!
+=end
+
+			break if schedules.length == 1
+
 			i += 1
 		end
-
-		schedules.uniq!
 
 		return schedules
 	end
@@ -211,19 +284,6 @@ class Scheduler
 
 		all_sections.combination(size).to_a.each do |options|
 			schedules += condense_schedules(options)
-=begin
-			schedules += options.reduce { |initial, course| initial.product(course) } \
-				.map { |combo| 
-					if combo.is_a? Array
-						combo.flatten
-					else
-						combo
-					end
-				} \
-				.map { |sections| Schedule.new.addSections sections }
-
-			schedules.delete_if { |schedule| schedule.checkForConflicts != [] }
-=end
 		end
 
 		return schedules
