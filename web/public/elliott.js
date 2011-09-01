@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 		$(this).toggleClass('listed');
 
-		var text = $(this).children('a').text().trim();
+		var text = $(this).children('.section_text').children('.crn').text().trim();
 
 		if(courseList.indexOf(text) == -1) {
 			courseList.push(text);
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		$(courseList).each(function(i) {
 			var section_element = $('.section[rel=' + courseList[i] + ']');
 
-			var title = section_element.parent('.sections').siblings('.course-title').text();
+			var title = section_element.parent().parent().parent().siblings('.course-title').text();
 			var time = section_element.children('.time').text();
 			var days = section_element.children('.days').text();
 
