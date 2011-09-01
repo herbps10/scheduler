@@ -12,11 +12,8 @@ $(document).ready(function() {
  		containerBackgroundColor        : "rgb(255,255,255)",
  		columnFontFamily                : "Arial,sans-serif",
  		columnScrollVelocity            : 600,
-        containerWidth                  : "755px",
+        containerWidth                  : "750px",
         containerMargin                 : "20px auto auto auto",
-    	columnDeselectBackgroundImage   : "url(/images/dept_light.png)",
-    	//columnSelectBackgroundImage     : "url(/images/dept_sel.png)",
-        
  	});
 
 	var courseList = [];

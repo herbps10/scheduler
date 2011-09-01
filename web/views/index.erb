@@ -24,6 +24,7 @@
                                     <% course.sections.each do |section| %>
 
 									<li class="section" rel='<%= section.crn %>'>
+                                    <div class='section_text'>
 										<% if section.time.tba == true %>
 											<span class='time'>Time TBA</span>
 										<% else %>
@@ -33,6 +34,7 @@
 										<br/><span class='instructor'><%= section.instructor %></span><a href='#'><span class='crn'>
 											<%= section.crn %></span>
 										</a>
+                                    </div>
 									</li>
                                     <% end %>
                                 </div>
