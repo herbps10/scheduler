@@ -46,7 +46,7 @@ $(document).ready(function() {
 			var time = section_element.children('.time').text();
 			var days = section_element.children('.days').text();
 
-			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='list_course-title'>" + title + "</span><br/><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span><br/><a href='#' class='delete'>remove</a></li>");
+			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='list_course-title'>" + title + "</span><br/><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span><a href='#' class='delete'>remove</a></li><br/>");
 		});
 	});
 
