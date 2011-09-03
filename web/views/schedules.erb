@@ -4,7 +4,10 @@
 
 	<% schedule.each do |section| %>
 		<% if section.kind_of? Array %>
-			<div class='options'>
+			<% if section.length > 1 %>
+				<div class='options'>
+			<% end %>
+
 				<% section.each_with_index do |option, i| %>
 					<p>
         					<span class='course-title'>• <%= option.title %></span><br/><span class='days'><%= option.time.prettyDays %>:</span><span class='time'> <%= option.time.prettyTime %></span>
@@ -12,13 +15,10 @@
 						<%= option.crn %>
 					</p>
 				<% end %>
-			</div>
-		<% else %>
-			<p>
-        			<span class='course-title'>• <%= section.title %></span><br/><span class='days'><%= section.time.prettyDays %>:</span><span class='time'> <%= section.time.prettyTime %></span>
 
-				<%= section.crn %>
-			</p>
+			<% if section.length > 1 %>
+				</div>
+			<% end %>
 		<% end %>
 	<% end %>
 </div>

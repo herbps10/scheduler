@@ -1,3 +1,26 @@
+class Array
+	def conflict?(section)
+		self.each do |e|
+			return true if e.conflict?(section) == true
+		end
+
+		return false
+	end
+
+	def all_length
+		sum = 0
+		self.each do |e|
+			if e.kind_of? Array
+				sum += e.length 
+			end
+		end
+
+		sum = self.length if self.length > 0 and sum == 0
+
+		return sum
+	end
+end
+
 class Scheduler
 	def initialize
 		@sections = []
@@ -43,235 +66,40 @@ class Scheduler
 		ret = []
 		sets[index].each do |element|
 			product(index + 1, sets).each do |e|
-				if element.conflict?(e) == false and element.sameCourse?(e) == false
+				if element.conflict?(e) == false
 					ret.push [element] + [e]
 				end
 			end
 		end
 
-		ret.map! { |r| r.flatten.sort_by { |s| s.crn } }
-		
 		return ret
 	end
 
-	def subtract(list1, list2)
-		if list1.kind_of? Array
-			list1.flatten! 
-		else
-			list1 = [list1]
-		end
+	def has_conflict(sections)
+		sections = sections.clone
+		return false if sections.length <= 1
 
-		if list2.kind_of? Array
-			list2.flatten!
-		else
-			list2 = [list2]
-		end
-
-
-		ret = []
-		list1.each do |s1|
-			included = false
-			list2.each do |s2|
-				next if s1 == s2
-
-				if s1.department == s2.department and s1.courseNumber == s2.courseNumber
-					included = true
-				end
-			end
-
-			ret.push s1 if included == true
-
-			#list1.delete_if { |l| l == s1 }
-		end
-		
-		return ret
-	end
-
-	def intersect(list1, list2, crn = false)
-		if list1.kind_of? Array
-			list1.flatten! 
-		else
-			list1 = [list1]
-		end
-
-		if list2.kind_of? Array
-			list2.flatten!
-		else
-			list2 = [list2]
-		end
-
-
-		ret = []
-
-		list1.each do |s1|
-			included = false
-			list2.each do |s2|
-				if crn == true
-					if s1.crn == s2.crn
-						ret.push s2
-					end
-				else
-					if s1.department == s2.department and s1.courseNumber == s2.courseNumber
-						ret.push s2
-					end
-				end
-			end
-		end
-
-		return ret
-	end
-
-	def intersect_crn(list1, list2)
-		intersect(list1, list2, true)
-	end
-
-	def same_course(arr)
-		return false if arr.flatten != arr
-		return false if arr.length == 0
-
-		arr.each do |s1|
-			arr.each do |s2|
-				next if s1 == s2
-
-				puts s1.department + " " + s2.department
-				return false if s1.department != s2.department
-				return false if s1.department == s2.department && s1.courseNumber != s2.courseNumber
-			end
-		end
-
-		return true
-	end
-
-	def split_by_class(sections)
-		ret = []
-
-		i = 0
 		sections.each do |s1|
-			ret[i] = [s1]
-
 			sections.each do |s2|
 				next if s1 == s2
 
-				if s1.department == s2.department and s1.courseNumber == s2.courseNumber
-					ret[i].push s2
-				end
+				return true if s1.conflict? s2
 			end
 
-			i += 1
 			sections.delete_if { |s| s == s1 }
 		end
 
-		ret.map! do |r|
-			r.flatten.sort_by { |s| s.crn }
-		end
-
-		return ret
+		return false
 	end
 
-	def condense_schedules(options)
-		schedules = product(0, options)
-		
-		return [schedules] if same_course(schedules)
-
-		return [schedules] if schedules.length == 1
-
-		i = 0
-		while true
-			replacement = []
-			schedules.each do |s1|
-				schedules.each do |s2|
-					next if s1 == s2
-
-					if i == 0 
-						puts "s1"
-						puts s1.inspect.gsub('>', "\n")
-						puts
-						puts "s2"
-						puts s2.inspect.gsub('>', "\n")
-						puts
-						puts "intersect"
-						puts intersect(s1, s2).inspect.gsub('>', "\n")
-						puts
-						puts "intersect crn"
-						puts intersect_crn(s1, s2).inspect.gsub('>', "\n")
-						puts
-						puts "subtract s1 s2"
-						puts subtract(s1, s2).inspect.gsub('>', "\n")
-						puts
-						puts "subtract s2 s1"
-						puts subtract(s2, s1).inspect.gsub('>', "\n")
-					end
-					
-					if intersect(s1, s2).length >= 1
-						combination = split_by_class(subtract(s1, s2) + subtract(s2, s1));
-
-						if i == 0
-							puts
-							puts "combination"
-							puts combination.inspect.gsub('>', "\n")
-						end
-
-						#replace = intersect_crn(s1, s2) + [[subtract(s1, s2) + subtract(s2, s1)].flatten.sort_by { |s| s.crn }]
-						replace = intersect_crn(s1, s2) + split_by_class(subtract(s1, s2) + subtract(s2, s1))
-
-						if i == 0
-							puts
-							puts replace.inspect.gsub('>', "\n")
-						end
-
-=begin
-						replace = replace.map do |arr|
-							if arr.kind_of? Array
-								arr.uniq
-							else
-								arr
-							end
-						end			
-
-						replace.each do |arr|
-							if arr.kind_of? Array
-								arr.each do |element|
-									replace.delete_if { |r| r == element }
-								end
-							end
-						end
-=end
-
-
-						replacement.push replace
-					end
-
-					if i == 0
-						puts
-						puts
-						puts
-					end
-				end
-
-				schedules.delete_if { |s| s == s1 }
-			end
-			puts
-			
-			#puts
-			#puts replacement.inspect.gsub(">", "\n")
-			#puts
-
-			puts replacement.length
-			
-			break if replacement.length == 0
-
-			schedules = replacement.clone
-
-=begin
-			schedules.uniq!
-=end
-
-			break if schedules.length == 1
-
-			i += 1
+	def course_product(sections)
+		combinations = []
+		puts sections.length
+		(1..sections.length).to_a.each do |size|
+			combinations += sections.combination(size).to_a.delete_if { |s| has_conflict(s) }
 		end
 
-		return schedules
+		return combinations
 	end
 
 	def genSchedules(size)
@@ -283,7 +111,20 @@ class Scheduler
 		schedules = []
 
 		all_sections.combination(size).to_a.each do |options|
-			schedules += condense_schedules(options)
+			course_combinations = []
+
+			options.each do |course|
+				course_combinations += [course_product(course)]
+			end
+
+			all = product(0, course_combinations).sort_by { |s| s.all_length }.reverse
+			
+			return false if all == []
+
+			all.delete_if { |s| s.all_length != all[0].all_length }
+
+			return all
+
 		end
 
 		return schedules
@@ -303,12 +144,12 @@ class Scheduler
 
 		size = @sections.length + @courses.length
 
-		while @schedules == []
+		#while @schedules == []
 			@schedules = genSchedules(size)
 
 			size -= 1
-			break if size == 0
-		end
+			#break if size == 0
+		#end
 
 		return @schedules
 	end
