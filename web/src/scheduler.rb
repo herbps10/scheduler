@@ -19,6 +19,14 @@ class Array
 
 		return sum
 	end
+
+	def contains_arrays
+		self.each do |e|
+			return true if e.kind_of? Array
+		end
+
+		return false
+	end
 end
 
 class Scheduler
@@ -64,10 +72,15 @@ class Scheduler
 		end
 
 		ret = []
+
 		sets[index].each do |element|
 			product(index + 1, sets).each do |e|
 				if element.conflict?(e) == false
-					ret.push [element] + [e]
+					if e.contains_arrays == true
+						ret.push([element] + e)
+					else
+						ret.push [element] + [e]
+					end
 				end
 			end
 		end
@@ -108,8 +121,6 @@ class Scheduler
 		# need to wrap the individual sections into an array
 		all_sections = (@courses | @sections.map { |s| [s] })
 
-		schedules = []
-
 		all_sections.combination(size).to_a.each do |options|
 			course_combinations = []
 
@@ -118,7 +129,7 @@ class Scheduler
 			end
 
 			all = product(0, course_combinations).sort_by { |s| s.all_length }.reverse
-			
+
 			return false if all == []
 
 			all.delete_if { |s| s.all_length != all[0].all_length }
@@ -126,8 +137,6 @@ class Scheduler
 			return all
 
 		end
-
-		return schedules
 	end
 
 	def schedules

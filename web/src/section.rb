@@ -16,7 +16,13 @@ class Section
 	def conflict? section
 		if section.kind_of?(Array) == true
 			section.each do |s|
-				return true if @time.conflict?(s.time) == true
+				if s.kind_of?(Array) == true
+					s.each do |a|
+						return true if @time.conflict?(a.time) == true
+					end
+				else
+					return true if @time.conflict?(s.time) == true
+				end
 			end
 
 			return false

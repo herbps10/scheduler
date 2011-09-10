@@ -1,8 +1,11 @@
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
+
+
 <div class='schedule'>
 	<h3>Schedule <%= schedule_index + 1 %></h3>
 
 	<% schedule.each do |section| %>
+		<% section = [section] if section.kind_of?(Array) == false %>
 		<% if section.kind_of? Array %>
 			<% if section.length > 1 %>
 				<div class='options'>
