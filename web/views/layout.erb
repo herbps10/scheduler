@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <head>
-	<title>Block Scheduler [working title]</title>
+	<title>Knight Scheduler [working title]</title>
 	<script type='text/javascript' src='jquery.js'></script>
-	<script type='text/javascript' src='elliott.js'></script>
+	<script type='text/javascript' src='slider-scripts.js'></script>
     
-    <script type='text/javascript' src='jquery.scrollTo-min.js'></script>
 	<script type='text/javascript' src='jquery.scrollTo.js'></script>
     
-	<script type='text/javascript' src='jquery-columnnav-1.1.0-min.js'></script>
-	<script type='text/javascript' src='jquery-columnnav-1.1.0.js'></script>
+	<script type='text/javascript' src='columnnav.js'></script>
     
 	<link rel='stylesheet' href='/styles.css' />
 </head>
@@ -16,18 +14,24 @@
 
 <img class='background' src="images/background_gradient.png" alt="grandient" />
 
-<div id="header">Scheduler</div>
+<div id="header">Knight Scheduler</div>
 
 <%= yield %>
 
-<div id="list">
-    <div id='list_title'>Added Courses:</div>
-    <a href='#' class='delete-all'>remove all</a>
-
-	<ul id="course_list"></ul>
-    
-    <div id='generate_button' class = 'button'>
+<div id='generate_button'>
+    <div class='button'>
         <a href='#'>Generate Schedules</a>
+    </div>
+</div>
+
+<div class="list_wrapper">
+    <div id="list">
+        <div id='list_title'>
+            Selected Courses:
+            <a href='#' class='delete-all'>clear all</a>
+        </div>
+
+        <ul id="course_list"></ul>
     </div>
 </div>
 

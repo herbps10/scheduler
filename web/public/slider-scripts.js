@@ -46,7 +46,7 @@ $(document).ready(function() {
 			var time = section_element.children('.time').text();
 			var days = section_element.children('.days').text();
 
-			$('#course_list').append("<li rel='" + courseList[i] + "'><span class='list_course-title'>" + title + "</span><br/><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span><a href='#' class='delete'>remove</a></li><br/>");
+			$('#course_list').append("<li rel='" + courseList[i] + "'><a href='#' class='delete'><img src='images/delete.png' alt='delete'></a> <span class='list_course-title'>" + title + "</span><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span></li>");
 		});
 	});
 
@@ -82,6 +82,8 @@ $(document).ready(function() {
 		});
 
         	$('#sliders, #searchboxes').hide(); 
+            $('#list').hide();
+            $('#generate_button').hide();
         	$('#back_button').show();
         	$('#schedules').show();
 	});
@@ -118,6 +120,8 @@ $(document).ready(function() {
     $('#back_button').click(function() {
         $('#schedules').hide();
         $('#sliders').show();
+        $('#list').show();
+        $('#generate_button').show();
         $('#back_button').hide();
     });
 
