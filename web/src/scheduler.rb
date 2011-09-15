@@ -130,7 +130,7 @@ class Scheduler
 
 			all = product(0, course_combinations).sort_by { |s| s.all_length }.reverse
 
-			return false if all == []
+			return [] if all == []
 
 			all.delete_if { |s| s.all_length != all[0].all_length }
 
@@ -153,12 +153,14 @@ class Scheduler
 
 		size = @sections.length + @courses.length
 
-		#while @schedules == []
+		while @schedules == []
 			@schedules = genSchedules(size)
 
 			size -= 1
-			#break if size == 0
-		#end
+			break if size == 0
+		end
+
+		puts @schedules.inspect
 
 		return @schedules
 	end

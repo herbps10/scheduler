@@ -15,12 +15,6 @@ require "./src/scheduler.rb"
 $redis = Redis.new
 
 get '/' do
-	response.set_cookie("schedule", Time.new.to_f.to_s)
-
-
-	#s1 = Section.new 12606
-	#s2 = Section.new 16279
-
 	@data = Everything.new
 
 	erb :index
@@ -38,7 +32,7 @@ get "/schedules" do
 
 	crns.each { |crn| @scheduler.addSection Section.new(crn) }
 
-	#return @scheduler.inspect.gsub('<', '')
+	#return @scheduler.inspect.gsub('<', '<br/>')
 
 	@scheduler.schedules
 
