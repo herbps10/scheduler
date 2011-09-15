@@ -5,25 +5,25 @@
 	<h3>Schedule <%= schedule_index + 1 %></h3>
 
 	<% schedule.each do |section| %
-        <% section = [section] if section.kind_of?(Array) == false %>
-        <span class='course-title'><%= section[0].title %></span><br/>
-		<% if section.kind_of? Array %>
-			<% if section.length > 1 %>
-				<select class='options'>
-			<% end %>
+        	<% section = [section] if section.kind_of?(Array) == false %>
+        	<span class='course-title'><%= section[0].title %></span><br/>
 
-				<% section.each_with_index do |option, i| %>
+		<% if section.length > 1 %>
+			<select class='options'>
+		<% end %>
+
+		<% section.each_with_index do |option, i| %>
                     <% if section.length > 1 %>
                         <option>
                     <% end %>
                         <span class='days'><%= option.time.prettyDays %>:</span><span class='time'> <%= option.time.prettyTime %></span><%= option.crn %>
                     <% if section.length > 1 %>
                         </option>
-                    <% end %>				<% end %>
+                    <% end %>
+		<% end %>
 
-			<% if section.length > 1 %>
-				</select><br/>
-			<% end %>
+		<% if section.length > 1 %>
+			</select><br/>
 		<% end %>
 	<% end %>
 </div>
