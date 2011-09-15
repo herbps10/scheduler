@@ -6,7 +6,11 @@
 
     <ol>
 	<% schedule.each do |section| %>
-        	<% section = [section] if section.kind_of?(Array) == false %>
+		<%
+		if section.kind_of?(Array) == false
+        		section = [section] if section.kind_of?(Array) == false
+		end
+		%>
         	<li class='course-title'><%= section[0].title %></li>
             	<ul>
 			<% if section.length > 1 %>
