@@ -104,7 +104,7 @@ body{
 
 	clear: both;
 	overflow-x: visible;
-	overflow-y: scroll;
+	overflow-y: auto;
 
 }
 #course_list li {
