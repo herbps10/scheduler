@@ -22,21 +22,21 @@ body{
 }
 
 #searchboxes {
-	width: 755px;
+	width: 750px;
 	margin: auto;
 }
 
-#departments-search {
+#departments-search, #courses-search, #sections-search {
+	background-image: url(images/magnifier.png);
+	background-repeat: no-repeat;
+	background-position: right;
 	position: relative;
+	width: 226px;
 	padding: 5px;
-	margin-right: 16px;
-	margin-left: -1px;
+	margin: 0px 10px 8px 0px;
 }
-
-#courses-search {
-	position: relative;
-	padding: 5px;
-	margin-left: -2px;
+#sections-search {
+	margin-right: 0;
 }
 
 #schedules {
@@ -87,32 +87,47 @@ body{
 }
 
 #sliders {
+	width: auto;
 	margin: auto;
+	padding: 0;
 }
 
 #course_list {
+	position: relative;
+	margin: 10px 0px 10px 0px;
 	padding: 20px;
-	height: 110px;
-	overflow-y: scroll;
+	height: 100px;	
+	overflow-y: auto;
 	overflow-x: visible;
 	font-size: .8em;
+	text-align: right;
+
 	clear: both;
+	overflow-x: visible;
+	overflow-y: scroll;
+
+}
+#course_list li {
+	width: 280;
 }
 
 #list {
-	padding: 10px 20px 10px 20px;
+	position: fixed;
+	float: right;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
 	margin: auto;
 	bottom: 0px;
-	width: 640px;
-	height: 200px;
+	width: 300px;
+	max-height: 30%;
 	
 	background-color: rgba(25, 25, 25, 0.1);
 	box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
 	-moz-box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
 	-webkit-box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
-	
-	overflow: hidden;
 }
+
 .list_wrapper {
 	padding: auto;
 }
@@ -131,10 +146,6 @@ body{
 }
 .list_course-title {
 	text-align: left;
-}
-
-#myTree {
-
 }
 
 #generate_button {
@@ -185,7 +196,8 @@ a[href] {
 }
 
 .wrapper {
-	padding-top: 30px;
+	margin: auto;
+	margin-top: 0;
 	border-color: hidden;
 	background-image: url(images/shadow_inset.png);
 	background-size: contain;
@@ -231,6 +243,9 @@ a[href] {
 	-moz-box-shadow:inset 0px 6px 12px rgba(37, 36, 36, .8);
 	-webkit-box-shadow:inset 0px 6px 12px rgba(37, 36, 36, .8);
 }
+#sliders .section:active, #sliders .section.listed:active {
+	padding: 7px;
+}
 
 #sliders .course.selected, #sliders .department.selected{
 	background: #eeeeee;
@@ -253,12 +268,12 @@ a[href] {
 }
 
 .department-title {
-	padding: 6px;
+	margin: 6px;
 	font-size: 1.2em;
 }
 
 .course-title {
-	padding: 6px;
+	margin: 6px;
 	font-size: .9em;
 }
 
@@ -266,7 +281,7 @@ a[href] {
 	font-weight: bold;
 }
 
-.section_text {
+.section {
 	padding: 6px;
 }
 

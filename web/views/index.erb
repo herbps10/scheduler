@@ -1,46 +1,35 @@
 <div id='searchboxes'>
-    <input type='text' id='departments-search' size='40' />
-    <input type='text' id='courses-search' size='40' />
+    <input type='text' id='departments-search' />
+    <input type='text' id='courses-search' />
 </div>
 <div id="sliders">
-    <ul id="myTree" class="departments">
-        <div id='departments'>
+    <ul id="departments">
 		<% @data.departments.each do |department| %>
             <li class = "department <%= department.title %>">
 				<a  href="#" class = "department-title"><%= department.title %></a>
-				<ul class = "courses" >
-                
-                    <div id='courses'>
-                        <% department.courses.each do |course| %>
+				<ul id = "courses" >
+                    <% department.courses.each do |course| %>
 						<li class= "course <%= course.title %>">
-                        
 							<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
-							<ul class="sections">
-                            
-                                <div id='sections'>
-                                    <% course.sections.each do |section| %>
-
+							<ul id="sections">
+                                <% course.sections.each do |section| %>
 									<li class="section" rel='<%= section.crn %>'>
-                                        <div class='section_text'>
+                                        <span class='section_text'>
                                             <% if section.time.tba == true %>
                                                 <span class='time'>Time TBA</span>
                                             <% else %>
                                                 <span class='days'><%= section.time.prettyDays %>:</span> <span class='time'><%= section.time.prettyTime %></span>
                                             <% end %>
-
                                             <br/><span class='instructor'><%= section.instructor %></span><span class='crn'>
 											<%= section.crn %></span>
-                                    </div>
+                                        </span>
 									</li>
-                                    <% end %>
-                                </div>
+                                <% end %>
 							</ul>
 						</li>
-                        <% end %>
-                    </div>
+                    <% end %>
 				</ul>
 			</li>
-            <% end %>
-        </div>
+        <% end %>
 	</ul>
 </div>

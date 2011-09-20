@@ -55,10 +55,10 @@
 			containerTop:"",
 			containerLeft:"",
 			containerPadding:"0",
-			containerMargin:"0",
+			containerMargin:"auto",
 			containerWidth:"400px",
-			containerHeight:"250px",
-			columnWidth:250,
+			containerHeight:"320px",
+			columnWidth:255,
 			columnScrollVelocity:200,
 			callBackFunction:null
 		}, configuration);
@@ -79,7 +79,7 @@
 			margin:configuration.containerMargin,
 			width:configuration.containerWidth,
 			height:configuration.containerHeight,
-			overflowX:"auto",
+			overflowX:"hidden",
 			overflowY:"hidden"
 		});
 		
@@ -105,7 +105,6 @@
 			textDecoration:"none",
 			fontWeight:"normal",
 			outline:"none",
-			width:"100%",
 			display:"block"
 		};
 		
@@ -144,10 +143,10 @@
 		$(wrapper).find(selectorName).wrapInner(document.createElement("div"));
 		
 		// Ensure each level can scroll within the container
-		$(wrapper).find(selectorName+" div").css({
+		$(wrapper).find(" div").css({
 			height:"100%",
-			overflowX:"hidden",
-			overflowY:"auto"
+			overflowX:"visible",
+			overflowY:"scroll"
 		});
 				
 		// Style the internals
@@ -198,39 +197,8 @@
 			// Highlight the text if required
 			$(this).css( aSelect );
 			
-			// Add scrolling if required
-			if( (licoords.left - containerPosition.left + ( ( configuration.columnWidth * 2 ) - 1 ) > containerSize ) )
-			{	
-				// Calculate differnce
-				var difference = '+=' + (((licoords.left - containerPosition.left + ( ( configuration.columnWidth * 2 ) - 1) ) ) - containerSize );
-				
-				scrollToLocale( difference );
-			}
-			
 			return false;
 		});
-		
-		// Double decides on task.
-		$(wrapper).find(selectorName+" li a").dblclick( function() {
-			
-			// If there is no callback function, use the existing link
-			if( configuration.callBackFunction == null )
-			{
-				window.location = $(this).attr("href");
-			}
-			else
-			{
-			// Otherwise attach this link to a variable and send it to the callBackFunction for processing
-				var linkObject = $(this);
-				configuration.callBackFunction( linkObject );
-			}
-		});
-		
-		// Scrolls the main view
-		function scrollToLocale( difference )
-		{
-			myself.scrollTo( difference, configuration.columnScrollVelocity, {axis:'x'} );			
-		}
 	}
 })
 (jQuery);

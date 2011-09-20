@@ -5,15 +5,13 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   $('#courses-search, #back_button').hide();
+   $('#courses-search, #section-search, #back_button').hide();
 
-    
-    	$("#myTree").columnNavigation({
+    	$("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
  		columnFontFamily                : "Arial,sans-serif",
- 		columnScrollVelocity            : 600,
         containerWidth                  : "750px",
-        containerMargin                 : "20px auto auto auto",
+        containerMargin                 : "auto auto auto auto",
  	});
 
 	var courseList = [];
@@ -42,11 +40,11 @@ $(document).ready(function() {
 		$(courseList).each(function(i) {
 			var section_element = $('.section[rel=' + courseList[i] + ']');
 
-			var title = section_element.parent().parent().parent().siblings('.course-title').text();
-			var time = section_element.children('.time').text();
-			var days = section_element.children('.days').text();
+			var title = section_element.parent().parent().siblings('.course-title').text();
+			var time = section_element.parent('.time').text();
+			var days = section_element.parent('.days').text();
 
-			$('#course_list').append("<li rel='" + courseList[i] + "'><a href='#' class='delete'><img src='images/delete.png' alt='delete'></a> <span class='list_course-title'>" + title + "</span><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span></li>");
+			$('#course_list').append("<li rel='" + courseList[i] + "'><a href='#' class='delete'><img src='images/delete.png' alt='delete'></a><span class='list_course-title'>" + title + "</span><span class='list_days'>" + days + "</span> <span class='list_time'>" + time + "</span></li>");
 		});
 	});
 
@@ -123,9 +121,11 @@ $(document).ready(function() {
         $('#list').show();
         $('#generate_button').show();
         $('#back_button').hide();
+        $('#searchboxes').show();
     });
 
-	listFilter("#departments-search", ".departments", 'department-title');
-	listFilter("#courses-search", ".courses", 'course-title');
+	listFilter("#departments-search", "#departments", 'department-title');
+	listFilter("#courses-search", "#courses", 'course-title');
+	listFilter("#sections-search", "#sections", 'section_text');
 });
 
