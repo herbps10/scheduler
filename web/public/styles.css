@@ -11,9 +11,17 @@ body{
 	position: fixed;
 }
 
+h1 {
+	font-family: 'Coustard', serif;
+	font-size: 1em;
+	color: rgb(65, 65, 65);
+	text-align: center;
+	margin: -8px 0 36px 0;
+}
+
 #header {
-	padding: 24px 0 24px 0;
-	font-family: 'Josefin Slab', serif;
+	padding: 24px 0 0 0;
+	font-family: 'Coustard', serif;
 	
 	text-align: center;
 	font-size: 4em;
@@ -58,24 +66,34 @@ body{
 	width: 100%;
 }
 
+#schedules table{
+	width: 100%;
+}
+
+#schedules th {
+	padding: 10px 20px;
+	border-bottom: 2px solid;
+}
+#schedules td {
+	border-bottom: 1px solid grey;
+	padding: 6px 8px;
+}
+#schedules tr:hover td {
+	color: black;
+}
+
 .schedule .course-title {	
 	font-size: 1.2em;
 }
 .schedule .days {
-	font-weight: 600;
-	size: 1.1;
-	padding-left: 40px;
 }
 .schedule .time {
 	font-weight: 500;
-	size: 1.05;
 }
 .schedule .instructor {
 	color: gray;
 }
 .schedule .crn {
-	padding-left: 40px;
-	font-size: 1.1em;
 	color: black;
 }
 
@@ -150,12 +168,56 @@ body{
 }
 
 #generate_button {
+	font-family: 'Coustard', serif;
+	font-weight: 900;
+	color: rgb(50, 50, 50);
 	text-align: center;
-	margin: 24px;
-	font-size: 1.4em;
+	margin: 24px auto 24px auto;
+	font-size: 1.6em;
+	width: 400px;
+}
+#generate_button{
+	background-image:linear-gradient(-90deg, rgb(252, 252, 252) 40%, rgb(239, 239, 239) 45%, rgb(199, 199, 199));
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(40%, rgb(252, 252, 252)), color-stop(100%, rgb(199, 199, 199)), color-stop(45%, rgb(239, 239, 239)));
+	background-image:-moz-linear-gradient(-90deg, rgb(252, 252, 252) 40%, rgb(239, 239, 239) 45%, rgb(199, 199, 199));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#99fcfcfc', EndColorStr='#99c7c7c7');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#99fcfcfc', EndColorStr='#99c7c7c7')";
+	background-color:rgb(219, 219, 219);
+	border:1px solid rgba(0, 0, 0, 0.2);
+	border-radius:40px;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
+	padding:5px 10px;
+	box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+#generate_button:hover{
+	box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
+	-moz-box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
+	-webkit-box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
+	border-color: rgba(200, 200, 200, 0.65);
+}
+#generate_button:active,#generate_button:focus{
+	background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#60ffffff', EndColorStr='#00ffffff');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#60ffffff', EndColorStr='#00ffffff')";
+	background-color:rgb(198, 198, 198);
+	box-shadow:0px 0px 8px rgba(247, 242, 242, 0.8);
+	-moz-box-shadow:0px 0px 8px rgba(247, 242, 242, 0.8);
+	-webkit-box-shadow:0px 0px 8px rgba(247, 242, 242, 0.8);
 }
 
-.button {
+.back_button {
+	text-align: center;
+	font-family: 'Coustard', serif;
+	font-size: 1.4em;
+	width: 150px;
+	margin: 24px auto 24px auto;
+}
+.back_button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #adadad;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #adadad;
 	box-shadow:inset 0px 1px 0px 0px #adadad;
@@ -169,26 +231,17 @@ body{
 	border:1px solid #141414;
 	display:inline-block;
 	color:#ebebeb;
-	font-family:Arial;
-	font-weight:bold;
-	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #8c8c8c;
-}.button:hover {
+	text-align: center;
+}.back_button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #212121), color-stop(1, #525252) );
 	background:-moz-linear-gradient( center top, #212121 5%, #525252 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#525252');
 	background-color:#212121;
-}.button:active {
+}.back_button:active {
 	position:relative;
 	top:1px;
-}
-
-#back_button {
-	font-size: 1.8em;
-	text-align: center;
-	float: right;
-	margin: 40px 45% 40px 0;
 }
 
 a[href] {

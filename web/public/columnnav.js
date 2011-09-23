@@ -57,7 +57,7 @@
 			containerPadding:"0",
 			containerMargin:"auto",
 			containerWidth:"400px",
-			containerHeight:"320px",
+			containerHeight:"288px", //multiple of 36 for height of each item
 			columnWidth:255,
 			columnScrollVelocity:200,
 			callBackFunction:null

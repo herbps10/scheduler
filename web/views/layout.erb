@@ -14,19 +14,19 @@
 	<link rel='stylesheet' href='/styles.css' />
     
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <img class='background' src="images/background_gradient.png" alt="grandient" />
 
 <div id="header">Knight Scheduler</div>
+<h1>A scheduling resource for Geneseo Students</h1>
 
 <%= yield %>
 
 <div id='generate_button'>
-    <div class='button'>
         <a href='#'>Generate Schedules</a>
-    </div>
 </div>
 
     <div id="list">
@@ -34,15 +34,14 @@
             Selected Courses:<br/>
             <a href='#' class='delete-all'>[clear all]</a>
         </div>
+            <thread id="course_list"></thread>
+        </div>
 
-        <ul id="course_list"></ul>
-    </div>
+<div class='back_button'>
+    <a href='#' >Reschedule</a>
+</div>
 
 <div id='schedules'></div>
-
-<div id='back_button' class = 'button'>
-    <a href='#'>Back</a>
-</div>
 
 </body>
 </html>
