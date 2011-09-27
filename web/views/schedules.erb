@@ -9,24 +9,48 @@
 		<%
 		if section.kind_of?(Array) == false
         		section = [section] if section.kind_of?(Array) == false
-		end
-		%>
+        end%>
         	<li class='course-title'><%= section[0].title %></li>
-            	<ul>
-			<% if section.length > 1 %>
-			    <div class='options'>
-			<% end %>
+            	<table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Professor</th>
+                            <th>Number of Credits</th>
+                            <th>CRN</th>
+                        <tr>
+                        <tr>
+                    </thread>
+                    <tfoot>
+                        <tr>
+                        <tr>
+                    </tfoot>
+                    
+                    <tbody>
+                    <% if section.length > 1 %>
+                        <tr class='options'>
+                    <% end %>
 
-			<% section.each_with_index do |option, i| %>
-				<li class='section'>
-					<span class='days'><%= option.time.prettyDays %>:</span><span class='time'> <%= option.time.prettyTime %></span><span class='crn'>CRN: <%= option.crn %></span>
-				</li>
-			<% end %>
+                    <% section.each_with_index do |option, i| %>
+                        <tr class='section'>
+                            <td class='days'><span><%= option.time.prettyDays %></td>
+                            <td class='time'><%= option.time.prettyTime %></td>
+                            <td class='professor'></td>
+                            <td class='credits'></td>
+                            <td class='crn'><%= option.crn %></td>
+                        </tr>
+                    <% end %>
 
-			<% if section.length > 1 %>
-			    </div>
-			<% end %>
-        	</ul>
-	<% end %>
+                    <% if section.length > 1 %>
+                        </tr>
+                    <% end %>
+                    </tbody>
+                </table>
+        <% end %>
 </div>
 <% end %>
+
+<div class='back_button'>
+    <a href='#'>Back</a>
+</div>
