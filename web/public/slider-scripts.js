@@ -128,11 +128,11 @@ $(document).ready(function() {
             opacity: 'toggle'
         });
         console.log(document.getElementById('toggle_button').src);
-        if(document.getElementById('toggle_button').src=="http://localhost:9393/images/toggle1.png"){
-            document.getElementById('toggle_button').src = "http://localhost:9393/images/toggle2.png"
+        if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
         }
         else{ 
-            document.getElementById('toggle_button').src = "images/toggle1.png"
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
         }
     
     });
