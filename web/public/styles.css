@@ -1,5 +1,6 @@
 body{
-	font-family: Helvetica, sans-serif;
+	font-family: 'Coustard', serif;
+	font-weight: normal;
 	background-image: url(images/background.png);
 	margin: auto;
 }
@@ -9,6 +10,28 @@ body{
 	height: 100%;
 	width: 100%;
 	position: fixed;
+}
+
+#beta {
+	position: absolute;
+	z-index: 100;
+	top: 35px;
+	margin-left: -20px;
+	
+	-moz-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#beta:hover {
+	-moz-transform: scale(1.1) rotate(-25deg);
+	-webkit-transform: scale(1.1) rotate(-25deg);
+	transform: scale(1.1) rotate(-25deg);
 }
 
 h1 {
@@ -33,6 +56,10 @@ h1 {
 #searchboxes {
 	width: 750px;
 	margin: auto;
+}
+
+#sections {
+	font-family: Ariel, sans-serif;
 }
 
 #departments-search, #courses-search, #sections-search {
@@ -60,23 +87,38 @@ h1 {
 	background-color: rgba(240, 240, 240, 0.5);
 }
 
-#schedules .section {
-	background: none;
-	padding-left: 20px;
+#schedule_intro {
+	padding: 0px 48px 0px 48px;
+	font-family: 'Coustard', serif;
+	text-indent: 24px;
+	font-weight: normal;
+}
+
+#schedules table {
 	width: 100%;
 }
 
-#schedules table{
-	width: 100%;
+#schedules thead {
+	font-weight: normal;
 }
 
 #schedules th {
-	padding: 10px 20px;
-	border-bottom: 2px solid;
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #6D929B;
+	border: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	margin: 0;
+	background-color: #CAE8EA;
 }
 #schedules td {
-	border-bottom: 1px solid grey;
-	padding: 6px 8px;
+	border: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	margin: 0;
+	color: #6D929B;
 }
 #schedules tr:hover td {
 	color: black;
@@ -116,7 +158,8 @@ h1 {
 	position: relative;
 	margin-top: 40px;
 	padding: 12px;
-	max-height: 200px;	
+	max-height: 200px;
+	width: 30%;	
 	overflow-y: auto;
 	font-size: .9em;
 }
@@ -232,7 +275,7 @@ h1 {
 	font-family: 'Coustard', serif;
 	font-size: 1.4em;
 	width: 150px;
-	margin: 24px auto 24px auto;
+	margin: 12px auto 12px auto;
 }
 .back_button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #adadad;

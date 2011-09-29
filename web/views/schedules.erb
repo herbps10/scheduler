@@ -1,5 +1,9 @@
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 
+<div id='schedule_intro'>
+    <p>Based on your courses you have selected, the schedules available to choose from are listed below.
+    <p>All of the available sections for a given course are listed beneath it for your convenience.
+</div>
 
 <div class='schedule'>
 	<h3>Schedule <%= schedule_index + 1 %></h3>
@@ -52,5 +56,5 @@
 <% end %>
 
 <div class='back_button'>
-    <a href='#'>Back</a>
+    <a href='#'>Back to Top</a>
 </div>
