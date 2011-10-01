@@ -107,7 +107,6 @@ class Scheduler
 
 	def course_product(sections)
 		combinations = []
-		puts sections.length
 		(1..sections.length).to_a.each do |size|
 			combinations += sections.combination(size).to_a.delete_if { |s| has_conflict(s) }
 		end
@@ -132,7 +131,10 @@ class Scheduler
 
 			return [] if all == []
 
-			all.delete_if { |s| s.all_length != all[0].all_length }
+
+			all.delete_if { |s| 
+				s.all_length != all[0].all_length
+			}
 
 			return all
 
@@ -153,6 +155,8 @@ class Scheduler
 
 		size = @sections.length + @courses.length
 
+		size = sum if(@courses.length == 1)
+
 		while @schedules == []
 			@schedules = genSchedules(size)
 
@@ -160,7 +164,9 @@ class Scheduler
 			break if size == 0
 		end
 
-		puts @schedules.inspect
+		if @sections.length + @courses.length == 1
+			@schedules = [@schedules]
+		end
 
 		return @schedules
 	end

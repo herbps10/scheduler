@@ -2,6 +2,7 @@
     <p>Based on your courses you have selected, the schedules available to choose from are listed below.
     <p>All of the available sections for a given course are listed beneath it for your convenience.
 </div>
+
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 <div class='schedule'>
 	<h3>Schedule <%= schedule_index + 1 %></h3>
@@ -11,7 +12,8 @@
 		<%
 		if section.kind_of?(Array) == false
         		section = [section] if section.kind_of?(Array) == false
-        end%>
+        	end
+		%>
         	<li class='course-title'><%= section[0].title %></li>
             	<table>
                     <thead>
