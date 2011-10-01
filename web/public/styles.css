@@ -121,8 +121,13 @@ h1 {
 	padding: 6px 6px 6px 12px;
 	margin: 0;
 	color: #6D929B;
+	cursor: pointer;
 }
 #schedules tr:hover td {
+	color: black;
+}
+
+#schedules tr.selected td {
 	color: black;
 }
 
@@ -479,4 +484,10 @@ li {
 
 .options {
 
+}
+
+.copyable-crns {
+	font-family: "Courier New", Courier, Monospace;
+	padding-top: 5px;
+	height: 1em;
 }

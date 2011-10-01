@@ -3,11 +3,13 @@
     <p>All of the available sections for a given course are listed beneath it for your convenience.
 </div>
 
+<%= @scheduler.schedules.length %>
+
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 <div class='schedule'>
 	<h3>Schedule <%= schedule_index + 1 %></h3>
 
-    <ol>
+    	<ol>
 	<% schedule.each do |section| %>
 		<%
 		if section.kind_of?(Array) == false
@@ -40,8 +42,8 @@
                         <tr class='section'>
                             <td class='days'><span><%= option.time.prettyDays %></td>
                             <td class='time'><%= option.time.prettyTime %></td>
-                            <td class='professor'></td>
-                            <td class='credits'></td>
+                            <td class='professor'><%= option.instructor %></td>
+                            <td class='credits'><%= option.credits %></td>
                             <td class='crn'><%= option.crn %></td>
                         </tr>
                     <% end %>
@@ -49,9 +51,14 @@
                     <% if section.length > 1 %>
                         </tr>
                     <% end %>
+
                     </tbody>
                 </table>
         <% end %>
+	</ol>
+
+	<div class='copyable-crns'></div>
+
 </div>
 <% end %>
 

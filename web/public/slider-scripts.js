@@ -5,8 +5,8 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   $('#courses-search, #section-search').hide();
-   $('.back_button').hide();
+   	$('#courses-search, #section-search').hide();
+   	$('.back_button').hide();
 
     	$("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
@@ -108,39 +108,53 @@ $(document).ready(function() {
 		});
 	}
 
-    $('.back_button').click(function() {
-        $('#schedules').hide();
-        $('#sliders').show();
-        $('#list').show();
-        $('#generate_button').show();
-        $('.back_button').hide();
-        $('#searchboxes').show();
-    });
-    
-    $('#course_list').animate({
-            height: 'toggle',
-            opacity: 'toggle'
-        });
-    
-    $('.list_toggle').click(function() {
-        $('#course_list').animate({
-            height: 'toggle',
-            opacity: 'toggle'
-        });
-        console.log(document.getElementById('toggle_button').src);
-        if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
-            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
-        }
-        else{ 
-            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
-        }
-    
-    });
-
-    
+	$('.back_button').click(function() {
+		$('#schedules').hide();
+		$('#sliders').show();
+		$('#list').show();
+		$('#generate_button').show();
+		$('.back_button').hide();
+		$('#searchboxes').show();
+	});
+	    
+	$('#course_list').animate({
+		height: 'toggle',
+		opacity: 'toggle'
+	});
+	    
+    	$('.list_toggle').click(function() {
+		$('#course_list').animate({
+		    height: 'toggle',
+		    opacity: 'toggle'
+		});
+		console.log(document.getElementById('toggle_button').src);
+		if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
+		    document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
+		}
+		else{ 
+		    document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
+		}
+    	});
 
 	listFilter("#departments-search", "#departments", 'department-title');
 	listFilter("#courses-search", "#courses", 'course-title');
 	listFilter("#sections-search", "#sections", 'section_text');
+
+	// When a user clicks on a section on the schedules page,
+	// it gets highlighted
+	// only one section from a class can be selected at one time
+	$(".schedule tr.section").live('click', function() {
+		$(this).siblings("tr").removeClass("selected");
+		$(this).addClass("selected");
+
+		var crns = "";
+		$(this).parent().parent().parent().find('tr.section.selected').each(function() {
+			crns += $(this).children('.crn').text() + " ";
+		});
+
+		$(this).parent().parent().parent().siblings(".copyable-crns").text(crns);
+
+		return false;
+	});
 });
 

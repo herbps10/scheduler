@@ -120,6 +120,7 @@ class Scheduler
 		# need to wrap the individual sections into an array
 		all_sections = (@courses | @sections.map { |s| [s] })
 
+		all = []
 		all_sections.combination(size).to_a.each do |options|
 			course_combinations = []
 
@@ -127,18 +128,24 @@ class Scheduler
 				course_combinations += [course_product(course)]
 			end
 
-			all = product(0, course_combinations).sort_by { |s| s.all_length }.reverse
 
-			return [] if all == []
+			all += product(0, course_combinations).sort_by { |s| s.all_length }.reverse
+
+			puts "genSchedules(#{size}):"
+			puts course_combinations.inspect.gsub('>', "\n")
+			puts
 
 
 			all.delete_if { |s| 
 				s.all_length != all[0].all_length
 			}
 
-			return all
 
 		end
+
+		return [] if all == []
+		
+		return all
 	end
 
 	def schedules

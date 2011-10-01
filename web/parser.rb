@@ -96,7 +96,7 @@ departments.each_pair do |department, full_department|
 	$redis.sadd(RedisHelper.departments, department)
 	$redis.set(RedisHelper.department_title(department), full_department)
 
-	doc = Nokogiri::HTML(File.open("data/#{department}.html").read)
+	doc = Nokogiri::HTML(File.open("data/fall/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
@@ -122,7 +122,7 @@ departments.each_pair do |department, full_department|
 			course.courseNumber = cell.content
 		elsif(index == 3) 	
 			course.section = cell.content
-		elsif(index == 4) 	
+		elsif(index == 5) 	
 			course.credits = cell.content
 		elsif(index == 6) 	
 			course.title = cell.content
