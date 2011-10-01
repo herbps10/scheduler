@@ -108,14 +108,6 @@ $(document).ready(function() {
 		});
 	}
 
-    $('#courses-search').focus(function() {
-
-    })
-    
-    $('#departments-search').focus(function() {
-
-    })
-
     $('.back_button').click(function() {
         $('#schedules').hide();
         $('#sliders').show();
@@ -124,6 +116,28 @@ $(document).ready(function() {
         $('.back_button').hide();
         $('#searchboxes').show();
     });
+    
+    $('#course_list').animate({
+            height: 'toggle',
+            opacity: 'toggle'
+        });
+    
+    $('.list_toggle').click(function() {
+        $('#course_list').animate({
+            height: 'toggle',
+            opacity: 'toggle'
+        });
+        console.log(document.getElementById('toggle_button').src);
+        if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
+        }
+        else{ 
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
+        }
+    
+    });
+
+    
 
 	listFilter("#departments-search", "#departments", 'department-title');
 	listFilter("#courses-search", "#courses", 'course-title');
