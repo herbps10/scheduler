@@ -5,8 +5,8 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   	$('#courses-search, #section-search').hide();
-   	$('.back_button').hide();
+   	$('#courses-search, #section-search').fadeOut();
+   	$('.back_button, #slider_wrapper').fadeOut();
 
     	$("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
@@ -17,10 +17,20 @@ $(document).ready(function() {
 
 	var courseList = [];
 
+    $('#begin').live('click', function() {
+        $('#landing').delay(100).fadeOut();
+        $('#slider_wrapper').delay(800).fadeIn();
+    });
+
 	$('.section').live('click', function() {
 		if(courseList.length == 0) {
-			$(".delete-all").show();
+			$(".delete-all").fadeIn();
+            $('#list').delay(0).animate({
+                    bottom: '0px'
+            });
 		}
+
+
 
 		$(this).toggleClass('listed');
 
@@ -57,7 +67,7 @@ $(document).ready(function() {
 		});
 
 		if(courseList.length == 0) {
-			$(".delete-all").hide();
+			$(".delete-all").fadeOut();
 		}
 
 		$('.section[rel=' + crn + ']').removeClass('listed');
@@ -70,7 +80,7 @@ $(document).ready(function() {
 		$("#course_list").html('');
 		$(".listed").removeClass('listed');
 
-		$(this).hide();
+		$(this).fadeOut();
 	});
 
 	$("#generate_button").click(function() {
@@ -79,12 +89,13 @@ $(document).ready(function() {
 		}, function(data) {
 			$("#schedules").html(data);
 		});
-
-        	$('#sliders, #searchboxes').hide(); 
-            $('#list').hide();
-            $('#generate_button').hide();
-        	$('.back_button').show();
-        	$('#schedules').show();
+        
+        $('#slider_wrapper').delay(400).fadeOut(); 
+        $('#list').delay(0).animate({
+            bottom: '-120px'
+        });
+        $('.back_button').delay(800).fadeIn();
+        $('#schedules').delay(800).fadeIn();
 	});
 
 	// from: http://kilianvalkhof.com/2010/javascript/how-to-build-a-fast-simple-list-filter-with-jquery/
@@ -97,11 +108,11 @@ $(document).ready(function() {
 			var filter = $(this).val();
 
 			if(filter) {
-				$(list).find("a." + cls + ":Contains(" + filter + ")").parent().show();
-				$(list).find("a." + cls + ":not(:Contains(" + filter + "))").parent().hide();
+				$(list).find("a." + cls + ":Contains(" + filter + ")").parent().fadeIn();
+				$(list).find("a." + cls + ":not(:Contains(" + filter + "))").parent().fadeOut();
 			}
 			else {
-				$(list).children('li').show();
+				$(list).children('li').fadeIn();
 			}
 		}).keyup(function() {
 			$(this).change();
@@ -109,12 +120,18 @@ $(document).ready(function() {
 	}
 
 	$('.back_button').click(function() {
-		$('#schedules').hide();
-		$('#sliders').show();
-		$('#list').show();
-		$('#generate_button').show();
-		$('.back_button').hide();
-		$('#searchboxes').show();
+		$('#schedules').fadeOut();
+		$('#slider_wrapper').delay(800).fadeIn();
+		if(courseList.length != 0) {
+                $('#list').delay(1200).animate({
+                    bottom: '0px'
+                });
+        }
+        $('.copyable-crns').text("");
+        
+		$('#generate_button').fadeIn();
+		$('.back_button').fadeOut();
+		$('#searchboxes').fadeIn();
 	});
 	    
 	$('#course_list').animate({
@@ -127,7 +144,6 @@ $(document).ready(function() {
 		    height: 'toggle',
 		    opacity: 'toggle'
 		});
-		console.log(document.getElementById('toggle_button').src);
 		if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
 		    document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
 		}

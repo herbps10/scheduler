@@ -1,9 +1,8 @@
 <div id='schedule_intro'>
-    <p>Based on your courses you have selected, the schedules available to choose from are listed below.
+    <p>Based on your courses you have selected, there are <%= @scheduler.schedules.length %>
+ schedules available to choose from.
     <p>All of the available sections for a given course are listed beneath it for your convenience.
 </div>
-
-<%= @scheduler.schedules.length %>
 
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 <div class='schedule'>

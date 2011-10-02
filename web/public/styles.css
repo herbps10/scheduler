@@ -98,6 +98,7 @@ h1 {
 
 #schedules table {
 	width: 100%;
+	border-spacing: 0;
 }
 
 #schedules thead {
@@ -174,12 +175,20 @@ h1 {
 	overflow-y: scroll;
 }
 
+#landing {
+	margin: auto;
+	width: 320px;
+	text-align: center;
+}
+
+
+
 #list {
 	position: fixed;
 	padding: 20px 20px 0px 20px;
 	min-height: 52px;
 	height: auto;
-	bottom: 0px;
+	bottom: -120px;
 	width: 100%;
 	overflow-y: visible;	
 	background: #ffffff; /* Old browsers */
@@ -235,7 +244,6 @@ h1 {
 }
 
 #generate_button {
-	font-family: 'Coustard', serif;
 	font-weight: 900;
 	color: rgb(50, 50, 50);
 	text-align: center;
@@ -243,8 +251,8 @@ h1 {
 	font-size: 1.6em;
 	width: 400px;
 }
-#generate_button{
-	background-image:linear-gradient(-90deg, rgb(252, 252, 252) 40%, rgb(239, 239, 239) 45%, rgb(199, 199, 199));
+.button_white{
+	background-image:linear-gradient(-90deg, rgb(252, 252, 252) 40%, rgb(239, 239, 239)/Users/oatmealsnap/.Trash/scheduler 45%, rgb(199, 199, 199));
 	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(40%, rgb(252, 252, 252)), color-stop(100%, rgb(199, 199, 199)), color-stop(45%, rgb(239, 239, 239)));
 	background-image:-moz-linear-gradient(-90deg, rgb(252, 252, 252) 40%, rgb(239, 239, 239) 45%, rgb(199, 199, 199));
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#99fcfcfc', EndColorStr='#99c7c7c7');
@@ -259,13 +267,13 @@ h1 {
 	-moz-box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5);
 }
-#generate_button:hover{
+.button_white:hover{
 	box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
 	-moz-box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
 	-webkit-box-shadow:0px 0px 14px rgba(246, 241, 241, 0.8);
 	border-color: rgba(200, 200, 200, 0.65);
 }
-#generate_button:active,#generate_button:focus{
+.button_white:active,.button_white:focus{
 	background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
 	background-image:-webkit-gradient(linear, left top, left bottom,color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
