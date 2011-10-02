@@ -5,8 +5,8 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   	$('#courses-search, #section-search').fadeOut();
-   	$('.back_button, #slider_wrapper').fadeOut();
+   	$('#courses-search, #section-search, #schedules').hide();
+   	$('.back_button, #slider_wrapper').hide();
 
     	$("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
@@ -27,6 +27,10 @@ $(document).ready(function() {
 			$(".delete-all").fadeIn();
             $('#list').delay(0).animate({
                     bottom: '0px'
+            });
+            $('course_list').animate({
+                height: 'toggle',
+                opacity: 'toggle'
             });
 		}
 
@@ -94,8 +98,14 @@ $(document).ready(function() {
         $('#list').delay(0).animate({
             bottom: '-120px'
         });
-        $('.back_button').delay(800).fadeIn();
-        $('#schedules').delay(800).fadeIn();
+        if($('#course_list').css('display') != 'none') {
+            $('#course_list').animate({
+                height: 'toggle',
+                opacity: 'toggle'
+            });
+        }
+        $('.back_button').delay(1000).fadeIn();
+        $('#schedules').delay(1000).fadeIn();
 	});
 
 	// from: http://kilianvalkhof.com/2010/javascript/how-to-build-a-fast-simple-list-filter-with-jquery/
@@ -120,37 +130,37 @@ $(document).ready(function() {
 	}
 
 	$('.back_button').click(function() {
-		$('#schedules').fadeOut();
-		$('#slider_wrapper').delay(800).fadeIn();
+		$('#schedules').delay(100).fadeOut();
+		$('.back_button').delay(100).fadeOut();
+        
+		$('#slider_wrapper').delay(1000).fadeIn();
 		if(courseList.length != 0) {
                 $('#list').delay(1200).animate({
                     bottom: '0px'
                 });
         }
         $('.copyable-crns').text("");
-        
-		$('#generate_button').fadeIn();
-		$('.back_button').fadeOut();
-		$('#searchboxes').fadeIn();
 	});
+	
+        $('#course_list').animate({
+            height: 'toggle',
+            opacity: 'toggle'
+        });
 	    
-	$('#course_list').animate({
-		height: 'toggle',
-		opacity: 'toggle'
-	});
-	    
-    	$('.list_toggle').click(function() {
-		$('#course_list').animate({
-		    height: 'toggle',
-		    opacity: 'toggle'
-		});
-		if(document.getElementById('toggle_button').src=="http://scheduler.pricemysemester.com/images/toggle1.png"){
-		    document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
-		}
-		else{ 
-		    document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
-		}
-    	});
+    $('.list_toggle').click(function() {
+        $('#course_list').animate({
+            height: 'toggle',
+            opacity: 'toggle'
+        });
+        console.log($('#course_list').css('display'));
+        if($('#course_list').css('display') == 'none') {
+            
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
+        }
+        if($('#course_list').css('display') == 'inline-block') {
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
+        }
+    });
 
 	listFilter("#departments-search", "#departments", 'department-title');
 	listFilter("#courses-search", "#courses", 'course-title');
