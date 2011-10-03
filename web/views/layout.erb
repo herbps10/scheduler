@@ -31,16 +31,27 @@
 </head>
 <body>
 
-<img class='background' src="images/background_gradient.png" alt="grandient" />
+<img class='background' src="images/background_gradient.png" alt="gradient" />
 
 <div id="header">Knight Scheduler</div>
 <h1>A scheduling resource for Geneseo Students<img src="/images/beta.png" alt="beta!" id="beta">
 </h1>
 
+<div id='landing'>
+    <p>Schedule your classes the easy way.</p>
+    <p>Browse course listings,</br>select class sections,</br>let Knight Scheduler handle the rest.
+    
+    <div id='begin' class='button_white'>Get Started</div>
+</div>
+
+<div id='slider_wrapper'>
+
 <%= yield %>
 
-<div id='generate_button'>
+<div id='generate_button' class='button_white'>
         <a href='#'>Generate Schedules</a>
+</div>
+
 </div>
 
     <div id="list">
