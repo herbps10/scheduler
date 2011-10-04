@@ -115,6 +115,7 @@ $(document).ready(function() {
 
 	function listFilter(inputs, list, cls) {
 		$(inputs).change(function() {
+			console.log('fire');
 			var filter = $(this).val();
 
 			if(filter) {
