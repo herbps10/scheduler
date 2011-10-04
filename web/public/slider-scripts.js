@@ -18,7 +18,7 @@ $(document).ready(function() {
 	var courseList = [];
 
     $('#begin').live('click', function() {
-        $('#landing').delay(100).fadeOut();
+        $('#landing, #beta').delay(100).fadeOut();
         $('#slider_wrapper').delay(800).fadeIn();
     });
 
@@ -27,10 +27,6 @@ $(document).ready(function() {
 			$(".delete-all").fadeIn();
             $('#list').delay(0).animate({
                     bottom: '0px'
-            });
-            $('course_list').animate({
-                height: 'toggle',
-                opacity: 'toggle'
             });
 		}
 

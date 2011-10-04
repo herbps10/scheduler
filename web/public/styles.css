@@ -6,11 +6,12 @@ body{
 }
 
 .wide {
+	font-size: 0.7em;
 	margin-top: 24px;
 	width: 60%;
 	position: absolute;
 	left: 20%;
-	color: #303030;
+	color: #606060;
 }
 
 a[href^="mailto:"] {
@@ -122,7 +123,7 @@ h1 {
 }
 
 #schedules {
-	margin: auto;
+	margin: 36px auto auto auto;
 	width: 720px;
 	height: auto;
 	text-align: left;
@@ -200,6 +201,11 @@ h1 {
 	list-style-type: decimal;
 }
 
+#slider_wrapper {
+	margin: 24px auto auto auto;
+
+}
+
 #sliders {
 	width: auto;
 	margin: auto;
@@ -220,8 +226,9 @@ h1 {
 }
 
 #landing {
+	font-size: 1.4em;
 	margin: auto;
-	width: 320px;
+	width: 400px;
 	text-align: center;
 }
 
@@ -332,7 +339,7 @@ h1 {
 	font-family: 'Coustard', serif;
 	font-size: 1.4em;
 	width: 150px;
-	margin: 12px auto 12px auto;
+	margin: 36px auto 12px auto;
 }
 
 .back_button {
