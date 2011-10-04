@@ -7,7 +7,7 @@
 		<% @data.departments.each do |department| %>
             <li class = "department <%= department.title %>">
 				<a  href="#" class = "department-title"><%= department.title %></a>
-				<ul id = "courses" >
+				<ul class = "courses" >
                     <% department.courses.each do |course| %>
 						<li class= "course <%= course.title %>">
 							<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>

@@ -115,7 +115,8 @@ $(document).ready(function() {
 
 	function listFilter(inputs, list, cls) {
 		$(inputs).change(function() {
-			console.log('fire');
+			console.log($(this).val());
+
 			var filter = $(this).val();
 
 			if(filter) {
@@ -123,7 +124,7 @@ $(document).ready(function() {
 				$(list).find("a." + cls + ":not(:Contains(" + filter + "))").parent().fadeOut();
 			}
 			else {
-				$(list).children('li').fadeIn();
+				$(list).find('a').parent().fadeIn();
 			}
 		}).keyup(function() {
 			$(this).change();
@@ -164,7 +165,7 @@ $(document).ready(function() {
     });
 
 	listFilter("#departments-search", "#departments", 'department-title');
-	listFilter("#courses-search", "#courses", 'course-title');
+	listFilter("#courses-search", ".courses", 'course-title');
 	listFilter("#sections-search", "#sections", 'section_text');
 
 	// When a user clicks on a section on the schedules page,
