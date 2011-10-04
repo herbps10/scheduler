@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Knight Scheduler [working title]</title>
+	<title>Knight Scheduler [beta]</title>
     
 	<link rel='stylesheet' href='/jquery.mCustomScrollbar.css' />
 	<link rel='stylesheet' href='/styles.css' />
@@ -17,6 +17,13 @@
     <script type='text/javascript' src='jquery.easing.1.3.js'></script>
 	<script type='text/javascript' src='jquery.mCustomScrollbar.js'></script>
     
+    <script type="text/javascript">
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
 
 </head>
 <body>
@@ -24,15 +31,40 @@
 <img class='background' src="images/background_gradient.png" alt="gradient" />
 
 <div id="header">Knight Scheduler</div>
-<h1>A scheduling resource for Geneseo Students<img src="/images/beta.png" alt="beta!" id="beta">
+<h1>A new scheduling resource for Geneseo Students<img src="/images/beta.png" alt="beta!" id="beta">
 </h1>
-
 <div id='landing'>
+    </br>
     <p>Schedule your classes the easy way.</p>
     <p>Browse course listings,</br>select class sections,</br>let Knight Scheduler handle the rest.
     
     <div id='begin' class='button_white'>Get Started</div>
+    
+    </br>
+    
+    <div class="wide"><p>As soon as the Spring '12 course information is made available on Knightweb, we will be able to update our site for next semester.</p>
+    <p>We are currently still testing features, but take a look around and send us feedback at <a href="mailto:err2@geneseo.edu?subject=Knight Scheduler Feedback">err2@geneseo.edu</a> and <a href="mailto:hps1@geneseo.edu?subject=Knight Scheduler Feedback">hps1@geneseo.edu</a>.</p>
+    <p>In the mean time, add Knight Scheduler to your bookmarks, share with your friends!</p>
+  <div id="social">
+    <div id='fb-wrapper'>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="fb-like" data-href="www.knightscheduler.com" data-send="true" data-layout="button_count" data-width="120" data-show-faces="false" data-action="recommend" data-font="arial"></div>
+    </div>
+    <div id="gplus-wrapper">
+        <div class="g-plusone" data-annotation="inline" data-width="120"></div>
+    </div>
 </div>
+</div>
+    </div>
 
 <div id='slider_wrapper'>
 

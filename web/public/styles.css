@@ -5,6 +5,50 @@ body{
 	margin: auto;
 }
 
+.wide {
+	margin-top: 24px;
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	color: #303030;
+}
+
+a[href^="mailto:"] {
+	color: #404040;
+	text-decoration: none;
+	border-bottom: 1px dotted;	
+}
+
+a[href^="mailto:"]:hover {
+	color: #505050;
+	border-bottom: 1px solid;	
+}
+
+a[href^="#"] {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+#social {
+	position: relative;
+	margin: auto;
+	width: 1em;
+	height: 50px;
+	width: 650px;
+	text-align: center;
+}
+
+#gplus-wrapper {
+	position: relative;
+	display: inline-block;
+	top: 8px;
+}
+
+#fb-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
 .background {
 	z-index: -1;
 	height: 100%;
@@ -41,11 +85,11 @@ h1 {
 	font-size: 1em;
 	color: rgb(65, 65, 65);
 	text-align: center;
-	margin: -8px 0 36px 0;
+	margin: -8px 0 4px 0;
 }
 
 #header {
-	padding: 24px 0 0 0;
+	padding: 0;
 	font-family: 'Coustard', serif;
 	
 	text-align: center;
@@ -323,11 +367,6 @@ h1 {
 }.back_button:active {
 	position:relative;
 	top:1px;
-}
-
-a[href] {
-	color: inherit;
-	text-decoration: inherit;
 }
 
 .wrapper {
