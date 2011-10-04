@@ -124,7 +124,7 @@ $(document).ready(function() {
 				$(list).find("a." + cls + ":not(:Contains(" + filter + "))").parent().fadeOut();
 			}
 			else {
-				$(list).find('a').parent().fadeIn();
+				$(list).children('div').children('li').fadeIn();
 			}
 		}).keyup(function() {
 			$(this).change();
