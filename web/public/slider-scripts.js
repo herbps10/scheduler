@@ -92,14 +92,9 @@ $(document).ready(function() {
         
         $('#slider_wrapper').delay(400).fadeOut(); 
         $('#list').delay(0).animate({
-            bottom: '-120px'
+            bottom: '-260px'
         });
-        if($('#course_list').css('display') != 'none') {
-            $('#course_list').animate({
-                height: 'toggle',
-                opacity: 'toggle'
-            });
-        }
+
         $('.back_button').delay(1000).fadeIn();
         $('#schedules').delay(1000).fadeIn();
 	});
@@ -133,30 +128,25 @@ $(document).ready(function() {
         
 		$('#slider_wrapper').delay(1000).fadeIn();
 		if(courseList.length != 0) {
-                $('#list').delay(1200).animate({
+                $('#list').delay(2000).animate({
                     bottom: '0px'
                 });
         }
         $('.copyable-crns').text("");
 	});
-	
-        $('#course_list').animate({
-            height: 'toggle',
-            opacity: 'toggle'
-        });
 	    
     $('.list_toggle').click(function() {
-        $('#course_list').animate({
-            height: 'toggle',
-            opacity: 'toggle'
-        });
-        console.log($('#course_list').css('display'));
-        if($('#course_list').css('display') == 'none') {
-            
-            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
-        }
-        if($('#course_list').css('display') == 'inline-block') {
+        if($('#list').css('bottom') == '-200px') {
+            $('#list').animate({
+                bottom: '0px',
+            });
             document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle1.png"
+        }
+        if($('#list').css('bottom') == '0px') {
+            document.getElementById('toggle_button').src = "http://scheduler.pricemysemester.com/images/toggle2.png"
+            $('#list').animate({
+                bottom: '-200px',
+            });
         }
     });
 

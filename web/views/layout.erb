@@ -2,11 +2,11 @@
 <head>
 	<title>Knight Scheduler [beta]</title>
     
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+    
 	<link rel='stylesheet' href='/jquery.mCustomScrollbar.css' />
 	<link rel='stylesheet' href='/styles.css' />
-    
-    	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
-    	<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
     
 	<script type='text/javascript' src='jquery.js'></script>
 	<script type='text/javascript' src='slider-scripts.js'></script>
@@ -14,7 +14,7 @@
 	<script type='text/javascript' src='jquery.scrollTo-min.js'></script>
 	<script type='text/javascript' src='columnnav.js'></script>
     
-    	<script type='text/javascript' src='jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='jquery.easing.1.3.js'></script>
 	<script type='text/javascript' src='jquery.mCustomScrollbar.js'></script>
     
     <script type="text/javascript">
@@ -24,7 +24,8 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
     </script>
-	<script type="text/javascript">
+	
+    <script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-8572766-9']);
 	  _gaq.push(['_trackPageview']);
@@ -80,8 +81,10 @@
 
 <%= yield %>
 
+<p>Click on the department, course, and then section to add it to the list below.</p>
+<p>Click "When you ready, click "Find Schedules".
 <div id='generate_button' class='button_white'>
-        <a href='#'>Generate Schedules</a>
+        <a href='#'>Find Schedules</a>
 </div>
 
 </div>
@@ -92,10 +95,15 @@
             Selected Courses:  <a href='#' class='delete-all'>[clear all]</a>
         </div>
         <div class='list_toggle'>
-            <img id='toggle_button'src="images/toggle2.png" alt="toggle button" />
+            <img id='toggle_button'src="images/toggle1.png" alt="toggle button" />
         </div>
 
         <thread id="course_list"></thread>
+        <div id='list_info'>
+            <p>This is the list of course sections you have selected. Knight Scheduler will use this list to create a schedule with every course you chose.</p>
+            <p>Occasionally, Knight Scheduler may find two courses that overlap, and cannot be placed in the same schedule. Knight Scheduler will create a second schedule with the course that doesn't fit and [eventually] alert you of the overlap. You will have the option to choose one of those schedules, or add more sections to your list and hope that one doesn't overlap.</p>
+            </p>
+        </div>
     </div>
 
 <div class='back_button'>
