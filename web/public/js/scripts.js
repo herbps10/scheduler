@@ -30,8 +30,6 @@ $(document).ready(function() {
             });
 		}
 
-
-
 		$(this).toggleClass('listed');
 
 		var text = $(this).children('.section_text').children('.crn').text().trim();

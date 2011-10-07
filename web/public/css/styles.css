@@ -1,7 +1,7 @@
 body{
 	font-family: 'Coustard', serif;
 	font-weight: normal;
-	background-image: url(images/background.png);
+	background-image: url(../images/background.png);
 	margin: auto;
 }
 
@@ -127,7 +127,7 @@ h1 {
 }
 
 #departments-search, #courses-search, #sections-search {
-	background-image: url(images/magnifier.png);
+	background-image: url(../images/magnifier.png);
 	background-repeat: no-repeat;
 	background-position: right;
 	position: relative;
@@ -407,7 +407,7 @@ h1 {
 	margin: auto;
 	margin-top: 0;
 	border-color: hidden;
-	background-image: url(images/shadow_inset.png);
+	background-image: url(../images/shadow_inset.png);
 	background-size: contain;
 	
 	box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
