@@ -1,5 +1,5 @@
 class Section
-	attr_accessor :crn, :title, :instructor, :section, :time, :courseNumber, :department, :credits
+	attr_accessor :crn, :title, :instructor, :section, :time, :courseNumber, :department, :credits, :conflicted
 
 	def initialize(crn)
 		data = $redis.hgetall(RedisHelper::section(crn))
@@ -12,6 +12,7 @@ class Section
 		@department = data["department"]
 		@credits = data["credits"]
 		@time = CourseTime.new(data["time"], data["days"])
+		@conflicted = false
 	end
 
 	def conflict? section
@@ -44,5 +45,9 @@ class Section
 			return true if section.department == @department and section.courseNumber == @courseNumber
 			return false
 		end
+	end
+
+	def clone
+		return Marshal.load(Marshal.dump(self))
 	end
 end

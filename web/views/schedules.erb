@@ -9,13 +9,13 @@
 	<h3>Schedule <%= schedule_index + 1 %></h3>
 
     	<ol>
-	<% schedule.each do |section| %>
+	<% schedule.each_with_index do |section, section_index| %>
 		<%
 		if section.kind_of?(Array) == false
         		section = [section] if section.kind_of?(Array) == false
         	end
 		%>
-        	<li class='course-title'><%= section[0].title %></li>
+        	<li class='course-title <%= "conflicted" if section.all_conflicted %>'><%= section[0].title %></li>
             	<table>
                     <thead>
                         <tr>
@@ -38,7 +38,7 @@
                     <% end %>
 
                     <% section.each_with_index do |option, i| %>
-                        <tr class='section'>
+                        <tr class='section <%= "conflicted" if option.conflicted %>'>
                             <td class='days'><span><%= option.time.prettyDays %></td>
                             <td class='time'><%= option.time.prettyTime %></td>
                             <td class='professor'><%= option.instructor %></td>

@@ -27,13 +27,68 @@ class Array
 
 		return false
 	end
+
+	def conflicted=(conflict)
+		self.each do |e|
+			e.conflicted = conflict
+		end
+	end
+
+	def conflicted
+		self.each do |e|
+			return true if e.conflicted
+		end
+
+		return false
+	end
+
+	def all_conflicted
+		self.each do |e|
+			return false if e.conflicted == false
+		end
+
+		return true
+	end
+
+	def addSection(section)
+		self.each_with_index do |course, course_index|
+			course = [course] if course.kind_of?(Array) == false
+			if(course[0].sameCourse?(section))
+				if self[course_index].kind_of?(Array) == false
+					if(self[course_index].sameCourse?(section) == false)
+						self[course_index] = [self[course_index]]
+					end
+				end
+				
+				if(self[course_index].sameCourse?(section) == false)
+					self[course_index] += section
+				end
+				return
+			end
+		end
+
+		self.push section
+		return
+	end
+
+	def deep_clone
+		n = []
+		self.each do |e|
+			n.push(e.clone)
+		end
+
+		return n
+	end
 end
 
 class Scheduler
+	attr_accessor :all_sections
+
 	def initialize
 		@sections = []
 		@courses = []
 		@schedules = nil
+		@all_sections = []
 	end
 
 	def addSections(sections)
@@ -75,7 +130,7 @@ class Scheduler
 
 		sets[index].each do |element|
 			product(index + 1, sets).each do |e|
-				if element.conflict?(e) == false
+				if element.conflict?(e)== false
 					if e.contains_arrays == true
 						ret.push([element] + e)
 					else
@@ -118,10 +173,10 @@ class Scheduler
 		# Gives us an array of arrays containing the different section options
 		# The sections of the courses are already wrapped in an array, but we 
 		# need to wrap the individual sections into an array
-		all_sections = (@courses | @sections.map { |s| [s] })
+		@all_sections = (@courses | @sections.map { |s| [s] })
 
 		all = []
-		all_sections.combination(size).to_a.each do |options|
+		@all_sections.combination(size).to_a.each do |options|
 			course_combinations = []
 
 			options.each do |course|
@@ -131,20 +186,13 @@ class Scheduler
 
 			all += product(0, course_combinations).sort_by { |s| s.all_length }.reverse
 
-			puts "genSchedules(#{size}):"
-			puts course_combinations.inspect.gsub('>', "\n")
-			puts
-
-
 			all.delete_if { |s| 
 				s.all_length != all[0].all_length
 			}
-
-
 		end
 
 		return [] if all == []
-		
+
 		return all
 	end
 
@@ -173,6 +221,27 @@ class Scheduler
 
 		if @sections.length + @courses.length == 1
 			@schedules = [@schedules]
+		end
+
+		@schedules.each do |schedule|
+			puts "Schedule: "
+			puts schedule.inspect.gsub('>', "\n")
+
+			puts "All sections: "
+			puts @all_sections.inspect.gsub('>', "\n")
+
+			diff = (@all_sections - schedule)
+
+			puts "Diff: "
+			puts diff.inspect.gsub('>', "\n")
+
+			puts
+
+			diff.each do |section|
+				s = section.deep_clone
+				s.conflicted = true
+				schedule.addSection(s)
+			end
 		end
 
 		return @schedules

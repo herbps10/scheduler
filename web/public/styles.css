@@ -536,3 +536,8 @@ li {
 	padding-top: 5px;
 	height: 1em;
 }
+
+.conflicted {
+	color: red;
+	text-decoration: line-through;
+}
