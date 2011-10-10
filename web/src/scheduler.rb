@@ -223,25 +223,23 @@ class Scheduler
 			@schedules = [@schedules]
 		end
 
-		@schedules.each do |schedule|
-			puts "Schedule: "
-			puts schedule.inspect.gsub('>', "\n")
-
-			puts "All sections: "
-			puts @all_sections.inspect.gsub('>', "\n")
+		@schedules.each_with_index do |schedule, index|
 
 			diff = (@all_sections - schedule)
-
-			puts "Diff: "
-			puts diff.inspect.gsub('>', "\n")
-
-			puts
 
 			diff.each do |section|
 				s = section.deep_clone
 				s.conflicted = true
 				schedule.addSection(s)
 			end
+
+			@schedules[index] = schedule.sort_by { |s| 
+				if s.kind_of? Array
+					s[0].crn
+				else
+					s.crn
+				end
+			}
 		end
 
 		return @schedules
