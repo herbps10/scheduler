@@ -1,16 +1,17 @@
 body{
 	font-family: 'Coustard', serif;
 	font-weight: normal;
-	background-image: url(images/background.png);
+	background-image: url(../images/background.png);
 	margin: auto;
 }
 
 .wide {
+	font-size: 0.7em;
 	margin-top: 24px;
 	width: 60%;
 	position: absolute;
 	left: 20%;
-	color: #303030;
+	color: #606060;
 }
 
 a[href^="mailto:"] {
@@ -99,6 +100,23 @@ h1 {
 	text-shadow: 0px -2px 2px black;
 }
 
+#titles {
+	margin: auto;
+	width: 1em;
+}
+
+#titles thead {
+}
+
+#titles th{
+	text-align: center;
+	width: 255px;
+	padding: 0px 85px 15px 85px;
+	text-decoration: underline;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
 #searchboxes {
 	width: 750px;
 	margin: auto;
@@ -109,7 +127,7 @@ h1 {
 }
 
 #departments-search, #courses-search, #sections-search {
-	background-image: url(images/magnifier.png);
+	background-image: url(../images/magnifier.png);
 	background-repeat: no-repeat;
 	background-position: right;
 	position: relative;
@@ -122,7 +140,7 @@ h1 {
 }
 
 #schedules {
-	margin: auto;
+	margin: 36px auto auto auto;
 	width: 720px;
 	height: auto;
 	text-align: left;
@@ -200,6 +218,13 @@ h1 {
 	list-style-type: decimal;
 }
 
+#slider_wrapper {
+	margin: 24px auto auto auto;
+}
+#slider_wrapper p {
+	text-align: center;
+}
+
 #sliders {
 	width: auto;
 	margin: auto;
@@ -209,28 +234,30 @@ h1 {
 #course_list {
 	position: relative;
 	margin-top: 40px;
+	margin-bottom: 12px;
 	padding: 12px;
-	max-height: 200px;
-	width: 30%;	
+	height: 140px;
+	width: 200px%;	
 	overflow-y: auto;
 	font-size: .9em;
+	float: left;
 }
 #course_list li {
 	overflow-y: scroll;
 }
 
 #landing {
+	font-size: 1.4em;
 	margin: auto;
-	width: 320px;
+	width: 400px;
 	text-align: center;
 }
 
 #list {
 	position: fixed;
 	padding: 20px 20px 0px 20px;
-	min-height: 52px;
-	height: auto;
-	bottom: -120px;
+	height: 200px;
+	bottom: -260px;
 	width: 100%;
 	overflow-y: visible;	
 	background: #ffffff; /* Old browsers */
@@ -241,15 +268,15 @@ h1 {
 	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */	
-	box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
-	-moz-box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
-	-webkit-box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
+	box-shadow: 0px -16px 56px rgba(36, 36, 36, .5);
+	-moz-box-shadow: 0px -16px 56px rgba(36, 36, 36, .5);
+	-webkit-box-shadow: 0px -16px 56px rgba(36, 36, 36, .5);
 }
 
 .list_toggle {
 	width: 40px;
 	margin: auto;
-	margin-top: -85px;
+	margin-top: -75px;
 	padding: 10px 15px 0px 15px;
 	text-align: center;
 	background-color: #ffffff; /* Old browsers */
@@ -258,9 +285,9 @@ h1 {
 	border-radius:4px 4px 0px 0px;
 	-moz-border-radius:4px 4px 0px 0px;
 	-webkit-border-radius:4px 4px 0px 0px;
-	box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
-	-moz-box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
-	-webkit-box-shadow: 0px -4px 6px rgba(36, 36, 36, .4);
+	box-shadow: 0px -10px 12px rgba(36, 36, 36, .5);
+	-moz-box-shadow: 0px -10px 12px rgba(36, 36, 36, .5);
+	-webkit-box-shadow: 0px -10px 12px rgba(36, 36, 36, .5);
 	
 }
 
@@ -273,6 +300,13 @@ h1 {
 	font-weight: lighter;
 	color: rgb(50, 50, 50);
 	z-index: 10;
+}
+
+#list_info {
+	float: right;
+	width: 65%;
+	margin: 0px 36px 36px 0px;
+	text-indent: 24px;
 }
 
 .list_days {
@@ -332,7 +366,7 @@ h1 {
 	font-family: 'Coustard', serif;
 	font-size: 1.4em;
 	width: 150px;
-	margin: 12px auto 12px auto;
+	margin: 36px auto 12px auto;
 }
 
 .back_button {
@@ -373,7 +407,7 @@ h1 {
 	margin: auto;
 	margin-top: 0;
 	border-color: hidden;
-	background-image: url(images/shadow_inset.png);
+	background-image: url(../images/shadow_inset.png);
 	background-size: contain;
 	
 	box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
