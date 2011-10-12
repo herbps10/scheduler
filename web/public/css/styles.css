@@ -101,25 +101,48 @@ h1 {
 }
 
 #titles {
-	margin: auto;
-	width: 1em;
-}
-
-#titles thead {
-}
-
-#titles th{
+	margin: 18px auto 12px auto;
+	min-width: 750px;
+	z-index: 30;
 	text-align: center;
-	width: 255px;
-	padding: 0px 85px 15px 85px;
-	text-decoration: underline;
+}
+
+#titles div{
+	display: inline-block;
+	text-align: center;
+	width: 219px;
+	padding: 12px;
+	margin: 0px 2px 0px 2px;
 	font-size: 1.1em;
 	font-weight: bold;
+	background: whitesmoke;
+	border: 2px solid lightgray;
 }
 
 #searchboxes {
-	width: 750px;
+	min-width: 750px;
+	margin: 0px;
+	margin-top: -12px;
+	margin-bottom: -6px;
+	text-align: center;
+}
+.search_wrapper{
+	padding: 6px 15px 2px 15px;
+	background: rgb(66, 66, 66);
+	width: 185px;
+	height: 30px;
+	margin: 0px 17px 0px 17px;
+	display: inline-block;
+	text-align: center;
+}
+
+.triangle_down {
+	width: 100%;
+	height: 16px;
 	margin: auto;
+	z-index: 20;
+	bottom: -8px;
+	position: relative;
 }
 
 #sections {
@@ -131,12 +154,16 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: right;
 	position: relative;
-	width: 226px;
-	padding: 5px;
-	margin: 0px 10px 8px 0px;
+	width: 120px;
+	padding: 3px;
+	margin: auto;
 }
 #sections-search {
 	margin-right: 0;
+}
+.search_filler {
+	width: 180px;
+	height: 23px;
 }
 
 #schedules {
@@ -229,21 +256,36 @@ h1 {
 	width: auto;
 	margin: auto;
 	padding: 0;
+	z-index: 10;
 }
 
 #course_list {
-	position: relative;
-	margin-top: 40px;
-	margin-bottom: 12px;
-	padding: 12px;
-	height: 140px;
-	width: 200px%;	
+	margin: 20px 0px 24px 0px;
+	height: 150px;
+	width: 25%;	
 	overflow-y: auto;
 	font-size: .9em;
+	display: block;
 	float: left;
 }
 #course_list li {
 	overflow-y: scroll;
+}
+
+#list_title {
+	font-size: 1.4em;
+	font-weight: lighter;
+	color: rgb(50, 50, 50);
+	z-index: 10;
+	margin-bottom: 12px;
+}
+
+#list_info {
+	float: right;
+	width: 65%;
+	margin: 0px 36px 36px 0px;
+	text-indent: 24px;
+	color: #606060;
 }
 
 #landing {
@@ -293,20 +335,6 @@ h1 {
 
 .list_wrapper {
 	padding: auto;
-}
-
-#list_title {
-	font-size: 1.4em;
-	font-weight: lighter;
-	color: rgb(50, 50, 50);
-	z-index: 10;
-}
-
-#list_info {
-	float: right;
-	width: 65%;
-	margin: 0px 36px 36px 0px;
-	text-indent: 24px;
 }
 
 .list_days {

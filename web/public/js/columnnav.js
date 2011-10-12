@@ -188,6 +188,8 @@
 			// Show child menu
 			$(this).parent().find(selectorName+":first").show();
             $('#courses-search').show();
+            $('.courses-search').show();
+
 			
 			// Select this level
 			$(this).parent().css( liSelect );

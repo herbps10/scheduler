@@ -5,10 +5,9 @@ $(document).ready(function() {
 	var $lastCourse = $(this);
 	var $lastDept = $(this).children('.courses');
 
-   	$('#courses-search, #section-search, #schedules').hide();
-   	$('.back_button, #slider_wrapper').hide();
+    $('.back_button, #slider_wrapper').hide();
 
-    	$("#departments").columnNavigation({
+    $("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
  		columnFontFamily                : "Arial,sans-serif",
         containerWidth                  : "750px",
@@ -127,7 +126,7 @@ $(document).ready(function() {
 		$('#slider_wrapper').delay(1000).fadeIn();
 		if(courseList.length != 0) {
                 $('#list').delay(2000).animate({
-                    bottom: '0px'
+                    bottom: '-200px'
                 });
         }
         $('.copyable-crns').text("");
