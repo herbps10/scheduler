@@ -1,19 +1,21 @@
 <div id = titles>
-    <div>Departments</div><div>Courses</div><div>Sections</div>
+    <img class='title_left' src="/images/title_left.png" alt="" />    
+    <div>Departments</div>
+    <div>Courses</div>
+    <div>Sections</div>
+    <img class='title_right' src="/images/title_right.png" alt="" />    
 </div>
-<div id='searchboxes'>
-    <div class='search_wrapper'><input type='text' id='departments-search' /><img class='triangle_down' src="/images/triangle_down.png" alt="triandle_down" /></div>
-    <div class='search_wrapper'><input type='text' id='courses-search' /><img class='triangle_down' src="/images/triangle_down.png" alt="triandle_down" /></div>
-    <div class='search_wrapper'><div class='search_filler'></div><img class='triangle_down' src="/images/triangle_down.png" alt="triandle_down" /></div>
-</div>
-
 
 <div id="sliders">
-    <ul id="departments">
+    <ul id="departments"> 
+        <li class='search_wrapper'><input type='text' id='departments-search' /></li>
+        <li class="department"><a href="#" class="title-padder"></a></li>
 		<% @data.departments.each do |department| %>
             <li class = "department <%= department.title %>">
 				<a  href="#" class = "department-title"><%= department.title %></a>
 				<ul class = "courses" >
+                    <li class='search_wrapper'><input type='text' id='courses-search' /></li>
+                    <li class="department"><a href="#" class="title-padder"></a></li>
                     <% department.courses.each do |course| %>
 						<li class= "course <%= course.title %>">
 							<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>

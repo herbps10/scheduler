@@ -3,6 +3,7 @@ body{
 	font-weight: normal;
 	background-image: url(../images/background.png);
 	margin: auto;
+	background-attachment: fixed;
 }
 
 .wide {
@@ -92,7 +93,7 @@ h1 {
 #header {
 	padding: 0;
 	font-family: 'Coustard', serif;
-	
+
 	text-align: center;
 	font-size: 4em;
 	font-weight: light;
@@ -101,47 +102,67 @@ h1 {
 }
 
 #titles {
-	margin: 18px auto 12px auto;
-	min-width: 750px;
+	margin: 26px auto -2px auto;
+	padding: 8px;
+	width: 730px;
+	height: 26px;
 	z-index: 30;
 	text-align: center;
+	background: rgb(60,71,99);
 }
 
 #titles div{
 	display: inline-block;
 	text-align: center;
-	width: 219px;
-	padding: 12px;
-	margin: 0px 2px 0px 2px;
-	font-size: 1.1em;
-	font-weight: bold;
-	background: whitesmoke;
-	border: 2px solid lightgray;
+	width: 225px;
+	margin: auto;
+	margin-top: -4px;
+	margin-left: -20px;
+	color: whitesmoke;
+	font-size: 1.5em;
+	font-weight: normal;
+	position: relative;
 }
 
-#searchboxes {
-	min-width: 750px;
-	margin: 0px;
-	margin-top: -12px;
-	margin-bottom: -6px;
-	text-align: center;
+.title_left {
+	float: left;
+	position: relative;
+	display: block;
+	left: -58px;
+	top: -8px;
+	z-index: -10;
 }
+.title_right {
+	float: right;
+	position: relative;
+	display: block;
+	right: -58px;
+	top: -8px;
+	z-index: -10;
+}
+
 .search_wrapper{
-	padding: 6px 15px 2px 15px;
-	background: rgb(66, 66, 66);
-	width: 185px;
-	height: 30px;
-	margin: 0px 17px 0px 17px;
+	background: -moz-linear-gradient(top, rgba(65,69,71,0.75) 0%, rgba(74,81,89,0.75) 33%, rgba(10,14,10,0.75) 36%, rgba(10,8,9,0.75) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,69,71,0.75)), color-stop(33%,rgba(74,81,89,0.75)), color-stop(36%,rgba(10,14,10,0.75)), color-stop(100%,rgba(10,8,9,0.75)));
+	background: -webkit-linear-gradient(top, rgba(65,69,71,0.75) 0%,rgba(74,81,89,0.75) 33%,rgba(10,14,10,0.75) 36%,rgba(10,8,9,0.75) 100%);
+	background: -o-linear-gradient(top, rgba(65,69,71,0.75) 0%,rgba(74,81,89,0.75) 33%,rgba(10,14,10,0.75) 36%,rgba(10,8,9,0.75) 100%);
+	background: -ms-linear-gradient(top, rgba(65,69,71,0.75) 0%,rgba(74,81,89,0.75) 33%,rgba(10,14,10,0.75) 36%,rgba(10,8,9,0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf414547', endColorstr='#bf0a0809',GradientType=0 );
+	background: linear-gradient(top, rgba(65,69,71,0.75) 0%,rgba(74,81,89,0.75) 33%,rgba(10,14,10,0.75) 36%,rgba(10,8,9,0.75) 100%);	
+	width: 239px;
+	height: 35px;
 	display: inline-block;
 	text-align: center;
+	z-index: 20;
+	position: absolute;
 }
 
-.triangle_down {
-	width: 100%;
-	height: 16px;
-	margin: auto;
-	z-index: 20;
-	bottom: -8px;
+.title_bottom {
+	height: 55px;
+	width: 250px;
+	z-index: -10;
+	bottom: -10px;
+	left: -16px;
 	position: relative;
 }
 
@@ -153,16 +174,22 @@ h1 {
 	background-image: url(../images/magnifier.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	position: relative;
-	width: 120px;
-	padding: 3px;
-	margin: auto;
+	background-color: gray;
+	border: darkgrey;
+	position: absolute;
+	width: 160px;
+	padding: 4px;
+	margin: 6px 36px 6px 36px;
+	box-shadow: inset 0px 1px 1px 1px rgba(55,55,55,.65);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 #sections-search {
 	margin-right: 0;
 }
 .search_filler {
-	width: 180px;
+	width: 141px;
 	height: 23px;
 }
 
@@ -246,17 +273,25 @@ h1 {
 }
 
 #slider_wrapper {
-	margin: 24px auto auto auto;
-}
-#slider_wrapper p {
-	text-align: center;
+	margin: auto;
+	width: 800px;
 }
 
 #sliders {
-	width: auto;
+	width: 750px;
 	margin: auto;
-	padding: 0;
+	margin-top: 14px;
 	z-index: 10;
+	padding: 0px 8px 8px 8px;
+	background-color: rgb(240,240,240);
+	z-index: -5;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#slider_wrapper p {
+	text-align: center;
 }
 
 #course_list {
@@ -433,7 +468,8 @@ h1 {
 
 .wrapper {
 	margin: auto;
-	margin-top: 0;
+	margin-top: 0px;
+	padding-top: 0px;
 	border-color: hidden;
 	background-image: url(../images/shadow_inset.png);
 	background-size: contain;
@@ -501,6 +537,10 @@ h1 {
 	box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
 	-moz-box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
 	-webkit-box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
+}
+
+.title-padder {
+	height: 33px;
 }
 
 .department-title {
