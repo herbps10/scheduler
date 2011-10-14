@@ -51,11 +51,7 @@
 		// Setup the column navigation object with configuration settings
 		// Overright existing settings where applicable
 		configuration = $.extend({
-			containerPosition:"relative",
-			containerTop:"",
-			containerLeft:"",
-			containerPadding:"0",
-			containerMargin:"auto",
+			containerPosition:"absolute",
 			containerWidth:"400px",
 			containerHeight:"288px", //multiple of 36 for height of each item
 			columnWidth:255,
@@ -73,10 +69,6 @@
 		// Setup the container space using the settings
 		$(wrapper).css({
 			position:configuration.containerPosition,
-			top:configuration.containerTop,
-			left:configuration.containerLeft,
-			padding:configuration.containerPadding,
-			margin:configuration.containerMargin,
 			width:configuration.containerWidth,
 			height:configuration.containerHeight,
 			overflowX:"hidden",
