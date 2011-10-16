@@ -96,7 +96,7 @@ departments.each_pair do |department, full_department|
 	$redis.sadd(RedisHelper.departments, department)
 	$redis.set(RedisHelper.department_title(department), full_department)
 
-	doc = Nokogiri::HTML(File.open("data/fall/#{department}.html").read)
+	doc = Nokogiri::HTML(File.open("data/10-16-11;14:42:06/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
