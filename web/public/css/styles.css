@@ -3,6 +3,7 @@ body{
 	font-weight: normal;
 	background-image: url(../images/background.png);
 	margin: auto;
+	background-attachment: fixed;
 }
 
 .wide {
@@ -92,7 +93,7 @@ h1 {
 #header {
 	padding: 0;
 	font-family: 'Coustard', serif;
-	
+
 	text-align: center;
 	font-size: 4em;
 	font-weight: light;
@@ -101,47 +102,73 @@ h1 {
 }
 
 #titles {
-	margin: 18px auto 12px auto;
-	min-width: 750px;
+	position: relative;
+	left: -15px;
+	margin: 38px auto 20px auto;
+	width: 950px;
+	height: 26px;
 	z-index: 30;
-	text-align: center;
+	overflow: visible;
 }
 
 #titles div{
 	display: inline-block;
+	position: relative;
+	width: 180px;
+	height: 42px;
+	margin: -4px 38px 0px 38px;
+	background: rgb(43, 58, 92);
+	color: whitesmoke;
+	font-size: 1.5em;
+	font-weight: normal;
 	text-align: center;
-	width: 219px;
-	padding: 12px;
-	margin: 0px 2px 0px 2px;
-	font-size: 1.1em;
-	font-weight: bold;
-	background: whitesmoke;
-	border: 2px solid lightgray;
+}
+#titles h4 {
+	line-height: 42px;
+	margin: 0px;
 }
 
-#searchboxes {
-	min-width: 750px;
-	margin: 0px;
-	margin-top: -12px;
-	margin-bottom: -6px;
-	text-align: center;
+.title_left {
+	float: left;
+	position: relative;
+	display: block;
+	left: -50px;
+	top: -42px;
+	z-index: -10;
 }
+.title_right {
+	float: right;
+	position: relative;
+	display: block;
+	right: -50px;
+	top: -42px;
+	z-index: -10;
+}
+
 .search_wrapper{
-	padding: 6px 15px 2px 15px;
-	background: rgb(66, 66, 66);
-	width: 185px;
-	height: 30px;
-	margin: 0px 17px 0px 17px;
+	background: rgb(178,178,178);
+	background: -moz-linear-gradient(top, rgba(178,178,178,1) 0%, rgba(178,178,178,1) 39%, rgba(150,150,150,1) 40%, rgba(178,178,178,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(178,178,178,1)), color-stop(39%,rgba(178,178,178,1)), color-stop(40%,rgba(150,150,150,1)), color-stop(100%,rgba(178,178,178,1)));
+	background: -webkit-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(178,178,178,1) 39%,rgba(150,150,150,1) 40%,rgba(178,178,178,1) 100%);
+	background: -o-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(178,178,178,1) 39%,rgba(150,150,150,1) 40%,rgba(178,178,178,1) 100%);
+	background: -ms-linear-gradient(top, rgba(178,178,178,1) 0%,rgba(178,178,178,1) 39%,rgba(150,150,150,1) 40%,rgba(178,178,178,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#b2b2b2',GradientType=0 );
+	background: linear-gradient(top, rgba(178,178,178,1) 0%,rgba(178,178,178,1) 39%,rgba(150,150,150,1) 40%,rgba(178,178,178,1) 100%);
+	border: 1px solid rgb(155,155,155);
+	width: 238px;
+	height: 36px;
 	display: inline-block;
 	text-align: center;
+	z-index: 0;
+	position: absolute;
 }
 
-.triangle_down {
-	width: 100%;
-	height: 16px;
-	margin: auto;
-	z-index: 20;
-	bottom: -8px;
+.title_bottom {
+	height: 55px;
+	width: 250px;
+	z-index: -10;
+	bottom: -10px;
+	left: -16px;
 	position: relative;
 }
 
@@ -153,16 +180,23 @@ h1 {
 	background-image: url(../images/magnifier.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	position: relative;
-	width: 120px;
-	padding: 3px;
-	margin: auto;
+	background-color: gray;
+	border: darkgrey;
+	position: absolute;
+	width: 160px;
+	right: 0px; /*Fix for FFox*/
+	padding: 4px;
+	margin: 6px 36px 6px 36px;
+	box-shadow: inset 0px 1px 1px 1px rgba(55,55,55,.65);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 #sections-search {
 	margin-right: 0;
 }
 .search_filler {
-	width: 180px;
+	width: 141px;
 	height: 23px;
 }
 
@@ -246,17 +280,26 @@ h1 {
 }
 
 #slider_wrapper {
-	margin: 24px auto auto auto;
-}
-#slider_wrapper p {
-	text-align: center;
+	margin: auto;
+	width: 800px;
 }
 
 #sliders {
-	width: auto;
+	width: 750px;
 	margin: auto;
-	padding: 0;
-	z-index: 10;
+	z-index: -10;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#slider_wrapper p {
+	text-align: center;
+	position: inherit;
+}
+
+#slider_text {
+	margin-top: 320px;
 }
 
 #course_list {
@@ -302,6 +345,7 @@ h1 {
 	bottom: -260px;
 	width: 100%;
 	overflow-y: visible;	
+	z-index: 100;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
@@ -432,15 +476,10 @@ h1 {
 }
 
 .wrapper {
-	margin: auto;
-	margin-top: 0;
-	border-color: hidden;
-	background-image: url(../images/shadow_inset.png);
-	background-size: contain;
-	
 	box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
 	-moz-box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
 	-webkit-box-shadow:inset 0px 0px 16px rgba(36, 36, 36, .4);
+	z-index: 10;
 }
 
 /* The *normal* state styling */
@@ -501,6 +540,10 @@ h1 {
 	box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
 	-moz-box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
 	-webkit-box-shadow:inset 0px 4px 8px rgba(37, 36, 36, .6);
+}
+
+.title-padder {
+	height: 33px;
 }
 
 .department-title {
