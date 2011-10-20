@@ -79,6 +79,14 @@ class Array
 
 		return n
 	end
+
+	def sameCourse?(section)
+		self.each do |e|
+			return true if e.sameCourse?(section)
+		end
+
+		return false
+	end
 end
 
 class Scheduler
@@ -228,9 +236,9 @@ class Scheduler
 			diff = (@all_sections - schedule)
 
 			diff.each do |section|
-				s = section.deep_clone
-				s.conflicted = true
-				schedule.addSection(s)
+				s2 = section.deep_clone
+				s2.conflicted = true
+				schedule.addSection(s2)
 			end
 
 			@schedules[index] = schedule.sort_by { |s| 
