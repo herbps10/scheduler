@@ -47,6 +47,19 @@ class Section
 		end
 	end
 
+	def sameSection? section
+		if section.kind_of?(Array) == true
+			section.each do |s|
+				return true if s.crn == @crn
+			end
+
+			return false
+		else
+			return true if section.crn == @crn
+			return false
+		end
+	end
+
 	def clone
 		return Marshal.load(Marshal.dump(self))
 	end
