@@ -102,7 +102,7 @@ $(document).ready(function() {
 	};
 
 	function listFilter(inputs, list, cls) {
-		$(inputs).change(function() {
+		$(inputs).live('change', function() {
 			console.log($(this).val());
 
 			var filter = $(this).val();
@@ -114,7 +114,7 @@ $(document).ready(function() {
 			else {
 				$(list).children('div').children('li').fadeIn();
 			}
-		}).keyup(function() {
+		}).live('keyup', function() {
 			$(this).change();
 		});
 	}
