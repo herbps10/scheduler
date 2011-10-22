@@ -184,19 +184,28 @@ class Scheduler
 		@all_sections = (@courses | @sections.map { |s| [s] })
 
 		all = []
+
+		puts "All Sections:"
+		puts @all_sections.inspect.gsub('>', "\n")
+
 		@all_sections.combination(size).to_a.each do |options|
+			puts "Options: "
+			puts options.inspect.gsub(">", "\n")
+			puts "\n\n"
+
 			course_combinations = []
 
 			options.each do |course|
 				course_combinations += [course_product(course)]
 			end
 
-
 			all += product(0, course_combinations).sort_by { |s| s.all_length }.reverse
 
+=begin
 			all.delete_if { |s| 
 				s.all_length != all[0].all_length
 			}
+=end
 		end
 
 		return [] if all == []
@@ -232,7 +241,6 @@ class Scheduler
 		end
 
 		@schedules.each_with_index do |schedule, index|
-
 			diff = (@all_sections - schedule)
 
 			diff.each do |section|

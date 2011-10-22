@@ -140,14 +140,14 @@ departments.each_pair do |department, full_department|
 			course.instructor = cell.content	
 		elsif(index == 17) 	
 			if course.time_id == nil
-				puts course.days
-				puts course.time
+				#puts course.days
+				#puts course.time
 			end
 
 			course.location = cell.content 
 
 			if previous_course == nil
-
+				course.save_course
 			elsif previous_course.title != course.title
 				course.save_course
 			else

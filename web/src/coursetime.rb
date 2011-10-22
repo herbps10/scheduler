@@ -26,6 +26,9 @@ class CourseTime
 		@englishTime = time
 
 		elements = time.split("-")
+
+		return "unknown" if elements[0] == nil || elements[1] == nil
+
 		@englishStartTime = elements[0].gsub(' ', '')
 		@englishEndTime = elements[1].gsub(' ', '')
 
