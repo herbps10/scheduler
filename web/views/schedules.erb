@@ -1,7 +1,7 @@
 <div id='schedule_intro'>
     <p>Based on your courses you have selected, there are <%= @scheduler.schedules.length %>
- schedules available to choose from.
-    <p>All of the available sections for a given course are listed beneath it for your convenience.
+ schedules available for you to choose from. Click on a section to add it's CRN to the list below the schedule.</p>
+    <p>If a course does not fit into a schedule, it will be printed in <span class="conflicted">red</span>, and an alternate schedule will be listed with courses moved to make room for it.</p>
 </div>
 
 <% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
@@ -56,7 +56,7 @@
         <% end %>
 	</ol>
 
-	<div class='copyable-crns'></div>
+	Copy to Knightweb:<div class='copyable-crns'>[No sections selected. Click on a section above.] </div>
 
 </div>
 <% end %>
@@ -65,4 +65,4 @@
     <a href='#'>Back to Top</a>
 </div>
 <br/>
-<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fknightscheduler&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;position:relative;left:230px" allowTransparency="true"></iframe>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fknightscheduler&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;position:relative;left:230px" allowTransparency="true"></iframe><br/>

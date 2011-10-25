@@ -9,16 +9,22 @@ body{
 .wide {
 	font-size: 0.7em;
 	margin-top: 24px;
-	width: 60%;
-	position: absolute;
-	left: 20%;
+	width: 600px;
 	color: #606060;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.new_update {
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 a[href^="mailto:"] {
 	color: #404040;
 	text-decoration: none;
-	border-bottom: 1px dotted;	
+	border-bottom: 1px dotted;
+	padding: -5px;
 }
 
 a[href^="mailto:"]:hover {
@@ -58,16 +64,11 @@ a[href^="#"] {
 	position: fixed;
 }
 
-#beta {
+.beta {
 	position: absolute;
 	z-index: 100;
 	top: 35px;
 	margin-left: -20px;
-	
-	-moz-transform: rotate(-30deg);
-	-webkit-transform: rotate(-30deg);
-	-o-transform: rotate(-30deg);
-	transform: rotate(-30deg);
 	
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
@@ -75,15 +76,16 @@ a[href^="#"] {
 	transition: all 1s ease-in-out;
 }
 
-#beta:hover {
-	-moz-transform: scale(1.1) rotate(-25deg);
-	-o-transform: scale(1.1) rotate(-25deg);
-	-webkit-transform: scale(1.1) rotate(-25deg);
-	transform: scale(1.1) rotate(-25deg);
+.beta:hover {
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 h1 {
 	font-family: 'Coustard', serif;
+	font-weight: normal;
 	font-size: 1em;
 	color: rgb(65, 65, 65);
 	text-align: center;
@@ -92,10 +94,15 @@ h1 {
 
 #header {
 	padding: 0;
-	font-family: 'Coustard', serif;
 
 	text-align: center;
 	font-size: 4em;
+
+}
+
+.logo_text {
+	font-family: 'Coustard', serif;
+	text-shadow: 0px -2px 2px black;
 	font-weight: light;
 	color: whitesmoke;
 	text-shadow: 0px -2px 2px black;
@@ -107,7 +114,7 @@ h1 {
 	margin: 38px auto 20px auto;
 	width: 950px;
 	height: 26px;
-	z-index: 30;
+	z-index: 0;
 	overflow: visible;
 }
 
@@ -126,6 +133,7 @@ h1 {
 #titles h4 {
 	line-height: 42px;
 	margin: 0px;
+	font-weight: normal;
 }
 
 .title_left {
@@ -201,7 +209,7 @@ h1 {
 }
 
 #schedules {
-	margin: 36px auto auto auto;
+	margin: 24px auto auto auto;
 	width: 720px;
 	height: auto;
 	text-align: left;
@@ -217,6 +225,7 @@ h1 {
 	font-family: 'Coustard', serif;
 	text-indent: 24px;
 	font-weight: normal;
+	text-align: justify;
 }
 
 #schedules table {
@@ -334,8 +343,15 @@ h1 {
 #landing {
 	font-size: 1.4em;
 	margin: auto;
-	width: 400px;
+	margin-top: 56px;
+	width: 550px;
 	text-align: center;
+}
+
+#begin {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 24px;
 }
 
 #list {
@@ -392,7 +408,7 @@ h1 {
 }
 
 #generate_button {
-	font-weight: 900;
+	font-weight: 400;
 	color: rgb(50, 50, 50);
 	text-align: center;
 	margin: 24px auto 24px auto;
@@ -436,9 +452,10 @@ h1 {
 .back_button {
 	text-align: center;
 	font-family: 'Coustard', serif;
+	font-weight: 400;
 	font-size: 1.4em;
 	width: 150px;
-	margin: 36px auto 12px auto;
+	margin: 36px auto 6px auto;
 }
 
 .back_button {
