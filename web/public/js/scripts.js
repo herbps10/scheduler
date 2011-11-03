@@ -17,7 +17,8 @@ $(document).ready(function() {
 	var courseList = [];
 
     $('#begin').live('click', function() {
-        $('#landing, #beta').delay(100).fadeOut();
+        $('#landing').delay(100).fadeOut();
+        $('.beta').delay(100).fadeOut();
         $('#slider_wrapper').delay(800).fadeIn();
     });
 
