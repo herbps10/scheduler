@@ -1,5 +1,5 @@
 class Section
-	attr_accessor :crn, :title, :instructor, :section, :time, :courseNumber, :department, :credits, :conflicted
+	attr_accessor :crn, :title, :instructor, :section, :times, :courseNumber, :department, :credits, :conflicted
 
 	def initialize(crn)
 		data = $redis.hgetall(RedisHelper::section(crn))
@@ -11,8 +11,15 @@ class Section
 		@courseNumber = data["courseNumber"]
 		@department = data["department"]
 		@credits = data["credits"]
-		@time = CourseTime.new(data["time"], data["days"])
+
+		@times = []
+		data["time"].split(',').each_with_index do |time, index|
+			@times.push CourseTime.new(time, data["days"].split(',').at(index))
+		end
+
 		@conflicted = false
+
+		puts @crn + " " + @title
 	end
 
 	def conflict? section
@@ -20,16 +27,26 @@ class Section
 			section.each do |s|
 				if s.kind_of?(Array) == true
 					s.each do |a|
-						return true if @time.conflict?(a.time) == true
+						@times.each do |time|
+							return true if time.conflict?(a.times) == true
+						end
+
+						return false
 					end
 				else
-					return true if @time.conflict?(s.time) == true
+					@times.each do |time|
+						return true if time.conflict?(s.times) == true
+					end
+
+					return false
 				end
 			end
 
 			return false
 		else
-			return true if @time.conflict? section.time
+			@times.each do |time|
+				return true if time.conflict?(section.times)
+			end
 			return false
 		end
 	end

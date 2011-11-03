@@ -646,3 +646,7 @@ li {
 	color: red;
 	text-decoration: line-through;
 }
+
+span.time-wrapper {
+	display: block;
+}

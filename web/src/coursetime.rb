@@ -37,16 +37,19 @@ class CourseTime
 	end
 
 	# Checks to see if the given course time conflicts with this course time
-	def conflict?(time)
+	def conflict?(times)
 		return false if @tba == true
-		return false if time.tba == true
 
-		return true if \
-				((time.startTimeInMinutes <= @endTimeInMinutes && time.startTimeInMinutes >= @startTimeInMinutes) \
-				or (time.endTimeInMinutes >= @startTimeInMinutes && time.endTimeInMinutes <= @endTimeInMinutes) \
-				or (time.startTimeInMinutes > @startTimeInMinutes && time.endTimeInMinutes < @endTimeInMinutes) \
-				or (time.startTimeInMinutes < @startTimeInMinutes && time.endTimeInMinutes > @endTimeInMinutes)) \
-				and (@days & time.days).length > 0
+		times.each do |time|
+			return false if time.tba == true
+			return true if \
+					((time.startTimeInMinutes <= @endTimeInMinutes && time.startTimeInMinutes >= @startTimeInMinutes) \
+					or (time.endTimeInMinutes >= @startTimeInMinutes && time.endTimeInMinutes <= @endTimeInMinutes) \
+					or (time.startTimeInMinutes > @startTimeInMinutes && time.endTimeInMinutes < @endTimeInMinutes) \
+					or (time.startTimeInMinutes < @startTimeInMinutes && time.endTimeInMinutes > @endTimeInMinutes)) \
+					and (@days & time.days).length > 0
+		end
+
 		return false
 	end
 

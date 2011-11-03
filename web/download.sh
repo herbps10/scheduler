@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEPARTMENTS=( "ACCT" "ANTH" "ARTH" "ARTS" "ASTR" "BIOL" "BLKS" "COMN" "CDSC" "DANC" "EDUC" "ENVR" "CHEM" "ECON" "ENGL" "CSCI" "GEOG" "GSCI" "HIST" "H&PE" "HONR" "HUMN" "INTD" "MATH" "PHYS" "THEA" "WRIT" "SOCI" "PLSC" "SPAN" "FREN" "JAPN" "GERM" "LATN" "ITAL" "RUSS" "CHIN" "ARBC" "MGMT" "MUSC" "PHIL" "PSYC" "WMST" )
+DEPARTMENTS=( "ACCT" "ANTH" "ARTH" "ARTS" "ASTR" "BIOL" "BLKS" "COMN" "CDSC" "DANC" "EDUC" "ENVR" "CHEM" "ECON" "ENGL" "CSCI" "GEOG" "GSCI" "HIST" "H&PE" "HONR" "HUMN" "INTD" "MATH" "PHYS" "THEA" "WRIT" "SOCL" "PLSC" "SPAN" "FREN" "JAPN" "GERM" "LATN" "ITAL" "RUSS" "CHIN" "ARBC" "MGMT" "MUSC" "PHIL" "PSYC" "WMST" )
 
 URL="https://knightweb.geneseo.edu/banweb/owsocc.P_GetCrse"
 DETAILS_URL="https://knightweb.geneseo.edu/banweb/bwckctlg.p_display_courses"

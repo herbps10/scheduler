@@ -9,6 +9,10 @@ class Saver
 	@@fields.each { |field| attr_accessor field }
 
 	def save_course
+		while $redis.zscore(RedisHelper::department(@department), @title.gsub(' ', '-')) != nil
+			@title += "*"
+		end
+
 		$redis.hset(RedisHelper::course(@title), 'title', @title)
 		$redis.hset(RedisHelper::course(@title), 'credits', @credits)
 		$redis.hset(RedisHelper::course(@title), 'courseNumber', @courseNumber);
@@ -75,7 +79,7 @@ departments = { "ACCT" => "Accounting",
 		"PHYS" => "Physics",
 		"THEA" => "Theater",
 		"WRIT" => "Writing",
-		"SOCI" => "Sociology",
+		"SOCL" => "Sociology",
 		"PLSC" => "Political Science",
 		"SPAN" => "Spanish",
 		"FREN" => "French",
@@ -96,7 +100,7 @@ departments.each_pair do |department, full_department|
 	$redis.sadd(RedisHelper.departments, department)
 	$redis.set(RedisHelper.department_title(department), full_department)
 
-	doc = Nokogiri::HTML(File.open("data/10-16-11;14:42:06/#{department}.html").read)
+	doc = Nokogiri::HTML(File.open("data/10-23-11;19:38:32/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
@@ -104,58 +108,65 @@ departments.each_pair do |department, full_department|
 
 	previous_course = nil
 
-	doc.css('tr td').each do |cell|
-		next if cell.content == ''
+	doc.css('tr').each do |row|
+		row.css('td').each_with_index do |cell, index|
+			next if cell.content == ''
 
-		if /[0-9]{5}/ =~ cell.content
-			valid_row = true
-			index = 0
-		end
-
-		next if valid_row == false
-
-		if(index == 0) 		
-			course.crn = cell.content
-		elsif(index == 1) 
-			course.department = cell.content
-		elsif(index == 2)	
-			course.courseNumber = cell.content
-		elsif(index == 3) 	
-			course.section = cell.content
-		elsif(index == 5) 	
-			course.credits = cell.content
-		elsif(index == 6) 	
-			course.title = cell.content
-		elsif(index == 7) 	
-			course.days = cell.content
-		elsif(index == 8) 	
-			course.time = cell.content
-		elsif(index == 9) 	
-			course.capacity = cell.content
-		elsif(index == 10) 	
-			course.actual = cell.content
-		elsif(index == 11) 	
-			course.remaining = cell.content	
-		elsif(index == 15) 	
-			course.instructor = cell.content	
-		elsif(index == 17) 	
-			if course.time_id == nil
-				#puts course.days
-				#puts course.time
+			if /[0-9]{5}/ =~ cell.content
+				valid_row = true
 			end
 
-			course.location = cell.content 
+			if(index == 1) 		
+				course.crn = cell.content
+			elsif(index == 2) 
+				course.department = cell.content
+			elsif(index == 3)	
+				course.courseNumber = cell.content
+			elsif(index == 4) 	
+				course.section = cell.content
+			elsif(index == 6) 	
+				course.credits = cell.content
+			elsif(index == 7) 	
+				course.title = cell.content.chomp.strip
+			elsif(index == 8) 	
+				course.days = cell.content
+			elsif(index == 9) 	
+				course.time = cell.content
+			elsif(index == 10) 	
+				course.capacity = cell.content
+			elsif(index == 11) 	
+				course.actual = cell.content
+			elsif(index == 12) 	
+				course.remaining = cell.content	
+			elsif(index == 16) 	
+				course.instructor = cell.content	
+			elsif(index == 19) 	
+				if valid_row == true
+					if course.time_id == nil
+						#puts course.days
+						#puts course.time
+					end
 
-			if previous_course == nil
-				course.save_course
-			elsif previous_course.title != course.title
-				course.save_course
-			else
-				course.save_section
+					course.location = cell.content 
+
+					if previous_course == nil
+						course.save_course
+					elsif previous_course.title != course.title
+						course.save_course
+					else
+						course.save_section
+					end
+
+					previous_course = course.dup
+					valid_row = false
+				else
+					if previous_course.days != course.days
+						previous_course.days += ',' + course.days
+						previous_course.time += ',' + course.time
+						previous_course.save_section
+					end
+				end
 			end
-
-			previous_course = course.dup
-			valid_row = false
 		end
 
 

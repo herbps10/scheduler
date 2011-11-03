@@ -1,41 +1,57 @@
 
 <div id="sliders">
-    <div id = titles>
-        <div><h4>Departments</h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
-        <div><h4>Courses<h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
-        <div><h4>Sections</h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
-    </div>
-    <ul id="departments"> 
-        <li class='search_wrapper'><input type='text' id='departments-search' /></li>
-        <li class="department"><a href="#" class="title-padder"></a></li>
+	<div id = titles>
+		<div><h4>Departments</h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
+		<div><h4>Courses<h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
+		<div><h4>Sections</h4><img class='title_left' src="/images/title_left.png" alt="" /><img class='title_right' src="/images/title_right.png" alt="" /></div>
+	</div>
+
+	<ul id="departments"> 
+        	<li class='search_wrapper'><input type='text' id='departments-search' /></li>
+        	<li class="department"><a href="#" class="title-padder"></a></li>
+
 		<% @data.departments.each do |department| %>
-            <li class = "department <%= department.title %>">
-				<a  href="#" class = "department-title"><%= department.title %></a>
-				<ul class = "courses" >
-                    <li class='search_wrapper'><input type='text' id='courses-search' /></li>
-                    <li class="department"><a href="#" class="title-padder"></a></li>
-                    <% department.courses.each do |course| %>
-						<li class= "course <%= course.title %>">
-							<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
-							<ul id="sections">
-                                <% course.sections.each do |section| %>
-									<li class="section" rel='<%= section.crn %>'>
-                                        <span class='section_text'>
-                                            <% if section.time.tba == true %>
-                                                <span class='time'>Time TBA</span>
-                                            <% else %>
-                                                <span class='days'><%= section.time.prettyDays %>:</span> <span class='time'><%= section.time.prettyTime %></span>
-                                            <% end %>
-                                            <br/><span class='instructor'><%= section.instructor %></span><span class='crn'>
-											<%= section.crn %></span>
-                                        </span>
-									</li>
-                                <% end %>
-							</ul>
+            	
+		<li class = "department <%= department.title %>">
+	    		<a  href="#" class = "department-title"><%= department.title %></a>
+			<ul class = "courses" >
+                   		<li class='search_wrapper'><input type='text' id='courses-search' /></li>
+                    		<li class="department"><a href="#" class="title-padder"></a></li>
+
+                    		<% department.courses.each do |course| %>
+
+				<li class= "course <%= course.title %>">
+					<a  href="#" class = "course-title"><span class="course_number"><%= course.courseNumber %>:</span> <%= course.title %></a>
+					<ul id="sections">
+
+						<% course.sections.each do |section| %>
+
+						<li class="section" rel='<%= section.crn %>'>
+							<span class='section_text'>
+
+								<% section.times.each do |time| %>
+									<span class='time-wrapper'>
+										<% if time.tba == true %>
+											<span class='time'>Time TBA</span>
+										<% else %>
+											<span class='days'><%= time.prettyDays %>:</span> <span class='time'><%= time.prettyTime %></span>
+										<% end %>
+									</span>
+								<% end %>
+
+								<span class='instructor'><%= section.instructor %></span>
+								<span class='crn'><%= section.crn %></span>
+							</span>
 						</li>
-                    <% end %>
-				</ul>
-			</li>
-        <% end %>
+
+						<% end %>
+					</ul>
+
+				</li>
+
+                    		<% end %>
+			</ul>
+		</li>
+        	<% end %>
 	</ul>
 </div>

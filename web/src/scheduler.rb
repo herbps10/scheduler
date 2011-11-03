@@ -61,20 +61,9 @@ class Array
 					end
 				end
 				
-				puts "Course_index: "
-				puts self[course_index].inspect.gsub(">", "\n")
-				puts
-
-				puts "Section: "
-				puts section.inspect.gsub(">", "\n")
-				puts
-
 				section = section.delete_if { |s|
 					self[course_index].sameSection?(s)
 				}
-
-				puts
-				puts section.inspect.gsub(">", "\n")
 
 				self[course_index] += section
 
@@ -154,6 +143,9 @@ class Scheduler
 
 	def product(index, sets)
 		if index == sets.length - 1
+			puts "sets[index]"
+			puts sets[index].inspect
+			puts
 			return sets[index]
 		end
 
@@ -161,6 +153,14 @@ class Scheduler
 
 		sets[index].each do |element|
 			product(index + 1, sets).each do |e|
+				puts "Element:"
+				puts element.inspect
+				puts "e:"
+				puts e.inspect
+				puts "conflict?"
+				puts element.conflict?(e)
+				puts
+
 				if element.conflict?(e)== false
 					if e.contains_arrays == true
 						ret.push([element] + e)
@@ -211,11 +211,26 @@ class Scheduler
 		@all_sections.combination(size).to_a.each do |options|
 			course_combinations = []
 
+			puts "Options"
+			puts options.inspect.gsub(">", "\n")
+			puts
+
 			options.each do |course|
+				puts "Course Product:"
+				puts course_product(course).inspect.gsub(">", "\n")
+				puts
 				course_combinations += [course_product(course)]
 			end
 
+			puts "Course combinations"
+			puts course_combinations.inspect.gsub(">", "\n")
+			puts
+
 			all += product(0, course_combinations).sort_by { |s| s.all_length }.reverse
+
+			puts "All:"
+			puts all.inspect.gsub(">", "\n")
+			puts
 
 			all.delete_if { |s| 
 				s.all_length != all[0].all_length
@@ -254,24 +269,14 @@ class Scheduler
 			@schedules = [@schedules]
 		end
 
+=begin
 		@schedules.each_with_index do |schedule, index|
-			puts "Schedule: "
-			puts schedule.inspect.gsub(">", "\n").to_s
-
 			diff = (@all_sections - schedule)
 
-			puts "Diff: "
-			puts diff.inspect.gsub(">", "\n").to_s
-			puts
-
 			diff.each do |section|
-				puts "Adding: "
 				s2 = section.deep_clone
 				s2.conflicted = true
-				puts s2.inspect.gsub(">", "\n")
 				schedule.addSection(s2)
-				puts "Schedule after add: "
-				puts schedule.inspect.gsub(">", "\n")
 			end
 
 			@schedules[index] = schedule.sort_by { |s| 
@@ -282,6 +287,7 @@ class Scheduler
 				end
 			}
 		end
+=end
 
 		return @schedules
 	end

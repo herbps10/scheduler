@@ -39,11 +39,21 @@
 
                     <% section.each_with_index do |option, i| %>
                         <tr class='section <%= "conflicted" if option.conflicted %>'>
-                            <td class='days'><span><%= option.time.prettyDays %></td>
-                            <td class='time'><%= option.time.prettyTime %></td>
-                            <td class='professor'><%= option.instructor %></td>
-                            <td class='credits'><%= option.credits %></td>
-                            <td class='crn'><%= option.crn %></td>
+                        	<td class='days'>
+					<% option.times.each do |time| %>
+						<span><%= time.prettyDays %></span><br/>
+					<% end %>
+				</td>
+				
+				<td class='time'>
+					<% option.times.each do |time| %>
+						<span><%= time.prettyTime %></span><br/>
+					<% end %>
+				</td>
+
+				<td class='professor'><%= option.instructor %></td>
+				<td class='credits'><%= option.credits %></td>
+				<td class='crn'><%= option.crn %></td>
                         </tr>
                     <% end %>
 
