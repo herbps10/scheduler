@@ -54,7 +54,7 @@
 			containerPosition:"absolute",
 			containerWidth:"400px",
 			containerHeight:"288px", //multiple of 36 for height of each item
-			columnWidth:255,
+			columnWidth:250,
 			columnScrollVelocity:200,
 			callBackFunction:null
 		}, configuration);
