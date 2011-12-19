@@ -48,3 +48,17 @@ end
 get "/add/course/:title" do
 	course = params[:title]
 end
+
+post "/subscribe" do
+	email = params[:email]
+
+	$redis.sadd('emails', email)
+
+	erb :subscribed
+end
+
+get "/unsubscribe/:email" do
+	email = params[:email]
+
+	$redis.srem('emails', email)
+end
