@@ -5,7 +5,7 @@ require 'nokogiri'
 require 'redishelper.rb'
 
 class Saver
-	@@fields = :crn, :department, :courseNumber, :section, :credits, :title, :days, :time, :capacity, :actual, :remaining, :instructor, :location, :time_id
+	@@fields = :crn, :department, :courseNumber, :section, :credits, :title, :days, :time, :capacity, :actual, :remaining, :instructor, :location, :time_id, :description
 	@@fields.each { |field| attr_accessor field }
 
 	def save_course
@@ -15,7 +15,10 @@ class Saver
 
 		$redis.hset(RedisHelper::course(@title), 'title', @title)
 		$redis.hset(RedisHelper::course(@title), 'credits', @credits)
-		$redis.hset(RedisHelper::course(@title), 'courseNumber', @courseNumber);
+		$redis.hset(RedisHelper::course(@title), 'courseNumber', @courseNumber)
+		$redis.hset(RedisHelper::course(@title), 'description', @description)
+
+		puts RedisHelper::course(@title)
 
 		$redis.zadd(RedisHelper::department(@department), @courseNumber.to_i, @title.gsub(' ', '-'))
 
@@ -100,11 +103,43 @@ departments.each_pair do |department, full_department|
 	$redis.sadd(RedisHelper.departments, department)
 	$redis.set(RedisHelper.department_title(department), full_department)
 
+	
+	###
+	### Parse out the descriptions from the details file
+	###
+
+	descriptions = []
+	description_index = 0
+
+	details = Nokogiri::HTML(File.open("data/10-23-11;19:38:32/#{department}-details.html").read)
+
+	details.css('.nttitle').each_with_index do |title, title_index|
+		course_title =  title.content
+
+		#department = title.to_s.match(/([A-Z]+)/)[0]
+		#course_number = title.to_s.match(/crse_numb_in=([0-9A-Z]+)/)[1]
+
+		description = title.parent().next()
+		if(description.to_s.split('<br>').length > 0)
+			content = description.to_s.split('<br>').at(0).gsub('<td class="ntdefault">', '').gsub('<tr>', '').gsub("\n", '')
+			
+			puts content
+			descriptions[description_index] = content
+			description_index += 1
+
+		end
+	end
+
+
+	###
+	### Parse the main listings
+	### 
+
 	doc = Nokogiri::HTML(File.open("data/10-23-11;19:38:32/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
-	index = 0
+	course_index = 0
 
 	previous_course = nil
 
@@ -150,6 +185,7 @@ departments.each_pair do |department, full_department|
 					course.location = cell.content 
 
 					if previous_course == nil
+						course.description = descriptions[course_index]
 						course.save_course
 					elsif previous_course.title != course.title
 						course.save_course
@@ -169,7 +205,11 @@ departments.each_pair do |department, full_department|
 			end
 		end
 
-
-		index += 1
+		course_index += 1
 	end
+end
+
+departments.each_pair do |department, full_department|
+	
+
 end
