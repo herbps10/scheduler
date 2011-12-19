@@ -7,6 +7,14 @@ $(document).ready(function() {
 
     $('.back_button, #slider_wrapper').hide();
 
+    $("#subscribe input[type=submit]").click(function() {
+	if($("#subscribe input[type=text]").val().toLowerCase().search("geneseo.edu") == -1) {
+		alert('Please enter a Geneseo email address');
+		return false;
+	}
+    	return true;
+    });
+
     $("#departments").columnNavigation({
  		containerBackgroundColor        : "rgb(255,255,255)",
  		columnFontFamily                : "Arial,sans-serif",
