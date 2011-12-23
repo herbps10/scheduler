@@ -1,12 +1,18 @@
 class CourseList
-	attr_accessor :courses, :sections
+	attr_accessor :courses
 
-	def schedules
-		schedules = []
+	def initialize
+		@courses = []
+	end
 
-		@sections.each do |section|
-			
-		end
+	def contains section
+		return false if section.is_a?(Section) == false
+
+		@courses.each { |c| return true if section.courseSection?(c) }
+	end
+
+	def add course
+		@courses.push course
 	end
 end
 

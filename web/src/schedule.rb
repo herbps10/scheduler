@@ -1,26 +1,8 @@
 class Schedule
 	attr_accessor :sections
 
-	def addSections sections
-		if sections.is_a? Section
-			@sections.push sections
-			return self
-		end
-
-		@sections += sections.map do |section|
-			if section.is_a? Section
-				section
-			else
-				Section.new section # we've been given a CRN, so create a new section object
-			end
-		end
-
-		return self
-	end
-
-	def initialize
-		@sections = []
-		return self
+	def initialize(sections)
+		@sections = sections
 	end
 	
 	def checkForConflicts
@@ -40,6 +22,16 @@ class Schedule
 		return conflicts
 	end
 
+	def conflicted
+		pairs = @sections.permutation(2).to_a
+
+		pairs.each do |pair|
+			return true if pair[0].conflict? pair[1]
+		end
+		
+		return false
+	end
+
 	def getCredits
 		credits = 0
 		@sections.each { |s| credits += s.credits.to_i }
@@ -49,7 +41,7 @@ class Schedule
 
 	def print
 		@sections.each do |section|
-			puts section.title
+			puts section.title + " " + section.section
 		end
 	end
 end

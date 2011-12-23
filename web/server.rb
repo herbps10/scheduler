@@ -11,6 +11,9 @@ require "./src/everything.rb"
 require "./src/department.rb"
 require "./src/section.rb"
 require "./src/scheduler.rb"
+require "./src/sectionlist.rb"
+require "./src/courselist.rb"
+require "./src/coursesections.rb"
 
 $redis = Redis.new
 
@@ -37,6 +40,37 @@ get "/schedules" do
 	@scheduler.schedules
 
 	erb :schedules, :layout => false
+end
+
+get "/schedules.json" do
+	crns = params[:crns]
+
+	sections = SectionList.new(crns)
+	
+	puts sections.sections.length
+
+	oldSection = sections[0]
+	course = CourseSections.new
+
+	@scheduler = Scheduler.new
+
+	sections.each do |section|
+		if(section.sameCourse?(oldSection))
+			course.add section
+		else
+			@scheduler.courses.add course
+			course = CourseSections.new
+			course.add section
+		end
+
+		oldSection = section
+	end
+
+	@scheduler.courses.add course
+
+	@scheduler.schedule
+
+	erb :schedulesjson, :layout => false
 end
 
 get "/add/section/:crn" do

@@ -17,6 +17,7 @@ class Saver
 		$redis.hset(RedisHelper::course(@title), 'credits', @credits)
 		$redis.hset(RedisHelper::course(@title), 'courseNumber', @courseNumber)
 		$redis.hset(RedisHelper::course(@title), 'description', @description)
+		$redis.hset(RedisHelper::course(@title), 'department', @department)
 
 		puts RedisHelper::course(@title)
 

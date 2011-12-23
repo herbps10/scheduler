@@ -1,0 +1,14 @@
+{
+	schedules: [
+	<% @scheduler.schedules.each do |schedule| %>
+		{
+		<% schedule.sections.each do |section| %>
+			department: "<%= section.department %>",
+			courseNumber: "<%= section.courseNumber %>",
+			title: "<%= section.title %>",
+			instructor: "<%= section.instructor %>"
+		<% end %>
+		}
+	<% end %>
+	]
+}
