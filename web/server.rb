@@ -11,9 +11,9 @@ require "./src/everything.rb"
 require "./src/department.rb"
 require "./src/section.rb"
 require "./src/scheduler.rb"
-require "./src/sectionlist.rb"
-require "./src/courselist.rb"
-require "./src/coursesections.rb"
+#require "./src/sectionlist.rb"
+#require "./src/courselist.rb"
+#require "./src/coursesections.rb"
 
 $redis = Redis.new
 
@@ -95,4 +95,8 @@ get "/unsubscribe/:email" do
 	email = params[:email]
 
 	$redis.srem('emails', email)
+end
+
+get "/calendar" do
+	haml :calendar, { :layout => false }
 end
