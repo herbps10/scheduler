@@ -102,3 +102,7 @@ end
 get '/scheduletester' do
 	erb :scheduletester
 end
+
+get "/calendar" do
+	haml :calendar, { :layout => false }
+end

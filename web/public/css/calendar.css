@@ -1,0 +1,25 @@
+.course {
+	position: absolute;
+	width: 20%;
+	border: 1px solid #CCC;
+}
+
+.mon {
+	
+}
+
+.tue {
+	left: 20%;
+}
+
+.wed {
+	left: 40%;
+}
+
+.thu {
+	left: 60%;
+}
+
+.fri {
+	left: 80%;
+}
