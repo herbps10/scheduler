@@ -1,5 +1,5 @@
 class CourseTime
-	attr_accessor :days, :startTimeInMinutes, :endTimeInMinutes
+	attr_accessor :days, :startTimeInMinutes, :endTimeInMinutes, :englishStartTime, :englishEndTime
 
 	def tba
 		@tba
