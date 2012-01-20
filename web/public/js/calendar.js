@@ -10,17 +10,17 @@ var data = {
 					day: "tue",
 
 					startPixel: 0,
-					endPixel: 50
+					endPixel: 60
 				},
 				{
 					crn: 11285,
 					title: "Humanities",
 					startTime: "10:00am",
 					endTime: "10:50am",
-					day: "tue",
+					day: "mon",
 
-					startPixel: 120,
-					endPixel: 170 
+					startPixel: 61,
+					endPixel: 121 
 				},
 				{
 					crn: 11286,
@@ -29,10 +29,29 @@ var data = {
 					endTime: "10:50am",
 					day: "wed",
 
-					startPixel: 0,
-					endPixel: 50
-				}
+					startPixel: 122,
+					endPixel: 182
+				},
+                {
+					crn: 11288,
+					title: "Humanities",
+					startTime: "10:00am",
+					endTime: "10:50am",
+					day: "thu",
 
+					startPixel: 122,
+					endPixel: 182
+				},
+				{
+					crn: 11289,
+					title: "ELA",
+					startTime: "8:00am",
+					endTime: "8:50am",
+					day: "fri",
+
+					startPixel: 183,
+					endPixel: 340
+				}
 
 			]
 		}
