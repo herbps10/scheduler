@@ -43,6 +43,8 @@ get "/schedules" do
 end
 
 get "/schedules.json" do
+	headers "Content-Type" => "application/json"
+
 	crns = params[:crns]
 
 	sections = SectionList.new(crns)
@@ -95,4 +97,8 @@ get "/unsubscribe/:email" do
 	email = params[:email]
 
 	$redis.srem('emails', email)
+end
+
+get '/scheduletester' do
+	erb :scheduletester
 end

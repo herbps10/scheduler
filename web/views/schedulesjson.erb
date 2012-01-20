@@ -1,14 +1,16 @@
 {
-	schedules: [
-	<% @scheduler.schedules.each do |schedule| %>
+	"schedules": [
+	<% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 		{
-		<% schedule.sections.each do |section| %>
-			department: "<%= section.department %>",
-			courseNumber: "<%= section.courseNumber %>",
-			title: "<%= section.title %>",
-			instructor: "<%= section.instructor %>"
+		<% schedule.sections.each_with_index do |section, section_index| %>
+			"section": {
+				"department": "<%= section.department %>",
+				"courseNumber": "<%= section.courseNumber %>",
+				"title": "<%= section.title %>",
+				"instructor": "<%= section.instructor %>"
+			}<%= "," if section_index < schedule.sections.length - 1%>
 		<% end %>
-		}
+		}<%= "," if schedule_index < @scheduler.schedules.length - 1 %>
 	<% end %>
 	]
 }
