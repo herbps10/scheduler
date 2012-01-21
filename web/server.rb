@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'redis'
+require 'digest/sha1'
 
 require "redishelper.rb"
 
@@ -16,6 +17,8 @@ require "./src/courselist.rb"
 require "./src/coursesections.rb"
 
 $redis = Redis.new
+
+enable :sessions
 
 get '/' do
 	@data = Everything.new
@@ -105,4 +108,47 @@ end
 
 get "/calendar" do
 	haml :calendar, { :layout => false }
+end
+
+get "/user/register" do
+	haml :register
+end
+
+post "/user/new" do
+	username = params[:username]
+	password = params[:password]
+	password2 = params[:password2]
+
+	if(password != password2)
+		return "Passwords don't match"
+	end
+
+	id = $redis.incr("user:nextID")
+	$redis.set("user:#{username}:id", id)
+	$redis.set("user:#{id}:username", username);
+	$redis.set("user:#{username}:password", Digest::SHA1.hexdigest(password))
+end
+
+get "/user/login" do
+	@session = session
+	haml :login
+end
+
+post "/user/authenticate" do
+	username = params[:username]
+	password = params[:password]
+
+	if($redis.get("user:#{username}:password") == Digest::SHA1.hexdigest(password))
+		session[:logged_in] = true
+		session[:username] = username
+
+		return "Logged In"
+	end
+end
+
+get "/user/logout" do
+	session[:logged_in] = false;
+	session[:username] = nil
+
+	redirect "/user/login"
 end
