@@ -2,26 +2,28 @@
 	"schedules": [
 	<% @scheduler.schedules.each_with_index do |schedule, schedule_index| %>
 		{
-		<% schedule.sections.each_with_index do |section, section_index| %>
-			"section": {
-				"crn": "<%= section.crn %>",
-				"department": "<%= section.department %>",
-				"courseNumber": "<%= section.courseNumber %>",
-				"title": "<%= section.title %>",
-				"instructor": "<%= section.instructor %>",
-				"times": [
-					<% section.times.each_with_index do |time, time_index| %>
-					{
-						"startTime": "<%= time.englishStartTime %>",
-						"endTime": "<%= time.englishEndTime %>",
-						"startPixel": "<%= time.startTimeInMinutes - 480 %>",
-						"endPixel": "<%= time.endTimeInMinutes - 480 %>",
-						"days": ["<%= time.days.join('","') %>"]
-					}<%= "," if time_index < section.times.length - 1 %>
-					<% end %>
-				]
-			}<%= "," if section_index < schedule.sections.length - 1%>
-		<% end %>
+			"courses": [
+			<% schedule.sections.each_with_index do |section, section_index| %>
+				{
+					"crn": "<%= section.crn %>",
+					"department": "<%= section.department %>",
+					"courseNumber": "<%= section.courseNumber %>",
+					"title": "<%= section.title %>",
+					"instructor": "<%= section.instructor %>",
+					"times": [
+						<% section.times.each_with_index do |time, time_index| %>
+						{
+							"startTime": "<%= time.englishStartTime %>",
+							"endTime": "<%= time.englishEndTime %>",
+							"startPixel": "<%= time.startTimeInMinutes - 480 %>",
+							"endPixel": "<%= time.endTimeInMinutes - 480 %>",
+							"days": ["<%= time.days.join('","') %>"]
+						}<%= "," if time_index < section.times.length - 1 %>
+						<% end %>
+					]
+				}<%= "," if section_index < schedule.sections.length - 1%>
+			<% end %>
+			]
 		}<%= "," if schedule_index < @scheduler.schedules.length - 1 %>
 	<% end %>
 	]

@@ -1,3 +1,12 @@
+$(document).ready(function() {
+	$.get("/schedules.json", {
+			crns: ['55374', '50608', '54582', '50371']
+	}, function(data) {
+		draw(data);
+	});
+});
+
+/*
 var data = {
 	schedules: [
 		{
@@ -57,19 +66,35 @@ var data = {
 		}
 	]
 }
+*/
 
 $(document).ready(function() {
-	draw(data);
 });
 
 function draw(data) {
+	console.log(data);
 	var schedule = data.schedules[0];
 
 	for(i in schedule.courses) {
 		var course = schedule.courses[i];
 
-		$("#calendar").append("<div id='" + course.crn + "' class=' course " + course.day + "'></div>")
+		for(t in course.times) {
+			var time = course.times[t];
 
-		$("#" + course.crn).append(course.title).css("height",course.endPixel-course.startPixel).css("top", course.startPixel + "px");
+			for(d in time.days) {
+				var day = time.days[d];
+
+				if(day == "M") day = "mon"
+				if(day == "T") day = "tue"
+				if(day == "W") day = "wed"
+				if(day == "R") day = "thu"
+				if(day == "F") day = "fri"
+
+				$("#calendar").append("<div class='course " + course.crn + " " + day + "'></div>")
+
+			}
+		}
+		
+		$("." + course.crn).append(course.title).css("height", time.endPixel-time.startPixel).css("top", time.startPixel + "px");
 	}
 }
