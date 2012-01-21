@@ -1,0 +1,15 @@
+- if @session[:logged_in] == true
+	You are logged in as
+	= @session[:username]
+	= "."
+	%a{ "href" => "/user/logout" } logout.
+
+%form{ "action" => "/user/authenticate", "method" => "post" }
+	%p
+		Username:
+		%input{"type" => "text", "name" => "username"}
+	%p
+		Password:
+		%input{"type" => "password", "name" => "password"}
+	
+	%input{"type" => "submit"}

@@ -1,0 +1,12 @@
+%form{ "action" => "/user/new", "method" => "post" }
+	%p
+		Username:
+		%input{"type" => "text", "name" => "username"}
+	%p
+		Password:
+		%input{"type" => "password", "name" => "password"}
+	%p
+		Repeat Your Password:
+		%input{"type" => "password", "name" => "password2"}
+
+	%input{"type" => "submit"}

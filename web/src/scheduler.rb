@@ -6,24 +6,28 @@ class Scheduler
 	end
 
 	def schedule
-		combinations = []
+		@schedules = []
 
-		@courses.courses.each do |c|
-			combinations.push c.sections
-		end
-		
-		schedules = combinations[0].product(*combinations[1..combinations.length])
+		#while(@schedules.length == 0)
+			combinations = []
 
-		schedules.each_with_index do |schedule, i|
-			schedules[i] = Schedule.new(schedule)
-		end
+			@courses.courses.each do |c|
+				combinations.push c.sections
+			end
+			
+			schedules = combinations[0].product(*combinations[1..combinations.length])
 
-		@schedules = schedules = schedules.delete_if { |schedule| schedule.conflicted == true }
-		
-		schedules.each do |schedule|
-			schedule.print
+			schedules.each_with_index do |schedule, i|
+				schedules[i] = Schedule.new(schedule)
+			end
 
-			puts
-		end
+			@schedules = schedules.delete_if { |schedule| schedule.conflicted == true }
+			
+			schedules.each do |schedule|
+				#schedule.print
+
+				puts
+			end
+		#end
 	end
 end
