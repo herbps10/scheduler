@@ -1,0 +1,20 @@
+<% sections.each_with_index do |section, section_index| %>
+	{
+		"crn": "<%= section.crn %>",
+		"department": "<%= section.department %>",
+		"courseNumber": "<%= section.courseNumber %>",
+		"title": "<%= section.title %>",
+		"instructor": "<%= section.instructor %>",
+		"times": [
+			<% section.times.each_with_index do |time, time_index| %>
+			{
+				"startTime": "<%= time.englishStartTime %>",
+				"endTime": "<%= time.englishEndTime %>",
+				"startPixel": "<%= time.startTimeInMinutes - 420 %>",
+				"endPixel": "<%= time.endTimeInMinutes - 420 %>",
+				"days": ["<%= time.days.join('","') %>"]
+			}<%= "," if time_index < section.times.length - 1 %>
+			<% end %>
+		]
+	}<%= "," if section_index < sections.length - 1%>
+<% end %>
