@@ -152,3 +152,9 @@ get "/user/logout" do
 
 	redirect "/user/login"
 end
+
+helpers do
+	def course_json_list sections
+		erb :coursejsonlist, { :layout => false, :locals => { :sections => sections }}
+	end
+end

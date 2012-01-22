@@ -6,6 +6,15 @@
 		%script{ "src" => "/js/calendar.js", "type" => "text/javascript" }
 
 	%body
+		#sidebar
+			%h3 Courses in Schedule
+			#schedule-courses
+			
+			%h3 Not in Schedule
+			#schedule-conflicts
+
+			%a{"href" => "#", "class" => "add-section"} Add Course
+	
 		#cal-header
 			#days
 				.day.mon Monday
@@ -117,4 +126,7 @@
 						.grid-day.thu
 						.grid-day.fri
 				#calendar
+
+		
+		#schedules
 			
