@@ -1,0 +1,51 @@
+#fb-root
+
+:plain
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) {return;}
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+#columnNav
+	%ul
+		%li.container.departments_container
+			%ul.departments
+				- @data.departments.each do |department|
+					%li.department
+						= department.title
+						%ul
+							%li.container.courses_container
+								%ul.courses
+									- department.courses.each do |course|
+										%li.course
+											= course.title
+											%ul 
+												%li.container.sections_container
+													%ul.sections
+														- course.sections.each do |section|
+															%li.section{ "rel" => section.crn }
+																= section.instructor
+
+#return
+	%a.button.add-selected-sections{"href" => "#"} Add Classes
+	%a.cancel{"href" => "#"} Cancel
+
+#list
+	.list_title
+		Selected Courses:
+		%a.delete-all{"href" => "#"} [clear all]
+	
+	
+	.list_toggle
+		%img#toggle_button{ "src" => "images/toggle1.png", "alt" => "toggle button" }
+
+	%thread#course_list
+
+	#list_info
+		%p This is the list of course sections you have selected. Knight Scheduler will use this list to create a schedule with every course you chose.
+		%p Occasionally, Knight Scheduler may find two courses that overlap, and cannot be placed in the same schedule. Knight Scheduler will create a second schedule with the course that doesn't fit and [eventually] alert you of the overlap.
+

@@ -91,6 +91,11 @@ $(document).ready(function() {
 		$(this).appendTo("#schedule-courses");
 
 	});
+
+
+	$(".add-section").click(function() {
+		$("#courses").show();
+	});
 });
 
 function get_conflicted_classes(conflicted_section) {

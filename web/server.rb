@@ -21,7 +21,6 @@ $redis = Redis.new
 enable :sessions
 
 get '/' do
-	@data = Everything.new
 
 	erb :splash, { :layout => false }
 end
@@ -107,6 +106,8 @@ get '/scheduletester' do
 end
 
 get "/calendar" do
+	@data = Everything.new
+
 	haml :calendar, { :layout => false }
 end
 

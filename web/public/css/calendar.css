@@ -11,6 +11,7 @@
 	height: 400px;
 	border: 1px solid #c9c9c9;
 	margin: 0px auto;
+	position: relative;
 }
 
 #cal-header {
@@ -49,6 +50,7 @@
 	width: 90%;
 	z-index: -100;
 	margin-top: 20px;
+	background: white;
 }
 
 #fade-top {
@@ -78,7 +80,7 @@
 	z-index: 20;
 	height: 20px;
 	width: 100%;
-	bottom: 44px;
+	bottom: 0px;
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
@@ -115,21 +117,16 @@
 	width: 18%;
 	margin: 0 1%;
 	border: 1px solid black;
-<<<<<<< HEAD
-	
-	
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	background-color: rgba(230, 239, 242, 0.51);
-=======
 	background: white;
 }
 
 #calendar .course.conflict {
 	border: 1px solid #ccc;
 	color: #ccc;
->>>>>>> f5cb6bd546857a7d5bb1292a91f42d029befe6ed
 }
 
 .grid-hour {
@@ -183,9 +180,21 @@
 	height: 100%;
 	border: 1px solid #CCC;
 	width: 300px;
+	background: white;
 }
 
 .add-section {
 	display: block;
 	margin: 10px;
+}
+
+#courses {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	background: white;
+	width: 80%;
+	height: 100%;
+	z-index: 100;
 }
