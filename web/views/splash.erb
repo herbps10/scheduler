@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Knight Scheduler</title>
+  <meta name="description" content="A scheduling resource for Geneseo students. Auto-generate schedules and track courses with text-message updates make scheduling your semester a breeze.">
+  <meta name="keywords" content="GENESEO, SCHEDULE, SCHEDULING, COURSE, COURSES, BULLETIN, KNIGHTWEB, SUNY GENESEO">
+  
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <script src="/js/jquery.js" type="text/javascript"></script>
+  <script type='text/javascript' src='/js/splash.js'></script>
+  
+  <link rel="stylesheet" href="/css/splash.css">
+  <link href='http://fonts.googleapis.com/css?family=Coustard:400,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700,400' rel='stylesheet' type='text/css'>
+ </head>
+ 
+ <body>
+  <header class="logo_text">
+  	<h1>Knight Scheduler</h1>
+  	<h2>A new scheduling resource for Geneseo Students</h2>
+  
+  </header>
+  <div id="landing_wrapper">
+  <div class="landing_text">
+  	<div class="script thanks">Thanks!</div>
+  	<p>We owe a big "Thank You" to everyone who tried out Knight Scheduler this past semester. We have some exciting news for those of you who found Knight Scheduler made their semester a little easier.</p>
+  	<p>We've been working hard over the last few months to make Knight Scheduler even better, and help you find your perfect schedule. Check out the new features coming this semester, and sign the mailing list to find out when we roll out them all out.</p>
+  </div>
+  
+  <div class="nav_buttons">
+	<div id="features_button" class="button hover_green">See Features</div>
+	<!--<div id="legacy" class="button hover_blue">Explore Site</div>-->
+ 	<br style="clear:both" />
+  </div>
+  </div>
+  
+  <div id="feature_wrapper">
+  	  	<div class="feature">
+  		<div class="img_text_wrapper">
+  			<img src="images/icons-01.png" alt="text message updates" />
+  	 		<p>Text-message updates will allow you to know the exact moment that class you want to get into opens up. If a student drops a class, you will be the first to know.</p>
+  	 	<br style="clear:both" />
+  	 	</div>
+  	 </div>
+  	 <div class="feature">
+  	 	<div class="img_text_wrapper">
+  	  		<img src="images/icons-02.png" alt="new schedule layout" />
+  	 		<p>A new scheduling layout will make it easier to see what your week will look like. We've also added the ability to save your schedule, so you can come back and edit it later.</p>
+  	 		<br style="clear:both" />
+  	 	</div>
+  	 </div>
+  	 <div class="feature">
+  	 	<div class="img_text_wrapper">
+  	 		<img src="images/icons-03.png" alt="registration statistics" />
+  	 		<p>Statistics on registration will tell you how likely you are to get into a class, so you can plan better. You can also see which classes fill up fastest, and find the most popular professors.</p>
+  	 		<br style="clear:both" />
+  	 	</div>
+  	 </div>
+  </div>
+  
+  <div id='subscribe'>
+		<p>Sign up with you Geneseo email for coming updates:</p>
+		<form action='/subscribe' method='post' >
+  			<input type='text' size='25' value="@geneseo.edu " name='email' />
+  			<input type='submit' id='signup' class="button orange" value='Sign up!' />
+  		</form>
+  		<div id="signedup">You are now on the mailing list.</div>
+  </div>
+  
+  <footer>
+  	<span class="footer_text">© Herb Susmann & Elliott Regan</span>
+  </footer>
+
+ </body>
+</html>

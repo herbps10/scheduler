@@ -23,7 +23,7 @@ enable :sessions
 get '/' do
 	@data = Everything.new
 
-	erb :index
+	erb :splash, { :layout => false }
 end
 
 get '/courses.json' do
