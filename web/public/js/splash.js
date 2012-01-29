@@ -15,6 +15,12 @@ $(document).ready(function() {
 	});
 	
 	$('#signup').live('click', function() {
-		$('#signedup').fadeIn();
+		$.post("/subscribe", {
+			email: $("input[name=email]").val()
+		}, function(data) {
+			$("#subscribe_message").html(data).show();
+		});
+
+		return false;
 	});
 });

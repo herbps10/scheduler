@@ -88,11 +88,17 @@ get "/add/course/:title" do
 end
 
 post "/subscribe" do
-	email = params[:email]
+	email = params[:email].chomp.gsub(' ', '')
 
-	$redis.sadd('emails', email)
+	email_regex = /\A[\w+\-.]+@geneseo\.edu\z/i
 
-	erb :subscribed
+	if email_regex.match(email) == nil
+		erb :email_error, { :layout => false }
+	else
+		$redis.sadd('emails', email)
+
+		erb :subscribed, { :layout => false }
+	end
 end
 
 get "/unsubscribe/:email" do
