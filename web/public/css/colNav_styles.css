@@ -1,0 +1,80 @@
+#columnNav {
+	height: 70%;
+	width: 700px;
+	position: absolute;
+}
+
+#return {
+	position: relative;
+	top: 75%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+li.container {
+	height: 100%;
+	position: relative;
+	top: 0;
+}
+
+li.container > ul {
+	height: 100%;
+	width: 200px;
+	top: 0;
+	margin-left: 200px; /*must be width of the columns*/
+	border: 1px solid #333;
+	overflow-y: scroll;
+}
+
+li.container > ul.departments {
+	margin-left: 0;
+}
+
+li {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+ul.sections {
+	display: hidden;
+}
+
+.sections_container {
+	z-index: -10;
+}
+
+.courses_container {
+	z-index: -20;
+	display: hidden;
+}
+
+.departments_container {
+	z-index: 30;
+}
+
+.department > ul > li {
+	display: none;
+}
+
+.course > ul > li {
+	display: none;
+}
+
+li.container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+li.selected {
+	background: green;
+}
