@@ -27,7 +27,7 @@ function intersection_safe(a, b)
 }
 
 $(document).ready(function() {
-	$("#full-cal-container").css('height', $(window).height() - 250 + "px");
+
 
 
 	get_data(['55374', '50608', '54582', '50371', '50315', '50622', '55517', '53456'], function() {
@@ -94,7 +94,10 @@ $(document).ready(function() {
 
 
 	$(".add-section").click(function() {
-		$("#courses").show();
+		$("#course-col").toggleClass("transparent");
+	});
+	$(".cancel").click(function() {
+		$("#course-col").toggleClass("transparent");
 	});
 });
 

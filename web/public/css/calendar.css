@@ -1,24 +1,97 @@
+body {
+	margin: 0;
+	min-width: 940px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header > h1 {
+	color: whitesmoke;
+	font: lighter 2em 'Coustard', serif;
+	margin: 0;
+	padding-left: 8px;
+	float: left;
+}
+
+#logout {
+  text-align: right;
+  position: relative;
+  color: #ffffff;
+  font-variant: small-caps;
+  float: right;
+  top: 10px;
+  right: 10px;
+}
+#logout:hover {
+	text-decoration: underline overline;
+}
+
+#schedules {
+	width: auto;
+	margin: 20px auto;
+	position: relative;
+}
+
+#course-col {
+	position: fixed;
+	width: 100%;
+	min-width: 620px;
+	padding: 80px 0px 80px 0px;
+	margin: 0px 10px 10px 0px;
+	top: 65px;
+	height: 320px;
+	z-index: 70;
+}
+
+#return {
+	position: relative;
+	bottom: 0;
+}
+
+#columnNav {
+	height: 100%;
+	width: auto;
+	margin: 0px 320px 0px 10px;
+	position: relative;
+}
+
+#full-cal-container {
+	width: 100%;
+	min-width: 620px;
+	height: 420px;
+	border: 1px solid #c9c9c9;
+	position: relative;
+}
+
+#cal-header {
+	width: auto;
+	min-width: 620px;
+	position: relative;
+	margin: 6px auto 6px auto;
+	padding: 10px;
+	height: 24px;
+	background-color: #536794;
+	font-size: 1.2em;
+	border: 1px solid #303645;
+}
+
 #calendar-container {
 	position: relative;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
-}
-
-#full-cal-container {
-	width:720px;
-	height: 400px;
-	border: 1px solid #c9c9c9;
-	margin: 0px auto;
-	position: relative;
-}
-
-#cal-header {
-	width:720px;
-	position: relative;
-	margin: 36px auto 6px auto;
-	height: 24px;
+	top: 0px;
+	background: white;
+	z-index: 10;
 }
 
 #days {
@@ -28,37 +101,60 @@
 	height: 1em;
 }
 
+#main-content {
+	width: auto;
+	top: 100px;
+	padding: 10px;
+	margin: 50px 250px auto auto;
+}
+
+#sidebar {
+	height: auto;
+	width: 250px;
+	background: white;
+	border: 1px solid #CCC;
+	right: 0px;
+	top: 64px;
+	bottom: 0px;
+	position: fixed;
+	padding: 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 100;
+}
+
 #time-axis {
 	position: absolute;
 	width: 10%;
-	margin-top: 14px;
+	margin-top: 12px;
 }
 
 #calendar {
-	right: 0;
 	position: absolute;
 	right: 0px;
 	width: 90%;
 	height: 100%;
 	z-index: 10;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 #grid {
 	position: absolute;
 	right: 0;
 	width: 90%;
-	z-index: -100;
+	z-index: 0;
 	margin-top: 20px;
 	background: white;
 }
 
 #fade-top {
 	position: absolute;
-	z-index: 20;
-	height: 20px;
+	top: 0px;
+	height: 10px;
 	width: 100%;
-	
+	z-index: 20;
+
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
@@ -77,10 +173,10 @@
 
 #fade-bottom {
 	position: absolute;
-	z-index: 20;
-	height: 20px;
-	width: 100%;
 	bottom: 0px;
+	height: 10px;
+	width: 100%;
+	z-index: 21;
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
@@ -105,7 +201,7 @@
 }
 
 .time {
-	margin: 0px 6px 46px 0px;
+	margin: 0px 6px 43px 0px;
 	color: #aaaaaa;
 	font-size: .8em;
 	text-align: right;
@@ -122,6 +218,9 @@
 	-webkit-border-radius: 4px;
 	background-color: rgba(230, 239, 242, 0.51);
 	background: white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #calendar .course.conflict {
@@ -163,24 +262,10 @@
 	left: 80%;
 }
 
-#schedules {
-	width: 720px;
-	margin: 20px auto;
-}
-
 #schedules a {
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 	margin: 0 2px;
-}
-
-
-#sidebar {
-	float: right;
-	height: 100%;
-	border: 1px solid #CCC;
-	width: 300px;
-	background: white;
 }
 
 .add-section {
@@ -188,13 +273,14 @@
 	margin: 10px;
 }
 
-#courses {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: none;
-	background: white;
-	width: 80%;
-	height: 100%;
-	z-index: 100;
+#regen {
+	margin: 20px;
+}
+
+.transparent {
+	opacity: 0;
+}
+#course-col {
+	-webkit-transition: all 1.0s linear;
+	background: url('../images/bg.jpg') no-repeat left top rgba(0, 0, 0, 0.91);
 }
