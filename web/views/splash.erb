@@ -22,6 +22,8 @@
   	<h2>A new scheduling resource for Geneseo Students</h2>
   
   </header>
+
+  
   <div id="landing_wrapper">
   <div class="landing_text">
   	<div class="script thanks">Thanks!</div>
@@ -32,9 +34,12 @@
   <div class="nav_buttons">
 	<div id="features_button" class="button hover_green">See Features</div>
 	<!--<div id="legacy" class="button hover_blue">Explore Site</div>-->
+	<div id="login_button" class="button hover_blue">Login</div>
  	<br style="clear:both" />
   </div>
   </div>
+
+  <%= haml :login, { :layout => false } %>
   
   <div id="feature_wrapper">
   	  	<div class="feature">
@@ -70,7 +75,6 @@
   		<div id='subscribe_message'></div>
   </div>
 
-  
   <footer>
   	<span class="footer_text">© Herb Susmann & Elliott Regan</span>
   </footer>

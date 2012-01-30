@@ -1,15 +1,20 @@
-- if @session[:logged_in] == true
-	You are logged in as
-	= @session[:username]
-	= "."
-	%a{ "href" => "/user/logout" } logout.
+#login
+	- if @session[:logged_in] == true
+		You are logged in as
+		= @session[:username]
+		= "."
+		%a{ "href" => "/user/logout" } logout.
+	- else
+		%p
+			Don't have an account?
+			%a{"href" => "/user/register"} register.
 
-%form{ "action" => "/user/authenticate", "method" => "post" }
-	%p
-		Username:
-		%input{"type" => "text", "name" => "username"}
-	%p
-		Password:
-		%input{"type" => "password", "name" => "password"}
-	
-	%input{"type" => "submit"}
+	%form{ "action" => "/user/authenticate", "method" => "post" }
+		%p
+			%label Email
+			%input.align{"type" => "text", "name" => "email"}
+		%p
+			%label Password:
+			%input.align{"type" => "password", "name" => "password"}
+		
+		%input{"type" => "submit", "value" => "Login"}

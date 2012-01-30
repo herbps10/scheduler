@@ -140,6 +140,7 @@ p {
 	margin: 20px auto;
 	width: 355px;
 	text-align: center;
+	cursor: pointer;
 }
 .nav_buttons > div {
 	float: left;
@@ -374,6 +375,42 @@ p {
 	border-radius: 2px;
 	font-size: 1.2em;
 	display: none;
+}
+
+#login {
+	background: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	width: 400px;
+	padding: 10px 0;
+
+	margin: auto;
+	position: relative;
+	display: none;
+}
+
+#login label {
+}
+
+form input.align {
+	position: absolute;
+	left: 120px;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+form input[type=submit] {
+	margin-left: 120px;
+}
+
+#register {
+	width: 720px;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+	background: white;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
 }
 
 /* @end */

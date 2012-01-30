@@ -23,4 +23,8 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+	$("#login_button").click(function() {
+		$("#login").slideDown();
+	});
 });

@@ -21,6 +21,7 @@ $redis = Redis.new
 enable :sessions
 
 get '/' do
+	@session = session
 
 	erb :splash, { :layout => false }
 end
@@ -142,12 +143,12 @@ get "/user/login" do
 end
 
 post "/user/authenticate" do
-	username = params[:username]
+	email = params[:email]
 	password = params[:password]
 
-	if($redis.get("user:#{username}:password") == Digest::SHA1.hexdigest(password))
+	if($redis.get("user:#{email}:password") == Digest::SHA1.hexdigest(password))
 		session[:logged_in] = true
-		session[:username] = username
+		session[:email] = username
 
 		return "Logged In"
 	end
@@ -155,7 +156,7 @@ end
 
 get "/user/logout" do
 	session[:logged_in] = false;
-	session[:username] = nil
+	session[:email] = nil
 
 	redirect "/user/login"
 end
