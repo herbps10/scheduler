@@ -7,6 +7,7 @@
 #return {
 	position: relative;
 	top: 75%;
+	background-color: #ffffff;
 }
 
 ul {
@@ -24,9 +25,9 @@ li.container {
 
 li.container > ul {
 	height: 100%;
-	width: 200px;
+	width: 33%;
 	top: 0;
-	margin-left: 200px; /*must be width of the columns*/
+	margin-left: 33%; /*must be width of the columns*/
 	border: 1px solid #333;
 	overflow-y: scroll;
 }
@@ -35,13 +36,16 @@ li.container > ul.departments {
 	margin-left: 0;
 }
 
-li {
+li:not(.container) {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+	
+	padding: 4px;
+	box-sizing: border-box;
 }
 
 ul.sections {
@@ -77,4 +81,16 @@ li.container {
 
 li.selected {
 	background: green;
+}
+
+li.department {
+	font-size: 1.2em;
+}
+
+li.course {
+	font-size: 0.8em;
+}
+
+li.section {
+	
 }

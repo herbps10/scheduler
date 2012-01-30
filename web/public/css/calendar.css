@@ -1,24 +1,101 @@
-#calendar-container {
+body {
+	margin: 0;
+	min-width: 940px;
+	height: auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header > h1 {
+	color: whitesmoke;
+	font: lighter 2em 'Coustard', serif;
+	margin: 0;
+	padding-left: 8px;
+	float: left;
+}
+
+#logout {
+	height: 32px;
+  	position: relative;
+  	color: #ffffff;
+  	font-variant: small-caps;
+  	float: right;
+  	right: 10px;
+	padding: 10px 40px 0px 0px;
+	background: url(../images/ic_power.png) no-repeat 60px 6px;
+}
+#logout:hover {
+	text-decoration: underline overline;
+}
+
+#schedules {
+	width: auto;
+	margin: 20px auto;
 	position: relative;
-	overflow-y: scroll;
-	overflow-x: hidden;
+}
+
+#course-col {
+	position: fixed;
 	width: 100%;
-	height: 100%;
+	min-width: 620px;
+	margin: 0px 10px 10px 0px;
+	top: 65px;
+	height: 620px;
+	z-index: 70;
+	background-color: rgba(236, 236, 236, 0.9);
+	display: none;
+}
+
+#return {
+	position: relative;
+	bottom: 0;
+}
+
+#columnNav {
+	height: 580px;
+	width: auto;
+	margin: 20px 280px 20px 20px;
+	position: relative;
 }
 
 #full-cal-container {
-	width:720px;
-	height: 400px;
+	width: 100%;
+	min-width: 620px;
+	height: 100%;
+	min-height: 520px;
 	border: 1px solid #c9c9c9;
-	margin: 0px auto;
 	position: relative;
 }
 
 #cal-header {
-	width:720px;
+	width: auto;
+	min-width: 620px;
 	position: relative;
-	margin: 36px auto 6px auto;
+	margin: 6px auto 6px auto;
+	padding: 10px;
 	height: 24px;
+	background-color: #536794;
+	font-size: 1.2em;
+	border: 1px solid #303645;
+}
+
+#calendar-container {
+	position: absolute;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background: white;
+	z-index: 10;
 }
 
 #days {
@@ -28,37 +105,89 @@
 	height: 1em;
 }
 
+#main-content {
+	width: auto;
+	top: 100px;
+	padding: 10px;
+	margin: 50px 250px auto auto;
+}
+
+#sidebar {
+	height: auto;
+	width: 250px;
+	border: 1px solid #101010;
+	right: -1px;
+	top: 64px;
+	bottom: 0px;
+	position: fixed;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 100;
+	background-color: #252525;
+	border-right-style: none;
+	border-bottom-style: none;
+}
+
+#sidebar h3 {
+	padding: 8px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	width: 254px;
+	left: -2px;
+	position: relative;
+	
+	background: rgb(81,81,81);
+	background: -moz-linear-gradient(top,  rgba(81,81,81,1) 0%, rgba(61,61,61,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(81,81,81,1)), color-stop(100%,rgba(61,61,61,1)));
+	background: -webkit-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: -o-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#3d3d3d',GradientType=0 );
+	color: #ececec;
+	font: lighter 1.1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-top: 1px solid #656565;
+	border-bottom: 1px solid #000000;
+}
+
+#sidebar .course {
+	margin: 2px 8px;
+	color: #e0e0e0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 #time-axis {
 	position: absolute;
 	width: 10%;
-	margin-top: 14px;
+	margin-top: 12px;
 }
 
 #calendar {
-	right: 0;
 	position: absolute;
 	right: 0px;
 	width: 90%;
 	height: 100%;
 	z-index: 10;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 #grid {
 	position: absolute;
 	right: 0;
 	width: 90%;
-	z-index: -100;
+	z-index: 0;
 	margin-top: 20px;
 	background: white;
 }
 
 #fade-top {
 	position: absolute;
-	z-index: 20;
-	height: 20px;
+	top: 0px;
+	height: 10px;
 	width: 100%;
-	
+	z-index: 20;
+
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
@@ -77,10 +206,10 @@
 
 #fade-bottom {
 	position: absolute;
-	z-index: 20;
-	height: 20px;
-	width: 100%;
 	bottom: 0px;
+	height: 10px;
+	width: 100%;
+	z-index: 21;
 
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
@@ -102,10 +231,12 @@
 	width: 20%;
 	top: 0px;
 	text-align: center;
+	color: #eeeeee;
+	text-shadow: 0 1px 1px #3a3a3a;
 }
 
 .time {
-	margin: 0px 6px 46px 0px;
+	margin: 0px 6px 43px 0px;
 	color: #aaaaaa;
 	font-size: .8em;
 	text-align: right;
@@ -122,6 +253,9 @@
 	-webkit-border-radius: 4px;
 	background-color: rgba(230, 239, 242, 0.51);
 	background: white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #calendar .course.conflict {
@@ -163,38 +297,29 @@
 	left: 80%;
 }
 
-#schedules {
-	width: 720px;
-	margin: 20px auto;
-}
-
 #schedules a {
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 	margin: 0 2px;
 }
 
-
-#sidebar {
-	float: right;
-	height: 100%;
-	border: 1px solid #CCC;
-	width: 300px;
-	background: white;
-}
-
 .add-section {
-	display: block;
-	margin: 10px;
+	margin: auto;
+	margin-top: 6px;
+	width: 224px;
+	height: 24px;
+	text-align: center;
+	border: 3px dashed #545454;
+	color: #545454;
+	font-size: 1.5em;
+	line-height: 1em;
 }
 
-#courses {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: none;
-	background: white;
-	width: 80%;
-	height: 100%;
-	z-index: 100;
+.add-section:hover {
+	border-color: #d6d6d6;
+	color: #d6d6d6;
+}
+
+#regen {
+	margin: 20px auto;
 }
