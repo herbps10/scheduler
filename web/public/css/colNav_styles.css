@@ -85,12 +85,21 @@ li.selected {
 
 li.department {
 	font-size: 1.2em;
+	cursor: pointer;
 }
 
 li.course {
 	font-size: 0.8em;
+	cursor: pointer;
 }
 
 li.section {
-	
+	cursor: pointer;
+}
+
+#columnNav .days {
+}
+
+#columnNav .time {
+	color: black;
 }

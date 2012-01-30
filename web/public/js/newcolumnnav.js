@@ -1,26 +1,34 @@
 $(document).ready(function() {
 	
-	$('div#columnNav').live('click', function(e){
-		switch($(e.target).attr('class')){
-			case 'department':
-				$(e.target).children().children().show();
-				$(e.target).siblings().children().children().hide();
-
-			break;
-			case 'course':
-				$(e.target).children().children().show();
-				$(e.target).siblings().children().children().hide();
-
-			break;
-			case 'section':
-				$(e.target).addClass('selected');
-				$("#schedule-conflicts").append("<div class='course " + $(e.target).attr('rel') + "'>" + $(e.target).text() + "</div>");
-			break;
-			case 'section selected':
-				$(e.target).removeClass('selected');
-				$("#schedule-conflicts .course." + $(e.target).attr('rel')).remove();
-			break;
-		}
+	$('div#columnNav li.department').live('click', function(e) {
+		$(e.target).children().children().show();
+		$(e.target).siblings().children().children().hide();
+	});
+	
+	$('div#columnNav li.course').live('click', function(e) {
+		$(e.target).children().children().show();
+		$(e.target).siblings().children().children().hide();
 	});
 
+	$('div#columnNav li.section:not(.selected)').live('click', function(e) {
+		var crn = $(this).attr('rel')
+
+		$(this).addClass('selected');
+
+		$.get('/section.json', {
+			crn: crn
+		}, function(data) {
+			var section = JSON.parse(data);
+			window.schedule_data.sections.push(section);
+			
+			add_to_conflicts_list(section);
+
+			window.schedule_data.up_to_date = false;
+		});
+	});
+
+	$('div#columnNav li.section.selected').live('click', function(e) {
+		$(e.target).removeClass('selected');
+		$("#schedule-conflicts .course." + $(this).attr('rel')).remove();
+	});
 });

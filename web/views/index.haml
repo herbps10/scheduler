@@ -17,6 +17,17 @@
 														- course.sections.each do |section|
 															%li.section{ "rel" => section.crn }
 																= section.instructor
+																%br
+																
+																- section.times.each do |time|
+																	%span.time-wrapper
+																		- if time.tba == true
+																			%span.time Time TBA
+																		- else 
+																			%span.days
+																				= time.prettyDays
+																			%span.time
+																				= time.prettyTime
 
 #return
 	%a.cancel{"href" => "#"} Cancel

@@ -155,6 +155,22 @@ header > h1 {
 	margin: 2px 8px;
 	color: #e0e0e0;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	border-top: 1px dotted #CCC;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+.course:first-child {
+	border-top: none;
+}
+
+.course .instructor {
+	display: block;
+	font-size: 8pt;
+}
+
+.course .title {
+	
 }
 
 #time-axis {
@@ -255,6 +271,7 @@ header > h1 {
 	background: white;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	padding: 5px;
 	box-sizing: border-box;
 }
 
@@ -313,6 +330,7 @@ header > h1 {
 	color: #545454;
 	font-size: 1.5em;
 	line-height: 1em;
+	cursor: pointer;
 }
 
 .add-section:hover {

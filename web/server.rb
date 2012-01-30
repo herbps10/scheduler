@@ -45,6 +45,14 @@ get "/schedules" do
 	erb :schedules, :layout => false
 end
 
+get "/section.json" do
+	crn = params[:crn]
+	
+	sections = [Section.new(crn)]
+
+	erb :coursejsonlist, { :layout => false, :locals => { :sections => sections } }
+end
+
 get "/schedules.json" do
 	headers "Content-Type" => "application/json"
 
