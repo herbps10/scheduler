@@ -1,10 +1,11 @@
 body {
 	margin: 0;
 	min-width: 940px;
+	height: auto;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
   position: fixed;
   top: 0;
@@ -22,13 +23,14 @@ header > h1 {
 }
 
 #logout {
-  text-align: right;
-  position: relative;
-  color: #ffffff;
-  font-variant: small-caps;
-  float: right;
-  top: 10px;
-  right: 10px;
+	height: 32px;
+  	position: relative;
+  	color: #ffffff;
+  	font-variant: small-caps;
+  	float: right;
+  	right: 10px;
+	padding: 10px 40px 0px 0px;
+	background: url(../images/ic_power.png) no-repeat 60px 6px;
 }
 #logout:hover {
 	text-decoration: underline overline;
@@ -44,11 +46,12 @@ header > h1 {
 	position: fixed;
 	width: 100%;
 	min-width: 620px;
-	padding: 80px 0px 80px 0px;
 	margin: 0px 10px 10px 0px;
 	top: 65px;
-	height: 320px;
+	height: 620px;
 	z-index: 70;
+	background-color: rgba(236, 236, 236, 0.9);
+	display: none;
 }
 
 #return {
@@ -57,16 +60,17 @@ header > h1 {
 }
 
 #columnNav {
-	height: 100%;
+	height: 580px;
 	width: auto;
-	margin: 0px 320px 0px 10px;
+	margin: 20px 280px 20px 20px;
 	position: relative;
 }
 
 #full-cal-container {
 	width: 100%;
 	min-width: 620px;
-	height: 420px;
+	height: 100%;
+	min-height: 520px;
 	border: 1px solid #c9c9c9;
 	position: relative;
 }
@@ -84,7 +88,7 @@ header > h1 {
 }
 
 #calendar-container {
-	position: relative;
+	position: absolute;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	width: 100%;
@@ -111,17 +115,46 @@ header > h1 {
 #sidebar {
 	height: auto;
 	width: 250px;
-	background: white;
-	border: 1px solid #CCC;
-	right: 0px;
+	border: 1px solid #101010;
+	right: -1px;
 	top: 64px;
 	bottom: 0px;
 	position: fixed;
-	padding: 10px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 100;
+	background-color: #252525;
+	border-right-style: none;
+	border-bottom-style: none;
+}
+
+#sidebar h3 {
+	padding: 8px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	width: 254px;
+	left: -2px;
+	position: relative;
+	
+	background: rgb(81,81,81);
+	background: -moz-linear-gradient(top,  rgba(81,81,81,1) 0%, rgba(61,61,61,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(81,81,81,1)), color-stop(100%,rgba(61,61,61,1)));
+	background: -webkit-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: -o-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	background: linear-gradient(top,  rgba(81,81,81,1) 0%,rgba(61,61,61,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#3d3d3d',GradientType=0 );
+	color: #ececec;
+	font: lighter 1.1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-top: 1px solid #656565;
+	border-bottom: 1px solid #000000;
+}
+
+#sidebar .course {
+	margin: 2px 8px;
+	color: #e0e0e0;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #time-axis {
@@ -198,6 +231,8 @@ header > h1 {
 	width: 20%;
 	top: 0px;
 	text-align: center;
+	color: #eeeeee;
+	text-shadow: 0 1px 1px #3a3a3a;
 }
 
 .time {
@@ -269,18 +304,22 @@ header > h1 {
 }
 
 .add-section {
-	display: block;
-	margin: 10px;
+	margin: auto;
+	margin-top: 6px;
+	width: 224px;
+	height: 24px;
+	text-align: center;
+	border: 3px dashed #545454;
+	color: #545454;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.add-section:hover {
+	border-color: #d6d6d6;
+	color: #d6d6d6;
 }
 
 #regen {
-	margin: 20px;
-}
-
-.transparent {
-	opacity: 0;
-}
-#course-col {
-	-webkit-transition: all 1.0s linear;
-	background: url('../images/bg.jpg') no-repeat left top rgba(0, 0, 0, 0.91);
+	margin: 20px auto;
 }

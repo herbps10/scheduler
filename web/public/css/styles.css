@@ -1,6 +1,7 @@
 html {
 	background-image: url(../images/light_alu.png);
 	font-family: Coustard, serif;
+	height: 100%;
 }
 
 /* @group Header */

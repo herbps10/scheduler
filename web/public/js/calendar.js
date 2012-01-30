@@ -94,10 +94,10 @@ $(document).ready(function() {
 
 
 	$(".add-section").click(function() {
-		$("#course-col").toggleClass("transparent");
+		$("#course-col").show();
 	});
 	$(".cancel").click(function() {
-		$("#course-col").toggleClass("transparent");
+		$("#course-col").hide();
 	});
 });
 
