@@ -328,14 +328,10 @@ header > h1 {
 	padding: 4px 8px;
 	border: 3px dashed #545454;
 	color: #545454;
-<<<<<<< HEAD
 	font-size: 1.5em;
 	line-height: 1em;
 	cursor: pointer;
-=======
 	font-size: 1em;
-	
->>>>>>> Layout is now flexible! Calendar adjusts, while sidebar is fixed.
 }
 
 .add-section:hover {
@@ -345,9 +341,9 @@ header > h1 {
 
 #regen {
 	margin: 20px auto;
-<<<<<<< HEAD
 }
-=======
-	bottom: 0px;
+
+.cancel {
+	position: relative;
+	z-index: 100;
 }
->>>>>>> Layout is now flexible! Calendar adjusts, while sidebar is fixed.
