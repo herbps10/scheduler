@@ -1,13 +1,18 @@
 $(document).ready(function() {
 	
 	$('div#columnNav li.department').live('click', function(e) {
+		$(this).addClass('selected');
+		$(this).siblings().removeClass('selected')
 		$(e.target).children().children().show();
 		$(e.target).siblings().children().children().hide();
 	});
 	
 	$('div#columnNav li.course').live('click', function(e) {
+		$(this).addClass('selected');
+		$(this).siblings().removeClass('selected')
 		$(e.target).children().children().show();
 		$(e.target).siblings().children().children().hide();
+		$(this).addClass('selected');
 	});
 
 	$('div#columnNav li.section:not(.selected)').live('click', function(e) {

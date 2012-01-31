@@ -22,18 +22,23 @@ li.container {
 
 li.container > ul {
 	height: 100%;
-	width: 33%;
+	width: 33.33%;
 	top: 0;
-	margin-left: 33%; /*must be width of the columns*/
-	border: 1px solid #333;
+	margin-left: 33.33%; /*must be width of the columns*/
+	border: 1px solid #d3d3d3;
 	overflow-y: scroll;
+	background-color: #f8f8f8;
 }
 
 li.container > ul.departments {
-	margin-left: 0;
+	margin-left: 10px;
 }
 
-li:not(.container) {
+li.container {
+	margin-left: -10px;
+}
+
+.container > ul {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -41,8 +46,9 @@ li:not(.container) {
 	-o-user-select: none;
 	user-select: none;
 	
-	padding: 4px;
 	box-sizing: border-box;
+	margin-left: -8px;
+	padding: 0px;
 }
 
 ul.sections {
@@ -76,22 +82,31 @@ li.container {
 	position: absolute;
 }
 
-li.selected {
-	background: green;
+ul > li.selected {
+	background-color: #e8e8e8;
+	color: #000000;
+	border: 1px solid #d5d5d5;
+		margin: -1px;
+	
 }
 
 li.department {
 	font-size: 1.2em;
 	cursor: pointer;
+	padding: 2px 8px;
 }
 
 li.course {
 	font-size: 0.8em;
 	cursor: pointer;
+	padding: 2px 8px;
+	color: #3e424b;
 }
 
 li.section {
 	cursor: pointer;
+	padding: 2px 8px;
+	color: #3e424b;
 }
 
 #columnNav .days {

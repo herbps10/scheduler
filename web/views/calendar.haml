@@ -7,7 +7,7 @@
 		%script{ "src" => "/js/jquery.js", "type" => "text/javascript" }
 		%script{ "src" => "/js/calendar.js", "type" => "text/javascript" }
 		%script{ "src" => "/js/newcolumnnav.js", "type" => "text/javascript" }
-
+		%link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Flamenco:300,400|Quantico", "type" =>"text/css"}
 
 
 	%body
@@ -18,29 +18,30 @@
 					#logout logout
 
 				#sidebar
-					%h3 Courses in Schedule
+					.title Courses in Schedule
 					#schedule-courses
 					
-					%h3 Not in Schedule
+					.title Not in Schedule
 					#schedule-conflicts
 
 					.add-section 
 						+ Add New Course
 				
-					#regen.button.hover_green{"href" => "#"} Regenerate Schedules
+				%button#regen.punch.green{"href" => "#"} Regenerate
 
 				#main-content
 					#course-col
 						= haml :index, { :locals => { :data => @data } }
 			
-					#cal-header
-						#days
-							.day.mon Monday
-							.day.tue Tuesday
-							.day.wed Wednesday
-							.day.thu Thursday
-							.day.fri Friday
+					
 					#full-cal-container
+						#cal-header
+							#days
+								.day.mon Mon
+								.day.tue Tue
+								.day.wed Wed
+								.day.thu Thu
+								.day.fri Fri
 						#fade-top
 						#fade-bottom
 						#calendar-container
@@ -61,6 +62,13 @@
 								.time 9:00pm
 								.time 10:00pm
 							#grid
+
+								.grid-hour
+									.grid-day.mon
+									.grid-day.tue
+									.grid-day.wed
+									.grid-day.thu
+									.grid-day.fri
 								.grid-hour
 									.grid-day.mon
 									.grid-day.tue

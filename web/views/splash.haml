@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+  %title Knight Scheduler
+  
+  %script{ "src" => "/js/jquery.js", "type" => "text/javascript" }
+  %script{ "src" => "/js/splash.js", "type" => "text/javascript" }
+  %link{ "rel" => "stylesheet", "href" => "/css/styles.css", "type" => "text/css" }
+  %link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Flamenco:300,400|Quantico", "type" =>"text/css"}
+
+ %body>
+  %header.logo_text
+  	%h1 Knight Scheduler
+  	%h2 A new scheduling resource for Geneseo Students
+  
+  #landing_wrapper
+  
+    .nav_buttons
+  	 #login_button Login
+      = haml :login, { :layout => false }
+
+  %footer
+  	%span.footer_text © Herb Susmann & Elliott Regan

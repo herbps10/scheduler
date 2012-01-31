@@ -27,22 +27,13 @@ function intersection_safe(a, b)
 }
 
 $(document).ready(function() {
+
+
+
 	get_data(['55374', '50608', '54582', '50371', '50315', '50622', '55517', '53456'], function() {
 		draw_schedule(0);
 		draw_schedule_links();
 		current_schedule = 0;
-	});
-
-	$("#regen").click(function() {
-		var crns = [];
-
-		for(var i = 0; i < window.schedule_data.sections.length; i++) {
-			crns.push(window.schedule_data.sections[i].crn);
-		}
-
-		get_data(crns, function() {
-			draw_schedule_links();
-		});
 	});
 	
 	$("#schedules a").live({
@@ -101,17 +92,18 @@ $(document).ready(function() {
 
 	});
 
-	$("#schedule-courses .course").live('click', function() {
-		$(this).appendTo("#schedule-conflicts");
-		$("#calendar ." + $(this).attr('rel')).remove();
-	});
-
 
 	$(".add-section").click(function() {
-		$("#course-col").show();
+		$("#course-col").slideDown();
+		$("#full-cal-container").animate({
+			minHeight: '220px'
+		});
 	});
 	$(".cancel").click(function() {
-		$("#course-col").hide();
+		$("#course-col").slideUp();
+		$("#full-cal-container").animate({
+			minHeight: '530px'
+		});
 	});
 });
 
@@ -150,7 +142,7 @@ function add_section_to_calendar(section) {
 		}
 	}
 	
-	$("#calendar ." + section.crn).append("<span class='title'>" + section.title + "</span><span class='instructor'>" + section.instructor + "</span>").css("height", time.endPixel-time.startPixel).css("top", time.startPixel + "px");
+	$("#calendar ." + section.crn).append(section.title).css("height", time.endPixel-time.startPixel).css("top", time.startPixel + "px");
 }
 
 function get_data(crns, callback) {
@@ -159,14 +151,11 @@ function get_data(crns, callback) {
 	}, function(data) {
 		window.schedule_data = data;
 
-		window.schedule_data.up_to_date = true;
-
 		callback();
 	});
 }
 
 function draw_schedule_links() {
-	$("#schedules a").remove();
 	for(var s = 0; s < window.schedule_data.schedules.length; s++) {
 		$("#schedules").append("<a href='#' rel='" + s + "'>Schedule " + s + "</a>");
 	}
@@ -184,22 +173,15 @@ function draw_schedule(schedule_index) {
 
 		add_section_to_calendar(course);
 		
-		add_to_course_list(course);
+		$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + "</div>");
+
 	}
 
 	for(var i = 0; i < schedule.conflicts.length; i++) {
 		var course = schedule.conflicts[i];
 
-		add_to_conflicts_list(course);
+		$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
 	}
-}
-
-function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><span class='title'>" + course.title + "</span> <span class='instructor'>" + course.instructor + "</div>");
-}
-
-function add_to_conflicts_list(course) {
-	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><span class='title'>" + course.title + "</span> <span class='instructor'>" + course.instructor + "</span></div>");
 }
 
 function get_section_data(crn) {
