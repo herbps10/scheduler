@@ -27,9 +27,6 @@ function intersection_safe(a, b)
 }
 
 $(document).ready(function() {
-
-
-
 	get_data(['55374', '50608', '54582', '50371', '50315', '50622', '55517', '53456'], function() {
 		draw_schedule(0);
 		draw_schedule_links();
@@ -173,15 +170,18 @@ function draw_schedule(schedule_index) {
 
 		add_section_to_calendar(course);
 		
-		$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + "</div>");
+		add_to_conflicts_list(course);
 
 	}
 
 	for(var i = 0; i < schedule.conflicts.length; i++) {
 		var course = schedule.conflicts[i];
-
-		$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
+		add_to_conflicts_list(course);
 	}
+}
+
+function add_to_conflicts_list(course) {
+	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
 }
 
 function get_section_data(crn) {
