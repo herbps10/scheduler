@@ -33,6 +33,21 @@ $(document).ready(function() {
 		current_schedule = 0;
 	});
 	
+
+	$("#regen").click(function() {
+		$("#schedules").empty();
+
+		var crns = [];
+
+		for(var i = 0; i < window.schedule_data.sections.length; i++) {
+			crns.push(window.schedule_data.sections[i].crn);
+		}
+
+		get_data(crns, function() {
+			draw_schedule_links();
+		});
+	});
+	
 	$("#schedules a").live({
 		mouseenter: function() {
 			var index = $(this).attr('rel');
