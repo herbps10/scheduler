@@ -156,7 +156,7 @@ header > h1 {
 	width: 230px;
 	left: -4px;
 	position: relative;
-	color: #3e424b;
+	color: black;
 	background-color: rgb(232, 232, 232);
 	font: 400 1.1em Quicksand;
 	border: 1px solid #d5d5d5;
@@ -164,7 +164,7 @@ header > h1 {
 
 #sidebar .course {
 	margin: 2px 8px;
-	color: #e0e0e0;
+	color: black;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-top: 1px dotted #CCC;
 	padding: 5px 0;

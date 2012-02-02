@@ -24,6 +24,7 @@ $(document).ready(function() {
 			crn: crn
 		}, function(data) {
 			var section = JSON.parse(data);
+
 			window.schedule_data.sections.push(section);
 			
 			add_to_conflicts_list(section);

@@ -20,12 +20,11 @@
 																%br
 																
 																- section.times.each do |time|
-																	%span.time-wrapper
-																		- if time.tba == true
-																			%span.time Time TBA
-																		- else 
-																			%span.days
-																				= time.prettyDays
-																			%span.time
-																				= time.prettyTime
+																	- if time.tba == true
+																		%span.time Time TBA
+																	- else 
+																		%span.days
+																			= time.prettyDays
+																		%span.time
+																			= time.prettyTime
 %a.cancel{"href" => "#"} Cancel
