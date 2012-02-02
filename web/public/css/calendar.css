@@ -20,7 +20,7 @@ header > h1 {
 	float: left;
 }
 
-#logout {
+#user-logout, #user-login {
 	height: 32px;
   	position: relative;
   	color: #40476a;
@@ -29,13 +29,40 @@ header > h1 {
   	right: 10px;
 	padding: 10px 40px 0px 0px;
 }
-#logout:hover {
-	text-decoration: underline overline;
+
+#user-logout a:hover, #user-login a:hover {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+.calendar #login {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 200px;
+	z-index: 100;
+	padding: 10px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.calendar #login input[type="text"], .calendar #login input[type="password"] {
+	border: 1px solid #CCC;
+}
+
+.calendar #login input[type="submit"] {
+	margin-top: 5px;
+}
+
+.calendar #login #register {
+	font-size: 8pt;
 }
 
 #schedules {
-	width: auto;
-	margin: 20px auto;
+	min-width: 920px;
+	max-width: 1260px;
+	margin: 40px auto;
 	position: relative;
 }
 

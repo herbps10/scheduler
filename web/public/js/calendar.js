@@ -44,6 +44,31 @@ $(document).ready(function() {
 			draw_schedule_links();
 		});
 	});
+
+	$(".calendar #login input[type=submit]").click(function() {
+		$.post("/user/authenticate.json", {
+			email: $("input[name=email]").val(),
+			password: $("input[name=password]").val()
+		}, function(data) {
+			data = JSON.parse(data);
+
+			console.log(data);
+			if(data.success == true)
+			{
+				location.reload(true);
+			}
+			else
+			{
+				$(".calendar #login #message").text("Username or password didn't work -- try again?");
+			}
+		});
+
+		return false;
+	});
+
+	$("#user-login a").click(function() {
+		$("#login").slideDown();
+	});
 	
 	$("#schedules a").live({
 		mouseenter: function() {

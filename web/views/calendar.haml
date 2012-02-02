@@ -10,12 +10,33 @@
 		%link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Flamenco:300,400|Quantico", "type" =>"text/css"}
 
 
-	%body
+	%body.calendar
 		#page-wrap
 			#inside
 				%header
 					%h1 Knight Scheduler
-					#logout logout
+					- if @session[:logged_in] == true
+						#user-logout
+							%a{"href" => "/user/logout?redirect=calendar"} logout
+					- else
+						#user-login 
+							%a login
+
+				#login
+					%form{"action" => "/user/authenticate.json", "method" => "post"}
+						%div 
+							%input{"name" => "email", "type" => "text"}
+						%div
+							%input{"name" => "password", "type" => "password"}
+
+						#register
+							Don't have an account? 
+							%a{"href" => "/user/register"} register
+
+						#message
+
+						%input{"type" => "submit", "value" => "Go"}
+
 
 				#sidebar
 					.title Courses in Schedule

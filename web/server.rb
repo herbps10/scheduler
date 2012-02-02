@@ -38,8 +38,6 @@ get "/schedules" do
 
 	crns.each { |crn| @scheduler.addSection Section.new(crn) }
 
-	#return @scheduler.inspect.gsub('<', '<br/>')
-
 	@scheduler.schedules
 
 	erb :schedules, :layout => false
@@ -123,6 +121,8 @@ end
 get "/calendar" do
 	@data = Everything.new
 
+	@session = session
+
 	haml :calendar, { :layout => false }
 end
 
@@ -131,7 +131,7 @@ get "/user/register" do
 end
 
 post "/user/new" do
-	username = params[:username]
+	username = params[:email]
 	password = params[:password]
 	password2 = params[:password2]
 
@@ -156,17 +156,39 @@ post "/user/authenticate" do
 
 	if($redis.get("user:#{email}:password") == Digest::SHA1.hexdigest(password))
 		session[:logged_in] = true
-		session[:email] = username
+		session[:email] = email
 
 		return "Logged In"
+	else
+		return "Username/password not found"
 	end
+end
+
+post "/user/authenticate.json" do
+	email = params[:email]
+	password = params[:password]
+
+	if($redis.get("user:#{email}:password") == Digest::SHA1.hexdigest(password))
+		session[:logged_in] = true
+		session[:email] = email
+
+		@success = true
+	else
+		@success = false
+	end
+
+	erb :authenticatejson, { :layout => false }
 end
 
 get "/user/logout" do
 	session[:logged_in] = false;
 	session[:email] = nil
 
-	redirect "/user/login"
+	if params[:redirect] != nil
+		redirect "/" + params[:redirect]
+	else
+		redirect "/user/login"
+	end
 end
 
 helpers do
