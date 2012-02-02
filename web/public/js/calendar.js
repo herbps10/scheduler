@@ -27,11 +27,8 @@ function intersection_safe(a, b)
 }
 
 $(document).ready(function() {
-	get_data(['55374', '50608', '54582', '50371', '50315', '50622', '55517', '53456'], function() {
-		draw_schedule(0);
-		draw_schedule_links();
-		current_schedule = 0;
-	});
+	window.schedule_data = {}
+	window.schedule_data.sections = [];
 	
 
 	$("#regen").click(function() {
