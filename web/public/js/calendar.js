@@ -170,7 +170,7 @@ function draw_schedule(schedule_index) {
 
 		add_section_to_calendar(course);
 		
-		add_to_conflicts_list(course);
+		add_to_course_list(course);
 
 	}
 
@@ -178,6 +178,10 @@ function draw_schedule(schedule_index) {
 		var course = schedule.conflicts[i];
 		add_to_conflicts_list(course);
 	}
+}
+
+function add_to_course_list(course) {
+	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
 }
 
 function add_to_conflicts_list(course) {
