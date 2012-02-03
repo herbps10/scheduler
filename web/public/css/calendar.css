@@ -36,27 +36,31 @@ header > h1 {
 	cursor: pointer;
 }
 
-.calendar #login {
+#small-login {
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	width: 200px;
 	z-index: 100;
 	padding: 10px;
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+	display: none;
+	background: white;
+	width: 200px;
 }
 
-.calendar #login input[type="text"], .calendar #login input[type="password"] {
+#small-login input[type="text"], #small-login input[type="password"] {
 	border: 1px solid #CCC;
+	display: block;
 }
 
-.calendar #login input[type="submit"] {
+#small-login input[type="submit"] {
 	margin-top: 5px;
 }
 
-.calendar #login #register {
+#small-login #register {
 	font-size: 8pt;
+	width: 180px;
 }
 
 #schedules {
@@ -176,7 +180,7 @@ header > h1 {
 	border-top-style: none;
 }
 
-#sidebar .title {
+#sidebar > .title {
 	padding: 8px;
 	margin-top: 0px;
 	margin-bottom: 6px;
@@ -378,4 +382,13 @@ header > h1 {
 	position: relative;
 	right: 0px;
 	z-index: 100;
+}
+
+#sidebar .course .title {
+	display: block;
+	font-weight: bold;
+}
+
+#sidebar .course .days {
+	
 }

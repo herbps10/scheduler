@@ -45,7 +45,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".calendar #login input[type=submit]").click(function() {
+	$("#small-login input[type=submit]").click(function() {
 		$.post("/user/authenticate.json", {
 			email: $("input[name=email]").val(),
 			password: $("input[name=password]").val()
@@ -59,7 +59,7 @@ $(document).ready(function() {
 			}
 			else
 			{
-				$(".calendar #login #message").text("Username or password didn't work -- try again?");
+				$("#small-login #message").text("Username or password didn't work -- try again?");
 			}
 		});
 
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 
 	$("#user-login a").click(function() {
-		$("#login").slideDown();
+		$("#small-login").slideDown();
 	});
 	
 	$("#schedules a").live({
@@ -217,12 +217,29 @@ function draw_schedule(schedule_index) {
 	}
 }
 
+function format_times(times) {
+	var str = "";
+	for(var i = 0; i < times.length; i++)
+	{
+		str += "<span class='days'>";
+
+		for(var d = 0; d < times[i].days.length; d++)
+		{
+			str += times[i].days[d];
+		}
+
+		str += "</span> <span class='times'>" + times[i].startTime + "-" + times[i].endTime + "</span>";
+	}
+
+	return str;
+}
+
 function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
+	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
-	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'>" + course.title + " " + course.crn + "</div>");
+	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function get_section_data(crn) {

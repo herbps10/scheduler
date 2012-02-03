@@ -191,6 +191,12 @@ get "/user/logout" do
 	end
 end
 
+get "/dashboard" do
+	@session = session
+
+	haml :dashboard
+end
+
 helpers do
 	def course_json_list sections
 		erb :coursejsonlist, { :layout => false, :locals => { :sections => sections }}
