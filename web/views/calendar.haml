@@ -16,13 +16,14 @@
 				%header
 					%h1 Knight Scheduler
 					- if @session[:logged_in] == true
-						#user-logout
+						#user-actions
+							%a{"href" => "/dashboard"} dashboard
 							%a{"href" => "/user/logout?redirect=calendar"} logout
 					- else
 						#user-login 
 							%a login
 
-				#login
+				#small-login
 					%form{"action" => "/user/authenticate.json", "method" => "post"}
 						%div 
 							%input{"name" => "email", "type" => "text"}
@@ -77,6 +78,7 @@
 								.time 2:00pm
 								.time 3:00pm
 								.time 4:00pm
+								.time 5:00pm
 								.time 6:00pm
 								.time 7:00pm
 								.time 8:00pm
@@ -84,6 +86,12 @@
 								.time 10:00pm
 							#grid
 
+								.grid-hour
+									.grid-day.mon
+									.grid-day.tue
+									.grid-day.wed
+									.grid-day.thu
+									.grid-day.fri
 								.grid-hour
 									.grid-day.mon
 									.grid-day.tue

@@ -20,7 +20,7 @@ header > h1 {
 	float: left;
 }
 
-#user-logout, #user-login {
+#user-actions, #user-login {
 	height: 32px;
   	position: relative;
   	color: #40476a;
@@ -30,7 +30,7 @@ header > h1 {
 	padding: 10px 40px 0px 0px;
 }
 
-#user-logout a:hover, #user-login a:hover {
+#user-actions a:hover, #user-login a:hover {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	cursor: pointer;
@@ -202,6 +202,11 @@ header > h1 {
 	cursor: pointer;
 }
 
+#sidebar .course button.swap {
+	float: left;
+	height: 100%;
+}
+
 .course:first-child {
 	border-top: none;
 }
@@ -309,11 +314,17 @@ header > h1 {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	word-wrap: break-word;
+	font-size: 10pt;
+}
+
+#calendar .course.limbo {
+	border: 1px solid #ccc;
+	color: #ccc;
 }
 
 #calendar .course.conflict {
-	border: 1px solid #ccc;
-	color: #ccc;
+	/*border: 1px solid red;*/
 }
 
 .grid-hour {

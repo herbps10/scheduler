@@ -1,7 +1,7 @@
 %header
 	%h1 Knight Scheduler
 	- if @session[:logged_in] == true
-		#user-logout
+		#user-actions
 			%a{"href" => "/user/logout?redirect=calendar"} logout
 	- else
 		#user-login 
@@ -21,4 +21,18 @@
 
 		%input{"type" => "submit", "value" => "Go"}
 
+#dash_wrapper
+	#dash
+		#content_0.node
+			%h2 Content 0
+			%p This is the content
 
+		#content_1.node.rcount_2a
+			%h2 Content 1
+			%p This is the content
+
+		#content_2.node.rcount_2b
+			%h2 Content 2
+			%p This is the content
+
+		%br{"style" => "clear: both"}
