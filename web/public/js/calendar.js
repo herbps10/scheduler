@@ -138,14 +138,14 @@ $(document).ready(function() {
 		$("#col-toggle").addClass("expanded")
 		$("#course-col").slideToggle();
 		$("#full-cal-container").animate({
-			minHeight: '220px'
+			minHeight: '204px'
 		});
 	});
 	$("#col-toggle .expanded").click(function() {
 		$("#col-toggle").removeClass("expanded")
 		$("#course-col").slideToggle();
 		$("#full-cal-container").animate({
-			minHeight: '530px'
+			minHeight: '514px'
 		});
 				console.log('click')
 
@@ -153,14 +153,14 @@ $(document).ready(function() {
 	$(".add-section").click(function() {
 		$("#course-col").slideDown();
 		$("#full-cal-container").animate({
-			minHeight: '220px'
+			minHeight: '204px'
 		});
 		$("#col-toggle").addClass("expanded")
 	});
 	$(".cancel").click(function() {
 		$("#course-col").slideUp();
 		$("#full-cal-container").animate({
-			minHeight: '530px'
+			minHeight: '514px'
 		});
 		$("#col-toggle").removeClass("expanded")
 	});

@@ -329,7 +329,7 @@ button.punch {
   text-align: center;
   text-shadow: 0 1px 0px #ffffff;
   -webkit-background-clip: padding-box;
-  background: url(../images/chruch.png) repeat #f2f2f2;
+  background: #f2f2f2;
   
 }
   button.punch:hover {

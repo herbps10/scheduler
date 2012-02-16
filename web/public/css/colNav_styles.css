@@ -1,4 +1,5 @@
 #columnNav {
+border: 1px solid #d3d3d3;
 }
 
 #return {
@@ -22,10 +23,9 @@ li.container {
 
 li.container > ul {
 	height: 100%;
-	width: 33.33%;
+	width: 33%;
 	top: 0;
-	margin-left: 33.33%; /*must be width of the columns*/
-	border: 1px solid #d3d3d3;
+	margin-left: 33%; /*must be width of the columns*/
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color: #f8f8f8;
@@ -36,12 +36,20 @@ li.container > ul.sections {
 	margin-left: 50%;
 }
 
+li.container > ul.courses > li {
+	margin-left: 0px;
+}
+
 li.container > ul.departments {
-	margin-left: 10px;
+	margin-left: 0px;
+}
+
+li.container > ul.departments > li {
+	margin-left: 0px;
 }
 
 li.container {
-	margin-left: -10px;
+	margin-left: 0px;
 }
 
 .container > ul {
@@ -52,13 +60,17 @@ li.container {
 	-o-user-select: none;
 	user-select: none;
 	
-	box-sizing: border-box;
-	margin-left: -8px;
+
+	margin-left: 0px;
 	padding: 0px;
 }
 
 ul.sections {
 	display: hidden;
+}
+
+li.department > ul, li.course > ul {
+	margin-left: -8px;
 }
 
 .sections_container {
@@ -90,15 +102,15 @@ li.container {
 }
 
 li.container .sections_container{
-	width: 66%;
+	width: 67%;
 }
 
 ul > li.selected {
 	background-color: #e8e8e8;
 	color: #000000;
 	border: 1px solid #d5d5d5;
-		margin: -1px;
 	
+	padding: 1px 7px;
 }
 
 li.department {
