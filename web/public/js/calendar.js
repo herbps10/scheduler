@@ -134,18 +134,35 @@ $(document).ready(function() {
 		$(this).parent().appendTo("#schedule-courses");
 	});
 
+	$("#col-toggle:not(.expanded)").click(function() {
+		$("#col-toggle").addClass("expanded")
+		$("#course-col").slideToggle();
+		$("#full-cal-container").animate({
+			minHeight: '220px'
+		});
+	});
+	$("#col-toggle .expanded").click(function() {
+		$("#col-toggle").removeClass("expanded")
+		$("#course-col").slideToggle();
+		$("#full-cal-container").animate({
+			minHeight: '530px'
+		});
+				console.log('click')
 
+	});
 	$(".add-section").click(function() {
 		$("#course-col").slideDown();
 		$("#full-cal-container").animate({
 			minHeight: '220px'
 		});
+		$("#col-toggle").addClass("expanded")
 	});
 	$(".cancel").click(function() {
 		$("#course-col").slideUp();
 		$("#full-cal-container").animate({
 			minHeight: '530px'
 		});
+		$("#col-toggle").removeClass("expanded")
 	});
 });
 
