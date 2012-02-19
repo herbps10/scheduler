@@ -1,4 +1,5 @@
 body {
+
 }
 
 header {
@@ -173,22 +174,30 @@ header > h1 {
 	margin: 10px 50px auto 20px;
 }
 
+.add-section {
+	margin: 2px;
+	height: 44px; 
+	position: absolute;
+	bottom: 0px;
+	width: 44px;
+}
+
 #regen {
-	width: 240px;
-	margin: 0px 40px;
-	border-radius: 2px;
-	float: right;
-	clear: right;
+	margin: 2px;
+	position: absolute;
+	height: 44px;
+	bottom: 0px;
+	left: 45px;
+	width: 185px;
 }
 
 #sidebar {
-	height: 500px;
+	height: 560px;
 	width: 240px;
 	margin: 0px 40px 10px 0px;
-	border: 1px solid #d5d5d5;
 	float: right;
+	position: relative;
 	z-index: 100;
-	background-color: #fafafa;
 	border-top-style: none;
 }
 
@@ -197,12 +206,17 @@ header > h1 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	width: 230px;
-	left: -4px;
+	left: -3px;
 	position: relative;
 	color: black;
 	background-color: rgb(232, 232, 232);
-	font: 400 1.1em Quicksand;
+	font: 700 1.1em Quicksand;
 	border: 1px solid #d5d5d5;
+}
+
+#sidebar > .list {
+	border: 1px solid #d5d5d5;
+	background-color: #fafafa;
 }
 
 #sidebar .course {
@@ -210,7 +224,7 @@ header > h1 {
 	margin: 0px 0px 0px 8px;
 	height: 69px;
 	color: black;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font: 400 1em Quicksand;
 	border-top: 1px dotted #CCC;
 	padding: 5px 0px 5px 0px;
 	cursor: pointer;
@@ -380,25 +394,6 @@ header > h1 {
 	margin: 0 2px;
 }
 
-.add-section {
-	margin: auto;
-	margin-top: 6px;
-	width: 200px;
-	height: 18px;
-	text-align: left;
-	padding: 4px 8px;
-	border: 2px dashed #cacaca;
-	color: #cacaca;
-	font-size: 1em;
-	line-height: 1em;
-	cursor: pointer;
-}
-
-.add-section:hover {
-	border-color: #d6d6d6;
-	color: #d6d6d6;
-}
-
 .cancel {
 	position: relative;
 	right: 0px;
@@ -421,6 +416,7 @@ header > h1 {
 }
 
 #sidebar .course .days {
+	
 }
 
 #sidebar button.swap{
@@ -454,6 +450,14 @@ header > h1 {
 
 #schedule-courses button.swap {
 	display: none;
+}
+
+#schedule-courses.list {
+	border-top: none;
+	border-bottom: none;
+}
+#schedule-conflicts.list {
+	border-top: none;
 }
 
 #schedule-conflicts, #schedule-courses {

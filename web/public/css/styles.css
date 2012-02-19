@@ -1,5 +1,5 @@
 html {
-	font-family: Quantico, serif;
+	font-family: Quicksand, serif;
 	background-image: url(../images/cross_scratches.png);
 	height: 100%;
 }
@@ -233,7 +233,6 @@ p {
 	
 }
 
-
 .button.hover_blue {
 	border-color: #95ddfe;
 }
@@ -309,15 +308,16 @@ p {
 	border-color: #f1dac2;
 }
 
-button.punch {
+button.neon {
+  cursor: pointer; 
   border: 1px solid #d5d5d5;
   border-bottom-color: #f1f1f1;
   border-top-color: #d2d2d2;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   -webkit-box-shadow: inset 0px 1px 10px #B3B3B3, 0px 6px 0px #E6E6E6, 0 8px 4px 1px #FFFFFF;
   -moz-box-shadow: inset 0 1px 10px #B3B3B3, 0px 1px 0 #CCCCCC, 0 6px 0px #E6E6E6, 0 8px 4px 1px #FFFFFF;
   -ms-box-shadow: inset 0 1px 10px #B3B3B3, 0px 1px 0 #CCCCCC, 0 6px 0px #E6E6E6, 0 8px 4px 1px #FFFFFF;
@@ -332,31 +332,40 @@ button.punch {
   background: #f2f2f2;
   
 }
-  button.punch:hover {
+  button.neon:hover {
     border: 1px solid #fff;
     cursor: pointer; 
     box-shadow: 0 0 15px rgba(255, 255, 255, .95), inset 0 0 15px rgba(255, 255, 255, .95), inset 0 0 6px #fff, inset 0 0 15px rgba(150, 150, 150, .65), 0px 1px 0px 0px #b1b1b1, 0px 6px 0px 0px #bfbfbf, 0px 6px 12px 0px #999;
 }
-  button.punch:active {
+  button.neon:active {
   	
     box-shadow: 0 0 15px rgba(255, 255, 255, .95), inset 0 0 15px rgba(255, 255, 255, .95), inset 0 0 6px #fff, inset 0 0 15px rgba(150, 150, 150, .65), 0px 1px 0px 0px #b1b1b1, 0px 3px 0px 0px #bfbfbf, 0px 4px 0px 0px #b9b9b9, 0px 2px 8px 0px #999; 
 }
 
-button.punch.green {
+button.neon.green {
 	border: 1px solid rgba(0, 199, 69, 0.6);
 }
-
-button.punch.green:hover {
+button.neon.green:hover {
 	border: 1px solid #16ed62;
 	cursor: pointer; 
 	box-shadow: 0 0 8px rgba(115, 255, 40, 0.39), inset 0 0 8px rgba(115, 255, 40, .6), inset 0 0 6px #fff, inset 0 0 15px rgba(150, 150, 150, .2);
 }
-
-button.punch.green:active {
+button.neon.green:active {
     box-shadow: 0 0 15px rgba(115, 255, 40, .6), inset 0 0 15px rgba(115, 255, 40, .6), inset 0 0 6px #fff, inset 0 0 15px rgba(150, 150, 150, .2), inset 0px 2px 3px 0px #999;
 	line-height: 1.1em;
 }
 
+button.neon.orange {
+	border: 1px solid #ffbb00;
+}
+button.neon.orange:hover {
+	border: 1px solid #ffd800;
+	box-shadow: 0 0 8px rgba(255, 193, 40, 0.54), inset 0 0 8px rgba(255, 201, 40, 0.6), inset 0 0 6px #fff, inset 0 0 15px rgba(150, 150, 150, .2);
+}
+button.neon.orange:active {
+    box-shadow: 0 0 15px rgba(255, 164, 40, 0.6), inset 0 0 15px rgba(255, 164, 40, 0.6), inset 0 0 6px #fff, inset 0px 2px 3px 0px #999;
+	line-height: 1.1em;
+}
 
 /* @group Subscribe */
 
