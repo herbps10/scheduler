@@ -19,6 +19,9 @@
 																= section.instructor
 																%br
 																
+																.description
+																	= section.description
+
 																- section.times.each do |time|
 																	- if time.tba == true
 																		%span.time Time TBA

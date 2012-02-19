@@ -10,8 +10,8 @@
 			{
 				"startTime": "<%= time.englishStartTime %>",
 				"endTime": "<%= time.englishEndTime %>",
-				"startPixel": "<%= time.startTimeInMinutes - 420 %>",
-				"endPixel": "<%= time.endTimeInMinutes - 420 %>",
+				"startPixel": "<%= ((time.startTimeInMinutes * (45.to_f/60.to_f)) - (8 * 45) + 15) %>",
+				"endPixel": "<%= ((time.endTimeInMinutes * (45.to_f/60.to_f)) - (8 * 45) + 15) %>",
 				"days": ["<%= time.days.join('","') %>"]
 			}<%= "," if time_index < section.times.length - 1 %>
 			<% end %>

@@ -19,8 +19,6 @@ class Saver
 		$redis.hset(RedisHelper::course(@title), 'description', @description)
 		$redis.hset(RedisHelper::course(@title), 'department', @department)
 
-		puts RedisHelper::course(@title)
-
 		$redis.zadd(RedisHelper::department(@department), @courseNumber.to_i, @title.gsub(' ', '-'))
 
 		save_section
@@ -35,6 +33,7 @@ class Saver
 		$redis.hset(RedisHelper::section(@crn), 'location', @location)
 		$redis.hset(RedisHelper::section(@crn), 'credits', @credits)
 		$redis.hset(RedisHelper::section(@crn), 'time', @time)
+		$redis.hset(RedisHelper::course(@title), 'description', @description)
 		$redis.hset(RedisHelper::section(@crn), 'days', @days)
 
 		$redis.sadd(RedisHelper::time(@days, @time), @crn);

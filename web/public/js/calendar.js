@@ -2,11 +2,7 @@
 // Might not work in IE8
 
 
-Array.prototype.diff = function(a) {
-    return this.filter(function(i) {return !(a.indexOf(i) > -1);});
-};
-
-function intersection_safe(a, b)
+Array.prototype.diff = function(a) { return this.filter(function(i) {return !(a.indexOf(i) > -1);}); }; function intersection_safe(a, b)
 {
   var ai=0, bi=0;
   var result = new Array();
@@ -29,9 +25,29 @@ function intersection_safe(a, b)
 $(document).ready(function() {
 	window.schedule_data = {}
 	window.schedule_data.sections = [];
+
 	
+	$(window).resize(function() {
+	});
+
+
+	var listHeight = ($("#sidebar").height() - $("#sidebar > .title").height() - $("#regen").height()) / 2;
+	$("#schedule-courses").css('height', (listHeight - 100) + "px");
+	$("#schedule-conflicts").css('height', (listHeight) + "px");
+
+	$("#resize").css('height', $("#sidebar").height() - $("#regen").height() - 35);
+
+	$("#resize").splitter({
+		splitHorizontal: true
+	});
 
 	$("#regen").click(function() {
+		$(this).text("Regenerate");
+
+		if($("#col-toggle").hasClass('expanded')) {
+			columnToggle();
+		}
+
 		$("#schedules").empty();
 
 		var crns = [];
@@ -41,6 +57,8 @@ $(document).ready(function() {
 		}
 
 		get_data(crns, function() {
+			draw_schedule(0);
+			current_schedule = 0;
 			draw_schedule_links();
 		});
 	});
@@ -134,22 +152,15 @@ $(document).ready(function() {
 		$(this).parent().appendTo("#schedule-courses");
 	});
 
-	$("#col-toggle:not(.expanded)").click(function() {
-		$("#col-toggle").addClass("expanded")
-		$("#course-col").slideToggle();
-		$("#full-cal-container").animate({
-			minHeight: '204px'
-		});
+	
+	$("#col-toggle.expanded").live('click', function() {
+		columnToggle();
 	});
-	$("#col-toggle .expanded").click(function() {
-		$("#col-toggle").removeClass("expanded")
-		$("#course-col").slideToggle();
-		$("#full-cal-container").animate({
-			minHeight: '514px'
-		});
-				console.log('click')
 
+	$("#col-toggle.unexpanded").live('click', function() {
+		columnToggle();
 	});
+
 	$(".add-section").click(function() {
 		$("#course-col").slideDown();
 		$("#full-cal-container").animate({
@@ -165,6 +176,27 @@ $(document).ready(function() {
 		$("#col-toggle").removeClass("expanded")
 	});
 });
+
+function columnToggle() {
+	if($("#col-toggle").hasClass('expanded')) {
+		$("#course-col").slideUp();
+
+		$("#full-cal-container").animate({
+			minHeight: '514px'
+		}, function() {
+			$("#col-toggle").removeClass("expanded").addClass('unexpanded');
+		});
+	}
+	else {
+		$("#course-col").slideDown();
+
+		$("#full-cal-container").animate({
+			minHeight: '204px'
+		}, function() {
+			$("#col-toggle").removeClass('unexpanded').addClass("expanded");
+		});
+	}
+}
 
 function get_conflicted_classes(conflicted_section) {
 	conflicts = []
@@ -226,8 +258,8 @@ function draw_schedule(schedule_index) {
 	var schedule = window.schedule_data.schedules[schedule_index];
 
 	$("#calendar .course").remove();
-	$("#schedule-courses").empty();
-	$("#schedule-conflicts").empty();
+	$("#schedule-courses .course").remove();
+	$("#schedule-conflicts .course").remove();
 
 	for(var i = 0; i < schedule.courses.length; i++) {
 		var course = schedule.courses[i];
@@ -262,7 +294,7 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
