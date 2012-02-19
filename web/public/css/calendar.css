@@ -207,13 +207,14 @@ header > h1 {
 
 #sidebar .course {
 	position: relative;
-	margin: 0px 8px;
+	margin: 0px 0px 0px 8px;
 	height: 69px;
 	color: black;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-top: 1px dotted #CCC;
 	padding: 5px 0px 5px 0px;
 	cursor: pointer;
+	word-wrap: break-word;
 }
 
 #sidebar .course:first-child {
@@ -408,6 +409,7 @@ header > h1 {
 	position: relative;
 	z-index: 200;
 }
+
 #sidebar .course:first-of-type {
 	border: none;
 	margin-top: 4px;
@@ -433,6 +435,7 @@ header > h1 {
 	background: url(../images/ic_sync.png) no-repeat center center #f8fafd;
 	z-index: 200;
 }
+
 #sidebar button.swap:hover{
 	border-color: #94dafe;
 	-moz-box-shadow: 0 0 2px #ace2ff, inset 0 0 4px #a7e0fe;
@@ -440,6 +443,7 @@ header > h1 {
 	box-shadow: 0 0 2px #ace2ff, inset 0 0 4px #a7e0fe;
 	z-index: 210;
 }
+
 #sidebar button.swap:active{
 	border-color: #94dafe;
 	-moz-box-shadow: inset 0 2px 4px lightgrey, 0 0 8px #aefeff, inset 0 0 8px #aefeff;
