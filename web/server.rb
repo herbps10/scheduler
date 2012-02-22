@@ -143,6 +143,8 @@ post "/user/new" do
 	$redis.set("user:#{username}:id", id)
 	$redis.set("user:#{id}:username", username);
 	$redis.set("user:#{username}:password", Digest::SHA1.hexdigest(password))
+
+	redirect "/dashboard"
 end
 
 get "/user/login" do

@@ -132,6 +132,15 @@ li.section {
 	color: #3e424b;
 }
 
+li.description {
+	margin-top: 10px;
+	border-top: 1px dotted #CCC;
+	padding: 10px 5px 5px 5px;
+	font: 11pt georgia, 'times new roman' serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
 #columnNav .days {
 }
 

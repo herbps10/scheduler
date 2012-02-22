@@ -56,11 +56,17 @@ header > h1 {
 
 #small-login input[type="submit"] {
 	margin-top: 5px;
+	float: right;
 }
 
 #small-login #register {
 	font-size: 8pt;
 	width: 180px;
+}
+
+#small-login .login-cancel {
+	font-size: 10pt;
+	float: left;
 }
 
 #schedules {

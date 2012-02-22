@@ -73,19 +73,35 @@ $(document).ready(function() {
 			console.log(data);
 			if(data.success == true)
 			{
-				location.reload(true);
+				window.location = "/dashboard";
 			}
 			else
 			{
 				$("#small-login #message").text("Username or password didn't work -- try again?");
+
+				$("#small-login #message").animate({
+					opacity: 0.25
+				}, 250, function() {
+					$("#small-login #message").animate({
+						opacity: 1
+					}, 250);
+				});
 			}
 		});
 
 		return false;
 	});
 
-	$("#user-login a").click(function() {
+	$("#user-actions a.user-login").click(function() {
 		$("#small-login").slideDown();
+	});
+
+	$("#user-actions a.user-register").click(function() {
+		window.location = "/user/register";
+	});
+
+	$(".login-cancel").click(function() {
+		$("#small-login").slideUp();
 	});
 	
 	/*

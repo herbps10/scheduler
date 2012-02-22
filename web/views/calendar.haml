@@ -21,8 +21,9 @@
 							%a{"href" => "/dashboard"} dashboard
 							%a{"href" => "/user/logout?redirect=calendar"} logout
 					- else
-						#user-login 
-							%a login
+						#user-actions
+							%a.user-register register
+							%a.user-login login
 
 				#small-login
 					%form{"action" => "/user/authenticate.json", "method" => "post"}
@@ -37,7 +38,8 @@
 
 						#message
 
-						%input{"type" => "submit", "value" => "Go"}
+						%input{"type" => "submit", "value" => "Login"}
+						%a.login-cancel{'href' => '#'} (cancel)
 
 
 				#sidebar

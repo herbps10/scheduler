@@ -11,6 +11,7 @@
 									- department.courses.each do |course|
 										%li.course
 											= course.title
+
 											%ul 
 												%li.container.sections_container
 													%ul.sections
@@ -18,9 +19,6 @@
 															%li.section{ "rel" => section.crn }
 																= section.instructor
 																%br
-																
-																.description
-																	= section.description
 
 																- section.times.each do |time|
 																	- if time.tba == true
@@ -30,4 +28,7 @@
 																			= time.prettyDays
 																		%span.time
 																			= time.prettyTime
+
+														%li.description
+															= course.description
 %a.cancel{"href" => "#"} Cancel
