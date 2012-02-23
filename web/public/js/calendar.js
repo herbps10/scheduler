@@ -144,36 +144,17 @@ $(document).ready(function() {
 		for(var i = 0; i < conflicts.length; i++) {
 			var section = conflicts[i];
 
-			$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts").attr('style', '');
-			$("#calendar .course." + section.crn).remove();
-			$("#schedule-courses .course." + section.crn).remove();
+			$("#schedule-courses .course" + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
+			$("#calendar .course" + section.crn).remove();
+			$("#schedule-courses .course" + section.crn).remove();
 		}
 
-		$(this).parent().appendTo("#schedule-courses");
+		$(this).parent().appendTo("#schedule-courses > ul.list");
 	});
 
 	
-	$("#col-toggle.expanded").live('click', function() {
+	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
 		columnToggle();
-	});
-
-	$("#col-toggle.unexpanded").live('click', function() {
-		columnToggle();
-	});
-
-	$(".add-section").click(function() {
-		$("#course-col").slideDown();
-		$("#full-cal-container").animate({
-			minHeight: '204px'
-		});
-		$("#col-toggle").addClass("expanded")
-	});
-	$(".cancel").click(function() {
-		$("#course-col").slideUp();
-		$("#full-cal-container").animate({
-			minHeight: '514px'
-		});
-		$("#col-toggle").removeClass("expanded")
 	});
 });
 
@@ -294,11 +275,11 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
-	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function get_section_data(crn) {

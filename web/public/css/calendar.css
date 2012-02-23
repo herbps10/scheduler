@@ -201,21 +201,21 @@ header > h1 {
 	border-top-style: none;
 }
 
-#sidebar #resize > .title {
+#sidebar div.title {
 	padding: 8px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	width: 230px;
-	left: -3px;
-	position: relative;
+	left: -4px;
+	top: -1px;
+	position: absolute;
 	color: black;
 	background-color: rgb(232, 232, 232);
-	font: 700 1.1em Quicksand;
+	font: 400 1.1em Quicksand;
 	border: 1px solid #d5d5d5;
-	cursor: row-resize;
 }
 
-#sidebar #resize > .list {
+#schedule-courses, #schedule-conflicts {
 	border: 1px solid #d5d5d5;
 	background-color: #fafafa;
 }
@@ -465,7 +465,7 @@ header > h1 {
 	border-top: none;
 }
 
-#schedule-conflicts, #schedule-courses {
+#sidebar ul {
 	overflow-y: scroll;
 	overflow-x: visible;
 	width: 240px;
@@ -473,7 +473,7 @@ header > h1 {
 }
 
 .hsplitbar {
-	height: 10px;
-	color: gray;
-	background-color: gray;
+	height: 16px;
+	cursor: r;
+	background: url(../images/drag_v.png) no-repeat center center;
 }
