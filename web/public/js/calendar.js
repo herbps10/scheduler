@@ -100,7 +100,7 @@ $(document).ready(function() {
 		window.location = "/user/register";
 	});
 
-	$(".login-cancel").click(function() {
+	$("#small-login button.close").click(function() {
 		$("#small-login").slideUp();
 	});
 	
@@ -160,22 +160,19 @@ $(document).ready(function() {
 		for(var i = 0; i < conflicts.length; i++) {
 			var section = conflicts[i];
 
-			$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts").attr('style', '');
+			$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
 			$("#calendar .course." + section.crn).remove();
 			$("#schedule-courses .course." + section.crn).remove();
 		}
 
-		$(this).parent().appendTo("#schedule-courses");
+		$(this).parent().appendTo("#schedule-courses > ul.list");
 	});
 
 	
-	$("#col-toggle.expanded").live('click', function() {
+	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
 		columnToggle();
 	});
-
-	$("#col-toggle.unexpanded").live('click', function() {
-		columnToggle();
-	});
+<<<<<<< HEAD
 
 	$(".add-section").click(function() {
 		$("#course-col").slideDown();
@@ -194,6 +191,8 @@ $(document).ready(function() {
 
 		$("#col-toggle").removeClass("expanded").addClass('unexpanded');
 	});
+=======
+>>>>>>> 7260c89bd30e7ed9610e7a6a803a28f20c88e4d0
 });
 
 function columnToggle() {
@@ -313,11 +312,19 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
+<<<<<<< HEAD
 	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
 	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+=======
+	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+}
+
+function add_to_conflicts_list(course) {
+	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+>>>>>>> 7260c89bd30e7ed9610e7a6a803a28f20c88e4d0
 }
 
 function get_section_data(crn) {
