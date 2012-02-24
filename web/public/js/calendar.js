@@ -87,6 +87,9 @@ $(document).ready(function() {
 	$("#user-login a").click(function() {
 		$("#small-login").slideDown();
 	});
+	$("#small-login button.close").click(function() {
+		$("#small-login").slideUp();
+	});
 	
 	/*
 	$("#schedules a").live({
@@ -144,9 +147,9 @@ $(document).ready(function() {
 		for(var i = 0; i < conflicts.length; i++) {
 			var section = conflicts[i];
 
-			$("#schedule-courses .course" + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
-			$("#calendar .course" + section.crn).remove();
-			$("#schedule-courses .course" + section.crn).remove();
+			$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
+			$("#calendar .course." + section.crn).remove();
+			$("#schedule-courses .course." + section.crn).remove();
 		}
 
 		$(this).parent().appendTo("#schedule-courses > ul.list");
