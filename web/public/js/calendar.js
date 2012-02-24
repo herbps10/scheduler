@@ -184,12 +184,15 @@ $(document).ready(function() {
 		});
 		$("#col-toggle").addClass("expanded")
 	});
+
 	$(".cancel").click(function() {
 		$("#course-col").slideUp();
+
 		$("#full-cal-container").animate({
 			minHeight: '514px'
 		});
-		$("#col-toggle").removeClass("expanded")
+
+		$("#col-toggle").removeClass("expanded").addClass('unexpanded');
 	});
 });
 
@@ -310,11 +313,11 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
-	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function get_section_data(crn) {
