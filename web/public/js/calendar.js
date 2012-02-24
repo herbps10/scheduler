@@ -172,7 +172,6 @@ $(document).ready(function() {
 	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
 		columnToggle();
 	});
-<<<<<<< HEAD
 
 	$(".add-section").click(function() {
 		$("#course-col").slideDown();
@@ -191,8 +190,6 @@ $(document).ready(function() {
 
 		$("#col-toggle").removeClass("expanded").addClass('unexpanded');
 	});
-=======
->>>>>>> 7260c89bd30e7ed9610e7a6a803a28f20c88e4d0
 });
 
 function columnToggle() {
@@ -312,19 +309,11 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-<<<<<<< HEAD
 	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
 	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
-=======
-	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
-}
-
-function add_to_conflicts_list(course) {
-	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
->>>>>>> 7260c89bd30e7ed9610e7a6a803a28f20c88e4d0
 }
 
 function get_section_data(crn) {
