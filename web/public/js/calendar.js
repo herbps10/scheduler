@@ -132,6 +132,7 @@ $(document).ready(function() {
 				var section = conflicts[i];
 
 				$("#calendar .course." + section.crn).addClass('conflict');
+				$("#calendar .course." + section.crn).addClass('swapee');
 			}
 
 			add_section_to_calendar(conflicted_section);
@@ -147,6 +148,7 @@ $(document).ready(function() {
 			});
 
 			$("#calendar .course.conflict").removeClass('conflict');
+			$("#calendar .course").removeClass('swapee');
 		}
 	});
 
@@ -171,24 +173,6 @@ $(document).ready(function() {
 	
 	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
 		columnToggle();
-	});
-
-	$(".add-section").click(function() {
-		$("#course-col").slideDown();
-		$("#full-cal-container").animate({
-			minHeight: '204px'
-		});
-		$("#col-toggle").addClass("expanded")
-	});
-
-	$(".cancel").click(function() {
-		$("#course-col").slideUp();
-
-		$("#full-cal-container").animate({
-			minHeight: '514px'
-		});
-
-		$("#col-toggle").removeClass("expanded").addClass('unexpanded');
 	});
 });
 
@@ -309,11 +293,11 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-	$("#schedule-courses").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
-	$("#schedule-conflicts").append("<div rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function get_section_data(crn) {

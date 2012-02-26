@@ -105,25 +105,31 @@ li.container .sections_container{
 	width: 67%;
 }
 
-ul > li.selected {
+#columnNav li.container > ul > li { /*Style for all column rows*/
+
+	border-bottom: 1px dotted #ececec;
+	padding: 2px 8px;
+	cursor: pointer;
+
+}
+#columnNav li.container > ul > li:last-of-type {
+	border-bottom: none;
+}
+
+#columnNav li.container > ul > li.selected {  /*Style for all selected column rows*/
 	background-color: #e8e8e8;
 	color: #000000;
-	border: 1px solid #d5d5d5;
-	
-	padding: 1px 7px;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	padding-top: 1px;
 }
 
 li.department {
-	font-size: 1.2em;
-	cursor: pointer;
-	padding: 2px 8px;
+	font-size: 1.1em;
 }
 
 li.course {
 	font-size: 0.8em;
-	cursor: pointer;
-	padding: 2px 8px;
-	color: #3e424b;
 }
 
 li.section:first-child {
@@ -135,7 +141,6 @@ li.section {
 	cursor: pointer;
 	padding: 2px 8px;
 	color: #3e424b;
-	border-top: 1px solid #CCC;
 }
 
 li.section .clue {
@@ -163,8 +168,7 @@ li.description {
 	margin-top: 10px;
 	border-top: 1px dotted #CCC;
 	padding: 10px 5px 5px 5px;
-	font: 11pt georgia, 'times new roman' serif;
-	font-size: 16px;
+	font: 16pt georgia, 'times new roman' serif;
 	line-height: 22px;
 	cursor: default;
 }

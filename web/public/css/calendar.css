@@ -154,11 +154,12 @@ header > h1 {
 #cal-header .day {
 	position: absolute;
 	width: 20%;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	text-align: center;
 	background-color: #f8f8f8;
-	font-family: Quicksand;
-	font-weight: 400;
 	border: 1px solid lightgrey;
+	font: 400 .8em Quicksand;
 }
 
 #cal-header .mon {
@@ -222,9 +223,9 @@ header > h1 {
 	position: absolute;
 	color: black;
 	background-color: rgb(232, 232, 232);
-	font: 400 1.1em Quicksand;
 	border: 1px solid #d5d5d5;
 	z-index: 200;
+	font: 400 1em Quicksand;
 }
 
 #schedule-courses, #schedule-conflicts {
@@ -368,8 +369,8 @@ header > h1 {
 	color: #ccc;
 }
 
-#calendar .course.conflict {
-	/*border: 1px solid red;*/
+#calendar .course.swapee {
+	border-left-style: dashed;
 }
 
 .grid-halfhour {
