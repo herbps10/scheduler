@@ -36,5 +36,17 @@ $(document).ready(function() {
 	$('div#columnNav li.section.selected').live('click', function(e) {
 		$(e.target).removeClass('selected');
 		$("#schedule-conflicts .course." + $(this).attr('rel')).remove();
+
+		var sections = [];
+
+		for(var i = 0; i < window.schedule_data.sections.length; i++)
+		{
+			if(window.schedule_data.sections[i].crn != $(this).attr('rel'))
+			{
+				sections.push(window.schedule_data.sections[i]);
+			}
+		}
+
+		window.schedule_data.sections = sections;
 	});
 });

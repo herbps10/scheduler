@@ -50,7 +50,6 @@ $(document).ready(function() {
 
 		$("#schedules").empty();
 
-
 		var crns = [];
 
 		for(var i = 0; i < window.schedule_data.sections.length; i++) {
