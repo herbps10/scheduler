@@ -62,7 +62,7 @@ $(document).ready(function() {
 			current_schedule = 0;
 			draw_schedule_links();
 
-			if ( 1 < window.schedule_data.sections.length) {
+			if ( 1 < window.schedule_data.schedules.length) {
 				$(".more-schedules").delay(1000).fadeIn();
 			}
 		});
