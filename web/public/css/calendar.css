@@ -148,7 +148,7 @@ header > h1 {
 	height: 100%;
 	background: white;
 	z-index: 10;
-	border: 1px solid #d3d3d3;
+	border: 1px solid #c2c1c1;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -168,12 +168,14 @@ header > h1 {
 	padding-bottom: 4px;
 	text-align: center;
 	background-color: #f8f8f8;
-	border: 1px solid lightgrey;
+	border: 1px solid #c2c1c1;
 	font: 400 .8em Quicksand;
+	border-left-color: #d3d3d3;
 }
 
 #cal-header .mon {
 	left: 1px;
+	border-left-color: #c2c1c1;
 }
 
 #page-wrap {
