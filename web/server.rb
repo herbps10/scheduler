@@ -1,7 +1,10 @@
 require 'rubygems'
 require 'sinatra'
+require 'omniauth'
+require 'omniauth-facebook'
 require 'redis'
 require 'digest/sha1'
+require 'open-uri'
 
 require "redishelper.rb"
 
@@ -19,6 +22,11 @@ require "./src/coursesections.rb"
 $redis = Redis.new
 
 enable :sessions
+
+use Rack::Session::Cookie
+use OmniAuth::Builder do
+	provider :facebook, '186503511460774', '4078a614ca76dab02c08d06411564a4b'
+end
 
 get '/' do
 	@session = session
@@ -144,6 +152,9 @@ post "/user/new" do
 	$redis.set("user:#{id}:username", username);
 	$redis.set("user:#{username}:password", Digest::SHA1.hexdigest(password))
 
+	session[:logged_in] = true
+	session[:email] = username
+
 	redirect "/dashboard"
 end
 
@@ -197,6 +208,18 @@ get "/dashboard" do
 	@session = session
 
 	haml :dashboard
+end
+
+get "/facebook" do
+	code = params[:code]
+	token_url =  "https://graph.facebook.com/oauth/access_token?client_id=186503511460774&redirect_uri=http://localhost:9393&client_secret=4078a614ca76dab02c08d06411564a4b&code=#{code}"
+
+	open(token_url)
+	return params.inspect
+end
+
+get '/auth/:name/callback' do
+	auth = request.env['omniauth.auth']
 end
 
 helpers do
