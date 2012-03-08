@@ -18,7 +18,6 @@ Array.prototype.diff = function(a) { return this.filter(function(i) {return !(a.
        bi++;
      }
   }
-
   return result;
 }
 
@@ -26,20 +25,19 @@ $(document).ready(function() {
 	window.schedule_data = {}
 	window.schedule_data.sections = [];
 
+	//$("#resize").css('height', $("#sidebar").height() - $("#regen").outerHeight(true));
+	var listHeight = ($("#calendar-container").height() - $("#sidebar > .title").height() - $("#regen").height()) / 2;
+	//$("#schedule-courses").css('height', (listHeight - 100) + "px");
+	//$("#schedule-conflicts").css('height', (listHeight) + "px");
 	
-	$(window).resize(function() {
-	});
-
-
-	var listHeight = ($("#full-cal-container").height() - $("#sidebar > .title").height() - $("#regen").height()) / 2;
-	$("#schedule-courses").css('height', (listHeight - 100) + "px");
-	$("#schedule-conflicts").css('height', (listHeight) + "px");
-
-	$("#resize").css('height', $("#sidebar").height() - $("#regen").outerHeight(true));
+	$(resize).on("resize")
 
 	$("#resize").splitter({
-		splitHorizontal: true
+		type: "h",
+		resizeTo: $("#calendar-container"),
+		sizeTop: true,
 	});
+
 
 	$("#regen").click(function() {
 		$(this).text("Regenerate");

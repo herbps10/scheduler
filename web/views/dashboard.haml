@@ -1,3 +1,9 @@
+%head
+	%link{ "rel" => "stylesheet", "href" => "/css/styles.css", "type" => "text/css" }
+	%link{ "rel" => "stylesheet", "href" => "/css/dashboard.css", "type" => "text/css" }
+	%script{ "src" => "/js/jquery.js", "type" => "text/javascript" }
+	%link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Flamenco:300,400|Quantico", "type" =>"text/css"}
+
 %header
 	%h1 Knight Scheduler
 	- if @session[:logged_in] == true
@@ -23,15 +29,15 @@
 
 #dash_wrapper
 	#dash
-		#content_0.node
+		#content_0.node.rcount_1<
 			%h2 Content 0
 			%p This is the content
 
-		#content_1.node.rcount_2a
+		#content_1.node.rcount_2><
 			%h2 Content 1
 			%p This is the content
 
-		#content_2.node.rcount_2b
+		#content_2.node.rcount_2>
 			%h2 Content 2
 			%p This is the content
 
