@@ -108,13 +108,14 @@ departments.each_pair do |department, full_department|
 	### Parse out the descriptions from the details file
 	###
 
-	descriptions = []
-	description_index = 0
+	descriptions = {}
 
-	details = Nokogiri::HTML(File.open("data/10-23-11;19:38:32/#{department}-details.html").read)
+	details = Nokogiri::HTML(File.open("data/03-08-12;22:40:27/#{department}-details.html").read)
 
 	details.css('.nttitle').each_with_index do |title, title_index|
 		course_title =  title.content
+
+		course_number = course_title[5..7]
 
 		#department = title.to_s.match(/([A-Z]+)/)[0]
 		#course_number = title.to_s.match(/crse_numb_in=([0-9A-Z]+)/)[1]
@@ -123,19 +124,15 @@ departments.each_pair do |department, full_department|
 		if(description.to_s.split('<br>').length > 0)
 			content = description.to_s.split('<br>').at(0).gsub('<td class="ntdefault">', '').gsub('<tr>', '').gsub("\n", '')
 			
-			puts content
-			descriptions[description_index] = content
-			description_index += 1
-
+			descriptions[course_number] = content
 		end
 	end
-
 
 	###
 	### Parse the main listings
 	### 
 
-	doc = Nokogiri::HTML(File.open("data/10-23-11;19:38:32/#{department}.html").read)
+	doc = Nokogiri::HTML(File.open("data/03-08-12;22:40:27/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
@@ -157,6 +154,7 @@ departments.each_pair do |department, full_department|
 				course.department = cell.content
 			elsif(index == 3)	
 				course.courseNumber = cell.content
+				course.description = descriptions[course.courseNumber.to_s]
 			elsif(index == 4) 	
 				course.section = cell.content
 			elsif(index == 6) 	
@@ -185,7 +183,6 @@ departments.each_pair do |department, full_department|
 					course.location = cell.content 
 
 					if previous_course == nil
-						course.description = descriptions[course_index]
 						course.save_course
 					elsif previous_course.title != course.title
 						course.save_course
@@ -206,6 +203,7 @@ departments.each_pair do |department, full_department|
 		end
 
 		course_index += 1
+
 	end
 end
 

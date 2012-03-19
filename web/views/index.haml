@@ -10,6 +10,8 @@
 								%ul.courses
 									- department.courses.each do |course|
 										%li.course
+											= course.courseNumber
+											 
 											= course.title
 
 											%ul 

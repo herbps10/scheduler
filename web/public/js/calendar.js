@@ -30,12 +30,12 @@ $(document).ready(function() {
 	//$("#schedule-courses").css('height', (listHeight - 100) + "px");
 	//$("#schedule-conflicts").css('height', (listHeight) + "px");
 	
-	$(resize).on("resize")
+	$(resize).on("resize");
 
 	$("#resize").splitter({
 		type: "h",
 		resizeTo: $("#calendar-container"),
-		sizeTop: true,
+		sizeTop: true
 	});
 
 
