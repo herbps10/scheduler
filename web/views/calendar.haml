@@ -12,270 +12,93 @@
 
 
 	%body.calendar
-		#page-wrap
-			#inside
-				%header
-					%h1 Knight Scheduler
-					- if @session[:logged_in] == true
-						#user-actions
-							%a{"href" => "/dashboard"} dashboard
-							%a{"href" => "/user/logout?redirect=calendar"} logout
-					- else
-						#user-actions
-							%a.user-register register
-							%a.user-login login
-							%a{"href" => "/auth/facebook"} Login with Facebook
+		%header
+			%h1 Knight Scheduler
+			- if @session[:logged_in] == true
+				#user-actions
+					%a{"href" => "/dashboard"} dashboard
+					%a{"href" => "/user/logout?redirect=calendar"} logout
+			- else
+				#user-actions
+					%a.user-register register
+					%a.user-login login
+					%a{"href" => "/auth/facebook"} Login with Facebook
 
-				#small-login
-					%form{"action" => "/user/authenticate.json", "method" => "post"}
-						%div 
-							%input{"name" => "email", "type" => "text"}
-						%div
-							%input{"name" => "password", "type" => "password"}
+			#small-login
+				%form{"action" => "/user/authenticate.json", "method" => "post"}
+					%div 
+						%input{"name" => "email", "type" => "text"}
+					%div
+						%input{"name" => "password", "type" => "password"}
 
-						#register
-							Don't have an account? 
-							%a{"href" => "/user/register"} register
+					#register
+						Don't have an account? 
+						%a{"href" => "/user/register"} register
 
-						#message
+					#message
 
-						%input{"type" => "submit", "value" => "Login"}
-					%button.close Close
-				#toolbar
-					%button#col-toggle.add-section.unexpanded.neon.orange
-						+
-					%button#regen.neon.green{"href" => "#"} Generate
-
-				#sidebar
-					#resize
-						#schedule-courses
-							.title Courses in Schedule
-							%ul.list
-						
-						#schedule-conflicts
-							.title Not in Schedule
-							%ul.list
+					%input{"type" => "submit", "value" => "Login"}
+				%button.close Close
 
 
+#content
+	#toolbar
+		%button#col-toggle.add-section.unexpanded.neon.orange
+			+
+		%button#regen.neon.green{"href" => "#"} Generate
 
-				#main-content
-					#course-col
-						= haml :index, { :locals => { :data => @data } }
-					
-					#full-cal-container
-						#cal-header
-							#days
-								.day.mon Mon
-								.day.tue Tue
-								.day.wed Wed
-								.day.thu Thu
-								.day.fri Fri
-						#calendar-container
-							#time-axis
-								.time 8:00am
-								.time 9:00am
-								.time 10:00am
-								.time 11:00am
-								.time 12:00pm
-								.time 1:00pm
-								.time 2:00pm
-								.time 3:00pm
-								.time 4:00pm
-								.time 5:00pm
-								.time 6:00pm
-								.time 7:00pm
-								.time 8:00pm
-								.time 9:00pm
-								.time 10:00pm
-							#grid
+	#sidebar
+		#resize
+			#schedule-courses
+				.title Courses in Schedule
+				%ul.list
+			
+			#schedule-conflicts
+				.title Not in Schedule
+				%ul.list
 
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-								.grid-halfhour
-									.grid-day.mon
-									.grid-day.tue
-									.grid-day.wed
-									.grid-day.thu
-									.grid-day.fri
-							#calendar
+
+
+	#main-content
+		#course-col
+			= haml :index, { :locals => { :data => @data } }
+		
+		#full-cal-container
+			#cal-header
+				#days
+					.day.mon Mon
+					.day.tue Tue
+					.day.wed Wed
+					.day.thu Thu
+					.day.fri Fri
+
+			#calendar-container
+				#time-axis
+					.time 8:00am
+					.time 9:00am
+					.time 10:00am
+					.time 11:00am
+					.time 12:00pm
+					.time 1:00pm
+					.time 2:00pm
+					.time 3:00pm
+					.time 4:00pm
+					.time 5:00pm
+					.time 6:00pm
+					.time 7:00pm
+					.time 8:00pm
+					.time 9:00pm
+					.time 10:00pm
+				#grid
+					- 31.times do
+						.grid-halfhour
+							.grid-day.mon
+							.grid-day.tue
+							.grid-day.wed
+							.grid-day.thu
+							.grid-day.fri
+
+				#calendar
 					#schedules-container
 						.more-schedules Click to view alternate schedules.
 						#schedules

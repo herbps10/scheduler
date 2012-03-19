@@ -76,9 +76,12 @@
 			A.css(opts.origin, 0).css(opts.split, newPos).css(opts.fixed,  splitter._DF);
 			B.css(opts.origin, newPos+bar._DA)
 				.css(opts.split, splitter._DA-bar._DA-newPos).css(opts.fixed,  splitter._DF);
+
 			// IE fires resize for us; all others pay cash
+			/*
 			if ( !$.browser.msie )
 				panes.trigger("resize");
+			*/
 		}
 		function dimSum(jq, dims) {
 			// Opera returns -1 for missing min/max width, turn into 0
@@ -86,6 +89,19 @@
 			for ( var i=1; i < arguments.length; i++ )
 				sum += Math.max(parseInt(jq.css(arguments[i])) || 0, 0);
 			return sum;
+		}
+
+		function resize_event(e, size) {
+			// Custom events bubble in jQuery 1.3; don't get into a Yo Dawg
+			if ( e.target != this ) return;
+			// Determine new width/height of splitter container
+			splitter._DF = splitter[0][opts.pxFixed] - splitter._PBF;
+			splitter._DA = splitter[0][opts.pxSplit] - splitter._PBA;
+			// Bail if splitter isn't visible or content isn't there yet
+			if ( splitter._DF <= 0 || splitter._DA <= 0 ) return;
+			// Re-divvy the adjustable dimension; maintain size of the preferred pane
+			resplit(!isNaN(size)? size : (!(opts.sizeRight||opts.sizeBottom)? A[0][opts.pxSplit] :
+				splitter._DA-B[0][opts.pxSplit]-bar._DA));
 		}
 		
 		// Determine settings based on incoming opts, element classes, and defaults
@@ -190,23 +206,12 @@
 			}).trigger("resize");
 		}
 		else if ( opts.resizeToWidth && !$.browser.msie )
-			$(window).bind("resize", function(){
-				splitter.trigger("resize"); 
-			});
+			$(window).bind("resize", resize_event);
 
 		// Resize event handler; triggered immediately to set initial position
-		splitter.bind("resize", function(e, size){
-			// Custom events bubble in jQuery 1.3; don't get into a Yo Dawg
-			if ( e.target != this ) return;
-			// Determine new width/height of splitter container
-			splitter._DF = splitter[0][opts.pxFixed] - splitter._PBF;
-			splitter._DA = splitter[0][opts.pxSplit] - splitter._PBA;
-			// Bail if splitter isn't visible or content isn't there yet
-			if ( splitter._DF <= 0 || splitter._DA <= 0 ) return;
-			// Re-divvy the adjustable dimension; maintain size of the preferred pane
-			resplit(!isNaN(size)? size : (!(opts.sizeRight||opts.sizeBottom)? A[0][opts.pxSplit] :
-				splitter._DA-B[0][opts.pxSplit]-bar._DA));
-		}).trigger("resize" , [initPos]);
+		splitter.bind("resize", resize_event);//.trigger("resize" , [initPos]);
+
+		splitter.trigger("resize", [initPos]);
 	});
 };
 
