@@ -41,6 +41,10 @@
 
 						%input{"type" => "submit", "value" => "Login"}
 					%button.close Close
+				#toolbar
+					%button#col-toggle.add-section.unexpanded.neon.orange
+						+
+					%button#regen.neon.green{"href" => "#"} Generate
 
 				#sidebar
 					#resize
@@ -52,11 +56,7 @@
 							.title Not in Schedule
 							%ul.list
 
-					%button#col-toggle.add-section.unexpanded.neon.orange
 
-						+
-				
-					%button#regen.neon.green{"href" => "#"} Generate
 
 				#main-content
 					#course-col
