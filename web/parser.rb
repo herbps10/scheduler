@@ -110,7 +110,7 @@ departments.each_pair do |department, full_department|
 
 	descriptions = {}
 
-	details = Nokogiri::HTML(File.open("data/03-08-12;22:40:27/#{department}-details.html").read)
+	details = Nokogiri::HTML(File.open("data/03-19-12;16:21:54/#{department}-details.html").read)
 
 	details.css('.nttitle').each_with_index do |title, title_index|
 		course_title =  title.content
@@ -132,7 +132,7 @@ departments.each_pair do |department, full_department|
 	### Parse the main listings
 	### 
 
-	doc = Nokogiri::HTML(File.open("data/03-08-12;22:40:27/#{department}.html").read)
+	doc = Nokogiri::HTML(File.open("data/03-19-12;16:21:54/#{department}.html").read)
 
 	course = Saver.new
 	valid_row = false
