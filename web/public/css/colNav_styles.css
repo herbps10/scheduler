@@ -28,7 +28,7 @@ li.container > ul {
 	margin-left: 33%; /*must be width of the columns*/
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background-color: #f8f8f8;
+  border: 1px solid #d3d3d3;
 }
 
 li.container > ul.sections {
@@ -117,11 +117,33 @@ li.container .sections_container{
 }
 
 #columnNav li.container > ul > li.selected {  /*Style for all selected column rows*/
-	background-color: #e8e8e8;
+background: -moz-linear-gradient(left,  rgba(232,232,232,1) 0%, rgba(232,232,232,1) 24%, rgba(232,232,232,0) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(232,232,232,1)), color-stop(24%,rgba(232,232,232,1)), color-stop(100%,rgba(232,232,232,0)));
+background: -webkit-linear-gradient(left,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 24%,rgba(232,232,232,0) 100%);
+background: -o-linear-gradient(left,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 24%,rgba(232,232,232,0) 100%);
+background: -ms-linear-gradient(left,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 24%,rgba(232,232,232,0) 100%);
+background: linear-gradient(left,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 24%,rgba(232,232,232,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#00e8e8e8',GradientType=1 );
+
 	color: #000000;
-	border-top: 1px solid #c1c1c1;
+	border: 1px solid #c1c1c1;
+	padding: 1px 1px 2px 7px;
+}
+#columnNav li.container > ul > li:first-of-type.selected {
+  border-top: none;
+  padding-top: 2px;
+}
+#columnNav li.container > ul > li.selected:last-of-type {
 	border-bottom: 1px solid #c1c1c1;
-	padding-top: 1px;
+}
+
+#columnNav li.container > ul > li.section.selected {
+  border-top: none;
+  padding-top: 2px;
+}
+#columnNav li.container > ul > li.section:not(.selected) + li.section.selected {
+  border-top:  1px solid #c1c1c1;
+  padding-top: 1px;
 }
 
 li.department {
@@ -130,10 +152,6 @@ li.department {
 
 li.course {
 	font-size: 0.8em;
-}
-
-li.section:first-child {
-	border: none;
 }
 
 li.section {
@@ -164,11 +182,10 @@ li.section .clue {
 
 }
 
-li.description {
+#columnNav li.container > ul > li.description {
 	margin-top: 10px;
 	border-top: 1px dotted #CCC;
-	padding: 10px 5px 5px 5px;
-	font: 16pt georgia, 'times new roman' serif;
+	padding: 20px 15px 5px 15px;
 	line-height: 22px;
 	cursor: default;
 }

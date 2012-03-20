@@ -19,11 +19,9 @@ h1 {
 }
 
 h2 {
-	color: #9d9d9d;
+	color: #444854;
 	text-align: center;
 	margin: -8px 0 4px 0;
-	font: normal 1em 'Coustard', serif;
-	text-shadow: 0 -2px 1px black;
 }
 
 /* @end */

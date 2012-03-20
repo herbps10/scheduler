@@ -43,13 +43,24 @@
 
 #content
 	#toolbar
-		%button#col-toggle.add-section.unexpanded.neon.orange Course Selector
-		%button#regen.neon.green{"href" => "#"} Generate
+		%button#col-toggle.add-section.hero.unexpanded +
+		%button#regen.passive{"href" => "#"} Generate
+		%button#help ?
+
+
 
 	#sidebar
+		#intro
+			%h2 Welcome to Knight Scheduler!
+			%p Knight Scheduler is a new web app designed to help Geneseo students find their perfect schedule.
+			%p Click on the <strong class="blue">blue "+"</strong> in the upper left to see the course list.
+			%p.int1 Now click on the department you are interested in, and you will see all of its courses. Click on a course, and you will see all the available sections, and a description for that course.
+			%p.int2 When you click on a section, this menu will disappear, and you will see your course lists (click the purple button to get this back at any time). New sections will be added to the "Not in Schedule" list first.
+			%p.int3 On clicking the "Generate" button, Knight Scheduler will attempt to fit your chosen classes together the best it can. Some sections might not fit, but you can always swap them out with others that did to fine tune your schedule. 
+
 		#resize
 			#schedule-courses
-				.title Courses in Schedule
+				.title In Schedule
 				%ul.list
 			
 			#schedule-conflicts
@@ -65,29 +76,29 @@
 		#full-cal-container
 			#cal-header
 				#days
-					.day.mon Mon
-					.day.tue Tue
-					.day.wed Wed
-					.day.thu Thu
-					.day.fri Fri
+					.day.mon M
+					.day.tue T
+					.day.wed W
+					.day.thu T
+					.day.fri F
 
 			#calendar-container
 				#time-axis
-					.time 8:00am
-					.time 9:00am
-					.time 10:00am
-					.time 11:00am
-					.time 12:00pm
-					.time 1:00pm
-					.time 2:00pm
-					.time 3:00pm
-					.time 4:00pm
-					.time 5:00pm
-					.time 6:00pm
-					.time 7:00pm
-					.time 8:00pm
-					.time 9:00pm
-					.time 10:00pm
+					.time 8am
+					.time 9am
+					.time 10am
+					.time 11am
+					.time 12pm
+					.time 1pm
+					.time 2pm
+					.time 3pm
+					.time 4pm
+					.time 5pm
+					.time 6pm
+					.time 7pm
+					.time 8pm
+					.time 9pm
+					.time 10pm
 				#grid
 					- 31.times do
 						.grid-halfhour

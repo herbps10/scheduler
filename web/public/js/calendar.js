@@ -33,16 +33,44 @@ $(document).ready(function() {
 
 	resize_components();
 	$(window).resize(resize_components);
+	$("#resize").fadeOut();
 	
 	$("#resize").splitter({
 		type: "h",
 		sizeTop: true,
 		resizeToWidth: true
 	});
+	$("#col-toggle.unexpanded").live( 'click', function() {
+		$(this).text("-");
+	});
 
+	$("#col-toggle.expanded").live( 'click', function() {
+		$(this).text("+");
+	});
+	$("#col-toggle").click(function() {
+		$(this).removeClass("hero");
+		$(this).addClass("passive");
+		$("p.int1").delay(600).fadeIn('slow');
+		$("p.int2").delay(3200).fadeIn('slow');
+		$("p.int3").delay(6400).fadeIn('slow');
+	});
+
+	$(".section").click(function() {
+		$("#regen").addClass("hero");
+		$("#regen").removeClass("passive");
+		$("#intro").fadeOut();
+		$("#resize").delay(600).fadeIn();
+	});
+
+	$("#help").click(function() {
+		$("#resize").fadeOut();
+		$("#help").delay(600).fadeIn();
+	});
 
 	$("#regen").click(function() {
 		$(this).text("Regenerate");
+		$(this).removeClass("hero");
+		$("#regen").addClass("passive");
 
 		if($("#col-toggle").hasClass('expanded')) {
 			columnToggle();
@@ -131,6 +159,7 @@ $(document).ready(function() {
 	*/
 
 	$("#schedules a").live('click', function() {
+
 		var index = $(this).attr('rel');
 
 		draw_schedule(index);
@@ -199,11 +228,10 @@ function columnToggle() {
 		});
 	}
 	else {
-		$("#course-col").slideDown();
-
 		$("#full-cal-container").slideUp(function() {
 			$("#col-toggle").removeClass('unexpanded').addClass("expanded");
 		});
+		$("#course-col").slideDown();
 	}
 }
 
