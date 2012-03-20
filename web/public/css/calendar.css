@@ -150,25 +150,9 @@ header > h1 {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	text-align: center;
-	border: 1px solid #464655;
 	font: 400 .8em Quicksand;
-	border-left-color: #464655;
-  color: #e4e2e2;
+  color: #545454;
   
-  background: rgb(108,115,137);
-  background: -moz-linear-gradient(top,  rgba(108,115,137,1) 0%, rgba(72,90,122,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(108,115,137,1)), color-stop(100%,rgba(72,90,122,1)));
-  background: -webkit-linear-gradient(top,  rgba(108,115,137,1) 0%,rgba(72,90,122,1) 100%);
-  background: -o-linear-gradient(top,  rgba(108,115,137,1) 0%,rgba(72,90,122,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(108,115,137,1) 0%,rgba(72,90,122,1) 100%);
-  background: linear-gradient(top,  rgba(108,115,137,1) 0%,rgba(72,90,122,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c7389', endColorstr='#485a7a',GradientType=0 );
-  
-}
-
-#cal-header .mon {
-	left: 1px;
-	border-left-color: #464655;
 }
 
 #page-wrap {
@@ -185,8 +169,8 @@ header > h1 {
 }
 
 #main-content {
-	padding-right: 250px;
-	margin: 0px 50px auto 20px;
+	padding-right: 229px;
+	margin: 20px 50px auto 20px;
 	height: 100%;
 }
 
@@ -194,7 +178,6 @@ header > h1 {
 	margin: 10px 2px 10px 0px;
 	height: 44px; 
 	bottom: 0px;
-	width: 44px;
 	display: inline-block;
 }
 
@@ -206,21 +189,21 @@ header > h1 {
 }
 
 #toolbar {
-	margin: 0px 40px;
-	text-align: right;
+	margin: -20px 40px 0px;
+	text-align: center;
 	height: 60px;
 }
 
 #content {
 	height: 100%;
 	position: relative;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 #sidebar {
-	height: 715px;
+	height: 700px;
 	width: 240px;
-	margin: 0px 40px 0px 0px;
+	margin: 44px 40px 0px 0px;
 	border-top-style: none;
 	z-index: 200;
 	position: absolute;
@@ -231,9 +214,9 @@ header > h1 {
 	padding: 8px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	width: 230px;
+	width: 224px;
 	height: 8px;
-	left: -4px;
+	left: -1px;
 	top: -1px;
 	position: absolute;
 	color: #f1f1f1;

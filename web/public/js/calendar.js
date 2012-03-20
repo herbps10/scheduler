@@ -357,11 +357,11 @@ function resize_components() {
 	$("#main-content").height((window_height - 200) + "px");
 	
 	if(window_height < 900) {
-		$("#sidebar").height((window_height - 180) + "px");
-		$("#resize").height((window_height - 180) + "px");
+		$("#sidebar").height((window_height - 202) + "px");
+		$("#resize").height((window_height - 202) + "px");
 	}
 	else {
-		$("#sidebar").height("715px");
-		$("#resize").height("715px");
+		$("#sidebar").height("691px");
+		$("#resize").height("691px");
 	}
 }
