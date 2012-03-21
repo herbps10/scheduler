@@ -3,14 +3,14 @@ $(document).ready(function() {
 	$('div#columnNav li.department').live('click', function(e) {
 		$(this).addClass('selected');
 		$(this).siblings().removeClass('selected')
-		$(e.target).children().children().show();
+		$(e.target).children().children().fadeIn('fast');
 		$(e.target).siblings().children().children().hide();
 	});
 	
 	$('div#columnNav li.course').live('click', function(e) {
 		$(this).addClass('selected');
 		$(this).siblings().removeClass('selected')
-		$(e.target).children().children().show();
+		$(e.target).children().children().fadeIn('fast');
 		$(e.target).siblings().children().children().hide();
 		$(this).addClass('selected');
 	});

@@ -62,10 +62,17 @@ $(document).ready(function() {
 		$("#resize").delay(600).fadeIn();
 	});
 
-	$("#help").click(function() {
+	$("#help").live('click', function() {
+		$(this).addClass("active")
 		$("#resize").fadeOut();
-		$("#help").delay(600).fadeIn();
+		$("#intro").delay(600).fadeIn();
 	});
+	$("#help.active").live('click', function() {
+		$(this).removeClass("active")
+		$("#intro").fadeOut();
+		$("#resize").delay(1000).fadeIn();
+	});
+
 
 	$("#regen").click(function() {
 		$(this).text("Regenerate");

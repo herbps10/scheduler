@@ -35,4 +35,14 @@
 																	click to add
 
 														%li.description
-															= course.description
+															<span class="dept">
+															= course.department
+															= course.courseNumber
+															</span>
+															<span class="colon">:</span><br />
+															<span class="course">
+															= course.title
+															</span>
+															.divider_h
+															%p
+																= course.description
