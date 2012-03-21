@@ -29,6 +29,8 @@ use OmniAuth::Builder do
 end
 
 get '/' do
+	redirect :calendar
+
 	@session = session
 
 	erb :splash, { :layout => false }
