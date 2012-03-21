@@ -20,9 +20,11 @@
 					%a{"href" => "/user/logout?redirect=calendar"} logout
 			- else
 				#user-actions
-					%a.user-register register
-					%a.user-login login
-					%a{"href" => "/auth/facebook"} Login with Facebook
+					Contact us at <a href="mailto:err2@geneseo.edu">err2@geneseo.edu</a> or <a href="mailto:hps1@geneseo.edu">hps1@geneseo.edu</a>
+					- if false
+						%a.user-register register
+						%a.user-login login
+						%a{"href" => "/auth/facebook"} Login with Facebook
 
 			#small-login
 				%form{"action" => "/user/authenticate.json", "method" => "post"}
