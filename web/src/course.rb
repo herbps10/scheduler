@@ -1,5 +1,5 @@
 class Course
-	attr_accessor :title, :sections, :courseNumber, :description, :department
+	attr_accessor :title, :sections, :courseNumber, :description, :department, :credits
 	
 	def initialize(title)
 		@sections = SectionList.new
@@ -10,6 +10,7 @@ class Course
 		@courseNumber = data["courseNumber"]
 		@description = data["description"]
 		@department = data["department"]
+		@credits = data["credits"]
 
 		$redis.smembers(RedisHelper::course_sections(@title)).each do |crn|
 			@sections.add Section.new(crn)

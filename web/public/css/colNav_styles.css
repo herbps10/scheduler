@@ -111,7 +111,7 @@ li.container .sections_container{
 	padding: 6px 8px;
 	cursor: pointer;
 }
-#columnNav li.container > ul > li:not(.description):hover {
+#columnNav li.container > ul > li:not(.description,.title):hover {
   background-color: #f3f3f3;
 }
 #columnNav li.container > ul > li:last-of-type {

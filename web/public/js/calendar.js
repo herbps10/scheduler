@@ -224,6 +224,24 @@ $(document).ready(function() {
 	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
 		columnToggle();
 	});
+
+
+	
+	$(".subscribe-button").click(function() {
+		$.get($(this).attr('href'));
+		$(this).text('unsubscribe');
+
+		$(this).attr('href', $(this).attr('href').replace('add', 'remove'));
+		return false;
+	});
+
+	$(".unsubscribe-button").click(function() {
+		$.get($(this).attr('href'));
+		$(this).text('subscribe');
+
+		$(this).attr('href', $(this).attr('href').replace('remove', 'add'));
+		return false;
+	});
 });
 
 function columnToggle() {

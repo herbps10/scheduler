@@ -21,6 +21,8 @@ class Saver
 
 		$redis.zadd(RedisHelper::department(@department), @courseNumber.to_i, @title.gsub(' ', '-'))
 
+		$redis.sadd("courses", @title)
+
 		save_section
 	end
 
@@ -33,12 +35,16 @@ class Saver
 		$redis.hset(RedisHelper::section(@crn), 'location', @location)
 		$redis.hset(RedisHelper::section(@crn), 'credits', @credits)
 		$redis.hset(RedisHelper::section(@crn), 'time', @time)
+		$redis.hset(RedisHelper::section(@crn), 'capacity', @capacity)
+		$redis.hset(RedisHelper::section(@crn), 'actual', @actual)
 		$redis.hset(RedisHelper::course(@title), 'description', @description)
 		$redis.hset(RedisHelper::section(@crn), 'days', @days)
 
 		$redis.sadd(RedisHelper::time(@days, @time), @crn);
 
 		$redis.sadd(RedisHelper::course_sections(@title), @crn)
+
+		$redis.sadd("sections", @crn)
 	end
 
 	def save
@@ -46,14 +52,12 @@ class Saver
 			next if field == :crn
 
 			$redis.hset(@crn, field, instance_variable_get("@" + field.to_s))
+
 		end
 
 	end
 end
 
-$redis = Redis.new
-
-$redis.flushdb
 
 departments = { "ACCT" => "Accounting", 
 		"ANTH" => "Anthropology",
@@ -86,8 +90,8 @@ departments = { "ACCT" => "Accounting",
 		"PLSC" => "Political Science",
 		"SPAN" => "Spanish",
 		"FREN" => "French",
-		"JAPN" => "Japan",
-		"GERM" => "Germany",
+		"JAPN" => "Japanese",
+		"GERM" => "German",
 		"LATN" => "Latin",
 		"ITAL" => "Italian",
 		"RUSS" => "Russian",
@@ -98,6 +102,27 @@ departments = { "ACCT" => "Accounting",
 		"PHIL" => "Philosophy",
 		"PSYC" => "Psychology",
 		"WMST" => "Women's Studies"}
+
+
+$redis = Redis.new
+
+#$redis.flushdb
+
+departments.each_key do |department|
+	$redis.del RedisHelper::department(department)
+end
+
+$redis.smembers("sections").each do |crn|
+	$redis.del RedisHelper::section(crn)
+
+end
+
+$redis.smembers("courses").each do |title|
+	$redis.del RedisHelper::course(title)
+	$redis.del RedisHelper::course_sections(title)
+end
+
+
 
 departments.each_pair do |department, full_department|
 	$redis.sadd(RedisHelper.departments, department)
@@ -205,9 +230,4 @@ departments.each_pair do |department, full_department|
 		course_index += 1
 
 	end
-end
-
-departments.each_pair do |department, full_department|
-	
-
 end

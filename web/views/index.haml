@@ -17,6 +17,28 @@
 											%ul 
 												%li.container.sections_container
 													%ul.sections
+														%li.title
+															<span class="dept">
+															= course.department
+															= course.courseNumber
+															</span>
+															
+															<span class="colon">:</span><br />
+															<span class="course">
+															= course.title
+															</span>
+															.divider_h
+
+														%li.description
+															%p
+																= course.description
+															
+															%p
+																= course.credits
+																credits.
+															
+																
+
 														- course.sections.each do |section|
 															%li.section{ "rel" => section.crn }
 																= section.instructor
@@ -34,15 +56,15 @@
 																.clue
 																	click to add
 
-														%li.description
-															<span class="dept">
-															= course.department
-															= course.courseNumber
-															</span>
-															<span class="colon">:</span><br />
-															<span class="course">
-															= course.title
-															</span>
-															.divider_h
-															%p
-																= course.description
+																.students
+																	#{section.actual}/#{section.capacity}
+																	%progress{"max" => section.capacity, "value" => section.actual }
+																		#{section.actual}/#{section.capacity} students in class.
+																- if false
+																	- if session[:logged_in]
+																		- if $redis.sismember("user:#{@email}:subscriptions", section.crn)
+																			<a class='unsubscribe-button' href="/user/subscriptions/remove?crn=#{section.crn}&redirect=false">unsubscribe</a>
+																		- else
+																			<a class='subscribe-button' href="/user/subscriptions/add?crn=#{section.crn}&redirect=false">subscribe</a> for updates.
+
+														

@@ -129,6 +129,8 @@ get '/scheduletester' do
 end
 
 get "/calendar" do
+	@email = session[:email]
+
 	@data = Everything.new
 
 	@session = session
@@ -153,6 +155,7 @@ post "/user/new" do
 	$redis.set("user:#{username}:id", id)
 	$redis.set("user:#{id}:username", username);
 	$redis.set("user:#{username}:password", Digest::SHA1.hexdigest(password))
+	$redis.sadd("users", username)
 
 	session[:logged_in] = true
 	session[:email] = username
@@ -204,6 +207,53 @@ get "/user/logout" do
 	else
 		redirect "/user/login"
 	end
+end
+
+get "/user/phone" do
+	email = session[:email]
+	phone = params[:phone]
+
+	$redis.set("user:#{email}:phone", phone)
+
+	redirect "/user/subscriptions"
+end
+
+get "/user/subscriptions" do
+	@email = session[:email]
+	@phone = $redis.get("user:#{@email}:phone")
+	@subscriptions = $redis.smembers("user:#{@email}:subscriptions")
+
+	haml :subscriptions
+end
+
+get "/user/subscriptions/remove" do
+	@email = session[:email]
+	crn = params[:crn]
+
+	$redis.srem("user:#{@email}:subscriptions", crn);
+
+	redirect "/user/subscriptions"
+end
+
+get "/user/subscriptions/add" do
+	crn = params[:crn]
+	@email = session[:email]
+
+	section = $redis.hgetall(RedisHelper::section(crn))
+
+	full = 0
+	full = 1 if(section["actual"].to_i >= section["capacity"].to_i)
+
+	$redis.sadd("user:#{@email}:subscriptions", crn)
+
+	$redis.hset("user:#{@email}:subscription:#{crn}", "crn", crn)
+	$redis.hset("user:#{@email}:subscription:#{crn}", "full", full)
+
+	do_redirect = true
+	do_redirect = false if(params[:redirect] == "false")
+
+
+	redirect "/user/subscriptions" if do_redirect
 end
 
 get "/dashboard" do

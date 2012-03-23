@@ -1,12 +1,3 @@
-* {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
 header {
   opacity: 1;
   position: absolute;
@@ -566,7 +557,7 @@ button#regen.hero {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c92626', endColorstr='#ff3030',GradientType=0 );
   
   border: 1px solid #fe0b0b;
-  text-shadow: 0 01px 0 #4e4e4e;
+  /*text-shadow: 0 01px 0 #4e4e4e;*/
 }
 button#regen.hero:hover {
   background: rgb(211,29,29);
@@ -695,7 +686,6 @@ button#col-toggle.passive:active {
 }
 
 .clue {
-  display: none;
 }
 
 #columnNav li.container > ul > li.section.selected {
@@ -703,7 +693,7 @@ button#col-toggle.passive:active {
 }
 
 #columnNav li.container > ul > li.description {
-  margin-top: 10px;
+  margin-top: 40px;
   cursor: default;
 }
 
@@ -721,22 +711,33 @@ p {
 	margin-top: 10px;
 	padding: 5px;
 	cursor: default;
-  line-height: 1.1em;
-  letter-spacing: 1.1px;
-  text-align: left;
-  font-family: Quattrocento, serif;
-  text-indent: 24px;
+	line-height: 1.1em;
+	letter-spacing: 1.1px;
+	text-align: left;
+	font-family: Quattrocento, serif;
+	text-indent: 24px;
 }
 
-#columnNav li.description .divider_h {
+#columnNav li.title .divider_h {
   margin: 10px 0px 10px 0px;
 }
 
-#columnNav li.description .dept {
+#columnNav li.title .dept {
   font-size: 1.4em;
 }
-#columnNav li.description .course {
+#columnNav li.title .course {
   font-size: 1.1em;
+}
+
+#columnNav .students {
+	position: absolute;
+	right: 100px;
+	top: 10px;
+	font-size: 8pt;
+}
+
+#columnNav .students progress {
+	width: 40px;
 }
 
 #intro {
