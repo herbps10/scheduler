@@ -4,7 +4,7 @@
 }
 
 #dash {
-  min-width: 920px;
+  min-width: 620px;
   margin: 40px;
   position: relative;
   padding: 10px;
@@ -26,10 +26,96 @@ h2 {
   text-align: center;
 }
 
+table.schedule {
+  position: relative;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: left;
+  margin: 40px 40px 80px;
+}
+
+td.title {
+  padding: 12px;
+  width: 30%;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+  font-size: 1.2em;
+  border-style: none;
+}
+
+td.title.active {
+  border-left: 2px solid #b00909;
+  background-color: #f0f0f0;
+  padding-left: 11px;
+}
+
+tr.course .info {
+  display: none;
+  position: absolute;
+  width: 70%;
+  height: 250px;
+  border-style: none;
+  top: 0px;
+  padding: 12px 12px 12px 28px;
+}
+
+.info .light {
+  color: gray;
+  font-weight: 300;
+}
+
+.info .title {
+  color: #b00909;
+  font: 1.8em "Flamenco";
+  margin-bottom: 8px;  
+}
+
+.credits {
+  color: #a9a9a9;
+  font-size: .8em;
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+.info .professor {
+  display: inline-block;
+  font-size: 1.1em;
+  color: black;
+  font-style: italic;
+  margin-left: 14px;
+}
+
+.info .location {
+  display: inline-block;
+  font-size: 1.1em;
+  color: black;
+}
+
+.info .days {
+  display: inline-block;
+  color: black;
+  font-size: 1.1em;
+}
+
+.info .time {
+  display: inline-block;
+  font-size: 1.1em;
+  color: black;
+}
+
+p.description {
+  height: 100px;
+  overflow-y: auto;
+}
+
+td.title.active + .info {
+  display: block;
+}
+
 .node {
   padding: 10px;
   margin: 10px 0px;
-  display: inline-block;
   position: relative;
   
 	box-sizing: border-box;
@@ -37,20 +123,20 @@ h2 {
 	-moz-box-sizing: border-box;
 }
 
+#content_0 {
+  border: 1px solid #e0e0e0;
+  height: 350px;
+}
+
 .rcount_1 {
   width: 100%;
+  position: relative;
 }
 
 .rcount_2 {
   width: 50%;
   padding: 10px;
-}
-.node{
-  border-left: 2px solid #040404;
-}
-
-#dash p {
-  margin: 0;
+  display: inline-block;
 }
 
 /* @end */
