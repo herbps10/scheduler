@@ -246,9 +246,11 @@ button#col-toggle {
 }
 
 #toolbar {
-	margin: 0px 20px 40px;
-	padding-top: 20px;
+	margin: 20px 20px 40px;
+	padding: 10px;
 	height: 40px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .divider_h {
@@ -290,7 +292,7 @@ button#col-toggle {
 
 #sidebar div.title {
 	padding: 0px 0px;
-	margin-top: 0px;
+	margin-top: -6px;
 	margin-bottom: 0px;
 	width: 210px;
 	position: absolute;
