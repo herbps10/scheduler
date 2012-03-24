@@ -13,7 +13,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
   z-index: 100;
 }
 
@@ -97,7 +96,6 @@ header > h1 {
 
 #course-col {
 	width: 100%;
-	min-width: 600px;
 	max-height: 693px;
 	margin: 0px 10px 10px 0px;
 	height: 100%;
@@ -255,8 +253,8 @@ button#col-toggle {
 }
 
 #toolbar {
-	margin: 20px 20px 40px;
-	padding: 10px;
+	margin: 0px 0px 30px;
+	padding: 5px 20px;
 	height: 40px;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
@@ -280,9 +278,9 @@ button#col-toggle {
 	height: 80%;
 	min-width: 740px;
 	position: relative;
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-bottom: 60px;
-	padding: 0px 20px 20px;
+	padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0 -5px 40px #fefefe;
   -webkit-box-shadow: 0 -5px 40px #fefefe;
@@ -373,7 +371,7 @@ button#col-toggle {
 	z-index: 0;
 }
 
-.time {
+#time-axis .time {
 	height: 45px;
 	margin-right: 2px;
 	color: #717171;
@@ -696,12 +694,30 @@ button#col-toggle.passive:active {
   background: url(../images/ic_minus.png) no-repeat center center;
 }
 
-.clue {
-  display: none;
+
+.req, .opt {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  margin: 16px 6px;
+  top: -6px;
+  cursor: pointer;
 }
 
-#columnNav li.container > ul > li.section.selected {
-  
+.req {
+  background-color: #ffce8d;
+  border: 1px solid #a2845a;
+  right: 4px;
+}
+
+.opt {
+  background-color: #c4ff9b;
+  border: 1px solid #7da063;
+  right: 36px;
+}
+
+#columnNav li.container > ul > li {
+  cursor: default;
 }
 
 #columnNav li.container > ul > li.description {
@@ -744,7 +760,7 @@ p {
 #intro {
     background-color: #ffffff;
     height: 100%;
-    position: a;
+    overflow-y: auto;
     -moz-box-shadow: 0 0 20px #ffffff;
     -webkit-box-shadow: 0 0 20px #ffffff;
     box-shadow: 0 0 20px #ffffff;

@@ -55,7 +55,7 @@ $(document).ready(function() {
 		$("p.int3").delay(6400).fadeIn('slow');
 	});
 
-	$(".section").click(function() {
+	$(".section button").click(function() {
 		$("#regen").addClass("hero");
 		$("#regen").removeClass("passive");
 		$("#intro").fadeOut();

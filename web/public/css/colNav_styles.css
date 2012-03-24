@@ -106,12 +106,14 @@ li.container .sections_container{
 }
 
 #columnNav li.container > ul > li { /*Style for all column rows*/
-
+  cursor: pointer;
 	border-bottom: 1px dotted #ececec;
 	padding: 6px 8px;
-	cursor: pointer;
 }
-#columnNav li.container > ul > li:not(.description):hover {
+#columnNav li.container > ul > li.section {
+  cursor: default;
+}
+#columnNav li.container > ul > li:not(ul.sections > li):hover {
   background-color: #f3f3f3;
 }
 #columnNav li.container > ul > li:last-of-type {
@@ -137,10 +139,12 @@ li.container .sections_container{
 #columnNav li.container > ul > li.section.selected {
   border-top: none;
   padding-top: 6px;
+  cursor: default;
 }
 #columnNav li.container > ul > li.section:not(.selected) + li.section.selected {
   border-top:  1px solid #c1c1c1;
   padding-top: 5px;
+  cursor: default;
 }
 
 li.department {
@@ -153,7 +157,7 @@ li.course {
 
 li.section {
 	position: relative;
-	cursor: pointer;
+	cursor: default;
 	padding: 2px 8px;
 	color: #3e424b;
 }
