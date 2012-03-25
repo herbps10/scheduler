@@ -41,20 +41,18 @@
 
 														- course.sections.each do |section|
 															%li.section{ "rel" => section.crn }
-																= section.instructor
-																%br
-
+																.instructor
+																	= section.instructor
 																- section.times.each do |time|
 																	- if time.tba == true
-																		%span.time Time TBA
+																		.time Time TBA
 																	- else 
 																		%span.days
 																			= time.prettyDays
 																		%span.time
 																			= time.prettyTime
-
-																.clue
-																	click to add
+																%button.req +
+																%button.opt +
 
 																.students
 																	#{section.actual}/#{section.capacity}

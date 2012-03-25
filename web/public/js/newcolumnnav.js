@@ -15,10 +15,15 @@ $(document).ready(function() {
 		$(this).addClass('selected');
 	});
 
-	$('div#columnNav li.section:not(.selected)').live('click', function(e) {
-		var crn = $(this).attr('rel')
+	$('div#columnNav li.section:not(.selected) button').live('click', function(e) {
+		var crn = $(this).parent().attr('rel')
 
+		$(this).parent().addClass('selected');
 		$(this).addClass('selected');
+		
+		if ($(this).hasClass('opt')) {
+
+		}
 
 		$.get('/section.json', {
 			crn: crn
@@ -33,15 +38,17 @@ $(document).ready(function() {
 		});
 	});
 
-	$('div#columnNav li.section.selected').live('click', function(e) {
-		$(e.target).removeClass('selected');
-		$("#schedule-conflicts .course." + $(this).attr('rel')).remove();
+	$('div#columnNav li.section.selected button').live('click', function(e) {
+		$(e.target).parent().removeClass('selected');
+		$(this).removeClass('selected');
+
+		$("#schedule-conflicts .course." + $(this).parent().attr('rel')).remove();
 
 		var sections = [];
 
 		for(var i = 0; i < window.schedule_data.sections.length; i++)
 		{
-			if(window.schedule_data.sections[i].crn != $(this).attr('rel'))
+			if(window.schedule_data.sections[i].crn != $(this).parent().attr('rel'))
 			{
 				sections.push(window.schedule_data.sections[i]);
 			}
