@@ -1,5 +1,5 @@
 class Section
-	attr_accessor :crn, :title, :instructor, :section, :times, :courseNumber, :department, :credits, :conflicted, :description, :actual, :capacity
+	attr_accessor :crn, :title, :instructor, :section, :times, :courseNumber, :department, :credits, :conflicted, :description, :actual, :capacity, :location
 
 	def initialize(crn)
 		data = $redis.hgetall(RedisHelper::section(crn))
@@ -14,6 +14,7 @@ class Section
 		@description = data["description"]
 		@actual = data["actual"]
 		@capacity = data["capacity"]
+		@location = data["location"]
 
 		@times = []
 		data["time"].split(',').each_with_index do |time, index|

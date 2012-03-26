@@ -22,9 +22,10 @@ Array.prototype.diff = function(a) { return this.filter(function(i) {return !(a.
 }
 
 $(document).ready(function() {
-
-	window.schedule_data = {}
-	window.schedule_data.sections = [];
+	if(window.schedule_data == null) {
+		window.schedule_data = {}
+		window.schedule_data.sections = [];
+	}
 
 	//$("#resize").css('height', $("#sidebar").height() - $("#regen").outerHeight(true));
 	var listHeight = ($("#calendar-container").height() - $("#sidebar > .title").height() - $("#regen").height()) / 2;
@@ -33,7 +34,15 @@ $(document).ready(function() {
 
 	resize_components();
 	$(window).resize(resize_components);
-	$("#resize").fadeOut();
+
+	// If not logged in, show the intro first
+	if(!window.knight_logged_in) {
+		$("#resize").fadeOut();
+	}
+
+	if(window.knight_logged_in) {
+		$("#intro").hide();
+	}
 	
 	$("#resize").splitter({
 		type: "h",
@@ -99,6 +108,8 @@ $(document).ready(function() {
 			if ( 1 < window.schedule_data.schedules.length) {
 				$(".more-schedules").delay(1000).fadeIn();
 			}
+
+			saveSchedule();
 		});
 	});
 
@@ -218,6 +229,37 @@ $(document).ready(function() {
 		}
 
 		$(this).parent().appendTo("#schedule-courses > ul.list");
+		
+		$("#schedule-courses .course." + conflicted_section + " button.close").removeClass('close').addClass('remove');
+
+		saveSchedule();
+	});
+
+	$("#schedule-conflicts .course .close").live('click', function() {
+		var crn = $(this).parent().attr('rel');
+		
+		var index = 0;
+		for(var i = 0; i < window.schedule_data.sections.length; i++) {
+			if(window.schedule_data.sections[i].crn == crn) {
+				index = i;
+				break;
+			}
+		}
+
+		window.schedule_data.sections.splice(index, 1);
+
+		$(this).parent().remove();
+
+		saveSchedule();
+	});
+
+	$("#schedule-courses .course button.remove").live('click', function() {
+		var crn = $(this).parent().attr('rel');
+		$(this).parent().appendTo("#schedule-conflicts > ul.list");
+
+		$("#schedule-conflicts .course." + crn + " button.remove").removeClass('remove').addClass('close');
+
+		saveSchedule();
 	});
 
 	
@@ -358,11 +400,11 @@ function format_times(times) {
 }
 
 function add_to_course_list(course) {
-	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='remove' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function add_to_conflicts_list(course) {
-	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='close' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
 }
 
 function get_section_data(crn) {
@@ -405,7 +447,6 @@ function times_conflict(time1, time2) {
 
 function resize_components() {
 	var window_height = $(window).height();
-	console.log(window_height);
 
 	$("#main-content").height((window_height - 200) + "px");
 	
@@ -417,4 +458,20 @@ function resize_components() {
 		$("#sidebar").height("691px");
 		$("#resize").height("691px");
 	}
+}
+
+function saveSchedule() {
+	// Check to make sure we're logged in
+
+	if(window.knight_logged_in) {
+		var crns = [];
+
+		$("#schedule-courses .course").each(function() {
+			crns.push($(this).attr('rel'));
+		});
+		
+		$.get("/user/schedule/save", {
+			crns: crns
+		});
+	};
 }

@@ -129,11 +129,15 @@ get '/scheduletester' do
 end
 
 get "/calendar" do
-	@email = session[:email]
-
 	@data = Everything.new
 
+	@email = session[:email]
 	@session = session
+
+	if(@email != nil)
+		@saved_crns = $redis.smembers("user:#{@email}:schedule")
+		@saved_crns_str = '["' + @saved_crns.join('", "') + '"]'
+	end
 
 	haml :calendar, { :layout => false }
 end
@@ -256,10 +260,31 @@ get "/user/subscriptions/add" do
 	redirect "/user/subscriptions" if do_redirect
 end
 
+get "/user/schedule/save" do
+	@email = session[:email]
+	crns = params[:crns]
+
+	$redis.del("user:#{@email}:schedule")
+
+	crns.each do |crn|
+		$redis.sadd("user:#{@email}:schedule", crn)
+	end
+end
+
 get "/dashboard" do
 	@session = session
+	@email = session[:email]
 
-	haml :dashboard
+	crns = $redis.smembers("user:#{@email}:schedule")
+
+	@sections = []
+	crns.each do |crn|
+		@sections.push Section.new(crn)
+	end
+
+	@subscriptions = $redis.smembers("user:#{@email}:subscriptions")
+
+	haml :dashboard, { :layout => false }
 end
 
 get "/facebook" do

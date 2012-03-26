@@ -1,23 +1,24 @@
 $(document).ready(function(){
 	$("td.title").live('click', function(e){
-		switch(e.target.id){
-			case "first":
-				$("#first").addClass("active");
-				$("#second").removeClass("active");
-				$("#third").removeClass("active");
-						console.log("heelo");
-			break;
-			case "second":
-				$("#first").removeClass("active");
-				$("#second").addClass("active");
-				$("#third").removeClass("active");
-			break;
-			case "third":
-				$("#first").removeClass("active");
-				$("#second").removeClass("active");
-				$("#third").addClass("active");
-			break;
+		$("td.title").removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$("form.subscribe input[type=checkbox]").click(function() {
+		var crn = $(this).attr('rel');
+		
+		if($(this).is(":checked")) {
+			// Subscribe
+
+			$.get("/user/subscriptions/add", {
+				crn: crn
+			});
 		}
-		console.log($(this));
+		else {
+			// Unsubscribe
+			$.get("/user/subscriptions/remove", {
+				crn: crn
+			});
+		}
 	});
 });

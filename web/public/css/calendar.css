@@ -202,6 +202,7 @@ button#help {
   border-radius: 20px;
   font: 1.85em Flamenco;
 }
+
 button#help:hover {
   background: rgb(127,103,181);
   background: -moz-linear-gradient(top,  rgba(127,103,181,1) 0%, rgba(165,133,191,1) 53%, rgba(127,103,181,1) 60%, rgba(136,43,155,1) 100%);
@@ -213,12 +214,14 @@ button#help:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f67b5', endColorstr='#882b9b',GradientType=0 );
   
 }
+
 button#help:active {
   -moz-box-shadow: inset 0 1px 8px #3c006c;
   -webkit-box-shadow: inset 0 1px 8px #3c006c;
   box-shadow: inset 0 1px 8px #3c006c;
   line-height: 1.15em;
 }
+
 button#help.active {
   -moz-box-shadow: inset 0 1px 8px #3c006c;
   -webkit-box-shadow: inset 0 1px 8px #3c006c;
@@ -525,6 +528,12 @@ button#col-toggle {
 
 #schedule-courses button.swap {
 	display: none;
+}
+
+#sidebar button.close, #sidebar button.remove {
+	float: right;
+	border: 1px solid #abccec;
+	cursor: pointer;
 }
 
 #sidebar ul.list {

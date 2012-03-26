@@ -38,6 +38,7 @@ class Saver
 		$redis.hset(RedisHelper::section(@crn), 'capacity', @capacity)
 		$redis.hset(RedisHelper::section(@crn), 'actual', @actual)
 		$redis.hset(RedisHelper::course(@title), 'description', @description)
+		$redis.hset(RedisHelper::section(@crn), 'description', @description)
 		$redis.hset(RedisHelper::section(@crn), 'days', @days)
 
 		$redis.sadd(RedisHelper::time(@days, @time), @crn);
@@ -198,14 +199,14 @@ departments.each_pair do |department, full_department|
 				course.remaining = cell.content	
 			elsif(index == 16) 	
 				course.instructor = cell.content	
+			elsif(index == 18)
+				course.location = cell.content
 			elsif(index == 19) 	
 				if valid_row == true
 					if course.time_id == nil
 						#puts course.days
 						#puts course.time
 					end
-
-					course.location = cell.content 
 
 					if previous_course == nil
 						course.save_course
