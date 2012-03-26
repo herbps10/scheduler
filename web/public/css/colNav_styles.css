@@ -113,8 +113,11 @@ li.container .sections_container{
 #columnNav li.container > ul > li:not(.description,.title):hover {
   cursor: default;
 }
-#columnNav li.container > ul > li:not(ul.sections > li):hover {
+#columnNav li.container > ul > li:hover {
   background-color: #f3f3f3;
+}
+#columnNav li.container > ul.sections > li:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 #columnNav li.container > ul > li:last-of-type {
 	border-bottom: none;

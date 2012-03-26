@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-=======
-* {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
+
 
 html, body {
   margin: 0;
 }
 
->>>>>>> A few more fixes to the fit.
 header {
   opacity: 1;
   position: absolute;
@@ -55,26 +45,35 @@ header > h1 {
 	cursor: pointer;
 }
 
-
+#small-login {
+  position: fixed;
+  left: 50%;
+}
 
 #user-actions-wrapper {
-	position: absolute;
-	margin-left: 30%;
-	width: 800px;
-	height: 500px;
+	position: relative;
+	left: -50%;
+  margin: auto;
+  padding: 14px;
+  width: 600px;
+	height: 350px;
 	background: white;
 	border: 1px solid #ccc;
 	top: 40%;
 	display: none;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  z-index: 1000;
 }
 
 #user-actions-wrapper #register {
-	width: 350px;
+	width: 400px;
 	float: left;
 }
 
 #user-actions-wrapper #login {
-	width: 400px;
+	width: 200px;
 	float: right;
 }
 
@@ -545,8 +544,15 @@ button#col-toggle {
 
 #sidebar button.close, #sidebar button.remove {
 	float: right;
-	border: 1px solid #abccec;
 	cursor: pointer;
+	border: none;
+}
+
+#sidebar button.close {
+  background: url(../images/close.png) no-repeat center center;
+}
+#sidebar button.remove {
+  background: url(../images/remove.png) no-repeat center center;
 }
 
 #sidebar ul.list {
@@ -709,8 +715,8 @@ button#col-toggle.passive:active {
 .req, .opt {
   position: absolute;
   height: 24px;
-  width: 24px;
-  margin: 16px 6px;
+  width: 100px;
+  margin: 16px 0px;
   top: -6px;
   cursor: pointer;
 }
@@ -724,7 +730,7 @@ button#col-toggle.passive:active {
 .opt {
   background-color: #c4ff9b;
   border: 1px solid #7da063;
-  right: 36px;
+  right: 4px;
 }
 
 #columnNav li.container > ul > li {
@@ -732,7 +738,6 @@ button#col-toggle.passive:active {
 }
 
 #columnNav li.container > ul > li.description {
-  margin-top: 40px;
   cursor: default;
 }
 
@@ -769,9 +774,6 @@ p {
 }
 
 #columnNav .students {
-	position: absolute;
-	right: 100px;
-	top: 10px;
 	font-size: 8pt;
 }
 
@@ -798,5 +800,6 @@ p {
 }
 
 .int1, .int2, .int3{
-display: none;
-3
+  display: none;
+
+}
