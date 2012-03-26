@@ -53,8 +53,8 @@ $(document).ready(function() {
 		$(this).text("-");
 	});
 
-	$("#col-toggle.expanded").live( 'click', function() {
-		$(this).text("+");
+	$("#col-toggle.expanded, #regen").live( 'click', function() {
+		$("#col-toggle").text("+");
 	});
 	$("#col-toggle").click(function() {
 		$(this).removeClass("hero");

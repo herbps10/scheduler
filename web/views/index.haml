@@ -54,9 +54,10 @@
 																%button.opt Click to add
 																%br
 																.students
-																	#{section.actual}/#{section.capacity}
+																	#{section.actual} #{section.capacity}
 																	%progress{"max" => section.capacity, "value" => section.actual }
-																		#{section.actual}/#{section.capacity} students in class.
+																	#{section.actual} #{section.capacity} 
+																	students in class.
 																- if false
 																	- if session[:logged_in]
 																		- if $redis.sismember("user:#{@email}:subscriptions", section.crn)
