@@ -153,7 +153,7 @@ $(document).ready(function() {
 	});
 
 	$("#user-actions a.user-login").click(function() {
-		$("#small-login").slideDown();
+		$("#user-actions-wrapper").fadeIn();
 	});
 
 	$("#user-actions a.user-register").click(function() {

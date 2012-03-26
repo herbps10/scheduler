@@ -1,20 +1,30 @@
-#login
-	- if @session[:logged_in] == true
-		You are logged in as
-		= @session[:username]
-		= "."
-		%a{ "href" => "/user/logout" } logout.
-	- else
-		%p
-			Don't have an account?
-			%a{"href" => "/user/register"} register.
+#user-actions-wrapper
+	#register
+		%form{ "action" => "/user/new", "method" => "post" }
+			%p
+				Email:
+				%input.align{"type" => "text", "name" => "email"}
 
-	%form{ "action" => "/user/authenticate", "method" => "post" }
-		%p
-			%label Email
-			%input.align{"type" => "text", "name" => "email"}
-		%p
-			%label Password:
-			%input.align{"type" => "password", "name" => "password"}
-		
-		%input{"type" => "submit", "value" => "Login"}
+			%p
+				Phone:
+				%input.align{"type" => "text", "name" => "phone"}
+
+			%p
+				Password: (please don't use your Geneseo password)
+				%input.align{"type" => "password", "name" => "password"}
+			%p
+				Again:
+				%input.align{"type" => "password", "name" => "password2"}
+
+			%input{"type" => "submit", "value" => "Register"}
+
+	#login
+		%form{ "action" => "/user/authenticate.json", "method" => "post" }
+			%p
+				%label Email
+				%input.align{"type" => "text", "name" => "email"}
+			%p
+				%label Password:
+				%input.align{"type" => "password", "name" => "password"}
+			
+			%input{"type" => "submit", "value" => "Login"}

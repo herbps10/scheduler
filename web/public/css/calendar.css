@@ -34,38 +34,30 @@ header > h1 {
 	cursor: pointer;
 }
 
-#small-login {
+
+
+#user-actions-wrapper {
 	position: absolute;
-	right: 0px;
-	top: 0px;
-	z-index: 1000;
-	padding: 10px;
-	border-left: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	display: none;
+	margin-left: 30%;
+	width: 800px;
+	height: 500px;
 	background: white;
-	width: 200px;
+	border: 1px solid #ccc;
+	top: 40%;
+	display: none;
 }
 
-#small-login input[type="text"], #small-login input[type="password"] {
-	border: 1px solid #CCC;
-	display: block;
+#user-actions-wrapper #register {
+	width: 350px;
+	float: left;
 }
 
-#small-login input[type="submit"] {
-	margin-top: 5px;
+#user-actions-wrapper #login {
+	width: 400px;
 	float: right;
 }
 
-#small-login #register {
-	font-size: 8pt;
-	width: 180px;
-}
 
-#small-login .login-cancel {
-	font-size: 10pt;
-	float: left;
-}
 
 #schedules-container {
 	width: 100%;
@@ -786,4 +778,4 @@ p {
 
 .int1, .int2, .int3{
 display: none;
-}
+3

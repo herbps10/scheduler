@@ -60,25 +60,10 @@
 					<div class="fb-like" data-href="http://www.knightscheduler.com" data-send="true" data-layout="button_count" data-width="200" data-show-faces="false" data-action="recommend" data-font="arial"></div>
 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="230" data-href="www.knightscheduler.com"></div>
 					
-					%a.user-register register
 					%a.user-login login
-					%a{"href" => "/auth/facebook"} Login with Facebook
 
 			#small-login
-				%form{"action" => "/user/authenticate.json", "method" => "post"}
-					%div 
-						%input{"name" => "email", "type" => "text"}
-					%div
-						%input{"name" => "password", "type" => "password"}
-
-					#register
-						Don't have an account? 
-						%a{"href" => "/user/register"} register
-
-					#message
-
-					%input{"type" => "submit", "value" => "Login"}
-				%button.close Close
+				= haml :login
 
 
 #content

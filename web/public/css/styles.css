@@ -447,21 +447,6 @@ button.neon.orange:active {
 	display: none;
 }
 
-#login {
-	background: white;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	width: 400px;
-	padding: 10px 0;
-
-	margin: auto;
-	position: relative;
-	display: none;
-}
-
-#login label {
-}
-
 form input.align {
 	position: absolute;
 	left: 120px;
@@ -471,16 +456,6 @@ form input.align {
 
 form input[type=submit] {
 	margin-left: 120px;
-}
-
-#register {
-	width: 720px;
-	margin: auto;
-	position: relative;
-	padding: 10px;
-	background: white;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
 }
 
 /* @end */
