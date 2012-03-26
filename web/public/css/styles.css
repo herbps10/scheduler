@@ -443,15 +443,87 @@ button.neon.orange:active {
 	display: none;
 }
 
+#user-actions-wrapper {
+	position: relative;
+	left: -50%;
+  margin: auto;
+  width: 600px;
+	height: 380px;
+	background: white;
+	border: 1px solid #7d7d7d;
+	top: 40%;
+	display: none;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  z-index: 1000;
+}
+
+#user-actions-wrapper h3{
+  margin: 0 0 10px;
+}
+
+#user-actions-wrapper .close {
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#user-actions-wrapper #register {
+	width: 400px;
+  position: absolute;
+  margin: 10px;
+  left: 0;
+  top: 40px;
+}
+
+#user-actions-wrapper #login {
+	width: 200px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  top: 40px;
+}
+
+
+.upper_border, .lower_border {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  background-image: url(../images/pinstriped_suit.png);
+}
+.lower_border {
+  bottom: 0;
+}
+
+
 form input.align {
-	position: absolute;
 	left: 120px;
 	border: 1px solid gray;
 	padding: 2px;
+	padding: 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+form label {
+  display: block;
+  font-size: .8em;
+}
+
+form input {
+  display: block;
+  margin-bottom: 10px;
 }
 
 form input[type=submit] {
-	margin-left: 120px;
+
 }
 
 /* @end */

@@ -29,6 +29,11 @@ header > h1 {
   top: 3px;
 }
 
+#small-login {
+  position: relative;
+  left: 50%;
+}
+
 #user-actions, #user-login {
 	height: 32px;
   	position: relative;
@@ -45,40 +50,6 @@ header > h1 {
 	cursor: pointer;
 }
 
-#small-login {
-  position: fixed;
-  left: 50%;
-}
-
-#user-actions-wrapper {
-	position: relative;
-	left: -50%;
-  margin: auto;
-  padding: 14px;
-  width: 600px;
-	height: 350px;
-	background: white;
-	border: 1px solid #ccc;
-	top: 40%;
-	display: none;
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
-  z-index: 1000;
-}
-
-#user-actions-wrapper #register {
-	width: 400px;
-	float: left;
-}
-
-#user-actions-wrapper #login {
-	width: 200px;
-	float: right;
-}
-
-
-
 #schedules-container {
 	width: 100%;
 	margin: 10px auto;
@@ -86,6 +57,7 @@ header > h1 {
 
 #schedules-container .more-schedules, #schedules {
 	display: none;
+	cursor: pointer;
 }
 
 #schedules .hide-schedules {
@@ -129,7 +101,6 @@ header > h1 {
 	font-size: 1.2em;
 	color: #484c55;
 	margin-right: 15px;
-  z-index: 100;
 }
 
 #calendar-container {
@@ -297,7 +268,6 @@ button#col-toggle {
 	width: 240px;
 	margin: 20px 40px 0px 0px;
 	border-top-style: none;
-	z-index: 200;
 	position: absolute;
 	right: 0px;
 }
