@@ -1,5 +1,5 @@
 html {
-	font-family: Quicksand, serif;
+	font-family: Quattrocento Sans, serif;
 	background-image: url(../images/cross_scratches.png);
 	height: 100%;
 }
@@ -99,6 +99,7 @@ h2 {
 }
 
 p {
+	font-family: Quattrocento, serif;
 	text-align: justify;
 	text-indent: 27px;
 }
