@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+html, body {
+  margin: 0;
+}
+
+>>>>>>> A few more fixes to the fit.
 header {
   opacity: 1;
   position: absolute;
@@ -16,6 +32,11 @@ header > h1 {
 	float: left;
 	cursor: default;
 	
+}
+
+#___plusone_0 {
+  position: relative;
+  top: 3px;
 }
 
 #user-actions, #user-login {
@@ -264,7 +285,7 @@ button#col-toggle {
 	min-width: 740px;
 	position: relative;
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 	padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0 -5px 40px #fefefe;
