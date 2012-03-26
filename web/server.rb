@@ -148,6 +148,7 @@ end
 
 post "/user/new" do
 	username = params[:email]
+	phone = params[:phone]
 	password = params[:password]
 	password2 = params[:password2]
 
@@ -159,6 +160,7 @@ post "/user/new" do
 	$redis.set("user:#{username}:id", id)
 	$redis.set("user:#{id}:username", username);
 	$redis.set("user:#{username}:password", Digest::SHA1.hexdigest(password))
+	$redis.set("user:#{username}:phone", phone);
 	$redis.sadd("users", username)
 
 	session[:logged_in] = true
