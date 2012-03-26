@@ -29,11 +29,6 @@ header > h1 {
   top: 3px;
 }
 
-#small-login {
-  position: relative;
-  left: 50%;
-}
-
 #user-actions, #user-login {
 	height: 32px;
   	position: relative;
