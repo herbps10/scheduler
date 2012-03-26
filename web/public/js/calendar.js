@@ -160,8 +160,8 @@ $(document).ready(function() {
 		window.location = "/user/register";
 	});
 
-	$("#small-login button.close").click(function() {
-		$("#small-login").slideUp();
+	$("#user-actions-wrapper .close").click(function() {
+		$("#user-actions-wrapper").fadeOut();
 	});
 	
 	/*

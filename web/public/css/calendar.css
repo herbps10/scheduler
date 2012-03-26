@@ -1,3 +1,9 @@
+
+
+html, body {
+  margin: 0;
+}
+
 header {
   opacity: 1;
   position: absolute;
@@ -18,6 +24,16 @@ header > h1 {
 	
 }
 
+#___plusone_0 {
+  position: relative;
+  top: 3px;
+}
+
+#small-login {
+  position: relative;
+  left: 50%;
+}
+
 #user-actions, #user-login {
 	height: 32px;
   	position: relative;
@@ -34,31 +50,6 @@ header > h1 {
 	cursor: pointer;
 }
 
-
-
-#user-actions-wrapper {
-	position: absolute;
-	margin-left: 30%;
-	width: 800px;
-	height: 500px;
-	background: white;
-	border: 1px solid #ccc;
-	top: 40%;
-	display: none;
-}
-
-#user-actions-wrapper #register {
-	width: 350px;
-	float: left;
-}
-
-#user-actions-wrapper #login {
-	width: 400px;
-	float: right;
-}
-
-
-
 #schedules-container {
 	width: 100%;
 	margin: 10px auto;
@@ -66,6 +57,7 @@ header > h1 {
 
 #schedules-container .more-schedules, #schedules {
 	display: none;
+	cursor: pointer;
 }
 
 #schedules .hide-schedules {
@@ -109,7 +101,6 @@ header > h1 {
 	font-size: 1.2em;
 	color: #484c55;
 	margin-right: 15px;
-  z-index: 100;
 }
 
 #calendar-container {
@@ -264,7 +255,7 @@ button#col-toggle {
 	min-width: 740px;
 	position: relative;
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 	padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0 -5px 40px #fefefe;
@@ -277,7 +268,6 @@ button#col-toggle {
 	width: 240px;
 	margin: 20px 40px 0px 0px;
 	border-top-style: none;
-	z-index: 200;
 	position: absolute;
 	right: 0px;
 }
@@ -524,8 +514,15 @@ button#col-toggle {
 
 #sidebar button.close, #sidebar button.remove {
 	float: right;
-	border: 1px solid #abccec;
 	cursor: pointer;
+	border: none;
+}
+
+#sidebar button.close {
+  background: url(../images/close.png) no-repeat center center;
+}
+#sidebar button.remove {
+  background: url(../images/remove.png) no-repeat center center;
 }
 
 #sidebar ul.list {
@@ -688,8 +685,8 @@ button#col-toggle.passive:active {
 .req, .opt {
   position: absolute;
   height: 24px;
-  width: 24px;
-  margin: 16px 6px;
+  width: 100px;
+  margin: 16px 0px;
   top: -6px;
   cursor: pointer;
 }
@@ -703,7 +700,7 @@ button#col-toggle.passive:active {
 .opt {
   background-color: #c4ff9b;
   border: 1px solid #7da063;
-  right: 36px;
+  right: 4px;
 }
 
 #columnNav li.container > ul > li {
@@ -711,7 +708,6 @@ button#col-toggle.passive:active {
 }
 
 #columnNav li.container > ul > li.description {
-  margin-top: 40px;
   cursor: default;
 }
 
@@ -748,9 +744,6 @@ p {
 }
 
 #columnNav .students {
-	position: absolute;
-	right: 100px;
-	top: 10px;
 	font-size: 8pt;
 }
 
@@ -777,5 +770,6 @@ p {
 }
 
 .int1, .int2, .int3{
-display: none;
-3
+  display: none;
+
+}

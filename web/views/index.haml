@@ -51,9 +51,8 @@
 																			= time.prettyDays
 																		%span.time
 																			= time.prettyTime
-																%button.req +
-																%button.opt +
-
+																%button.opt Click to add
+																%br
 																.students
 																	#{section.actual}/#{section.capacity}
 																	%progress{"max" => section.capacity, "value" => section.actual }

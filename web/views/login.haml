@@ -1,30 +1,29 @@
 #user-actions-wrapper
+	.upper_border
+	.close [ close ]
 	#register
+		%h3 Register:
 		%form{ "action" => "/user/new", "method" => "post" }
-			%p
-				Email:
-				%input.align{"type" => "text", "name" => "email"}
+			%label Geneseo Email:
+			%input.align{"type" => "text", "name" => "email", "type" => "email", "placeholder" => "you@geneseo.edu"}
 
-			%p
-				Phone:
-				%input.align{"type" => "text", "name" => "phone"}
+			%label Phone for SMS updates:
+			%input.align{"type" => "text", "name" => "phone", "type" => "tel", "placeholder" => "cell phone"}
 
-			%p
-				Password: (please don't use your Geneseo password)
-				%input.align{"type" => "password", "name" => "password"}
-			%p
-				Again:
-				%input.align{"type" => "password", "name" => "password2"}
+			%label Password <br /><small>(please don't use your Geneseo password):</small>
+			%input.align{"type" => "password", "name" => "password", "placeholder" => "password"}
+			%label Again:
+			%input.align{"type" => "password", "name" => "password2", "placeholder" => "password"}
 
 			%input{"type" => "submit", "value" => "Register"}
 
 	#login
+		%h3 Login:
 		%form{ "action" => "/user/authenticate.json", "method" => "post" }
-			%p
-				%label Email
-				%input.align{"type" => "text", "name" => "email"}
-			%p
-				%label Password:
-				%input.align{"type" => "password", "name" => "password"}
+			%label Email
+			%input.align{"type" => "text", "name" => "email", "type" => "email", "placeholder" => "you@geneseo.edu"}
+			%label Password:
+			%input.align{"type" => "password", "name" => "password", "placeholder" => "password"}
 			
 			%input{"type" => "submit", "value" => "Login"}
+	.lower_border
