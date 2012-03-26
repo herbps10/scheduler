@@ -123,7 +123,7 @@ $(document).ready(function() {
 		$(".more-schedules").delay(400).fadeIn();
 	});
 
-	$("#small-login input[type=submit]").click(function() {
+	$("#small-login #login input[type=submit]").click(function() {
 		$.post("/user/authenticate.json", {
 			email: $("input[name=email]").val(),
 			password: $("input[name=password]").val()
