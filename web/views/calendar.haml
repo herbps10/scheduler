@@ -55,12 +55,14 @@
 					%a{"href" => "/user/logout?redirect=calendar"} logout
 			- else
 				#user-actions
-					Contact us at <a href="mailto:err2@geneseo.edu">err2@geneseo.edu</a> or <a href="mailto:hps1@geneseo.edu">hps1@geneseo.edu</a><br/>
-
+					%address
+						Contact us: 
+						%a{ "href" => "mailto:err2@geneseo.edu,hps1@geneseo.edu?subject=Knight Scheduler Comments" } 
+							err2@geneseo.edu, hps1@geneseo.edu
 					<div class="fb-like" data-href="http://www.knightscheduler.com" data-send="true" data-layout="button_count" data-width="200" data-show-faces="false" data-action="recommend" data-font="arial"></div>
 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="230" data-href="www.knightscheduler.com"></div>
 					
-					%a.user-login login
+					%a.user-login login to save
 
 			#small-login
 				= haml :login
