@@ -257,6 +257,8 @@ $(document).ready(function() {
 		var crn = $(this).parent().attr('rel');
 		$(this).parent().appendTo("#schedule-conflicts > ul.list");
 
+		$("#calendar .course." + crn).remove();
+
 		$("#schedule-conflicts .course." + crn + " button.remove").removeClass('remove').addClass('close');
 
 		saveSchedule();
