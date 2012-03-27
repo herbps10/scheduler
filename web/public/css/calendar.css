@@ -130,7 +130,7 @@ header > h1 {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	text-align: center;
-	font: 400 .8em Quicksand;
+	font: 400 .8em Poiret One;
   color: #d6d6d6;
 }
 
@@ -265,8 +265,8 @@ button#col-toggle {
 
 #sidebar {
 	height: 700px;
-	width: 240px;
-	margin: 20px 40px 0px 0px;
+	width: 250px;
+	margin: 20px 20px 0px 0px;
 	border-top-style: none;
 	position: absolute;
 	right: 0px;
@@ -305,7 +305,7 @@ button#col-toggle {
 	margin: 0px 0px 0px 5px;
 	height: 35px;
 	color: black;
-	font: 400 1em Quicksand;
+	font: 400 1em Quattrocento Sans;
 	padding: 5px 0px;
 	font-size: 9pt;
 }
@@ -463,7 +463,7 @@ button#col-toggle {
 
 #sidebar .course .title {
 	display: block;
-	font-weight: 700;
+	font-weight: 700;	
 }
 
 .fade_right {
@@ -712,7 +712,7 @@ button#col-toggle.passive:active {
 }
 
 p {
-    font-family: Quattrocento, serif;
+    font-family: Quattrocento Sans, serif;
     -webkit-user-select: text;
     -khtml-user-select: text;
     -moz-user-select: text;
@@ -722,18 +722,22 @@ p {
 }
 
 #columnNav li.description > p {
-	margin-top: 10px;
+	margin-top: 0px;
 	padding: 5px;
 	cursor: default;
 	line-height: 1.1em;
 	letter-spacing: 1.1px;
 	text-align: left;
-	font-family: Quattrocento, serif;
+	font-family: Quattrocento Sans, sans-serif;
 	text-indent: 24px;
 }
 
+#columnNav li.container > ul > li.title {
+  border-bottom: none;
+}
+
 #columnNav li.title .divider_h {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 #columnNav li.title .dept {
