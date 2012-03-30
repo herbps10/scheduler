@@ -5,14 +5,14 @@ DEPARTMENTS=( "ACCT" "ANTH" "ARTH" "ARTS" "ASTR" "BIOL" "BLKS" "COMN" "CDSC" "DA
 URL="https://knightweb.geneseo.edu/banweb/owsocc.P_GetCrse"
 DETAILS_URL="https://knightweb.geneseo.edu/banweb/bwckctlg.p_display_courses"
 
-TIME=`date +"%m-%d-%y;%T"`
-mkdir "data/$TIME/"
-
-rm ./data/most-recent
-ln -s "data/$TIME/" ./data/most-recent
-
 while :
 do
+	TIME=`date +"%m-%d-%y;%T"`
+	mkdir "data/$TIME/"
+
+	rm ./data/most-recent
+	ln -s "data/$TIME/" ./data/most-recent
+
 	if [ `date +"%H"` -eq 6 ]
 	then
 		if [ `date +"%M"` -gt 45 ]
@@ -38,5 +38,6 @@ do
 
 	done
 	
+	echo "Sleeping..."
 	sleep 60
 done

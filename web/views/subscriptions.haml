@@ -1,0 +1,28 @@
+
+%h3 Phone Number
+%form{"action" => "/user/phone", "method" => "get"}
+	%input{"type" => "text", "name" => "phone", "value" => @phone}
+	%input{"type" => "submit", "value" => "Update Phone Number"}
+
+%h3 Subscriptions
+
+- @subscriptions.each do |crn|
+	%p
+		- section = $redis.hgetall(RedisHelper::section(crn))
+		- subscription = $redis.hgetall("user:#{@email}:subscription:#{crn}")
+
+		= crn
+		= section["department"]
+		= section["courseNumber"]
+		= section["title"]
+		- if section["actual"].to_i >= section["capacity"].to_i
+			#{section["actual"]}/#{section["capacity"]} (full)
+		- else
+			#{section["actual"]}/#{section["capacity"]}
+			
+		<a href="/user/subscriptions/remove?crn=#{crn}">remove</a>
+
+%form{"action" => "/user/subscriptions/add", "method" => "get"}
+	%input{"type" => "text", "name" => "crn"}
+	%input{"type" => "submit", "value" => "Subscribe"}
+	
