@@ -49,14 +49,8 @@ $(document).ready(function() {
 		sizeTop: true,
 		resizeToWidth: true
 	});
-	$("#col-toggle.unexpanded").live( 'click', function() {
-		$(this).text("-");
-	});
 
-	$("#col-toggle.expanded, #regen").live( 'click', function() {
-		$("#col-toggle").text("+");
-	});
-	$("#col-toggle").click(function() {
+	$(".switch").click(function() {
 		$(this).removeClass("hero");
 		$(this).addClass("passive");
 		$("p.int1").delay(600).fadeIn('slow');
@@ -87,10 +81,6 @@ $(document).ready(function() {
 		$(this).text("Regenerate");
 		$(this).removeClass("hero");
 		$("#regen").addClass("passive");
-
-		if($("#col-toggle").hasClass('expanded')) {
-			columnToggle();
-		}
 
 		$("#schedules").empty();
 
@@ -131,8 +121,7 @@ $(document).ready(function() {
 			data = JSON.parse(data);
 
 			console.log(data);
-			if(data.success == true)
-			{
+			if(data.success == true){
 				window.location = "/dashboard";
 			}
 			else
@@ -265,8 +254,8 @@ $(document).ready(function() {
 	});
 
 	
-	$("#col-toggle.expanded, #col-toggle.unexpanded, .add-section, .cancel").live('click', function() {
-		columnToggle();
+	$("fieldset.switch input, .add-section, .cancel, button#regen").on('click', function() {
+		columnToggle($(this));
 	});
 
 
@@ -288,30 +277,34 @@ $(document).ready(function() {
 	});
 });
 
-function columnToggle() {
-	if($("#col-toggle").hasClass('expanded')) {
-		$("#course-col").slideUp();
-
-		$("#full-cal-container").slideDown(function() {
-			$("#col-toggle").removeClass("expanded").addClass('unexpanded');
-		});
+function columnToggle(e) {
+	if($(e).is("button")) {
+		$("#cal").prop("checked", true);
+		$("#col").prop("checked", false);
+		console.log("courses");
+	}
+	
+	if($("#cal").is(':checked')) {
+		$("#course-col").slideUp( 'slow', function(){ 
+			console.log("hello3")});
+		$("#full-cal-container").slideDown();
+		console.log("calendar");
 	}
 	else {
-		$("#full-cal-container").slideUp(function() {
-			$("#col-toggle").removeClass('unexpanded').addClass("expanded");
-		});
+		$("#full-cal-container").slideUp( 'slow', function(){ 
+			console.log("hello2")});
 		$("#course-col").slideDown();
 	}
 }
 
 function get_conflicted_classes(conflicted_section) {
-	conflicts = []
+	conflicts = [];
 	for(var i = 0; i < schedule_data.sections.length; i++) {
 		var section = schedule_data.sections[i];
 		
 		if(section == conflicted_section) continue;
 		if(section_conflict(section, conflicted_section) == true) {
-			conflicts.push(section)
+			conflicts.push(section);
 		}
 
 		if(section.department == conflicted_section.department && section.courseNumber == conflicted_section.courseNumber) {
@@ -319,7 +312,7 @@ function get_conflicted_classes(conflicted_section) {
 		}
 	}
 
-	return conflicts
+	return conflicts;
 }
 
 function add_section_to_calendar(section) {
