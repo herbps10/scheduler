@@ -13,8 +13,7 @@
 			%a{"href" => "/user/logout?redirect=calendar"} logout
 	- else
 		#user-login 
-			%a login
-
+			%a login 
 #small-login
 	%form{"action" => "/user/authenticate.json", "method" => "post"}
 		%input{"name" => "email", "type" => "text"}
@@ -72,8 +71,14 @@
 								- else
 									%input{"type" => "checkbox", "rel" => section.crn} Subscribe for text-message updates.
 		#content_1.node.rcount_2>
-			%h2 Content 1
-			%p This is the content
+			%h2 Phone Number
+			%p
+				%form{"action" => "/user/phone", "method" => "get"}
+					%input{"type" => "hidden", "name" => "email"}
+
+					%input{"type" => "input", "name" => "phone", "value" => @phone}
+
+					%input{"type" => "submit", "value" => "update"}
 
 		#content_2.node.rcount_2
 			%h2 Content 2

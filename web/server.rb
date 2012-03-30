@@ -221,7 +221,7 @@ get "/user/phone" do
 
 	$redis.set("user:#{email}:phone", phone)
 
-	redirect "/user/subscriptions"
+	redirect "/dashboard"
 end
 
 get "/user/subscriptions" do
@@ -276,6 +276,8 @@ end
 get "/dashboard" do
 	@session = session
 	@email = session[:email]
+
+	@phone = $redis.get("user:#{@email}:phone")
 
 	crns = $redis.smembers("user:#{@email}:schedule")
 
