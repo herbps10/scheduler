@@ -12,7 +12,7 @@
 										%li.course
 											= course.courseNumber
 											 
-											= course.title
+											= course.title.gsub('*', '')
 
 											%ul 
 												%li.container.sections_container
@@ -25,7 +25,7 @@
 															
 															<span class="colon">:</span><br />
 															<span class="course">
-															= course.title
+															= course.title.gsub('*', '')
 															</span>
 															.divider_h
 
