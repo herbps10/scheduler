@@ -110,21 +110,17 @@ li.container .sections_container{
 	border-bottom: 1px dotted #ececec;
 	padding: 6px 8px;
 }
-#columnNav li.container > ul > li:not(.description,.title):hover {
-  cursor: default;
-}
-#columnNav li.container > ul > li:hover {
+
+#columnNav li.container > ul > li:not(.title):not(.description):hover {
   background-color: #f3f3f3;
+  cursor: pointer;
 }
-#columnNav li.container > ul.sections > li:hover {
-  background-color: rgba(255, 255, 255, 0);
-}
+
 #columnNav li.container > ul > li:last-of-type {
 	border-bottom: none;
 }
 
 #columnNav li.container > ul > li.selected {  /*Style for all selected column rows*/
-  
 	color: #000000;
 	border-top: 1px solid #c1c1c1;
 	border-bottom: 1px solid #c1c1c1;
@@ -142,12 +138,10 @@ li.container .sections_container{
 #columnNav li.container > ul > li.section.selected {
   border-top: none;
   padding-top: 6px;
-  cursor: default;
 }
 #columnNav li.container > ul > li.section:not(.selected) + li.section.selected {
   border-top:  1px solid #c1c1c1;
   padding-top: 5px;
-  cursor: default;
 }
 
 li.department {
@@ -160,7 +154,6 @@ li.course {
 
 li.section {
 	position: relative;
-	cursor: default;
 	padding: 2px 8px;
 	color: #3e424b;
 }

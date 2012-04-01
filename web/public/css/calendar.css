@@ -652,25 +652,6 @@ button#col-toggle.passive:active {
   right: 4px;
 }
 
-#columnNav li.container > ul > li {
-  cursor: default;
-}
-
-#columnNav li.container > ul > li.description {
-  cursor: default;
-}
-
-#columnNav li.description > p {
-	margin-top: 0px;
-	padding: 5px;
-	cursor: default;
-	line-height: 1.1em;
-	letter-spacing: 1.1px;
-	text-align: left;
-	font-family: Quattrocento Sans, sans-serif;
-	text-indent: 24px;
-}
-
 #columnNav li.container > ul > li.title {
   border-bottom: none;
 }
@@ -692,6 +673,10 @@ button#col-toggle.passive:active {
 
 #columnNav .students progress {
 	width: 40px;
+}
+
+#columnNav li.container > ul.sections {
+  background-color: #f9f9f9;
 }
 
 #intro {

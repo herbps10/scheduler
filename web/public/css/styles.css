@@ -5,6 +5,14 @@ html, body {
   height: 100%;
 }
 
+html {
+  -moz-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+  -webkit-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+  -o-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+  -ms-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+  transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+
 *.unselectable {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
