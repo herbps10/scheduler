@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
-require 'omniauth'
-require 'omniauth-facebook'
+#require 'omniauth'
+#require 'omniauth-facebook'
 require 'redis'
 require 'digest/sha1'
 require 'open-uri'
@@ -24,9 +24,9 @@ $redis = Redis.new
 enable :sessions
 
 use Rack::Session::Cookie
-use OmniAuth::Builder do
-	provider :facebook, '186503511460774', '4078a614ca76dab02c08d06411564a4b'
-end
+#use OmniAuth::Builder do
+	#provider :facebook, '186503511460774', '4078a614ca76dab02c08d06411564a4b'
+#end
 
 get '/' do
 	redirect :calendar
