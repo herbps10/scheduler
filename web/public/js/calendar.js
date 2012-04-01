@@ -1,55 +1,52 @@
-// From http://stackoverflow.com/questions/1187518/javascript-array-difference
-// Might not work in IE8
-
-
-Array.prototype.diff = function(a) { return this.filter(function(i) {return !(a.indexOf(i) > -1);}); }; function intersection_safe(a, b)
-{
-  var ai=0, bi=0;
-  var result = new Array();
-
-  while( ai < a.length && bi < b.length )
-  {
-     if      (a[ai] < b[bi] ){ ai++; }
-     else if (a[ai] > b[bi] ){ bi++; }
-     else /* they're equal */
-     {
-       result.push(a[ai]);
-       ai++;
-       bi++;
-     }
-  }
-  return result;
-}
-
 $(document).ready(function() {
+
+	// *********************
+	// ** INITIALIZATION **
+	// *********************
+
+
+	//
+	// If you're logged in, the schedule data global variable is already set.
+	// If you're not logged in, the following code will fire to initialize the variables.
+	//
 	if(window.schedule_data == null) {
 		window.schedule_data = {}
 		window.schedule_data.sections = [];
 	}
 
-	//$("#resize").css('height', $("#sidebar").height() - $("#regen").outerHeight(true));
-	var listHeight = ($("#calendar-container").height() - $("#sidebar > .title").height() - $("#regen").height()) / 2;
-	//$("#schedule-courses").css('height', (listHeight - 100) + "px");
-	//$("#schedule-conflicts").css('height', (listHeight) + "px");
-
+	//
+	// Make sure the sidebar components are sized correctly on page load
+	//
 	resize_components();
-	$(window).resize(resize_components);
+	$(window).resize(resize_components); // Attach the resize handler to any window resize event
 
 	// If not logged in, show the intro first
 	if(!window.knight_logged_in) {
 		$("#resize").fadeOut();
 	}
 
+	// If logged in, skip the intro
 	if(window.knight_logged_in) {
 		$("#intro").hide();
 	}
 	
+	//
+	// Initialize Sidebar splitter
+	//
 	$("#resize").splitter({
 		type: "h",
 		sizeTop: true,
 		resizeToWidth: true
 	});
 
+
+
+
+	// ********************
+	// ** EVENT HANDLERS **
+	// ********************
+
+	// Switcher between courses and calendar view
 	$(".switch").click(function() {
 		$(this).removeClass("hero");
 		$(this).addClass("passive");
@@ -58,6 +55,8 @@ $(document).ready(function() {
 		$("p.int3").delay(6400).fadeIn('slow');
 	});
 
+	// Changes the way the generate button is styled
+	// fired when you add a section to your unscheduled courses list
 	$(".section button").click(function() {
 		$("#regen").addClass("hero");
 		$("#regen").removeClass("passive");
@@ -65,11 +64,14 @@ $(document).ready(function() {
 		$("#resize").delay(600).fadeIn();
 	});
 
+
 	$("#help").live('click', function() {
 		$(this).addClass("active")
 		$("#resize").fadeOut();
 		$("#intro").delay(600).fadeIn();
 	});
+	
+
 	$("#help.active").live('click', function() {
 		$(this).removeClass("active")
 		$("#intro").fadeOut();
@@ -77,6 +79,7 @@ $(document).ready(function() {
 	});
 
 
+	// Regenerate schedules button
 	$("#regen").click(function() {
 		$(this).text("Regenerate");
 		$(this).removeClass("hero");
@@ -84,12 +87,14 @@ $(document).ready(function() {
 
 		$("#schedules").empty();
 
-		var crns = [];
 
+		// Build CRN list
+		var crns = [];
 		for(var i = 0; i < window.schedule_data.sections.length; i++) {
 			crns.push(window.schedule_data.sections[i].crn);
 		}
 
+		// Fire request for schedules
 		get_data(crns, function() {
 			draw_schedule(0);
 			current_schedule = 0;
@@ -103,68 +108,23 @@ $(document).ready(function() {
 		});
 	});
 
+
+	// View more schedules button that appears below the calendar after schedules are generated
 	$(".more-schedules").click(function() {
 		$("#schedules").delay(400).fadeIn();
 		$(".more-schedules").fadeOut();
 	});
 
+
+	// Hide extra schedules link
 	$(".hide-schedules").live('click', function() {
 		$("#schedules").fadeOut();
 		$(".more-schedules").delay(400).fadeIn();
 	});
 
-	$("#small-login #login input[type=submit]").click(function() {
-		$.post("/user/authenticate.json", {
-			email: $("input[name=email]").val(),
-			password: $("input[name=password]").val()
-		}, function(data) {
-			data = JSON.parse(data);
-
-			console.log(data);
-			if(data.success == true){
-				window.location = "/dashboard";
-			}
-			else
-			{
-				$("#small-login #message").text("Username or password didn't work -- try again?");
-
-				$("#small-login #message").animate({
-					opacity: 0.25
-				}, 250, function() {
-					$("#small-login #message").animate({
-						opacity: 1
-					}, 250);
-				});
-			}
-		});
-
-		return false;
-	});
-
-	$("#user-actions a.user-login").click(function() {
-		$("#user-actions-wrapper").fadeIn();
-	});
-
-	$("#user-actions a.user-register").click(function() {
-		window.location = "/user/register";
-	});
-
-	$("#user-actions-wrapper .close").click(function() {
-		$("#user-actions-wrapper").fadeOut();
-	});
 	
-	/*
-	$("#schedules a").live({
-		mouseenter: function() {
-			var index = $(this).attr('rel');
-			draw_schedule(index);
-		},
-		mouseleave:  function() {
-			draw_schedule(current_schedule);
-		}
-	});
-	*/
-
+	// Extra schedule link
+	// Changes the schedule currently being displayed on the calendar
 	$("#schedules a").live('click', function() {
 
 		var index = $(this).attr('rel');
@@ -173,6 +133,8 @@ $(document).ready(function() {
 		current_schedule = index;
 	});
 
+
+	// Swap button that appears besides sections on the unscheduled sections list
 	$("#schedule-conflicts .course button.swap").live({
 		mouseenter: function() {
 			conflicted_section = get_section_data($(this).parent().attr('rel'));
@@ -199,31 +161,31 @@ $(document).ready(function() {
 
 			$("#calendar .course.conflict").removeClass('conflict');
 			$("#calendar .course").removeClass('swapee');
-		}
-	});
-
-	$("#schedule-conflicts .course .swap").live('click', function() {
-		$("#calendar .course.conflict").removeClass('conflict');
+		},
+		click: function() {
 		$("#calendar .course.limbo").removeClass('limbo');
+			conflicted_section = get_section_data($(this).parent().attr('rel'));
+			var conflicts = get_conflicted_classes(conflicted_section);
 
-		conflicted_section = get_section_data($(this).parent().attr('rel'));
-		var conflicts = get_conflicted_classes(conflicted_section);
+			for(var i = 0; i < conflicts.length; i++) {
+				var section = conflicts[i];
 
-		for(var i = 0; i < conflicts.length; i++) {
-			var section = conflicts[i];
+				$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
+				$("#calendar .course." + section.crn).remove();
+				$("#schedule-courses .course." + section.crn).remove();
+			}
 
-			$("#schedule-courses .course." + section.crn + ":first").appendTo("#schedule-conflicts > ul.list").attr('style', '');
-			$("#calendar .course." + section.crn).remove();
-			$("#schedule-courses .course." + section.crn).remove();
+			$(this).parent().appendTo("#schedule-courses > ul.list");
+			
+			$("#schedule-courses .course." + conflicted_section + " button.close").removeClass('close').addClass('remove');
+
+			saveSchedule();
 		}
-
-		$(this).parent().appendTo("#schedule-courses > ul.list");
-		
-		$("#schedule-courses .course." + conflicted_section + " button.close").removeClass('close').addClass('remove');
-
-		saveSchedule();
 	});
 
+
+	// Button that appears besides each section on the scheduled sections list
+	// Deletes course from conflicts list
 	$("#schedule-conflicts .course .close").live('click', function() {
 		var crn = $(this).parent().attr('rel');
 		
@@ -242,6 +204,9 @@ $(document).ready(function() {
 		saveSchedule();
 	});
 
+
+	// Small 'x' button that appears right of sections in currently scheduled section list
+	// moves the section back down to the unscheduled courses list
 	$("#schedule-courses .course button.remove").live('click', function() {
 		var crn = $(this).parent().attr('rel');
 		$(this).parent().appendTo("#schedule-conflicts > ul.list");
@@ -254,28 +219,55 @@ $(document).ready(function() {
 	});
 
 	
+	// A handful of buttons need to have the state of the page change between calendar and courses view
 	$("fieldset.switch input, .add-section, .cancel, button#regen").on('click', function() {
 		columnToggle($(this));
 	});
-
-
-	
-	$(".subscribe-button").click(function() {
-		$.get($(this).attr('href'));
-		$(this).text('unsubscribe');
-
-		$(this).attr('href', $(this).attr('href').replace('add', 'remove'));
-		return false;
-	});
-
-	$(".unsubscribe-button").click(function() {
-		$.get($(this).attr('href'));
-		$(this).text('subscribe');
-
-		$(this).attr('href', $(this).attr('href').replace('remove', 'add'));
-		return false;
-	});
 });
+
+//
+// Get all the available schedules given a list of CRNs
+//
+function get_data(crns, callback) {
+	$.get("/schedules.json", {
+			crns: crns
+	}, function(data) {
+		window.schedule_data = data;
+
+		callback();
+	});
+}
+
+//
+// Retrieve JSON data from the server about a section given its CRN number
+//
+function get_section_data(crn) {
+	for(var i = 0; i < schedule_data.sections.length; i++) {
+		if(schedule_data.sections[i].crn == crn) return schedule_data.sections[i];
+	}
+
+	return false;
+}
+
+//
+// If you're logged in, saves the courses in your scheduled
+// sections list to the server
+//
+function saveSchedule() {
+	// Check to make sure we're logged in
+	if(window.knight_logged_in) {
+		var crns = [];
+
+		// Gather the CRNs from the scheduled sections list
+		$("#schedule-courses .course").each(function() {
+			crns.push($(this).attr('rel'));
+		});
+		
+		$.get("/user/schedule/save", {
+			crns: crns
+		});
+	};
+}
 
 function columnToggle(e) {
 	if($(e).is("button")) {
@@ -297,24 +289,10 @@ function columnToggle(e) {
 	}
 }
 
-function get_conflicted_classes(conflicted_section) {
-	conflicts = [];
-	for(var i = 0; i < schedule_data.sections.length; i++) {
-		var section = schedule_data.sections[i];
-		
-		if(section == conflicted_section) continue;
-		if(section_conflict(section, conflicted_section) == true) {
-			conflicts.push(section);
-		}
 
-		if(section.department == conflicted_section.department && section.courseNumber == conflicted_section.courseNumber) {
-			conflicts.push(section);
-		}
-	}
-
-	return conflicts;
-}
-
+//
+// Draws a section to the calendar
+//
 function add_section_to_calendar(section) {
 	for(var t = 0; t < section.times.length; t++) {
 		var time = section.times[t];
@@ -337,16 +315,9 @@ function add_section_to_calendar(section) {
 	$("#calendar ." + section.crn).append(section.title).css("height", time.endPixel-time.startPixel).css("top", time.startPixel + "px");
 }
 
-function get_data(crns, callback) {
-	$.get("/schedules.json", {
-			crns: crns
-	}, function(data) {
-		window.schedule_data = data;
-
-		callback();
-	});
-}
-
+//
+// Draws several links to other schedules below the calendar
+//
 function draw_schedule_links() {
 	for(var s = 0; s < window.schedule_data.schedules.length; s++) {
 		$("#schedules").append("<a href='#' rel='" + s + "'>Schedule " + s + "</a>");
@@ -355,6 +326,10 @@ function draw_schedule_links() {
 	$("#schedules").append("<div class='hide-schedules'><<</div>");
 }
 
+//
+// Draw's a schedule, given in the window.schedule_data object, onto the calendar
+// and the scheduled and conflicted sections list in the sidebar.
+//
 function draw_schedule(schedule_index) {
 	var schedule = window.schedule_data.schedules[schedule_index];
 
@@ -377,6 +352,17 @@ function draw_schedule(schedule_index) {
 	}
 }
 
+function add_to_course_list(course) {
+	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='remove' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+}
+
+function add_to_conflicts_list(course) {
+	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='close' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
+}
+
+//
+// Format a section's time slots for display on the site
+//
 function format_times(times) {
 	var str = "";
 	for(var i = 0; i < times.length; i++)
@@ -394,22 +380,9 @@ function format_times(times) {
 	return str;
 }
 
-function add_to_course_list(course) {
-	$("#schedule-courses > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='remove' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
-}
-
-function add_to_conflicts_list(course) {
-	$("#schedule-conflicts > .list").append("<li rel='" + course.crn + "' class='course unselectable " + course.crn + "'><button class='close' /><button class='swap' /><span class='title'>" + course.title + "</span> " + format_times(course.times) + "</div>");
-}
-
-function get_section_data(crn) {
-	for(var i = 0; i < schedule_data.sections.length; i++) {
-		if(schedule_data.sections[i].crn == crn) return schedule_data.sections[i];
-	}
-
-	return false;
-}
-
+//
+// Check to see if two sections conflict with each other
+//
 function section_conflict(section1, section2) {
 	for(var t1 = 0; t1 < section1.times.length; t1++) {
 		var time1 = section1.times[t1];
@@ -424,8 +397,31 @@ function section_conflict(section1, section2) {
 	return false;
 }
 
-function times_conflict(time1, time2) {
+//
+// Get a list of all the courses currently being considered that conflict with the given section
+//
+function get_conflicted_classes(conflicted_section) {
+	conflicts = [];
+	for(var i = 0; i < schedule_data.sections.length; i++) {
+		var section = schedule_data.sections[i];
+		
+		if(section == conflicted_section) continue;
+		if(section_conflict(section, conflicted_section) == true) {
+			conflicts.push(section);
+		}
 
+		if(section.department == conflicted_section.department && section.courseNumber == conflicted_section.courseNumber) {
+			conflicts.push(section);
+		}
+	}
+
+	return conflicts;
+}
+
+//
+// Check to see if two times overlap each other
+//
+function times_conflict(time1, time2) {
 	if(intersection_safe(time1.days, time2.days).length == 0) return false;
 
 	if(parseInt(time1.startPixel) >= parseInt(time2.startPixel) && parseInt(time1.startPixel) <= parseInt(time2.endPixel)) return true;
@@ -455,18 +451,4 @@ function resize_components() {
 	}
 }
 
-function saveSchedule() {
-	// Check to make sure we're logged in
 
-	if(window.knight_logged_in) {
-		var crns = [];
-
-		$("#schedule-courses .course").each(function() {
-			crns.push($(this).attr('rel'));
-		});
-		
-		$.get("/user/schedule/save", {
-			crns: crns
-		});
-	};
-}
