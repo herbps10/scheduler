@@ -12,33 +12,12 @@
 		%h1 Knight Scheduler
 		- if @session[:logged_in] == true
 			#user-actions
+				%a{"href" => "/calendar"} calendar
 				%a{"href" => "/user/logout?redirect=calendar"} logout
 		- else
 			#user-login 
 				%a login 
-	#small-login
-		%form{"action" => "/user/authenticate.json", "method" => "post"}
-			%input{"name" => "email", "type" => "text"}
 
-	%h1 Knight Scheduler
-	- if @session[:logged_in] == true
-		#user-actions
-			%a{"href" => "/calendar"} calendar
-			%a{"href" => "/user/logout?redirect=calendar"} logout
-	- else
-		#user-login 
-			%a login 
-#small-login
-	%form{"action" => "/user/authenticate.json", "method" => "post"}
-		%input{"name" => "email", "type" => "text"}
-			%input{"name" => "password", "type" => "password"}
-
-			#register
-				Don't have an account? 
-				%a{"href" => "/user/register"} register
-			#message
-			%input{"type" => "submit", "value" => "Go"}
-				%a login
 	#dash_wrapper
 		#dash
 			#content_0.node.rcount_1<
