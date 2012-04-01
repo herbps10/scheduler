@@ -1,3 +1,22 @@
+function intersection_safe(a, b)
+{
+  var ai=0, bi=0;
+  var result = new Array();
+
+  while( ai < a.length && bi < b.length )
+  {
+     if      (a[ai] < b[bi] ){ ai++; }
+     else if (a[ai] > b[bi] ){ bi++; }
+     else /* they're equal */
+     {
+       result.push(a[ai]);
+       ai++;
+       bi++;
+     }
+  }
+  return result;
+}
+
 $(document).ready(function() {
 
 	// *********************
@@ -390,7 +409,9 @@ function section_conflict(section1, section2) {
 		for(var t2 = 0; t2 < section2.times.length; t2++) {
 			var time2 = section2.times[t2];
 
-			if(times_conflict(time1, time2) == true) return true;
+			if(times_conflict(time1, time2) == true) {
+				return true;
+			}
 		}
 	}
 
@@ -411,11 +432,24 @@ function get_conflicted_classes(conflicted_section) {
 		}
 
 		if(section.department == conflicted_section.department && section.courseNumber == conflicted_section.courseNumber) {
-			conflicts.push(section);
+			if(is_lecture_lab(section, conflicted_section) == false) {
+				conflicts.push(section);
+			}
 		}
 	}
 
 	return conflicts;
+}
+
+function is_lecture_lab(section1, section2) {
+				if((section1.title.toLowerCase().indexOf('lab') >= 0 && section2.title.toLowerCase().indexOf('lec')) >= 0 || (section1.title.toLowerCase().indexOf('lec') >= 0 && section2.title.toLowerCase().indexOf('lab') >= 0)) {
+					console.log('is lecture lab');
+					return true
+				}
+
+				console.log('is not lecture lab');
+
+				return false;
 }
 
 //
