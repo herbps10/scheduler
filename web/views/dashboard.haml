@@ -1,92 +1,78 @@
-%head
-	%title Knight Schduler | Dashboard
-	%link{ "rel" => "stylesheet", "href" => "/css/styles.css", "type" => "text/css" }
-	%link{ "rel" => "stylesheet", "href" => "/css/dashboard.css", "type" => "text/css" }
-	%script{ "src" => "/js/jquery.js", "type" => "text/javascript" }
-	%script{ "src" => "/js/scripts.js", "type" => "text/javascript" }
-	%script{ "src" => "/js/dashboard.js", "type" => "text/javascript" }
-	%link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Flamenco|Poiret One|Quattrocento Sans|Quattrocento", "type" =>"text/css"}
+!!! 5
+%html
+	%head
+		%title Knight Schduler | Dashboard
+		%link{ "rel" => "stylesheet", "href" => "/css/styles.css", "type" => "text/css" }
+		%link{ "rel" => "stylesheet", "href" => "/css/dashboard.css", "type" => "text/css" }
+		%script{ "src" => "/js/jquery.js", "type" => "text/javascript" }
+		%script{ "src" => "/js/scripts.js", "type" => "text/javascript" }
+		%script{ "src" => "/js/dashboard.js", "type" => "text/javascript" }
+		%link{ "rel" => "stylesheet", "href" => "http://fonts.googleapis.com/css?family=Flamenco|Poiret One|Quattrocento Sans|Quattrocento", "type" =>"text/css"}
+	%header
+		%h1 Knight Scheduler
+		- if @session[:logged_in] == true
+			#user-actions
+				%a{"href" => "/user/logout?redirect=calendar"} logout
+		- else
+			#user-login 
+				%a login 
+	#small-login
+		%form{"action" => "/user/authenticate.json", "method" => "post"}
+			%input{"name" => "email", "type" => "text"}
 
-%header
-	%h1 Knight Scheduler
-	- if @session[:logged_in] == true
-		#user-actions
-			%a{"href" => "/user/logout?redirect=calendar"} logout
-	- else
-		#user-login 
-<<<<<<< HEAD
-			%a login 
-#small-login
-	%form{"action" => "/user/authenticate.json", "method" => "post"}
-		%input{"name" => "email", "type" => "text"}
+			%input{"name" => "password", "type" => "password"}
 
-		%input{"name" => "password", "type" => "password"}
-
-		#register
-			Don't have an account? 
-			%a{"href" => "/user/register"} register
-
-		#message
-
-		%input{"type" => "submit", "value" => "Go"}
-=======
-			%a login
->>>>>>> Organized CSS
-
-#dash_wrapper
-	#dash
-		#content_0.node.rcount_1<
-			%table.schedule 
-				- @sections.each_with_index do |section, index|
-					- class_str = 'title'
-					- class_str += " active" if index == 0
-					%tr.course
-						%td{'class' => class_str, 'id' => "course#{index}"}
-							= section.title
-						
-						%td.info
-							.title
-								= section.department + " " + section.courseNumber + " " + section.title
-							.professor
-								= section.instructor
-							
-							.location
-								= section.location
-
-							.days
-								- section.times.each do |time|
-									- if time.tba == true
-										.time Time TBA
+			#register
+				Don't have an account? 
+				%a{"href" => "/user/register"} register
+			#message
+			%input{"type" => "submit", "value" => "Go"}
+				%a login
+	#dash_wrapper
+		#dash
+			#content_0.node.rcount_1<
+				%table.schedule 
+					- @sections.each_with_index do |section, index|
+						- class_str = 'title'
+						- class_str += " active" if index == 0
+						%tr.course
+							%td{'class' => class_str, 'id' => "course#{index}"}
+								= section.title	
+							%td.info
+								.title
+									= section.department + " " + section.courseNumber + " " + section.title
+								.professor
+									= section.instructor			
+								.location
+									= section.location
+								.days
+									- section.times.each do |time|
+										- if time.tba == true
+											.time Time TBA
+										- else
+											%span.days
+												= time.prettyDays
+											%span.time
+												= time.prettyTime
+								%p.description
+									= section.description
+									%br
+									CRN: 
+									= section.crn
+								%form.subscribe
+									- if @subscriptions.include? section.crn
+										%input{"type" => "checkbox", "rel" => section.crn, 'checked' => 'checked'} Subscribe for text-message updates.
 									- else
-										%span.days
-											= time.prettyDays
-										%span.time
-											= time.prettyTime
-
-							%p.description
-								= section.description
-
-								%br
-								CRN: 
-								= section.crn
-
-							%form.subscribe
-								- if @subscriptions.include? section.crn
-									%input{"type" => "checkbox", "rel" => section.crn, 'checked' => 'checked'} Subscribe for text-message updates.
-								- else
-									%input{"type" => "checkbox", "rel" => section.crn} Subscribe for text-message updates.
-		#content_1.node.rcount_2>
-			%h2 Phone Number
-			%p
+										%input{"type" => "checkbox", "rel" => section.crn} Subscribe for text-message updates.
+			#content_1.node.rcount_2>
+				%h2 Phone Number
 				%form{"action" => "/user/phone", "method" => "get"}
 					%input{"type" => "hidden", "name" => "email"}
 
 					%input{"type" => "input", "name" => "phone", "value" => @phone}
 
 					%input{"type" => "submit", "value" => "update"}
-
-		#content_2.node.rcount_2
-			%h2 Content 2
-			%p This is the content
-
-		%br{"style" => "clear: both"}
+			#content_2.node.rcount_2
+				%h2 Content 2
+				%p This is the content.
+			%br{"style" => "clear: both"}
