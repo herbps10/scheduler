@@ -37,6 +37,9 @@ do
 		curl --sslv3 -d "$DETAILS_POST" $DETAILS_URL > "data/$TIME/$SUBJECT-details.html"
 
 	done
+
+	ruby /home/herb/scheduler/web/parser.rb
+	ruby /home/herb/scheduler/web/texter.rb
 	
 	echo "Sleeping..."
 	sleep 60
