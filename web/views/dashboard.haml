@@ -11,6 +11,7 @@
 	%h1 Knight Scheduler
 	- if @session[:logged_in] == true
 		#user-actions
+			%a{"href" => "/calendar"} calendar
 			%a{"href" => "/user/logout?redirect=calendar"} logout
 	- else
 		#user-login 
