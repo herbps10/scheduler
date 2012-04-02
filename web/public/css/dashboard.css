@@ -14,6 +14,26 @@
   border-radius: 4px;
 }
 
+form label {
+  display: inline-block;
+}
+
+form input {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+.crn {
+  font-family: "Courier New", Courier, mono;
+}
+
 /* @group Dashboard Nodes */
 
 h2 {
@@ -22,7 +42,7 @@ h2 {
 	color: black;
 }
 
-table.schedule {
+.schedule {
   position: relative;
   border-collapse: collapse;
   width: 90%;
@@ -30,29 +50,35 @@ table.schedule {
   margin: 40px 40px 80px;
 }
 
-td.title {
+.course > .title {
   padding: 12px;
-  width: 30%;
   text-align: left;
   border: 1px solid #e7e7e7;
   font-size: 1.2em;
   border-style: none;
+  width: 30%;
+  cursor: pointer;
 }
 
-td.title.active {
+.title.active {
   border-left: 2px solid #b00909;
   background-color: #f0f0f0;
   padding-left: 11px;
 }
 
-tr.course .info {
+.course .info {
   display: none;
   position: absolute;
-  width: 70%;
   height: 250px;
   border-style: none;
   top: 0px;
-  padding: 12px 12px 12px 28px;
+  padding: 12px;
+  margin-left: 280px;
+  width: 70%;
+}
+
+.info .crn {
+  margin-bottom: 12px;
 }
 
 .info .light {
@@ -62,7 +88,7 @@ tr.course .info {
 
 .info .title {
   color: #b00909;
-  font: 1.8em "Flamenco";
+  font: 1.5em "Quattrocento";
   margin-bottom: 8px;  
 }
 
@@ -75,11 +101,10 @@ tr.course .info {
 }
 
 .info .professor {
-  display: inline-block;
+  display: block;
   font-size: 1.1em;
   color: black;
   font-style: italic;
-  margin-left: 14px;
 }
 
 .info .location {
@@ -105,7 +130,7 @@ p.description {
   overflow-y: auto;
 }
 
-td.title.active + .info {
+.title.active + .info {
   display: block;
 }
 

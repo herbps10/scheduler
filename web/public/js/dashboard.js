@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$("td.title").live('click', function(e){
-		$("td.title").removeClass('active');
+	$(".title").live('click', function(e){
+		$(".title").removeClass('active');
 		$(this).addClass('active');
 	});
 
@@ -20,5 +20,5 @@ $(document).ready(function(){
 				crn: crn
 			});
 		}
-	});
+	});	
 });

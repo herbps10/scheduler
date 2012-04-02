@@ -21,14 +21,14 @@
 	#dash_wrapper
 		#dash
 			#content_0.node.rcount_1<
-				%table.schedule 
+				.schedule 
 					- @sections.each_with_index do |section, index|
 						- class_str = 'title'
 						- class_str += " active" if index == 0
-						%tr.course
-							%td{'class' => class_str, 'id' => "course#{index}"}
+						.course
+							%div{'class' => class_str, 'id' => "course#{index}"}
 								= section.title	
-							%td.info
+							.info
 								.title
 									= section.department + " " + section.courseNumber + " " + section.title
 								.professor
@@ -46,14 +46,15 @@
 												= time.prettyTime
 								%p.description
 									= section.description
-									%br
+								.crn
 									CRN: 
 									= section.crn
 								%form.subscribe
 									- if @subscriptions.include? section.crn
 										%input{"type" => "checkbox", "rel" => section.crn, 'checked' => 'checked'} Subscribe for text-message updates.
 									- else
-										%input{"type" => "checkbox", "rel" => section.crn} Subscribe for text-message updates.
+										%input{"type" => "checkbox", "rel" => section.crn, "id" => "subscribe_box"} 
+										%label{"for" => "subscribe_box"} Subscribe for text-message updates.
 			#content_1.node.rcount_2>
 				%h2 Phone Number
 				%form{"action" => "/user/phone", "method" => "get"}
@@ -63,6 +64,10 @@
 
 					%input{"type" => "submit", "value" => "update"}
 			#content_2.node.rcount_2
-				%h2 Content 2
-				%p This is the content.
+				%h2 Full CRN List
+				%ul#crn_list
+				- @sections.each_with_index do |section, index|
+					- class_str = 'title'
+					%li.crn
+						=section.crn
 			%br{"style" => "clear: both"}
