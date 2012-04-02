@@ -5,8 +5,19 @@ body {
   overflow: hidden;
 }
 
+::-moz-selection, ::selection {
+  background-color: #fe843f;
+}
+
 button {
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 p {
@@ -33,6 +44,13 @@ header {
   width: 100%;
   z-index: 100;
   min-width: 720px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 header > h1 {
@@ -44,11 +62,6 @@ header > h1 {
 	float: left;
 	cursor: default;
 	
-}
-
-#___plusone_0 {
-  position: relative;
-  top: 3px;
 }
 
 /* @end Header Elements*/
