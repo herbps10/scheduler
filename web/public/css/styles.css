@@ -1,16 +1,16 @@
-html, body {
+body {
   margin: 0;
   font-family: Quattrocento Sans, serif;
   background-image: url(../images/cross_scratches.png);
-  height: 100%;
+  overflow: hidden;
 }
 
-html {
-  -moz-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
-  -webkit-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
-  -o-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
-  -ms-transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
-  transform: scale(1) rotate(180deg) translate(0px, 0px) skew(0deg, 0deg);
+button {
+  cursor: pointer;
+}
+
+p {
+  text-indent: 1em;
 }
 
 *.unselectable {
@@ -32,6 +32,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  min-width: 720px;
 }
 
 header > h1 {

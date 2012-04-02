@@ -10,10 +10,8 @@
 								%ul.courses
 									- department.courses.each do |course|
 										%li.course
-											= course.courseNumber
-											 
+											= course.courseNumber 
 											= course.title.gsub('*', '')
-
 											%ul 
 												%li.container.sections_container
 													%ul.sections
@@ -27,18 +25,12 @@
 															<span class="course">
 															= course.title.gsub('*', '')
 															</span>
-															.divider_h
-
 														%li.description
 															%p
-																= course.description
-															
+																= course.description	
 															%p
 																= course.credits
 																credits.
-															
-																
-
 														- course.sections.each do |section|
 															%li.section{ "rel" => section.crn }
 																.instructor
@@ -47,12 +39,12 @@
 																	- if time.tba == true
 																		.time Time TBA
 																	- else 
-																		%span.days
-																			= time.prettyDays
-																		%span.time
-																			= time.prettyTime
-																%button.opt Click to add
-																%br
+																		%div
+																			%span.days
+																				= time.prettyDays
+																			%span.time
+																				= time.prettyTime
+																%button.opt
 																.students
 																	#{section.actual} #{section.capacity}
 																	%progress{"max" => section.capacity, "value" => section.actual }
@@ -64,5 +56,3 @@
 																			<a class='unsubscribe-button' href="/user/subscriptions/remove?crn=#{section.crn}&redirect=false">unsubscribe</a>
 																		- else
 																			<a class='subscribe-button' href="/user/subscriptions/add?crn=#{section.crn}&redirect=false">subscribe</a> for updates.
-
-														

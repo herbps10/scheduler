@@ -58,17 +58,12 @@ $(document).ready(function() {
 		resizeToWidth: true
 	});
 
-
-
-
 	// ********************
 	// ** EVENT HANDLERS **
 	// ********************
 
 	// Switcher between courses and calendar view
 	$(".switch").click(function() {
-		$(this).removeClass("hero");
-		$(this).addClass("passive");
 		$("p.int1").delay(600).fadeIn('slow');
 		$("p.int2").delay(3200).fadeIn('slow');
 		$("p.int3").delay(6400).fadeIn('slow');
@@ -292,18 +287,14 @@ function columnToggle(e) {
 	if($(e).is("button")) {
 		$("#cal").prop("checked", true);
 		$("#col").prop("checked", false);
-		console.log("courses");
 	}
 	
 	if($("#cal").is(':checked')) {
-		$("#course-col").slideUp( 'slow', function(){ 
-			console.log("hello3")});
+		$("#course-col").slideUp();
 		$("#full-cal-container").slideDown();
-		console.log("calendar");
 	}
 	else {
-		$("#full-cal-container").slideUp( 'slow', function(){ 
-			console.log("hello2")});
+		$("#full-cal-container").slideUp();
 		$("#course-col").slideDown();
 	}
 }

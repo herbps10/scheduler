@@ -56,78 +56,79 @@
 					%a.user-login login to save
 			#small-login
 				= haml :login
-#content
-	#toolbar
-		%fieldset.switch
-			<input id="cal" name="view" type="radio" checked>
-			<label for="cal">Calendar</label>
+		#content
+			#toolbar
+				%fieldset.switch
+					<input id="cal" name="view" type="radio" checked>
+					<label for="cal">Calendar</label>
 
-			<input id="col" name="view" type="radio">	
-			<label for="col">Courses</label>
+					<input id="col" name="view" type="radio">	
+					<label for="col">Courses</label>
+					
+					<span class="switch-button"></span>
+				%button#help ?
+				%button#regen.passive{"href" => "#"} Generate!
+			#sidebar
+				#intro
+					.divider_h
+					%h2 Welcome to Knight Scheduler!
+					.divider_h
+					%p Knight Scheduler is a new web app designed to help Geneseo students find their perfect schedule.
+					%p Click on <strong>"Courses"</strong> in the upper left to begin browsing the course list.
+					%p.int1 When you click on a section, this menu will disappear, and you will see your course lists (click the purple button to get this back at any time). New sections will be added to the "Not in Schedule" list first.
+					%p.int2 After clicking the "Generate" button, Knight Scheduler will attempt to fit your chosen classes together the best it can. Some sections might not fit, but you can always swap them out with others that did to fine tune your schedule. 
+				#resize
+					#schedule-courses
+						.title Scheduled
+						%ul.list
+					#schedule-conflicts
+						.title Unscheduled
+						%ul.list
+			#main-content
+				#course-col
+					= haml :index, { :locals => { :data => @data } }
+				#full-cal-container
+					#cal-header
+						#days
+							.day.mon M
+							.day.tue T
+							.day.wed W
+							.day.thu T
+							.day.fri F
+
+					#calendar-container
+						#time-axis
+							.time 8am
+							.time 9am
+							.time 10am
+							.time 11am
+							.time 12pm
+							.time 1pm
+							.time 2pm
+							.time 3pm
+							.time 4pm
+							.time 5pm
+							.time 6pm
+							.time 7pm
+							.time 8pm
+							.time 9pm
+							.time 10pm
+						#grid
+							- 31.times do
+								.grid-halfhour
+									.grid-day.mon
+									.grid-day.tue
+									.grid-day.wed
+									.grid-day.thu
+									.grid-day.fri
+						#calendar
+				#schedules-container
+					.more-schedules Click to view alternate schedules.
+					#schedules
+						.hide-schedules X
 			
-			<span class="switch-button"></span>
-		%button#help ?
-		%button#regen.passive{"href" => "#"} Generate!
-	#sidebar
-		#intro
-			.divider_h
-			%h2 Welcome to Knight Scheduler!
-			.divider_h
-			%p Knight Scheduler is a new web app designed to help Geneseo students find their perfect schedule.
-			%p Click on <strong>"Courses"</strong> in the upper left to see the course list.
-			%p.int1 Now click on the department you are interested in, and you will see all of its courses. Click on a course, and you will see all the available sections, and a description for that course.
-			%p.int2 When you click on a section, this menu will disappear, and you will see your course lists (click the purple button to get this back at any time). New sections will be added to the "Not in Schedule" list first.
-			%p.int3 On clicking the "Generate" button, Knight Scheduler will attempt to fit your chosen classes together the best it can. Some sections might not fit, but you can always swap them out with others that did to fine tune your schedule. 
-		#resize
-			#schedule-courses
-				.title Scheduled
-				%ul.list
-			#schedule-conflicts
-				.title Unscheduled
-				%ul.list
-	#main-content
-		#course-col
-			= haml :index, { :locals => { :data => @data } }
-		#full-cal-container
-			#cal-header
-				#days
-					.day.mon M
-					.day.tue T
-					.day.wed W
-					.day.thu T
-					.day.fri F
-
-			#calendar-container
-				#time-axis
-					.time 8am
-					.time 9am
-					.time 10am
-					.time 11am
-					.time 12pm
-					.time 1pm
-					.time 2pm
-					.time 3pm
-					.time 4pm
-					.time 5pm
-					.time 6pm
-					.time 7pm
-					.time 8pm
-					.time 9pm
-					.time 10pm
-				#grid
-					- 31.times do
-						.grid-halfhour
-							.grid-day.mon
-							.grid-day.tue
-							.grid-day.wed
-							.grid-day.thu
-							.grid-day.fri
-				#calendar
-		#schedules-container
-			.more-schedules Click to view alternate schedules.
-			#schedules
-				.hide-schedules X
-	%address.contact
-		Contact us: 
-		%a{ "href" => "mailto:err2@geneseo.edu,hps1@geneseo.edu?subject=Knight Scheduler Comments" } 
-			err2@geneseo.edu, hps1@geneseo.edu
+		%footer
+			%address.contact
+				Contact us: 
+				%a{ "href" => "mailto:err2@geneseo.edu,hps1@geneseo.edu?subject=Knight Scheduler Comments" } 
+					err2@geneseo.edu, hps1@geneseo.edu

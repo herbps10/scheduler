@@ -24,11 +24,9 @@ li.container {
 li.container > ul {
 	height: 100%;
 	width: 33.33%;
-	top: 0;
 	margin-left: 33.33%; /*must be width of the columns*/
 	overflow-y: scroll;
 	overflow-x: hidden;
-/*  border: 1px solid #d3d3d3;*/
 }
 
 li.container > ul.sections {
@@ -73,11 +71,6 @@ li.department > ul, li.course > ul {
 	margin-left: -8px;
 }
 
-.sections_container {
-	z-index: -30;
-	display: hidden;
-}
-
 .courses_container {
 	z-index: -20;
 	display: hidden;
@@ -102,18 +95,25 @@ li.container {
 }
 
 li.container .sections_container{
-	width: 67%;
+	width: 66.66%;
+	z-index: -30;
+	display: hidden;
+	top: -1px;
 }
 
 #columnNav li.container > ul > li { /*Style for all column rows*/
-  cursor: pointer;
 	border-bottom: 1px dotted #ececec;
 	padding: 6px 8px;
+  cursor: pointer;
+
 }
 
-#columnNav li.container > ul > li:not(.title):not(.description):hover {
+#columnNav li.container > ul.sections > li{
+  cursor: default;
+}
+
+#columnNav li.container > ul:not(.sections) > li:not(.selected):hover {
   background-color: #f3f3f3;
-  cursor: pointer;
 }
 
 #columnNav li.container > ul > li:last-of-type {
@@ -138,6 +138,7 @@ li.container .sections_container{
 #columnNav li.container > ul > li.section.selected {
   border-top: none;
   padding-top: 6px;
+  background-color: #e8e8e8;
 }
 #columnNav li.container > ul > li.section:not(.selected) + li.section.selected {
   border-top:  1px solid #c1c1c1;
@@ -156,32 +157,4 @@ li.section {
 	position: relative;
 	padding: 2px 8px;
 	color: #3e424b;
-}
-
-li.section .clue {
-	position: absolute;
-	top: 10px;
-	right: 3px;
-	float: right;
-	font-size: 10pt;
-	border: 1px solid #CCC;
-	padding: 2px;
-	color: white;
-
-	background: #9dd53a; /* Old browsers */
-	background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
-	background: linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
-
-}
-
-#columnNav .days {
-}
-
-#columnNav .time {
-	color: black;
 }
