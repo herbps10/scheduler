@@ -24,6 +24,11 @@ p {
   text-indent: 1em;
 }
 
+footer {
+  position: relative;
+  z-index: 100;
+}
+
 *.unselectable {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
