@@ -290,12 +290,12 @@ function columnToggle(e) {
 	}
 	
 	if($("#cal").is(':checked')) {
-		$("#course-col").slideUp();
-		$("#full-cal-container").slideDown();
+		$("#course-col").slideUp({duration: 500, easing: 'easeOutQuint', queue: false});
+		$("#full-cal-container").fadeIn({duration: 400, easing: 'easeOutQuint', queue: false});
 	}
 	else {
-		$("#full-cal-container").slideUp();
-		$("#course-col").slideDown();
+		$("#full-cal-container").fadeOut({duration: 400, easing: 'easeInQuint', queue: false});
+		$("#course-col").slideDown({duration: 500, easing: 'easeInCirc', queue: false});
 	}
 }
 

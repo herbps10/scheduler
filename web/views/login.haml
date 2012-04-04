@@ -1,23 +1,22 @@
-#user-actions-wrapper
+.user-actions-wrapper
 	.upper_border
 	.close [ close ]
-	#register
+	.register
 		%h3 Register:
 		%form{ "action" => "/user/new", "method" => "post" }
 			%label Geneseo Email:
 			%input.align{"type" => "text", "name" => "email", "type" => "email", "placeholder" => "you@geneseo.edu"}
 
-			%label Phone for SMS updates:
+			%label Phone for SMS updates <small>(optional)</small>:
 			%input.align{"type" => "text", "name" => "phone", "type" => "tel", "placeholder" => "cell phone"}
 
-			%label Password <br /><small>(please don't use your Geneseo password):</small>
+			%label Password: <br /><small>(please don't use your Geneseo password)</small>
 			%input.align{"type" => "password", "name" => "password", "placeholder" => "password"}
 			%label Again:
 			%input.align{"type" => "password", "name" => "password2", "placeholder" => "password"}
 
 			%input{"type" => "submit", "value" => "Register"}
-
-	#login
+	.login
 		%h3 Login:
 		%form{ "action" => "/user/authenticate.json", "method" => "post" }
 			%label Email
@@ -26,7 +25,5 @@
 			%input.align{"type" => "password", "name" => "password", "placeholder" => "password"}
 			
 			%input{"type" => "submit", "value" => "Login"}
-
-
-		#message
+		.message
 	.lower_border

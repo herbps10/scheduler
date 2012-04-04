@@ -32,10 +32,17 @@ $(document).ready(function() {
 	});
 
 	$("#user-actions a.user-login").click(function() {
-		$("#user-actions-wrapper").fadeIn();
+		$(".user-actions-wrapper").slideDown();
+		$("#dark_fader").fadeIn();
 	});
 
-	$("#user-actions-wrapper .close").click(function() {
-		$("#user-actions-wrapper").fadeOut();
+	$(".user-actions-wrapper .close").click(function() {
+		$(".user-actions-wrapper").slideUp();
+		$("#dark_fader").fadeOut();
 	});
+
+	$("#landing_slide .close").click(function() {
+		$("#landing_slide").slideUp();
+	});
+
 });

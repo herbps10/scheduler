@@ -1,6 +1,8 @@
+.user-login
+
 #schedules-container {
 	width: 100%;
-	margin: 10px auto;
+	margin-top: 15px;
 }
 
 #schedules-container .more-schedules, #schedules {
@@ -27,6 +29,7 @@
 
 #columnNav {
 	height: 100%;
+	max-height: 693px;
 	position: relative;
 }
 
@@ -47,7 +50,6 @@
 	position: relative;
 	height: 24px;
 	font-size: 1.2em;
-	color: #484c55;
 	margin-right: 15px;
 }
 
@@ -79,7 +81,7 @@
 	padding-bottom: 4px;
 	text-align: center;
 	font: 400 .8em Poiret One;
-  color: #333;
+  color: #555;
 }
 
 #cal-header .day.mon {
@@ -90,7 +92,6 @@
 	padding-right: 239px;
 	margin: 10px 50px auto 20px;
 	height: 100%;
-	
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -184,7 +185,7 @@ button#col-toggle {
 	margin: 0px 0px 20px;
 	padding: 10px 20px 20px 20px;
 	height: 40px;
-
+  
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -211,13 +212,10 @@ button#col-toggle {
 #content {
 	min-width: 740px;
 	position: relative;
-	margin-top: 60px;
-	margin-bottom: -20px;
-	padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: 0 -5px 40px #fefefe;
-  -webkit-box-shadow: 0 -5px 40px #fefefe;
-  box-shadow: 0 -5px 40px #fefefe;
+  -moz-box-shadow: 0 -5px 20px #fefefe;
+  -webkit-box-shadow: 0 -5px 20px #fefefe;
+  box-shadow: 0 -5px 20px #fefefe;
 }
 
 #sidebar {
@@ -491,7 +489,7 @@ button#col-toggle {
 }
 
 button#regen {
-  margin: 4px 0;
+  margin: 4px 0px 4px 0;
 }
 
 button#regen.hero {
@@ -501,12 +499,6 @@ button#regen.hero {
   
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
   
-  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 54%, rgba(255,255,255,0.2) 59%, rgba(255,255,255,0) 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(54%,rgba(255,255,255,0.3)), color-stop(59%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
-  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
   text-shadow: 0 1px 0 #000000;
 }
 button#regen.hero:hover {
@@ -514,12 +506,7 @@ button#regen.hero:hover {
   background-color: rgb(255, 10, 10);
   border: 1px solid #d61b12;
   
-  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.4) 54%, rgba(255,255,255,0.2) 59%, rgba(255,255,255,0) 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(54%,rgba(255,255,255,0.4)), color-stop(59%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
-  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
+
 }
 button#regen.hero:active {
   -moz-box-shadow: inset 0 0 12px #880220;
@@ -527,23 +514,12 @@ button#regen.hero:active {
   box-shadow: inset 0 0 12px #880220;
   line-height: 1.15px;
   background-color: #d7201b;
-  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
-  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
-  background-image: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 59%,rgba(255,255,255,0) 100%);
-  background-image: linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
 }
 
 button#regen.passive {
   border: 1px solid #9c9c9c;
   color: #666666;
   background-color: rgb(248, 248, 248);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-  background-image:  -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-  background-image:  -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-  background-image:  -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0)); 
 }
 button#regen.passive:hover {
   border: 1px solid #f85d5d;
@@ -677,7 +653,7 @@ address.contact {
 /* Switch */
 .switch {
   float: left;
-  position: relative;
+  position: absolute;
   padding: 0;
 	margin: 6px 0;
 	width: 250px;
@@ -689,7 +665,7 @@ address.contact {
   -webkit-border-radius: 3px;	
   -moz-border-radius: 3px;	
   
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.19), 0 1px 0px rgba(255, 255, 255, 0.2);
   border: 1px solid #b4b4b4;
   line-height: .8em;
   
@@ -751,13 +727,6 @@ address.contact {
 	
   padding: 2px;	
 	background-color: #70c66b;
-	
-	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 54%, rgba(255,255,255,0.2) 57%, rgba(255,255,255,0) 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(54%,rgba(255,255,255,0.3)), color-stop(57%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
-	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 57%,rgba(255,255,255,0) 100%);
-	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 57%,rgba(255,255,255,0) 100%);
-	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.3) 54%,rgba(255,255,255,0.2) 57%,rgba(255,255,255,0) 100%);
-	background-image: linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.4) 54%,rgba(255,255,255,0.2) 57%,rgba(255,255,255,0) 100%);
 	
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
 	

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Quattrocento Sans, serif;
+  font-family: Quattrocento Sans, sans-serif;
   background-image: url(../images/cross_scratches.png);
   overflow: hidden;
 }
@@ -39,15 +39,47 @@ footer {
 	user-select: none;
 }
 
+#landing_slide {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 40%;
+  z-index: 999;
+  padding: 20px;
+  top: -20px;
+  background-color: rgba(12, 12, 12, 0.94);
+  color: #ffffff;
+  font-family: Quattrocento, serif;
+}
+
+#landing_slide .text_wrapper {
+  width: 50%;
+  float: left;
+}
+
+#landing_wrapper .login_wrapper {
+  float: right;
+  width: 50%;
+}
+
+#landing_wrapper .login_wrapper #user-actions-wrapper {
+  display: block;
+}
+
+#landing_slide h2{
+  color: #c9c9c9;
+  font: bold 2.5em Quattrocento;
+  margin-bottom: 40px;
+}
+
 /* @group Header Elements */
 
 header {
-  opacity: 1;
-  position: absolute;
-  top: 0;
+  top: -20;
   left: 0;
   width: 100%;
-  z-index: 100;
+  height: 60px;
+  z-index: 1000;
   min-width: 720px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -73,48 +105,58 @@ header > h1 {
 
 /* @group Login Panel */
 
+#dark_fader {
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  top: -100px;
+  background-color: rgba(0, 0, 0, 0.80);
+  z-index: 999;
+  display: none;
+}
+
 #small-login {
+  overflow: visible;
+  position: absolute;
+  left: 25%;
+  top: 0;
+}
+
+.fb-like, .user-login {
   position: relative;
-  left: 50%;
-}
-
-#user-actions, #user-login {
-	height: 32px;
-  	position: relative;
-  	color: #40476a;
-  	font-variant: small-caps;
-  	float: right;
-  	right: 10px;
-	padding: 10px 40px 0px 0px;
-}
-
-#user-actions a:hover, #user-login a:hover {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+  color: #40476a;
+  font-variant: small-caps;
+  float: right;
+	margin: 10px 40px 0px 0px;
 	cursor: pointer;
 }
 
-#user-actions-wrapper {
-	position: relative;
+a.user-login:hover {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.user-actions-wrapper {
+	position: absolute;
 	left: -50%;
-  margin: auto;
+  margin: 0;
   width: 600px;
 	height: 380px;
 	background: white;
-	border: 1px solid #7d7d7d;
-	top: 40%;
+	border: 1px solid #000000;
+	border-top: none;
 	display: none;
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0 0 80px rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 80px rgb(0, 0, 0);
+  box-shadow: 0 0 80px rgb(0, 0, 0);
   z-index: 1000;
 }
 
-#user-actions-wrapper h3{
+.user-actions-wrapper h3{
   margin: 0 0 10px;
 }
 
-#user-actions-wrapper .close {
+.user-actions-wrapper .close {
   text-align: center;
   color: #ffffff;
   width: 100%;
@@ -125,7 +167,7 @@ header > h1 {
   cursor: pointer;
 }
 
-#user-actions-wrapper #register {
+.user-actions-wrapper .register {
 	width: 400px;
   position: absolute;
   margin: 10px;
@@ -133,7 +175,7 @@ header > h1 {
   top: 40px;
 }
 
-#user-actions-wrapper #login {
+.user-actions-wrapper .login {
 	width: 200px;
   position: absolute;
   margin: 10px;
